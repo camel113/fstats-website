@@ -1,0 +1,38 @@
+---
+layout: page
+title: AFF-3ème-ligue
+groups:
+  - group-info: 
+    - name: Groupe 1
+      id: group1
+  - group-info: 
+    - name: Groupe 2
+      id: group2
+  - group-info: 
+    - name: Groupe 3
+      id: group3
+---
+<div id="content">
+  <div class="groups" id="aff-3">
+    {% assign name = 'Adrien' %}
+    Hello {{name}}
+    {% for group in page.groups %}
+      {% for gr in group.group-info %}
+      <h3>{{gr.name}}</h3>
+      <table class="table table-striped" id="{{gr.id}}">
+        <thead>
+          <tr>
+              <th>#</th>
+              <th>Nom</th>
+              <th>Club</th>
+              <th>Buts</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
