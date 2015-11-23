@@ -19,25 +19,27 @@ groups:
     - name: Groupe 5
       id: group5
 ---
-<div id="content">
-  <div class="groups" id="aff-4">
-    {% for group in page.groups %}
-      {% for gr in group.group-info %}
-      <h3>{{gr.name}}</h3>
-      <table class="table table-striped" id="{{gr.id}}">
-        <thead>
-          <tr>
-              <th>#</th>
-              <th>Nom</th>
-              <th>Club</th>
-              <th>Buts</th>
-          </tr>
-        </thead>
-        <tbody>
-          
-        </tbody>
-      </table>
-      {% endfor %}
+<div class="groups" id="aff-4">
+  <p class="rankingDescription">Les classements sont mis à jour plusieurs fois par semaine.</p>
+  <p class="rankingDescription">Les classements sont réalisés en fonction des résultats publiés sur le site football.ch</p>
+  <p class="lastUpdate" title="Dernière mise à jour"><i class="fa fa-refresh"></i>&nbsp;</p>
+  {% for group in page.groups %}
+    {% for gr in group.group-info %}
+    <h3>{{gr.name}}</h3>
+    <table class="table table-striped" id="{{gr.id}}">
+      <thead>
+        <tr>
+            <th>#</th>
+            <th>Nom</th>
+            <th>Club</th>
+            <th>Buts</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
     {% endfor %}
+  {% endfor %}
   </div>
 </div>
