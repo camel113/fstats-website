@@ -60,10 +60,17 @@ header{
   header{
     text-align: center;
     h1{
-      margin: 45px 0;
       span{
         font-style: italic;
       }
+      margin-bottom: 0px;
+      margin-top: 20px;
+      font-size: 24px;
+    }
+    h2{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 1.4em;
     }
   }
   footer{
@@ -84,20 +91,6 @@ header{
   &:first-child{
     margin-top: 25px;
     margin-bottom: 0;
-  }
-}
-.ligue{
-  header{
-    h1{
-      margin-bottom: 0px;
-      margin-top: 20px;
-      font-size: 24px;
-    }
-    h2{
-      margin-top: 20px;
-      margin-bottom: 10px;
-      font-size: 24px;
-    }
   }
 }
 @media (min-width: 1200px) {
@@ -126,6 +119,13 @@ header{
     font-size: 1em;
   }
 }
+.groups .table-striped {
+  tbody tr td,thead tr th{
+    @media (max-width: 768px){
+      padding: 8px 4px;
+    }
+  }
+} 
 /* Loader */
 .loader,
 .loader:before,
