@@ -31,6 +31,8 @@
                 {% endfor %}
               </ul>
             </li>
+          {% else %}
+            <li><a href="{{region.path}}">{{region.title}}</a></li>
           {% endif %}
         {% endfor %}
         </ul>
