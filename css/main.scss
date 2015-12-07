@@ -39,11 +39,12 @@ header{
 }
 #content{
   background: url("../images/bg2.jpg") no-repeat;
+  background-size: 100% 200px;
   margin-bottom: 2rem;
   height: 200px;
   padding-top: 100px;
-  background-size: cover;
-  background-position: center;
+  // background-size: cover;
+  // background-position: center;
   height:auto;
   overflow:visible;
   @media (max-width: 768px) {
@@ -85,6 +86,10 @@ header{
       }
     }
   }
+}
+.home header h1{
+  margin: 45px 0;
+  font-size: 36px;
 }
 .rankingDescription{
   margin-top: 0;
