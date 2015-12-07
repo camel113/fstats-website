@@ -6,6 +6,12 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
 
+  <meta property="og:url" content="{{ site.url }}"/>
+  <meta property="og:description" content="Classements buteurs et équipes Vaud et Fribourg." />
+  <meta property="og:title" content="Classements équpes et buteurs Vaud/Fribourg" />
+  <meta property="og:image" content="{{ '/images/affFbPreview.png' | prepend: site.url }}" />
+  <meta property="og:image" content="{{ '/images/newFootballTopScorersFeaturesFbPreview.png' | prepend: site.url }}" />
+
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
