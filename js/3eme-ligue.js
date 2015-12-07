@@ -101,6 +101,43 @@ $(document).ready(function(){
 
         rankingChoice.init(3)
     }
+    if(document.getElementById('acvf-3') !== null){
+        region = 'acvf'
+        var minGoals = 1;
+        var scorerRankingGroup1 = 1;
+        var scorerRankingGroup2 = 1;
+        var scorerRankingGroup3 = 1;
+        var scorerRankingGroup4 = 1;
+
+        $.getJSON( 'http://footballtopscorers-pmeweb.rhcloud.com/scorerRanking/3/acvf',function(data){
+            $('.loader').hide()
+            $.each( data.scorers["1"], function( i, scorer ) {
+                if(scorer.goals > minGoals){
+                    $('#group1 tbody').append('<tr><td>'+scorerRankingGroup1+'</td><td>'+scorer.scorer+'</td><td>'+scorer.team+'</td><td>'+scorer.goals+'</td></tr>')
+                    scorerRankingGroup1++
+                }
+            });
+            $.each( data.scorers["2"], function( i, scorer ) {
+                if(scorer.goals > minGoals){
+                    $('#group2 tbody').append('<tr><td>'+scorerRankingGroup2+'</td><td>'+scorer.scorer+'</td><td>'+scorer.team+'</td><td>'+scorer.goals+'</td></tr>')
+                    scorerRankingGroup2++
+                }
+            });
+            $.each( data.scorers["3"], function( i, scorer ) {
+                if(scorer.goals > minGoals){
+                    $('#group3 tbody').append('<tr><td>'+scorerRankingGroup3+'</td><td>'+scorer.scorer+'</td><td>'+scorer.team+'</td><td>'+scorer.goals+'</td></tr>')
+                    scorerRankingGroup3++
+                }
+            });
+            $.each( data.scorers["4"], function( i, scorer ) {
+                if(scorer.goals > minGoals){
+                    $('#group4 tbody').append('<tr><td>'+scorerRankingGroup4+'</td><td>'+scorer.scorer+'</td><td>'+scorer.team+'</td><td>'+scorer.goals+'</td></tr>')
+                    scorerRankingGroup4++
+                }
+            });
+            $('.lastUpdate').append(data.lastUpdate)
+        })
+    }
 })
 
     

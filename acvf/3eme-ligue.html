@@ -1,8 +1,7 @@
 ---
 layout: page
-title: AFF 3ème ligue
-categories: AFF,3
-test: abc
+title: ACVF 3ème ligue
+headline: Classements buteurs par groupe
 groups:
   - group-info: 
     - name: Groupe 1
@@ -13,28 +12,30 @@ groups:
   - group-info: 
     - name: Groupe 3
       id: group3
+  - group-info: 
+    - name: Groupe 4
+      id: group4
 ---
-<div id="content">
-  <div class="groups" id="aff-3">
-    {% assign name = 'Adrien' %}
-    Hello {{name}}
-    {% for group in page.groups %}
-      {% for gr in group.group-info %}
-      <h3>{{gr.name}}</h3>
-      <table class="table table-striped" id="{{gr.id}}">
-        <thead>
-          <tr>
-              <th>#</th>
-              <th>Nom</th>
-              <th>Club</th>
-              <th><i class="fa fa-futbol-o"></i></th>
-          </tr>
-        </thead>
-        <tbody>
-          
-        </tbody>
-      </table>
-      {% endfor %}
+<div class="groups" id="acvf-3">
+  <p class="rankingDescription">Les classements sont mis à jour plusieurs fois par semaine.</p>
+  <p class="rankingDescription">Les classements sont réalisés en fonction des résultats publiés sur le site football.ch</p>
+  <p class="lastUpdate" title="Dernière mise à jour"><i class="fa fa-refresh"></i>&nbsp;</p>
+  {% for group in page.groups %}
+    {% for gr in group.group-info %}
+    <h3>{{gr.name}}</h3>
+    <table class="table table-striped" id="{{gr.id}}">
+      <thead>
+        <tr>
+            <th>#</th>
+            <th>Nom</th>
+            <th>Club</th>
+            <th><i class="fa fa-futbol-o"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
     {% endfor %}
-  </div>
+  {% endfor %}
 </div>

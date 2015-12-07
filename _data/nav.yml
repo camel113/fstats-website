@@ -22,12 +22,12 @@
       path: "/acvf"
       subpages:
         - title: "Buteurs"
-          path: "/3eme-ligue"
+          path: "/3eme-ligue.html"
         - title: "Teams"
-          path: "/3eme-ligue-teams"
+          path: "/3eme-ligue-teams.html"
     - title: "4ème ligue"
       subpages:
         - title: "Buteurs"
-          path: "/4eme-ligue"
+          path: "/4eme-ligue.html"
         - title: "Teams"
           path: "/test"
