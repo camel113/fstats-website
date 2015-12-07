@@ -8,7 +8,7 @@
         - title: "Buteurs"
           path: "/3eme-ligue"
         - title: "Teams"
-          path: ""
+          path: "/3eme-ligue-teams.html"
     - title: "4ème ligue"
       subpages:
         - title: "Buteurs"
@@ -23,7 +23,7 @@
         - title: "Buteurs"
           path: "/3eme-ligue"
         - title: "Teams"
-          path: ""
+          path: "/3eme-ligue-teams"
     - title: "4ème ligue"
       subpages:
         - title: "Buteurs"
