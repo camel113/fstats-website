@@ -26,6 +26,7 @@
         - title: "Teams"
           path: "/3eme-ligue-teams.html"
     - title: "4ème ligue"
+      path: "/acvf"
       subpages:
         - title: "Buteurs"
           path: "/4eme-ligue.html"
