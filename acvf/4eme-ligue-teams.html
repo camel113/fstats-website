@@ -1,0 +1,204 @@
+---
+layout: page
+title: ACVF 4ème ligue
+headline: Classements buteurs par groupe
+groups:
+  - group-info: 
+    - name: Groupe 1
+      id: group1
+  - group-info: 
+    - name: Groupe 2
+      id: group2
+  - group-info: 
+    - name: Groupe 3
+      id: group3
+  - group-info: 
+    - name: Groupe 4
+      id: group4
+  - group-info: 
+    - name: Groupe 5
+      id: group5
+  - group-info: 
+    - name: Groupe 6
+      id: group6
+  - group-info: 
+    - name: Groupe 7
+      id: group7
+  - group-info: 
+    - name: Groupe 8
+      id: group8
+---
+<div class="groups" id="acvf-4-teams">
+  <div id="table-choice" class="col-xs-12">
+    <div class="form-group">
+      <label class="col-xs-5 col-md-2">Groupe</label>
+      <div class="col-xs-7 col-md-2">
+        <select class="form-control" id="group-choice">
+          <option value="global">global</option>
+          <option value="group1">1</option>
+          <option value="group2">2</option>
+          <option value="group3">3</option>
+        </select>
+      </div>
+      <label class="col-xs-5 col-md-2">Classement</label>
+      <div class="col-xs-7 col-md-2">
+        <select class="form-control" id="rank-choice">
+          <option value="standard">Général</option>
+          <option value="attack">Attaque</option>
+          <option value="defense">Défense</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  {% for group in page.groups %}
+    {% for gr in group.group-info %}
+    <div class="groups col-xs-12" id="{{gr.id}}">
+      <h4>{{gr.name}}</h4>
+      <div class="row ranking" id="{{gr.id}}-standard">
+        <div class="col-xs-12">
+          <table class="table table-striped table-condensed">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Club</th>
+                <th>BP</th>
+                <th>BC</th>
+                <th>G</th>
+                <th>N</th>
+                <th>P</th>
+                <th>F</th>
+                <th>Pts</th>
+              </tr>      
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+          <div class="loader"></div>
+        </div>
+      </div>
+      <div class="row ranking" id="{{gr.id}}-attack">
+        <div class="col-xs-12">
+          <table class="table table-striped table-condensed">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Club</th>
+                <th>BP</th>
+                <th>BC</th>
+                <th>G</th>
+                <th>N</th>
+                <th>P</th>
+                <th>F</th>
+                <th>Pts</th>
+              </tr>      
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+          <div class="loader"></div>
+        </div>
+      </div>
+      <div class="row ranking" id="{{gr.id}}-defense">
+        <div class="col-xs-12">
+          <table class="table table-striped table-condensed">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Club</th>
+                <th>BP</th>
+                <th>BC</th>
+                <th>G</th>
+                <th>N</th>
+                <th>P</th>
+                <th>F</th>
+                <th>Pts</th>
+              </tr>      
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+          <div class="loader"></div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  {% endfor %}
+  <div class="groups col-xs-12" id="global">
+    <h4>Global</h4>
+    <div class="row ranking" id="global-standard">
+      <div class="col-xs-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Club</th>
+              <th>Pos</th>
+              <th>Grp</th>
+              <th>BP</th>
+              <th>BC</th>
+              <th>G</th>
+              <th>N</th>
+              <th>P</th>
+              <th>F</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row ranking" id="global-attack">
+      <div class="col-xs-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Club</th>
+              <th>Pos</th>
+              <th>Grp</th>
+              <th>BP</th>
+              <th>BC</th>
+              <th>G</th>
+              <th>N</th>
+              <th>P</th>
+              <th>F</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row ranking" id="global-defense">
+      <div class="col-xs-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Club</th>
+              <th>Pos</th>
+              <th>Grp</th>
+              <th>BP</th>
+              <th>BC</th>
+              <th>G</th>
+              <th>N</th>
+              <th>P</th>
+              <th>F</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>
+</div>
