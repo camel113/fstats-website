@@ -4,15 +4,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
   <meta property="og:url" content="{{ site.url }}"/>
-  <meta property="og:description" content="Classements buteurs et équipes Vaud et Fribourg." />
-  <meta property="og:title" content="Classements équpes et buteurs Vaud/Fribourg" />
+  <meta property="og:description" content="Classements buteurs et équipes (3ème/4ème/5ème ligue) Vaud et Fribourg." />
+  <meta property="og:title" content="Classements équipes et buteurs Vaud/Fribourg" />
   <meta property="og:image" content="{{ '/images/affFbPreview.png' | prepend: site.url }}" />
   <meta property="og:image" content="{{ '/images/newFootballTopScorersFeaturesFbPreview.png' | prepend: site.url }}" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <link rel="icon" href="http://www.footballtopscorers.ch/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://www.footballtopscorers.ch/favicon.ico" type="image/x-icon">
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">  
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.4.1/css/ripples.min.css" rel="stylesheet">
