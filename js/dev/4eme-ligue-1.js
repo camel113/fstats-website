@@ -1,6 +1,11 @@
 var region;
 $(document).ready(function(){
     if(document.getElementById('aff-4') !== null){
+        $('.lastUpdate').after('<div class="alert alert-dismissable alert-success">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      Communiquez nous les erreurs des résumés de matchs par message sur&nbsp;<a href="http://www.facebook.com/footballtopscorers" title="Top scorers sur facebook">facebook.com/footballtopscorers</a>
+    </div>')
+
         region = 'aff'
         var minGoals = 1;
         var scorerRankingGroup1 = 1;
@@ -145,6 +150,11 @@ $(document).ready(function(){
     }
 
     if(document.getElementById('acvf-4') !== null){
+        $('.lastUpdate').after('<div class="alert alert-dismissable alert-success">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      Communiquez nous les erreurs des résumés de matchs par message sur&nbsp;<a href="http://www.facebook.com/footballtopscorers" title="Top scorers sur facebook">facebook.com/footballtopscorers</a>
+    </div>')
+        
         region = 'acvf'
         var minGoals = 1;
         var scorerRankingGroup1 = 1;
