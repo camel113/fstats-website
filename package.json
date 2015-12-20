@@ -1,0 +1,10 @@
+{
+  "name": "chscorers",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-less": "2.0",
+    "gulp-uglify": "^1.1.0"
+  }
+}
