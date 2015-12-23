@@ -16,6 +16,11 @@
           path: "/4eme-ligue"
         - title: "Teams"
           path: "/4eme-ligue-teams"
+    - title: "5ème ligue"
+      path: "/aff"
+      subpages:
+        - title: "Buteurs"
+          path: "/5eme-ligue"
 - title: "ACVF"
   subcategories:
     - title: "3ème ligue"
