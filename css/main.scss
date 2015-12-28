@@ -7,11 +7,6 @@ $main-red: #F44336;
 body{
   background-color: white;
 }
-h1{
-  @media(max-width:768px){
-    font-size: 29px;
-  }
-}
 a{
   color:$main-red;
 }
@@ -90,6 +85,9 @@ header{
 .home header h1{
   margin: 45px 0;
   font-size: 36px;
+  @media(max-width:768px){
+    font-size: 29px;
+  }
 }
 .rankingDescription{
   margin-top: 0;
