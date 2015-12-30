@@ -247,6 +247,25 @@ $(document).ready(function(){
             $('.lastUpdate').append(data.lastUpdate)
         })
     }
+    if(document.getElementById('acvf-3-fem') !== null){
+        
+        $('h3').after('<div class="alert alert-dismissable alert-warning"><button type="button" class="close" data-dismiss="alert">×</button>Communiquez nous les erreurs des résumés de matchs football.ch par message sur&nbsp;<a href="http://www.facebook.com/footballtopscorers" title="Top scorers sur facebook">facebook.com/footballtopscorers</a></div>')
+
+        region = 'acvf'
+        var minGoals = 1;
+        var scorerRankingGroup1 = 1;
+
+        $.getJSON( 'http://footballtopscorers-pmeweb.rhcloud.com/scorerRanking/30/acvf',function(data){
+            $('.loader').hide()
+            $.each( data.scorers["1"], function( i, scorer ) {
+                if(scorer.goals > minGoals){
+                    $('#group1 tbody').append('<tr><td>'+scorerRankingGroup1+'</td><td>'+scorer.scorer+'</td><td>'+scorer.team+'</td><td>'+scorer.goals+'</td></tr>')
+                    scorerRankingGroup1++
+                }
+            });
+            $('.lastUpdate').append(data.lastUpdate)
+        })
+    }
 })
 
     
