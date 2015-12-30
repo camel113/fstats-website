@@ -1,0 +1,34 @@
+---
+layout: page
+title: AFF 3ème ligue Féminine
+description: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue Féminine.
+headline: Classements buteurs par groupe
+groups:
+  - group-info: 
+    - name: 3ème ligue Féminine
+      id: group1
+---
+<div class="groups" id="aff-3-fem">
+  <p class="rankingDescription">Les classements sont mis à jour plusieurs fois par semaine.</p>
+  <p class="rankingDescription">Les classements sont réalisés en fonction des résultats publiés sur le site football.ch</p>
+  <p class="lastUpdate" title="Dernière mise à jour"><i class="fa fa-refresh"></i>&nbsp;</p>
+  {% for group in page.groups %}
+    {% for gr in group.group-info %}
+    <h3>{{gr.name}}</h3>
+    <table class="table table-striped" id="{{gr.id}}">
+      <thead>
+        <tr>
+            <th>#</th>
+            <th>Nom</th>
+            <th>Club</th>
+            <th><i class="fa fa-futbol-o"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+    <div class="loader"></div>
+    {% endfor %}
+  {% endfor %}
+</div>
