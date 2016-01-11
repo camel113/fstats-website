@@ -42,3 +42,8 @@
       subpages:
         - title: "Buteurs"
           path: "/5eme-ligue"
+    - title: "3ème ligue Féminine"
+      path: "/acvf"
+      subpages:
+        - title: "Buteurs"
+          path: "/3eme-ligue-feminine"
