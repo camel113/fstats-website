@@ -1,5 +1,7 @@
 - title: "Home"
   path: "/"
+- title: "Concours"
+  path: "/topbuts"
 - title: "AFF"
   subcategories:
     - title: "3ème ligue"
@@ -21,6 +23,11 @@
       subpages:
         - title: "Buteurs"
           path: "/5eme-ligue"
+    - title: "3ème ligue Féminine"
+      path: "/aff"
+      subpages:
+        - title: "Buteurs"
+          path: "/3eme-ligue-feminine"
 - title: "ACVF"
   subcategories:
     - title: "3ème ligue"

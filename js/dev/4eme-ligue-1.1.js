@@ -1,10 +1,11 @@
 var region;
 $(document).ready(function(){
+    var concoursAdvertising = '<div class="alert alert-dismissable alert-info"><button type="button" class="close" data-dismiss="alert">×</button>CONCOURS ! Envoyez-nous les vidéos de vos plus beaux buts et gagnez une paire de Nike Hypervenom.&nbsp;<a href="/topbuts" title="Concours buts en vidéo">Plus d\'infos ici</a>.</div>'
+    var errorMessage = '<div class="alert alert-dismissable alert-success"><button type="button" class="close" data-dismiss="alert">×</button>Communiquez nous les erreurs des résumés de matchs par message sur&nbsp;<a href="http://www.facebook.com/footballtopscorers" title="Top scorers sur facebook">facebook.com/footballtopscorers</a></div>'
+
     if(document.getElementById('aff-4') !== null){
-        $('.lastUpdate').after('<div class="alert alert-dismissable alert-success">
-      <button type="button" class="close" data-dismiss="alert">×</button>
-      Communiquez nous les erreurs des résumés de matchs par message sur&nbsp;<a href="http://www.facebook.com/footballtopscorers" title="Top scorers sur facebook">facebook.com/footballtopscorers</a>
-    </div>')
+        
+        $('h3').before(concoursAdvertising)
 
         region = 'aff'
         var minGoals = 1;
@@ -150,10 +151,8 @@ $(document).ready(function(){
     }
 
     if(document.getElementById('acvf-4') !== null){
-        $('.lastUpdate').after('<div class="alert alert-dismissable alert-success">
-      <button type="button" class="close" data-dismiss="alert">×</button>
-      Communiquez nous les erreurs des résumés de matchs par message sur&nbsp;<a href="http://www.facebook.com/footballtopscorers" title="Top scorers sur facebook">facebook.com/footballtopscorers</a>
-    </div>')
+        
+        $('h3').before(concoursAdvertising)
         
         region = 'acvf'
         var minGoals = 1;
