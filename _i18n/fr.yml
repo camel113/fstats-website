@@ -2,9 +2,11 @@ pages:
   titles:
     aff_3: AFF 3ème ligue
     aff_4: AFF 4ème ligue
+    aff_5: AFF 5ème ligue
   descriptions:
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
     aff_4: Classement buteurs championnat de football AFF (Fribourg) 4ème ligue.
+    aff_5: Classement buteurs championnat de football AFF (Fribourg) 5ème ligue.
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: Les classements sont réalisés en fonction des résultats publiés sur le site football.ch
