@@ -1,32 +1,32 @@
 ---
 layout: page
-title: AFF 3ème ligue
-description: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
-headline: Classements buteurs par groupe
+title: pages.titles.aff_3
+description: pages.descriptions.aff_3
+headline: pages.scorer_ranking.headline
 groups:
   - group-info: 
-    - name: Groupe 1
+    - name: pages.scorer_ranking.groups.group1
       id: group1
   - group-info: 
-    - name: Groupe 2
+    - name: pages.scorer_ranking.groups.group2
       id: group2
   - group-info: 
-    - name: Groupe 3
+    - name: pages.scorer_ranking.groups.group3
       id: group3
 ---
 <div class="groups" id="aff-3">
-  <p class="rankingDescription">Les classements sont mis à jour plusieurs fois par semaine.</p>
-  <p class="rankingDescription">Les classements sont réalisés en fonction des résultats publiés sur le site football.ch</p>
+  <p class="rankingDescription">{% t pages.scorer_ranking.update %}</p>
+  <p class="rankingDescription">{% t pages.scorer_ranking.info %}</p>
   <p class="lastUpdate" title="Dernière mise à jour"><i class="fa fa-refresh"></i>&nbsp;</p>
   {% for group in page.groups %}
     {% for gr in group.group-info %}
-    <h3>{{gr.name}}</h3>
+    <h3>{% t gr.name %}</h3>
     <table class="table table-striped" id="{{gr.id}}">
       <thead>
         <tr>
             <th>#</th>
-            <th>Nom</th>
-            <th>Club</th>
+            <th>{% t pages.scorer_ranking.nom_du_joueur %}</th>
+            <th>{% t pages.scorer_ranking.club_du_joueur %}</th>
             <th><i class="fa fa-futbol-o"></i></th>
         </tr>
       </thead>

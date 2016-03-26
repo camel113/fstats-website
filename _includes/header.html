@@ -16,7 +16,12 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
         <ul class="nav navbar-nav navbar-right">
-        {% for region in site.data.nav %}
+        {% if site.lang == "de" %}
+          {% assign name = site.data.navde %}
+        {% else if site.lang == "fr" %}
+          {% assign name = site.data.nav %}
+        {% endif %}
+        {% for region in name %}
           {% if region.subcategories != null %}
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{region.title}}<span class="caret"></span></a>
@@ -35,6 +40,11 @@
             <li><a href="{{region.path}}">{{region.title}}</a></li>
           {% endif %}
         {% endfor %}
+        {% if site.lang == "de" %}
+        <li><a href="{{ site.url | append: page.url }}" >Fr</a></li>
+        {% else if site.lang == "fr" %}
+        <li><a href="{{ '/de' | prepend: site.url | append: page.url }}" >De</a></li>
+        {% endif %}
         </ul>
 
       </div>
