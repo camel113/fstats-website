@@ -4,11 +4,13 @@ pages:
     aff_4: AFF 4ème ligue
     aff_5: AFF 5ème ligue
     aff_3_women: AFF 3ème ligue Féminine
+    aff_3_teams: AFF 3ème ligue classements
   descriptions:
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
     aff_4: Classement buteurs championnat de football AFF (Fribourg) 4ème ligue.
     aff_5: Classement buteurs championnat de football AFF (Fribourg) 5ème ligue.
     aff_3_women: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue Féminine.
+    aff_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 3ème ligue."
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: Les classements sont réalisés en fonction des résultats publiés sur le site football.ch
@@ -21,5 +23,23 @@ pages:
       group5: Groupe 5
     player_name: Nom
     player_club: Club
+  teams_ranking:
+    headline: "Classements classique, attaque, défense"
+    global: global
+    general: Général
+    attack: Attaque
+    defense: Défense
+    group: Groupe
+    ranking: Classement
+    club: Club
+    goals_for_abbrevitation: BP
+    goals_against_abbrevitation: BC
+    matchs_win_abbrevitation: G
+    matchs_draw_abbrevitation: N
+    matchs_lost_abbrevitation: P
+    fairplay_abbrevitation: F
+    points_abbrevitation: Pts
+    group_abbrevitation: Grp
+    position_abbrevitation: Pos
 layout:
   follow_us: Suivez-nous
