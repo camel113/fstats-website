@@ -8,6 +8,7 @@ pages:
     aff_4_teams: AFF 4ème ligue classements
     acvf_3: ACVF 3ème ligue
     acvf_4: ACVF 4ème ligue
+    acvf_5: ACVF 5ème ligue
   descriptions:
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
     aff_4: Classement buteurs championnat de football AFF (Fribourg) 4ème ligue.
@@ -17,6 +18,7 @@ pages:
     aff_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 3ème ligue."
     acvf_3: Classement buteurs championnat de football ACVF (Vaud) 3ème ligue.
     acvf_4: Classement buteurs championnat de football ACVF (Vaud) 4ème ligue.
+    acvf_5: Classement buteurs championnat de football ACVF (VAUD) 5ème ligue.
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: Les classements sont réalisés en fonction des résultats publiés sur le site football.ch
