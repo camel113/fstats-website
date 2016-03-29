@@ -1,11 +1,11 @@
 ---
 layout: page
-title: ACVF 3ème ligue Féminine
-description: Classement buteurs championnat de football ACVF (Fribourg) 3ème ligue Féminine.
-headline: Classements buteurs par groupe
+title: pages.titles.acvf_3_women
+description: pages.descriptions.acvf_3_women
+headline: pages.scorer_ranking.headline
 groups:
   - group-info: 
-    - name: 3ème ligue Féminine
+    - name: pages.scorer_ranking.groups.group3_women
       id: group1
 ---
 <div class="groups" id="acvf-3-fem">
@@ -14,13 +14,13 @@ groups:
   <p class="lastUpdate" title="Dernière mise à jour"><i class="fa fa-refresh"></i>&nbsp;</p>
   {% for group in page.groups %}
     {% for gr in group.group-info %}
-    <h3>{{gr.name}}</h3>
+    <h3>{% t gr.name %}</h3>
     <table class="table table-striped" id="{{gr.id}}">
       <thead>
         <tr>
             <th>#</th>
-            <th>Nom</th>
-            <th>Club</th>
+            <th>{% t pages.scorer_ranking.player_name %}</th>
+            <th>{% t pages.scorer_ranking.player_club %}</th>
             <th><i class="fa fa-futbol-o"></i></th>
         </tr>
       </thead>

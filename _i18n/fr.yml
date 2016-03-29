@@ -9,6 +9,7 @@ pages:
     acvf_3: ACVF 3ème ligue
     acvf_4: ACVF 4ème ligue
     acvf_5: ACVF 5ème ligue
+    acvf_3_women: ACVF 3ème ligue Féminine
     acvf_3_teams: ACVF 3ème ligue classements
     acvf_4_teams: ACVF 4ème ligue classements
   descriptions:
@@ -21,6 +22,7 @@ pages:
     acvf_3: Classement buteurs championnat de football ACVF (Vaud) 3ème ligue.
     acvf_4: Classement buteurs championnat de football ACVF (Vaud) 4ème ligue.
     acvf_5: Classement buteurs championnat de football ACVF (VAUD) 5ème ligue.
+    aff_3_women: Classement buteurs championnat de football ACVF (Vaud) 3ème ligue Féminine.
     acvf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 3ème ligue."
     acvf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 4ème ligue."
   scorer_ranking:
@@ -36,6 +38,7 @@ pages:
       group6: Groupe 6
       group7: Groupe 7
       group8: Groupe 8
+      group3_women: 3ème ligue Féminine
     player_name: Nom
     player_club: Club
   teams_ranking:
