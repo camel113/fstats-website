@@ -29,7 +29,7 @@ groups:
 <div class="groups" id="acvf-5">
   <p class="rankingDescription">{% t pages.scorer_ranking.update %}</p>
   <p class="rankingDescription">{% t pages.scorer_ranking.info %}</p>
-  <p class="lastUpdate" title="Dernière mise à jour"><i class="fa fa-refresh"></i>&nbsp;</p>
+  <p class="lastUpdate" title="{% t pages.other.last_update %}"><i class="fa fa-refresh"></i>&nbsp;</p>
   {% for group in page.groups %}
     {% for gr in group.group-info %}
     <h3>{% t gr.name %}</h3>

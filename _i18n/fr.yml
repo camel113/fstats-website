@@ -59,5 +59,7 @@ pages:
     points_abbrevitation: Pts
     group_abbrevitation: Grp
     position_abbrevitation: Pos
+  other:
+    last_update: Dernière mise à jour
 layout:
   follow_us: Suivez-nous
