@@ -3,12 +3,12 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>{% if page.title %}{% t page.title %}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title_meta %}{% t page.title_meta %}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description_meta %}{% t page.description_meta %}{% else %}{{ site.description }}{% endif %}">
 
   <meta property="og:url" content="{{ site.url }}"/>
-  <meta property="og:description" content="Classements buteurs et équipes (3ème/4ème/5ème ligue) Vaud et Fribourg." />
-  <meta property="og:title" content="Classements équipes et buteurs Vaud/Fribourg" />
+  <meta property="og:description" content="{% t page.facebook_meta_description %}" />
+  <meta property="og:title" content="{{ page.facebook_meta_title }}" />
   <meta property="og:image" content="{{ '/images/affFbPreview.png' | prepend: site.baseurl_root }}" />
   <meta property="og:image" content="{{ '/images/newFootballTopScorersFeaturesFbPreview.png' | prepend: site.baseurl_root }}" />
 
