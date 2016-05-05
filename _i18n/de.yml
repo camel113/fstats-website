@@ -1,17 +1,78 @@
 pages:
   titles:
-    aff_3: AFF 3ème ligue
+    aff_3: "FFV 3. Liga"
+    aff_4: "FFV 4. Liga"
+    aff_5: "FFV 5. Liga"
+    aff_3_women: "FFV 3. Liga Frauen"
+    aff_3_teams: "FFV 3. Liga Ranglisten"
+    aff_4_teams: "FFV 4. Liga Ranglisten"
+    acvf_3: "ACVF 3. Liga"
+    acvf_4: "ACVF 4. Liga"
+    acvf_5: "ACVF 5. Liga"
+    acvf_3_women: "ACVF 3. Liga Frauen"
+    acvf_3_teams: "ACVF 3. Liga Ranglisten"
+    acvf_4_teams: "ACVF 4. Liga Ranglisten"
   descriptions:
-    aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
+    aff_3: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 3. Liga."
+    aff_4: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 4. Liga."
+    aff_5: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 5. Liga."
+    aff_3_women: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 3. Liga Frauen."
+    aff_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft FFV (Freiburg)"
+    aff_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FFV (Freiburg)"
+    acvf_3: "Torschützen-Rangliste Meisterschaft ACVF (Waadt) 3. Liga."
+    acvf_4: "Torschützen-Rangliste Meisterschaft ACVF (Waadt) 4. Liga."
+    acvf_5: "Torschützen-Rangliste Meisterschaft ACVF (Waadt) 5. Liga."
+    aff_3_women: "Torschützen-Rangliste Meisterschaft ACVF(Waadt) 3. Liga Frauen."
+    acvf_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft ACVF (Waadt)"
+    acvf_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ACVF (Waadt)"
   scorer_ranking:
-    update: Les classements sont mis à jour plusieurs fois par semaine.
-    info: Les classements sont réalisés en fonction des résultats publiés sur le site football.ch
-    headline: Classements buteurs par groupe
+    update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
+    info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."
+    headline: "Torschützen-Rangliste pro Gruppe"
     groups:
-      group1: Groupe 1
-      group2: Groupe 2
-      group3: Groupe 3
-      group4: Groupe 4
-      group5: Groupe 5
-    player_name: Nom
-    player_club: Club
+      group1: "Gruppe 1"
+      group2: "Gruppe 2"
+      group3: "Gruppe 3"
+      group4: "Gruppe 4"
+      group5: "Gruppe 5"
+      group6: "Gruppe 6"
+      group7: "Gruppe 7"
+      group8: "Gruppe 8"
+      group3_women: "3. Liga Frauen"
+    player_name: "Name"
+    player_club: "Club"
+  teams_ranking:
+    headline: "Ranglisten klassisch, Offensive, Defensive"
+    global: "global"
+    general: "generell"
+    attack: "Offensive"
+    defense: "Defensive"
+    group: "Gruppe"
+    ranking: "Rangliste"
+    club: "Verein"
+    goals_for_abbrevitation: "+"
+    goals_against_abbrevitation: "-"
+    matchs_win_abbrevitation: "S"
+    matchs_draw_abbrevitation: "U"
+    matchs_lost_abbrevitation: "N"
+    fairplay_abbrevitation: "F"
+    points_abbrevitation: "Pts"
+    group_abbrevitation: "Grp"
+    position_abbrevitation: "Pos"
+  home:
+    description_1: "Torschützen-Rangliste der freiburger (FFV) und waadtländer (ACVF) Fussball-Meisterschaften der 3. Liga (einschliesslich Frauen), 4. und 5. Liga"
+    description_2: "Klassische Rangliste, beste Offensiven und Defensiven der 3., 4. und 5. Liga Waadt und Freiburg."
+    description_3: "Inoffizielle Ranglisten auf Basis der Daten, welche im Match-Protokoll auf football.ch publiziert werden."
+    description_4: "Wenn Sie Fehler in den Ranglisten feststellen, bitte via facebook.com/footballtopscorers melden. Besten Dank."
+  other:
+    last_update: "Letzte Aktualisierung"
+  top_buts:
+    title: "Footballtopscorers | Wettbewerb um die besten Tore im schweizer Amateurfussball"
+    description: "Schicken Sie uns die Filme Ihrer schönsten Tore und nehmen Sie an einem Wettbewerb für ein Paar Nike Schuhe (Hypervenom Phantom II) teil"
+layout:
+  follow_us: "Folge uns"
+meta: 
+  site_title: "Torschützen-Rangliste | Topscorers | Amateurfussball Schweiz"
+  site_description: "Torschützen- und Mannschafts-Rangliste für die Amateur-Meisterschaften der Kantone Waadt und Freiburg"
+  facebook_title: "Torschützen- und Mannschafts-Rangliste Waadt und Freiburg."
+  facebook_description: "Rangliste der Torschützen und der Mannschaften Waadt/Freiburg"

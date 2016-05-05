@@ -41,9 +41,9 @@
           {% endif %}
         {% endfor %}
         {% if site.lang == "de" %}
-        <li><a href="{{ site.url | append: page.url }}" >Fr</a></li>
+          <li><a href="{{ site.url | append: page.url }}" >Fr</a></li>
         {% else if site.lang == "fr" %}
-        <li><a href="{{ '/de' | prepend: site.url | append: page.url }}" >De</a></li>
+          <li><a href="{{ '/de' | prepend: site.url | append: page.url }}" >De</a></li>
         {% endif %}
         </ul>
 

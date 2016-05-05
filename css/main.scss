@@ -313,3 +313,108 @@ header{
     width: 95%;
   }
 }
+
+// Votes
+.joueurs{
+  text-align: center;
+}
+.liste-joueurs {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 0 auto;
+    font-size: 0;
+    max-width: 1200px;
+}
+.liste-joueurs .joueur {
+    display: inline-block;
+    font-size: 14px;
+    width: 46%;
+    margin: 0 2% 32px 2%;
+    cursor: default;
+    position: relative;
+    z-index: 2;
+    vertical-align: top;
+    @media (min-width: 480px){
+      width: 26%;
+      margin: 0 2% 32px 2%;
+    }
+    @media (min-width: 992px){
+      width: 16%;
+    }
+}
+.liste-joueurs .joueur .container-photo {
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    position: relative;
+    transition: background ease-in-out .3s;
+}
+.joueur .container-photo img {
+    border-radius: 50%;
+    max-width: 100%;
+    box-shadow: 0 0 6px rgba(0,0,0,0.55);
+}
+.liste-joueurs .joueur .texte {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.liste-joueurs .joueur .texte .prenom {
+    font-weight: 400;
+    display: block;
+    margin: auto;
+}
+.liste-joueurs .joueur .texte .nom {
+    font-weight: 700;
+    display: block;
+    margin: auto;
+}
+.liste-joueurs .joueur.selected .container-photo {
+    background: #0087da;
+}
+.liste-joueurs .joueur.selected .container-photo {
+    opacity: 1;
+    overflow: hidden;
+}
+.liste-joueurs .joueur.selected .container-photo:after {
+    opacity: .5;
+}
+.liste-joueurs .joueur.selected .container-photo:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    z-index: 3;
+    background: #000;
+    overflow: hidden;
+    transition: all .4s ease-out;
+}
+.liste-joueurs .joueur.selected .container-photo:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -5px;
+    border-radius: 50%;
+    z-index: 4;
+    opacity: 1;
+    transition: all .2s ease-out;
+}
+.liste-joueurs .joueur.selected .container-photo:before {
+    background: url("../images/selected.svg") no-repeat center center;
+}
