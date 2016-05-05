@@ -1,7 +1,8 @@
 # Site settings
 title: "Footballtopscorers | Classements buteurs | Foot amateur Suisse"
-description: > # this means to ignore newlines until "baseurl:"
-  Classements buteurs et équipes pour les championnats amateurs de football des cantons de Vaud et Fribourg.
+title_de: "Torschützen-Ranglisten | Topscorers | Amateurfussball Schweiz"
+description_de: "Torschützen- und Mannschafts-Rangliste für die Amateur-Meisterschaften der Kantone Waadt und Freiburg"
+description: "Classements buteurs et équipes pour les championnats amateurs de football des cantons de Vaud et Fribourg"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.footballtopscorers.ch" # the base hostname & protocol for your site
