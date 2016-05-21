@@ -6,12 +6,13 @@ description: "Classements buteurs et équipes pour les championnats amateurs de 
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.footballtopscorers.ch" # the base hostname & protocol for your site
+#url: "http://localhost:4000" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
 markdown: kramdown
 
-exclude: [package.json,gulpfile.js,js/dev,node_modules]
+exclude: [package.json,gulpfile.js,js/dev,node_modules,README.md]
 languages: ["fr", "de"]
 exclude_from_localizations: ["js", "images", "css", "rankings"]
