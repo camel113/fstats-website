@@ -340,7 +340,7 @@ h5{
 /*SLIDER HEADER 
 ============================================================*/
 .slider {
-    background: url("../images/bg-app4.jpg") no-repeat center center fixed;
+    background: url("../images/bg-app6.jpg") no-repeat center center fixed;
     background-size: cover;
     min-height: 580px;
     height: 500px;
@@ -1296,4 +1296,7 @@ header .navbar.navbar-default .dropdown-menu li a:hover {
 }
 header .navbar-brand span {
     font-style: italic; 
+}
+.pp_social{
+	display: none;
 }
