@@ -16,3 +16,4 @@ markdown: kramdown
 exclude: [package.json,gulpfile.js,js/dev,node_modules,README.md]
 languages: ["fr", "de"]
 exclude_from_localizations: ["js", "images", "css", "rankings"]
+exclude: ["backup"]
