@@ -78,10 +78,10 @@ p {
 -----------------------------------------*/
 /*menu*/
 
-.header h2 {
+/*.header h2 {
     height: 0px;
     margin: 0px;
-}
+}*/
 /*.navbar {
     margin-top: -100px
 }
@@ -1102,4 +1102,16 @@ header .navbar.navbar-default .dropdown-menu li a:hover {
 }
 header .navbar-brand span {
     font-style: italic; 
+}
+h1, .home_text h2{
+    color:#fff;
+}
+h1 span{
+    font-style: italic;
+}
+.download-btn{
+    margin-top: 45px;
+}
+.download-btn img{
+    max-width: 200px;
 }
