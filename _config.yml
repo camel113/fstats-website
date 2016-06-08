@@ -13,7 +13,7 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-exclude: [package.json,gulpfile.js,js/dev,node_modules,README.md]
+# exclude: [dpackage.json,gulpfile.js,js/dev,node_modules,README.m]
 languages: ["fr", "de"]
 exclude_from_localizations: ["js", "images", "css", "rankings"]
-exclude: ["backup"]
+exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","gulpfile.js","js/dev","README.m","feed.xml"]

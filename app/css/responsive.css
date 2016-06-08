@@ -1,112 +1,113 @@
-/* Responsive styles
-================================================== */
 
-/* Large Devices, Wide Screens */
-@media (min-width : 1200px) {
-	.dropdown i{
-		display: none;
-	}
+/* This Css is for small mobile */
+
+@media (max-width: 767px) {
+    .single_store {
+        border-left: 0px;
+    }
+    .last {
+        border-right: 0px;
+    }
+    .iphone {
+        float: none;
+        text-align: center;
+    }
+    .about_phone {
+        text-align: center;
+    }
+    .video {
+        padding-top: 50px;
+    }
+    .video-button {
+        text-align: center;
+    }
+    .call_to_action .col-md-3 {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .single_fun_facts {
+        padding-bottom: 60px;
+    }
+    .about_phone img {
+        width: 100%;
+    }
 }
+/* This Css is for tablet */
 
-
-/* Medium Devices, Desktops */
-@media (min-width : 992px) {
-
+@media (min-width: 760px) {
+    .single_store {
+        border-left: 0px;
+    }
+    .last {
+        border-right: 0px;
+    }
+    .iphone {
+        float: none;
+        text-align: center;
+    }
+    .about_phone {
+        text-align: center;
+    }
+    .call_to_action .col-md-3 {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .video-button {
+        text-align: center;
+    }
+    .single_fun_facts {
+        padding-bottom: 60px;
+    }
+    .video {
+        padding-top: 50px;
+    }
 }
+/* This Css is for Medium Deviced */
 
-/* Small Devices, Tablets */
-@media (min-width : 768px) and (max-width: 991px) {
-	.heading-inner::before,.heading-inner::after{
-		display: none;
-	}
-	.slider-content {
-	    padding-top: 0px;
-	}
-	/*.navbar-brand {
-	    height: 15px;
-	    padding: 10px 7px;
-	}
-	.nav > li > a {
-	    padding: 15px 5px;
-	    font-size: 14px;
-	}*/
-	.columns {
-	    margin-bottom: 35px;
-	}
-	.columns:after{
-		border: none;
-	}
-	.pricing-wrapper {
-	    margin-bottom: 20px;
-	}
-	.flaoting-img{
-		margin: 30px 0px;
-	}
-
-	.top-link li{
-		margin-bottom: 38px;
-	}
+@media (min-width: 992px) {
+    .last {
+        border-right: 1px solid #0F1217;
+    }
+    .single_store {
+        border-left: 1px solid #0F1217;
+    }
+    .iphone {
+        float: right;
+    }
+    .video-button {
+        text-align: left;
+    }
+    .call_to_action .col-md-3 {
+        text-align: right;
+        padding-top: 0px;
+    }
+    .single_fun_facts {
+        padding-bottom: 0px;
+    }
+    .video {
+        padding-top: 00px;
+    }
 }
+/* This Css is for large Deviced */
 
-
-/* Custom, iPhone Retina */ 
-@media (min-width : 320px) and (max-width : 767px)  {
-	.slider h1 {
-	    font-size: 20px;
-	}
-	.heading-inner {
-    	width: 90%;
-	}
-
-	.top-link li{
-		margin-bottom: 38px;
-	}
-	.slider-content {
-	    padding-top: 0px;
-	}
-	.slider-wrap {
-    	padding: 50px 0px;
-	}
-	.heading-inner::before,.heading-inner::after{
-		display: none;
-	}
-	
-	.slider-content .btn-container .btn-deafult{
-		margin-bottom: 20px;
-	}
-
-	.process-content {
-	    padding: 30px 40px;
-	    margin-bottom: 10px;
-}
-	#process-carousel.carousel-indicators{
-		bottom: 0px;
-	}
-
-	.subscription input {
-	    width: 100%;
-	}
-	.subscription .btn-default {
-	    position: relative;
-	    margin-top: 10px;
-	    margin-left: 10px;
-	    left: 0px;
-	}
-	.columns {
-	    margin-bottom: 35px;
-	}
-	.columns:after{
-		border: none;
-	}
-
-	.pricing-wrapper {
-	    margin-bottom: 40px;
-	}
-	.btn-container a {
-	    margin-right: -1px;
-	}
-	.flaoting-img{
-		margin: 20px 0px;
-	}
-
+@media (min-width: 1200px) {
+    .last {
+        border-right: 1px solid #0F1217;
+    }
+    .single_store {
+        border-left: 1px solid #0F1217;
+    }
+    .iphone {
+        float: right;
+    }
+    .video-button {
+        text-align: left;
+    }
+    .call_to_action .col-md-3 {
+        text-align: right;
+        padding-top: 0px;
+    }
+    .video {
+        padding-top: 0px;
+    }
 }
