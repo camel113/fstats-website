@@ -61,6 +61,20 @@
     ga('create', 'UA-22193321-5', 'auto');
     ga('send', 'pageview');
     </script>
+    <script>
+    /**
+    * Function that tracks a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+    var trackOutboundLink = function(url) {
+       ga('send', 'event', 'outbound', 'click', url, {
+         'transport': 'beacon',
+         'hitCallback': function(){document.location = url;}
+       });
+    }
+    </script>
 </head>
 
 <body>
@@ -81,7 +95,7 @@
     {% include header.html %}
     <section class="header parallax home-parallax page" id="HOME">
         <div class="section_overlay">
-
+            <div class="alert alert-dismissable alert-success"><button type="button" class="close" data-dismiss="alert">×</button>Nous améliorons notre app continuellement. Si vous avez des questions ou des remarques, écrivez nous à&nbsp;app@footballtopscorers.ch</div>
             <div class="container home-container">
                 <div class="row">
                     <div class="col-md-12">
@@ -98,7 +112,7 @@
                         </div>
                         <div class="download-btn">
                             <!-- BUTTON -->
-                                <a href="https://itunes.apple.com/ch/app/footballtopscorers/id1116387146?l=en&mt=8"><img src="images/app-store.png"></a>
+                                <a onclick="trackOutboundLink('https://itunes.apple.com/ch/app/footballtopscorers/id1116387146?l=en&mt=8'); return false;" href="https://itunes.apple.com/ch/app/footballtopscorers/id1116387146?l=en&mt=8"><img src="images/app-store.png"></a>
                             </div>
                     </div>
                     <div class="col-md-3 col-md-offset-1 col-sm-4">

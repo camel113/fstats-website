@@ -2,9 +2,11 @@ var region;
 $(document).ready(function(){
     var concoursAdvertising = '<div class="alert alert-dismissable alert-info"><button type="button" class="close" data-dismiss="alert">×</button>CONCOURS ! Envoyez-nous les vidéos de vos plus beaux buts et gagnez une paire de Nike Hypervenom.&nbsp;<a href="/topbuts" title="Concours buts en vidéo">Plus d\'infos ici</a>.</div>'
     var errorMessage = '<div class="alert alert-dismissable alert-success"><button type="button" class="close" data-dismiss="alert">×</button>Communiquez nous les erreurs par message sur&nbsp;<a href="http://www.facebook.com/footballtopscorers" title="Top scorers sur facebook">facebook.com/footballtopscorers</a> ou à goal@footballtopscorers.ch</div>'
+    var appAdvertising = '<div class="alert alert-dismissable alert-info"><button type="button" class="close" data-dismiss="alert">×</button>Suivez et reportez les matchs des finales en direct avec&nbsp;<a href="/app" title="App footballtopscorers">notre App</a>.</div>'
+
     if(document.getElementById('aff-3') !== null){
         
-        // $('h3').before(concoursAdvertising)
+        $('h3').before(appAdvertising)
 
         region = 'aff'
         var minGoals = 1;
@@ -45,6 +47,8 @@ $(document).ready(function(){
         var globalRanking = 1;
         var globalRankingDefense = 1;
         var globalRankingAttack = 1;
+
+        $('h3').before(appAdvertising)
 
         $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/global/aff/3',function(data){
             $('.loader').hide()
@@ -108,7 +112,7 @@ $(document).ready(function(){
     }
     if(document.getElementById('acvf-3') !== null){
         
-        $('h3').before(errorMessage)
+        $('h3').before(appAdvertising)
 
         region = 'acvf'
         var minGoals = 1;
@@ -233,7 +237,7 @@ $(document).ready(function(){
     }
     if(document.getElementById('aff-3-fem') !== null){
         
-        // $('h3').before(errorMessage)
+        $('h3').before(appAdvertising)
 
         region = 'aff'
         var minGoals = 1;

@@ -1,5 +1,7 @@
 - title: "Home"
   path: "/"
+- title: "App"
+  path: "/app"
 - title: "Concours"
   path: "/topbuts"
 - title: "AFF"
