@@ -1,0 +1,27 @@
+---
+layout: page
+title: Stats
+---
+<table class="table table-striped" id="stats">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nom</th>
+      <th>Club</th>
+      <th>Region</th>
+      <th>Buts</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for scorer in site.data.global-stats.top10scorers %}
+      <tr>
+        <td>{{forloop.index}}</td>
+        <td>{{scorer.scorer}}</td>
+        <td>{{scorer.team}}</td>
+        <td>{{scorer.region}}</td>
+        <td>{{scorer.goals}}</td>
+      </tr>
+    {% endfor %}
+    
+  </tbody>
+</table>
