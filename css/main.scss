@@ -207,6 +207,11 @@ header{
   }
 }
 /* Stats */
+#global-stats{
+  .scorer-region{
+    text-transform: uppercase;
+  }
+}
 .stats{
   margin-bottom: 30px;
   .stats-title{
@@ -313,6 +318,8 @@ header{
     width: 95%;
   }
 }
+
+
 
 // Votes
 .joueurs{

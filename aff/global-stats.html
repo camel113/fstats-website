@@ -2,7 +2,7 @@
 layout: page
 title: Stats
 ---
-<table class="table table-striped" id="stats">
+<table class="table table-striped" id="global-stats">
   <thead>
     <tr>
       <th>#</th>
@@ -18,7 +18,7 @@ title: Stats
         <td>{{forloop.index}}</td>
         <td>{{scorer.scorer}}</td>
         <td>{{scorer.team}}</td>
-        <td>{{scorer.region}}</td>
+        <td class="scorer-region">{{scorer.region}}</td>
         <td>{{scorer.goals}}</td>
       </tr>
     {% endfor %}
