@@ -207,6 +207,12 @@ header{
   }
 }
 /* Stats */
+#region-logos-container{
+  text-align: center;
+  img{
+    width: 200px;
+  }
+}
 #global-stats{
   .scorer-region{
     text-transform: uppercase;

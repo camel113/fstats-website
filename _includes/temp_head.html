@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>{% if page.title_meta %}{% t page.title_meta %}{% else %}{% t meta.site_title %}{% endif %}</title>
+  <meta name="description" content="{% if page.description_meta %}{% t page.description_meta %}{% else %}{% t meta.site_description %}{% endif %}">
+
+  <meta property="og:url" content="{{ site.url }}"/>
+  <meta property="og:description" content="{% t meta.facebook_description %}" />
+  <meta property="og:title" content="{% t meta.facebook_title %}" />
+  <meta property="og:image" content="{{ '/images/affFbPreview.png' | prepend: site.baseurl_root }}" />
+  <meta property="og:image" content="{{ '/images/newFootballTopScorersFeaturesFbPreview.png' | prepend: site.baseurl_root }}" />
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.baseurl_root }}">
+
+  <link rel="icon" href="http://www.footballtopscorers.ch/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://www.footballtopscorers.ch/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="{{ "/libs/bootstrap.min.css" | prepend: site.baseurl_root }}">
+  <link rel="stylesheet" href="{{ "/libs/ripples.min.css" | prepend: site.baseurl_root }}">
+  <link rel="stylesheet" href="{{ "/libs/material.min.css" | prepend: site.baseurl_root }}">
+  <link rel="stylesheet" href="{{ "/libs/font-awesome.min.css" | prepend: site.baseurl_root }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl_root }}">
+
+</head>
