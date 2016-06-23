@@ -13,6 +13,34 @@ $(document).ready(function(){
       $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
     });
 
+    var ctx = $("#myChart");
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [1,2,3,4],
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                label: 'Scatter Dataset',
+                data: [1,2,4]
+            },{
+                fill: false,
+                lineTension: 0,
+                label: 'Scatter XXX',
+                data: [2,4,8]
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+
     if(document.getElementById('aff-3') !== null){
         
         $('h3').before(appAdvertising)
@@ -63,7 +91,7 @@ $(document).ready(function(){
             $('.loader').hide()
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
-                    $('#group1-standard tbody').append('<tr><td>'+team.rank+'</td><td><a href="#" data-toggle="modal" data-target="#myModal">'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    $('#group1-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
                 }
                 if(team.group == 2){
                     $('#group2-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
@@ -112,7 +140,7 @@ $(document).ready(function(){
 
         $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/global/aff/3',function(data){
             $.each( data.teams,function(i, team){
-                $('#global-standard tbody').append('<tr><td>'+globalRanking+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                $('#global-standard tbody').append('<tr><td>'+globalRanking+'</td><td><a href="#" data-toggle="modal" data-target="#myModal">'+team.team+'</a></td><td>'+team.rank+'</td><td>'+team.group+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
                 globalRanking++;
             })
         })
