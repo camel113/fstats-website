@@ -13,33 +13,7 @@ $(document).ready(function(){
       $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
     });
 
-    var ctx = $("#myChart");
-    var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: [1,2,3,4],
-            datasets: [{
-                fill: false,
-                lineTension: 0,
-                label: 'Scatter Dataset',
-                data: [1,2,4]
-            },{
-                fill: false,
-                lineTension: 0,
-                label: 'Scatter XXX',
-                data: [2,4,8]
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
-    });
+    
 
     if(document.getElementById('aff-3') !== null){
         
@@ -74,6 +48,7 @@ $(document).ready(function(){
             $('.lastUpdate').append(data.lastUpdate)
         })
     }
+    
     if(document.getElementById('aff-3-teams') !== null){
         var attackRankingGroup1 = 1;
         var defenseRankingGroup1 = 1;
@@ -85,22 +60,37 @@ $(document).ready(function(){
         var globalRankingDefense = 1;
         var globalRankingAttack = 1;
 
+        var group1DataSet = [];
+        var group2DataSet = [];
+
         $('h3').before(appAdvertising)
 
-        $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/global/aff/3',function(data){
+        $.getJSON('http://127.0.0.1:8080/teams/global/aff/3',function(data){
             $('.loader').hide()
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
-                    $('#group1-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    $('#group1-standard tbody').append('<tr><td>'+team.rank+'</td><td><a class="chart-link" href="#" data-group="31">'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    group1DataSet.push({label:team.team,data:team.evolution,fill:false})
                 }
                 if(team.group == 2){
-                    $('#group2-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    $('#group2-standard tbody').append('<tr><td>'+team.rank+'</td><td><a class="chart-link" href="#" data-group="32">'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    group2DataSet.push({label:team.team,data:team.evolution,fill:false})
                 }
                 if(team.group == 3){
                     $('#group3-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    group3DataSet.push({label:team.team,data:team.evolution,fill:false})
                 }
             })
+            $(".chart-link").on("click",function(){
+                if($(this).data("group") == "31"){
+                    makeChart.init(group1DataSet)
+                }else{
+                    makeChart.init(group2DataSet)
+                }
+                
+            })
         })
+
         $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/attack/aff/3',function(data){
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
@@ -310,9 +300,36 @@ $(document).ready(function(){
             $('.lastUpdate').append(data.lastUpdate)
         })
     }
+
 })
 
-    
+
+
+var makeChart = {
+    init: function(dataset){
+        var ctx = $("#myChart");
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [1,2,3,4,5,6,7,8,9,10,11],
+                datasets: dataset
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        makeChart.display()
+    },
+    display: function(){
+        $("#myModal").modal()
+    }
+}
 
 var rankingChoice = {
     groupCount: 0,
