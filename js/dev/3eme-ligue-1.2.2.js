@@ -69,15 +69,15 @@ $(document).ready(function(){
             $('.loader').hide()
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
-                    $('#group1-standard tbody').append('<tr><td>'+team.rank+'</td><td><a class="chart-link" href="#" data-group="31">'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group1-standard",team)
                     group1DataSet.push({label:team.team,data:team.evolution,fill:false})
                 }
                 if(team.group == 2){
-                    $('#group2-standard tbody').append('<tr><td>'+team.rank+'</td><td><a class="chart-link" href="#" data-group="32">'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group2-standard",team)
                     group2DataSet.push({label:team.team,data:team.evolution,fill:false})
                 }
                 if(team.group == 3){
-                    $('#group3-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group3-standard",team)
                     group3DataSet.push({label:team.team,data:team.evolution,fill:false})
                 }
             })
@@ -303,7 +303,12 @@ $(document).ready(function(){
 
 })
 
-
+var teamRankingManager = {
+    add: function(groupId,team){
+        console.log(groupId)
+        $(groupId).find('tbody').append('<tr><td>'+team.rank+'</td><td><a class="chart-link" href="#" data-group="31">'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+    }
+}
 
 var makeChart = {
     init: function(dataset){
