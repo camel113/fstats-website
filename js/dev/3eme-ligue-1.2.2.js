@@ -4,6 +4,15 @@ $(document).ready(function(){
     var errorMessage = '<div class="alert alert-dismissable alert-success"><button type="button" class="close" data-dismiss="alert">×</button>Communiquez nous les erreurs par message sur&nbsp;<a href="http://www.facebook.com/footballtopscorers" title="Top scorers sur facebook">facebook.com/footballtopscorers</a> ou à goal@footballtopscorers.ch</div>'
     var appAdvertising = '<div class="alert alert-dismissable alert-info"><button type="button" class="close" data-dismiss="alert">×</button>Suivez et reportez les matchs des finales en direct avec&nbsp;<a href="/app" title="App footballtopscorers">notre App</a>.</div>'
 
+    $(".modal-fullscreen").on('show.bs.modal', function () {
+      setTimeout( function() {
+        $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+      }, 0);
+    });
+    $(".modal-fullscreen").on('hidden.bs.modal', function () {
+      $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+    });
+
     if(document.getElementById('aff-3') !== null){
         
         $('h3').before(appAdvertising)
@@ -54,7 +63,7 @@ $(document).ready(function(){
             $('.loader').hide()
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
-                    $('#group1-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    $('#group1-standard tbody').append('<tr><td>'+team.rank+'</td><td><a href="#" data-toggle="modal" data-target="#myModal">'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
                 }
                 if(team.group == 2){
                     $('#group2-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')

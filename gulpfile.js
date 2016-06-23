@@ -5,7 +5,8 @@ var uglify = require('gulp-uglify');
 
 var paths = {
   mainStyleSheet: 'less/main.less',
-  lessStyles: 'less/*.less'
+  lessStyles: 'less/*.less',
+  js: 'js/dev/*.js'
 }
 
 gulp.task('mainCss', function () {  
@@ -19,6 +20,7 @@ gulp.task('mainCss', function () {
 
 gulp.task('watch', function() {
   gulp.watch(paths.lessStyles, ['mainCss']);
+  gulp.watch(paths.js, ['compress']);
 });
 
 gulp.task('compress', function() {

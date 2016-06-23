@@ -59,11 +59,10 @@ $(document).ready(function(){
         $.getJSON('http://127.0.0.1:8080/teams/global/acvf/4',function(data){
             $('.loader').hide()
             $.each( data.teams,function(i, team){
-                $('#global-standard tbody').append('<tr><td>'+globalRanking+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                $('#global-standard tbody').append('<tr><td>'+globalRanking+'</td><td><a href="#">'+team.team+'</a></td><td>'+team.rank+'</td><td>'+team.group+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
                 globalRanking++;
             })
         })
-        console.log("test2")
         rankingChoice.init(0)
     }
 })
