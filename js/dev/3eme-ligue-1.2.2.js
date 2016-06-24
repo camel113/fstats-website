@@ -1,4 +1,5 @@
 var region;
+var lineColors = ['#F44336','#9C27B0','#3F51B5','#2196F3','#009688','#8BC34A','#FFEB3B','#FF9800','#795548','#E91E63','#673AB7','#00BCD4','#CDDC39']
 $(document).ready(function(){
     var concoursAdvertising = '<div class="alert alert-dismissable alert-info"><button type="button" class="close" data-dismiss="alert">×</button>CONCOURS ! Envoyez-nous les vidéos de vos plus beaux buts et gagnez une paire de Nike Hypervenom.&nbsp;<a href="/topbuts" title="Concours buts en vidéo">Plus d\'infos ici</a>.</div>'
     var errorMessage = '<div class="alert alert-dismissable alert-success"><button type="button" class="close" data-dismiss="alert">×</button>Communiquez nous les erreurs par message sur&nbsp;<a href="http://www.facebook.com/footballtopscorers" title="Top scorers sur facebook">facebook.com/footballtopscorers</a> ou à goal@footballtopscorers.ch</div>'
@@ -62,6 +63,7 @@ $(document).ready(function(){
 
         var group1DataSet = [];
         var group2DataSet = [];
+        var group3DataSet = [];
 
         $('h3').before(appAdvertising)
 
@@ -69,23 +71,28 @@ $(document).ready(function(){
             $('.loader').hide()
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
-                    teamRankingManager.add("#group1-standard",team)
-                    group1DataSet.push({label:team.team,data:team.evolution,fill:false})
+                    console.log(group1DataSet.length)
+                    teamRankingManager.add("#group1-standard",team,31)
+                    group1DataSet.push({label:team.team,data:team.evolution,fill:false,borderColor:lineColors[group1DataSet.length],pointBackgroundColor:lineColors[group1DataSet.length],backgroundColor:lineColors[group1DataSet.length]})
                 }
                 if(team.group == 2){
-                    teamRankingManager.add("#group2-standard",team)
+                    teamRankingManager.add("#group2-standard",team,32)
                     group2DataSet.push({label:team.team,data:team.evolution,fill:false})
                 }
                 if(team.group == 3){
-                    teamRankingManager.add("#group3-standard",team)
+                    teamRankingManager.add("#group3-standard",team,33)
                     group3DataSet.push({label:team.team,data:team.evolution,fill:false})
                 }
             })
             $(".chart-link").on("click",function(){
                 if($(this).data("group") == "31"){
                     makeChart.init(group1DataSet)
-                }else{
+                }
+                if($(this).data("group") == "32"){
                     makeChart.init(group2DataSet)
+                }
+                if($(this).data("group") == "33"){
+                    makeChart.init(group3DataSet)
                 }
                 
             })
@@ -304,9 +311,9 @@ $(document).ready(function(){
 })
 
 var teamRankingManager = {
-    add: function(groupId,team){
+    add: function(groupId,team,dataGroup){
         console.log(groupId)
-        $(groupId).find('tbody').append('<tr><td>'+team.rank+'</td><td><a class="chart-link" href="#" data-group="31">'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+        $(groupId).find('tbody').append('<tr><td>'+team.rank+'</td><td><a class="chart-link" href="#" data-group="'+dataGroup+'">'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
     }
 }
 
