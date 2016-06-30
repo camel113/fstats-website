@@ -50,15 +50,15 @@ pages:
     group: Groupe
     ranking: Classement
     club: Club
-    goals_for_abbrevitation: BP
-    goals_against_abbrevitation: BC
-    matchs_win_abbrevitation: G
-    matchs_draw_abbrevitation: N
-    matchs_lost_abbrevitation: P
-    fairplay_abbrevitation: F
-    points_abbrevitation: Pts
-    group_abbrevitation: Grp
-    position_abbrevitation: Pos
+    goals_for_abbrevitation: "+"
+    goals_against_abbrevitation: "-"
+    matchs_win_abbrevitation: g
+    matchs_draw_abbrevitation: "n"
+    matchs_lost_abbrevitation: "p"
+    fairplay_abbrevitation: "f"
+    points_abbrevitation: "pt"
+    group_abbrevitation: "gr"
+    position_abbrevitation: "po"
   home:
     description_1: "Classements des buteurs des championnats de football fribourgeois AFF et vaudois ACVF de 3ème (y compris féminine), 4ème et 5ème ligue."
     description_2: "Classements classiques, meilleures attaques et défenses de 3ème, 4ème et 5ème ligue vaud et fribourg."
