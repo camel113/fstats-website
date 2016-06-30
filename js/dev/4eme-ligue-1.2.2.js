@@ -54,90 +54,64 @@ $(document).ready(function(){
     }
 
     if(document.getElementById('aff-4-teams') !== null){
-        var attackRankingGroup1 = 1;
-        var defenseRankingGroup1 = 1;
-        var attackRankingGroup2 = 1;
-        var defenseRankingGroup2 = 1;
-        var attackRankingGroup3 = 1;
-        var defenseRankingGroup3 = 1;
-        var attackRankingGroup4 = 1;
-        var defenseRankingGroup4 = 1;
-        var attackRankingGroup5 = 1;
-        var defenseRankingGroup5 = 1;
         var globalRanking = 1;
-        var globalRankingDefense = 1;
-        var globalRankingAttack = 1;
 
         $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/global/aff/4',function(data){
             $('.loader').hide()
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
-                    $('#group1-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group1-standard",team,41)
                 }
                 if(team.group == 2){
-                    $('#group2-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group2-standard",team,42)
                 }
                 if(team.group == 3){
-                    $('#group3-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group3-standard",team,43)
                 }
                 if(team.group == 4){
-                    $('#group4-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group4-standard",team,44)
                 }
                 if(team.group == 5){
-                    $('#group5-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group5-standard",team,45)
                 }
             })
         })
         $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/attack/aff/4',function(data){
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
-                    $('#group1-attack tbody').append('<tr><td>'+attackRankingGroup1+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup1++;
+                    teamAttacksRankingManager.add("#group1-attack",team,1)
                 }
                 if(team.group == 2){
-                    $('#group2-attack tbody').append('<tr><td>'+attackRankingGroup2+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup2++;
+                    teamAttacksRankingManager.add("#group2-attack",team,2)
                 }
                 if(team.group == 3){
-                    $('#group3-attack tbody').append('<tr><td>'+attackRankingGroup3+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup3++;
+                    teamAttacksRankingManager.add("#group3-attack",team,3)
                 }
                 if(team.group == 4){
-                    $('#group4-attack tbody').append('<tr><td>'+attackRankingGroup4+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup4++;
+                    teamAttacksRankingManager.add("#group4-attack",team,4)
                 }
                 if(team.group == 5){
-                    $('#group5-attack tbody').append('<tr><td>'+attackRankingGroup5+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup5++;
+                    teamAttacksRankingManager.add("#group5-attack",team,5)
                 }
-                $('#global-attack tbody').append('<tr><td>'+globalRankingAttack+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                globalRankingAttack++;
             })
         })
         $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/defense/aff/4',function(data){
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
-                    $('#group1-defense tbody').append('<tr><td>'+defenseRankingGroup1+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup1++;
+                    teamDefencesRankingManager.add("#group1-defense",team,1)
                 }
                 if(team.group == 2){
-                    $('#group2-defense tbody').append('<tr><td>'+defenseRankingGroup2+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup2++;
+                    teamDefencesRankingManager.add("#group2-defense",team,2)
                 }
                 if(team.group == 3){
-                    $('#group3-defense tbody').append('<tr><td>'+defenseRankingGroup3+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup3++;
+                    teamDefencesRankingManager.add("#group3-defense",team,3)
                 }
                 if(team.group == 4){
-                    $('#group4-defense tbody').append('<tr><td>'+defenseRankingGroup4+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup4++;
+                    teamDefencesRankingManager.add("#group4-defense",team,4)
                 }
                 if(team.group == 5){
-                    $('#group5-defense tbody').append('<tr><td>'+defenseRankingGroup5+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup5++;
+                    teamDefencesRankingManager.add("#group5-defense",team,5)
                 }
-                $('#global-defense tbody').append('<tr><td>'+globalRankingDefense+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                globalRankingDefense++;
             })
         })
 
@@ -222,129 +196,91 @@ $(document).ready(function(){
     }
 
     if(document.getElementById('acvf-4-teams') !== null){
-        var attackRankingGroup1 = 1;
-        var defenseRankingGroup1 = 1;
-        var attackRankingGroup2 = 1;
-        var defenseRankingGroup2 = 1;
-        var attackRankingGroup3 = 1;
-        var defenseRankingGroup3 = 1;
-        var attackRankingGroup4 = 1;
-        var defenseRankingGroup4 = 1;
-        var attackRankingGroup5 = 1;
-        var defenseRankingGroup5 = 1;
-        var attackRankingGroup6 = 1;
-        var defenseRankingGroup6 = 1;
-        var attackRankingGroup7 = 1;
-        var defenseRankingGroup7 = 1;
-        var attackRankingGroup8 = 1;
-        var defenseRankingGroup8 = 1;
         var globalRanking = 1;
-        var globalRankingDefense = 1;
-        var globalRankingAttack = 1;
 
         $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/global/acvf/4',function(data){
             $('.loader').hide()
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
-                    $('#group1-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group1-standard",team,41)
                 }
                 if(team.group == 2){
-                    $('#group2-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group2-standard",team,42)
                 }
                 if(team.group == 3){
-                    $('#group3-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group3-standard",team,43)
                 }
                 if(team.group == 4){
-                    $('#group4-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group4-standard",team,44)
                 }
                 if(team.group == 5){
-                    $('#group5-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group5-standard",team,45)
                 }
                 if(team.group == 6){
-                    $('#group6-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group6-standard",team,46)
                 }
                 if(team.group == 7){
-                    $('#group7-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group7-standard",team,47)
                 }
                 if(team.group == 8){
-                    $('#group8-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+                    teamRankingManager.add("#group8-standard",team,48)
                 }
             })
         })
         $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/attack/acvf/4',function(data){
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
-                    $('#group1-attack tbody').append('<tr><td>'+attackRankingGroup1+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup1++;
+                    teamAttacksRankingManager.add("#group1-attack",team,1)
                 }
                 if(team.group == 2){
-                    $('#group2-attack tbody').append('<tr><td>'+attackRankingGroup2+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup2++;
+                    teamAttacksRankingManager.add("#group2-attack",team,2)
                 }
                 if(team.group == 3){
-                    $('#group3-attack tbody').append('<tr><td>'+attackRankingGroup3+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup3++;
+                    teamAttacksRankingManager.add("#group3-attack",team,3)
                 }
                 if(team.group == 4){
-                    $('#group4-attack tbody').append('<tr><td>'+attackRankingGroup4+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup4++;
+                    teamAttacksRankingManager.add("#group4-attack",team,4)
                 }
                 if(team.group == 5){
-                    $('#group5-attack tbody').append('<tr><td>'+attackRankingGroup5+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup5++;
+                    teamAttacksRankingManager.add("#group5-attack",team,5)
                 }
                 if(team.group == 6){
-                    $('#group6-attack tbody').append('<tr><td>'+attackRankingGroup6+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup6++;
+                    teamAttacksRankingManager.add("#group6-attack",team,6)
                 }
                 if(team.group == 7){
-                    $('#group7-attack tbody').append('<tr><td>'+attackRankingGroup7+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup7++;
+                    teamAttacksRankingManager.add("#group7-attack",team,7)
                 }
                 if(team.group == 8){
-                    $('#group8-attack tbody').append('<tr><td>'+attackRankingGroup8+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup8++;
+                    teamAttacksRankingManager.add("#group8-attack",team,8)
                 }
-                $('#global-attack tbody').append('<tr><td>'+globalRankingAttack+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                globalRankingAttack++;
             })
         })
         $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/defense/acvf/4',function(data){
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
-                    $('#group1-defense tbody').append('<tr><td>'+defenseRankingGroup1+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup1++;
+                    teamDefencesRankingManager.add("#group1-defense",team,1)
                 }
                 if(team.group == 2){
-                    $('#group2-defense tbody').append('<tr><td>'+defenseRankingGroup2+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup2++;
+                    teamDefencesRankingManager.add("#group2-defense",team,2)
                 }
                 if(team.group == 3){
-                    $('#group3-defense tbody').append('<tr><td>'+defenseRankingGroup3+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup3++;
+                    teamDefencesRankingManager.add("#group3-defense",team,3)
                 }
                 if(team.group == 4){
-                    $('#group4-defense tbody').append('<tr><td>'+defenseRankingGroup4+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup4++;
+                    teamDefencesRankingManager.add("#group4-defense",team,4)
                 }
                 if(team.group == 5){
-                    $('#group5-defense tbody').append('<tr><td>'+defenseRankingGroup5+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup5++;
+                    teamDefencesRankingManager.add("#group5-defense",team,5)
                 }
                 if(team.group == 6){
-                    $('#group6-defense tbody').append('<tr><td>'+defenseRankingGroup6+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup6++;
+                    teamDefencesRankingManager.add("#group6-defense",team,6)
                 }
                 if(team.group == 7){
-                    $('#group7-defense tbody').append('<tr><td>'+defenseRankingGroup7+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup7++;
+                    teamDefencesRankingManager.add("#group7-defense",team,7)
                 }
                 if(team.group == 8){
-                    $('#group8-defense tbody').append('<tr><td>'+defenseRankingGroup8+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    defenseRankingGroup8++;
+                    teamDefencesRankingManager.add("#group8-defense",team,8)
                 }
-                $('#global-defense tbody').append('<tr><td>'+globalRankingDefense+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                globalRankingDefense++;
             })
         })
 
@@ -360,6 +296,104 @@ $(document).ready(function(){
     }
 
 })
+
+var teamRankingManager = {
+    add: function(groupId,team,dataGroup){
+        $(groupId).find('tbody').append('<tr><td>'+team.rank+'</td><td><a class="chart-link" href="#" data-group="'+dataGroup+'">'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
+    }
+}
+
+var teamAttacksRankingManager = {
+    attackRankingGroup1:1,
+    attackRankingGroup2:1,
+    attackRankingGroup3:1,
+    attackRankingGroup4:1,
+    attackRankingGroup5:1,
+    attackRankingGroup6:1,
+    attackRankingGroup7:1,
+    attackRankingGroup8:1,
+    attackRankingGroup9:1,
+    globalRankingAttack:1,
+    add: function(groupId,team,groupNumber){
+        var ranking = 0
+        if(groupNumber == 1){
+            ranking = teamAttacksRankingManager.attackRankingGroup1++
+        }
+        if(groupNumber == 2){
+            ranking = teamAttacksRankingManager.attackRankingGroup2++
+        }
+        if(groupNumber == 3){
+            ranking = teamAttacksRankingManager.attackRankingGroup3++
+        }
+        if(groupNumber == 4){
+            ranking = teamAttacksRankingManager.attackRankingGroup4++
+        }
+        if(groupNumber == 5){
+            ranking = teamAttacksRankingManager.attackRankingGroup5++
+        }
+        if(groupNumber == 6){
+            ranking = teamAttacksRankingManager.attackRankingGroup6++
+        }
+        if(groupNumber == 7){
+            ranking = teamAttacksRankingManager.attackRankingGroup7++
+        }
+        if(groupNumber == 8){
+            ranking = teamAttacksRankingManager.attackRankingGroup8++
+        }
+        if(groupNumber == 9){
+            ranking = teamAttacksRankingManager.attackRankingGroup9++
+        }
+        $(groupId).find('tbody').append('<tr><td>'+ranking+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
+        $('#global-attack tbody').append('<tr><td>'+teamAttacksRankingManager.globalRankingAttack+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
+                teamAttacksRankingManager.globalRankingAttack++;
+    }
+}
+
+var teamDefencesRankingManager = {
+    defenseRankingGroup1:1,
+    defenseRankingGroup2:1,
+    defenseRankingGroup3:1,
+    defenseRankingGroup4:1,
+    defenseRankingGroup5:1,
+    defenseRankingGroup6:1,
+    defenseRankingGroup7:1,
+    defenseRankingGroup8:1,
+    defenseRankingGroup9:1,
+    globalRankingDefense:1,
+    add: function(groupId,team,groupNumber){
+        var ranking = 0
+        if(groupNumber == 1){
+            ranking = teamDefencesRankingManager.defenseRankingGroup1++
+        }
+        if(groupNumber == 2){
+            ranking = teamDefencesRankingManager.defenseRankingGroup2++
+        }
+        if(groupNumber == 3){
+            ranking = teamDefencesRankingManager.defenseRankingGroup3++
+        }
+        if(groupNumber == 4){
+            ranking = teamDefencesRankingManager.defenseRankingGroup4++
+        }
+        if(groupNumber == 5){
+            ranking = teamDefencesRankingManager.defenseRankingGroup5++
+        }
+        if(groupNumber == 6){
+            ranking = teamDefencesRankingManager.defenseRankingGroup6++
+        }
+        if(groupNumber == 7){
+            ranking = teamDefencesRankingManager.defenseRankingGroup7++
+        }
+        if(groupNumber == 8){
+            ranking = teamDefencesRankingManager.defenseRankingGroup8++
+        }
+        if(groupNumber == 9){
+            ranking = teamDefencesRankingManager.defenseRankingGroup9++
+        }
+        $(groupId).find('tbody').append('<tr><td>'+ranking+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
+        $('#global-defense tbody').append('<tr><td>'+teamDefencesRankingManager.globalRankingDefense+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
+                teamDefencesRankingManager.globalRankingDefense++;
+    }
+}
 
 var rankingChoice = {
     groupCount: 0,

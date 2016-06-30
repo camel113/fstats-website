@@ -14,8 +14,6 @@ $(document).ready(function(){
       $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
     });
 
-    
-
     if(document.getElementById('aff-3') !== null){
         
         $('h3').before(appAdvertising)
