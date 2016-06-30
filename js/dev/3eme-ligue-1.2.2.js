@@ -101,21 +101,39 @@ $(document).ready(function(){
         $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/attack/aff/3',function(data){
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
-                    $('#group1-attack tbody').append('<tr><td>'+attackRankingGroup1+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup1++;
+                    teamAttacksRankingManager.add("#group1-attack",team,1)
                 }
                 if(team.group == 2){
-                    $('#group2-attack tbody').append('<tr><td>'+attackRankingGroup2+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup2++;
+                    teamAttacksRankingManager.add("#group2-attack",team,2)
                 }
                 if(team.group == 3){
-                    $('#group3-attack tbody').append('<tr><td>'+attackRankingGroup3+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                    attackRankingGroup3++;
+                    teamAttacksRankingManager.add("#group3-attack",team,3)
                 }
                 $('#global-attack tbody').append('<tr><td>'+globalRankingAttack+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
                 globalRankingAttack++;
             })
         })
+
+        var teamAttacksRankingManager = {
+            attackRankingGroup1:0,
+            attackRankingGroup2:0,
+            attackRankingGroup3:0,
+            add: function(groupId,team,groupNumber){
+                var ranking = 0
+                if(groupNumber == 1){
+                    ranking = attackRankingGroup1++
+                }
+                if(groupNumber == 2){
+                    ranking = attackRankingGroup2++
+                }
+                if(groupNumber == 3){
+                    ranking = attackRankingGroup3++
+                }
+                $(groupId).find('tbody').append('<tr><td>'+ranking+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
+            }
+        }
+
+
         $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/defense/aff/3',function(data){
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
@@ -312,7 +330,6 @@ $(document).ready(function(){
 
 var teamRankingManager = {
     add: function(groupId,team,dataGroup){
-        console.log(groupId)
         $(groupId).find('tbody').append('<tr><td>'+team.rank+'</td><td><a class="chart-link" href="#" data-group="'+dataGroup+'">'+team.team+'</a></td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
     }
 }
