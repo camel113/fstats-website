@@ -168,23 +168,10 @@ $(document).ready(function(){
         })
     }
     if(document.getElementById('acvf-3-teams') !== null){
+        var globalRanking = 1;
 
         $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/global/acvf/3',function(data){
             $('.loader').hide()
-            $.each(data.teams,function(i, team){
-                if(team.group == 1){
-                    $('#group1-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
-                }
-                if(team.group == 2){
-                    $('#group2-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
-                }
-                if(team.group == 3){
-                    $('#group3-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
-                }
-                if(team.group == 4){
-                    $('#group4-standard tbody').append('<tr><td>'+team.rank+'</td><td>'+team.team+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
-                }
-            })
             $.each( data.teams,function(i, team){
                 if(team.group == 1){
                     teamRankingManager.add("#group1-standard",team,31)
