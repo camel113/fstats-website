@@ -303,6 +303,12 @@ var teamAttacksRankingManager = {
     attackRankingGroup1:1,
     attackRankingGroup2:1,
     attackRankingGroup3:1,
+    attackRankingGroup4:1,
+    attackRankingGroup5:1,
+    attackRankingGroup6:1,
+    attackRankingGroup7:1,
+    attackRankingGroup8:1,
+    attackRankingGroup9:1,
     globalRankingAttack:1,
     add: function(groupId,team,groupNumber){
         var ranking = 0
@@ -315,6 +321,24 @@ var teamAttacksRankingManager = {
         if(groupNumber == 3){
             ranking = teamAttacksRankingManager.attackRankingGroup3++
         }
+        if(groupNumber == 4){
+            ranking = teamAttacksRankingManager.attackRankingGroup4++
+        }
+        if(groupNumber == 5){
+            ranking = teamAttacksRankingManager.attackRankingGroup5++
+        }
+        if(groupNumber == 6){
+            ranking = teamAttacksRankingManager.attackRankingGroup6++
+        }
+        if(groupNumber == 7){
+            ranking = teamAttacksRankingManager.attackRankingGroup7++
+        }
+        if(groupNumber == 8){
+            ranking = teamAttacksRankingManager.attackRankingGroup8++
+        }
+        if(groupNumber == 9){
+            ranking = teamAttacksRankingManager.attackRankingGroup9++
+        }
         $(groupId).find('tbody').append('<tr><td>'+ranking+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
         $('#global-attack tbody').append('<tr><td>'+teamAttacksRankingManager.globalRankingAttack+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
                 teamAttacksRankingManager.globalRankingAttack++;
@@ -325,6 +349,12 @@ var teamDefencesRankingManager = {
     defenseRankingGroup1:1,
     defenseRankingGroup2:1,
     defenseRankingGroup3:1,
+    defenseRankingGroup4:1,
+    defenseRankingGroup5:1,
+    defenseRankingGroup6:1,
+    defenseRankingGroup7:1,
+    defenseRankingGroup8:1,
+    defenseRankingGroup9:1,
     globalRankingDefense:1,
     add: function(groupId,team,groupNumber){
         var ranking = 0
@@ -336,6 +366,24 @@ var teamDefencesRankingManager = {
         }
         if(groupNumber == 3){
             ranking = teamDefencesRankingManager.defenseRankingGroup3++
+        }
+        if(groupNumber == 4){
+            ranking = teamDefencesRankingManager.defenseRankingGroup4++
+        }
+        if(groupNumber == 5){
+            ranking = teamDefencesRankingManager.defenseRankingGroup5++
+        }
+        if(groupNumber == 6){
+            ranking = teamDefencesRankingManager.defenseRankingGroup6++
+        }
+        if(groupNumber == 7){
+            ranking = teamDefencesRankingManager.defenseRankingGroup7++
+        }
+        if(groupNumber == 8){
+            ranking = teamDefencesRankingManager.defenseRankingGroup8++
+        }
+        if(groupNumber == 9){
+            ranking = teamDefencesRankingManager.defenseRankingGroup9++
         }
         $(groupId).find('tbody').append('<tr><td>'+ranking+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
         $('#global-defense tbody').append('<tr><td>'+teamDefencesRankingManager.globalRankingDefense+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
