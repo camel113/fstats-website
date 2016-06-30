@@ -52,9 +52,6 @@ $(document).ready(function(){
     
     if(document.getElementById('aff-3-teams') !== null){
         var globalRanking = 1;
-        var globalRankingDefense = 1;
-        var globalRankingAttack = 1;
-
         var group1DataSet = [];
         var group2DataSet = [];
         var group3DataSet = [];
@@ -103,8 +100,6 @@ $(document).ready(function(){
                 if(team.group == 3){
                     teamAttacksRankingManager.add("#group3-attack",team,3)
                 }
-                $('#global-attack tbody').append('<tr><td>'+globalRankingAttack+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                globalRankingAttack++;
             })
         })
 
@@ -120,8 +115,6 @@ $(document).ready(function(){
                 if(team.group == 3){
                     teamDefencesRankingManager.add("#group3-defense",team,3)
                 }
-                $('#global-defense tbody').append('<tr><td>'+globalRankingDefense+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
-                globalRankingDefense++;
             })
         })
 
@@ -310,6 +303,7 @@ var teamAttacksRankingManager = {
     attackRankingGroup1:1,
     attackRankingGroup2:1,
     attackRankingGroup3:1,
+    globalRankingAttack:1,
     add: function(groupId,team,groupNumber){
         var ranking = 0
         if(groupNumber == 1){
@@ -322,6 +316,8 @@ var teamAttacksRankingManager = {
             ranking = teamAttacksRankingManager.attackRankingGroup3++
         }
         $(groupId).find('tbody').append('<tr><td>'+ranking+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
+        $('#global-attack tbody').append('<tr><td>'+teamAttacksRankingManager.globalRankingAttack+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td><strong>'+team.goalsfor+'</strong></td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
+                teamAttacksRankingManager.globalRankingAttack++;
     }
 }
 
@@ -329,6 +325,7 @@ var teamDefencesRankingManager = {
     defenseRankingGroup1:1,
     defenseRankingGroup2:1,
     defenseRankingGroup3:1,
+    globalRankingDefense:1,
     add: function(groupId,team,groupNumber){
         var ranking = 0
         if(groupNumber == 1){
@@ -341,6 +338,8 @@ var teamDefencesRankingManager = {
             ranking = teamDefencesRankingManager.defenseRankingGroup3++
         }
         $(groupId).find('tbody').append('<tr><td>'+ranking+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
+        $('#global-defense tbody').append('<tr><td>'+teamDefencesRankingManager.globalRankingDefense+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
+                teamDefencesRankingManager.globalRankingDefense++;
     }
 }
 
