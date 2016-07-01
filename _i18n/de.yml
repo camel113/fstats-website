@@ -44,8 +44,8 @@ pages:
     player_club: "Club"
   teams_ranking:
     headline: "Ranglisten klassisch, Offensive, Defensive"
-    global: "global"
-    general: "generell"
+    global: "Global"
+    general: "Generell"
     attack: "Offensive"
     defense: "Defensive"
     group: "Gruppe"

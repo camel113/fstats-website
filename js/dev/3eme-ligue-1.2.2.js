@@ -15,64 +15,19 @@ $(document).ready(function(){
     });
 
     if(document.getElementById('aff-3') !== null){
-        
         $('h3').before(appAdvertising)
-
-        region = 'aff'
-        var minGoals = 1;
-        var scorerRankingGroup1 = 1;
-        var scorerRankingGroup2 = 1;
-        var scorerRankingGroup3 = 1;
-
-        $.getJSON( 'http://footballtopscorers-pmeweb.rhcloud.com/scorerRanking/3/aff',function(data){
-            $('.loader').hide()
-            $.each( data.scorers["1"], function( i, scorer ) {
-                if(scorer.goals > minGoals){
-                    $('#group1 tbody').append('<tr><td>'+scorerRankingGroup1+'</td><td>'+scorer.scorer+'</td><td>'+scorer.team+'</td><td>'+scorer.goals+'</td></tr>')
-                    scorerRankingGroup1++
-                }
-            });
-            $.each( data.scorers["2"], function( i, scorer ) {
-                if(scorer.goals > minGoals){
-                    $('#group2 tbody').append('<tr><td>'+scorerRankingGroup2+'</td><td>'+scorer.scorer+'</td><td>'+scorer.team+'</td><td>'+scorer.goals+'</td></tr>')
-                    scorerRankingGroup2++
-                }
-            });
-            $.each( data.scorers["3"], function( i, scorer ) {
-                if(scorer.goals > minGoals){
-                    $('#group3 tbody').append('<tr><td>'+scorerRankingGroup3+'</td><td>'+scorer.scorer+'</td><td>'+scorer.team+'</td><td>'+scorer.goals+'</td></tr>')
-                    scorerRankingGroup3++
-                }
-            });
-            $('.lastUpdate').append(data.lastUpdate)
-        })
     }
     
     if(document.getElementById('aff-3-teams') !== null){
-        var globalRanking = 1;
         var group1DataSet = [];
         var group2DataSet = [];
         var group3DataSet = [];
 
         $('h3').before(appAdvertising)
 
+        rankingChoice.init(3)
+
         $.getJSON('http://127.0.0.1:8080/teams/global/aff/3',function(data){
-            $('.loader').hide()
-            $.each( data.teams,function(i, team){
-                if(team.group == 1){
-                    console.log(group1DataSet.length)
-                    teamRankingManager.add("#group1-standard",team,31)
-                    group1DataSet.push({label:team.team,data:team.evolution,fill:false,borderColor:lineColors[group1DataSet.length],pointBackgroundColor:lineColors[group1DataSet.length],backgroundColor:lineColors[group1DataSet.length]})
-                }
-                if(team.group == 2){
-                    teamRankingManager.add("#group2-standard",team,32)
-                    group2DataSet.push({label:team.team,data:team.evolution,fill:false})
-                }
-                if(team.group == 3){
-                    teamRankingManager.add("#group3-standard",team,33)
-                    group3DataSet.push({label:team.team,data:team.evolution,fill:false})
-                }
-            })
             $(".chart-link").on("click",function(){
                 if($(this).data("group") == "31"){
                     makeChart.init(group1DataSet)
@@ -86,44 +41,6 @@ $(document).ready(function(){
                 
             })
         })
-
-        $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/attack/aff/3',function(data){
-            $.each( data.teams,function(i, team){
-                if(team.group == 1){
-                    teamAttacksRankingManager.add("#group1-attack",team,1)
-                }
-                if(team.group == 2){
-                    teamAttacksRankingManager.add("#group2-attack",team,2)
-                }
-                if(team.group == 3){
-                    teamAttacksRankingManager.add("#group3-attack",team,3)
-                }
-            })
-        })
-
-
-        $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/defense/aff/3',function(data){
-            $.each( data.teams,function(i, team){
-                if(team.group == 1){
-                    teamDefencesRankingManager.add("#group1-defense",team,1)
-                }
-                if(team.group == 2){
-                    teamDefencesRankingManager.add("#group2-defense",team,2)
-                }
-                if(team.group == 3){
-                    teamDefencesRankingManager.add("#group3-defense",team,3)
-                }
-            })
-        })
-
-        $.getJSON('http://footballtopscorers-pmeweb.rhcloud.com/teams/global/aff/3',function(data){
-            $.each( data.teams,function(i, team){
-                $('#global-standard tbody').append('<tr><td>'+globalRanking+'</td><td><a href="#" data-toggle="modal" data-target="#myModal">'+team.team+'</a></td><td>'+team.rank+'</td><td>'+team.group+'</td><td>'+team.goalsfor+'</td><td>'+team.goalsagainst+'</td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td><strong>'+team.points+'</strong></td></tr>')
-                globalRanking++;
-            })
-        })
-
-        rankingChoice.init(3)
     }
     if(document.getElementById('acvf-3') !== null){
         

@@ -44,7 +44,7 @@ pages:
     player_club: Club
   teams_ranking:
     headline: "Classements classique, attaque, défense"
-    global: global
+    global: Global
     general: Général
     attack: Attaque
     defense: Défense
