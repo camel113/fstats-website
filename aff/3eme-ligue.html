@@ -3,43 +3,10 @@ layout: page
 title: pages.titles.aff_3
 description: pages.descriptions.aff_3
 headline: pages.scorer_ranking.headline
-groups:
-  - group-info: 
-    - name: pages.scorer_ranking.groups.group1
-      id: group1
-  - group-info: 
-    - name: pages.scorer_ranking.groups.group2
-      id: group2
-  - group-info: 
-    - name: pages.scorer_ranking.groups.group3
-      id: group3
+data_path_file: scorers
+data_path_region: aff
+data_path_ligue: ligue3
 ---
 <div class="groups" id="aff-3">
-  <p class="rankingDescription">{% t pages.scorer_ranking.update %}</p>
-  <p class="rankingDescription">{% t pages.scorer_ranking.info %}</p>
-  <p class="lastUpdate" title="{% t pages.other.last_update %}"><i class="fa fa-refresh"></i>&nbsp;</p>
-  {% for group in site.data.test.rankings %}
-    <h3>{% t pages.scorer_ranking.group %} {{ group.groupNumber }}</h3>
-    <table class="table table-striped" id="{{gr.id}}">
-      <thead>
-        <tr>
-            <th>#</th>
-            <th>{% t pages.scorer_ranking.player_name %}</th>
-            <th>{% t pages.scorer_ranking.player_club %}</th>
-            <th><i class="fa fa-futbol-o"></i></th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for scorer in group.scorers %}
-          <tr>
-            <td>{{ forloop.index }}</td>
-            <td>{{ scorer.scorer }}</td>
-            <td>{{ scorer.team }}</td>
-            <td>{{ scorer.goals }}</td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-    <div class="loader"></div>
-  {% endfor %}
+  {% include ranking-table.html %}
 </div>
