@@ -18,9 +18,8 @@ groups:
   <p class="rankingDescription">{% t pages.scorer_ranking.update %}</p>
   <p class="rankingDescription">{% t pages.scorer_ranking.info %}</p>
   <p class="lastUpdate" title="{% t pages.other.last_update %}"><i class="fa fa-refresh"></i>&nbsp;</p>
-  {% for group in page.groups %}
-    {% for gr in group.group-info %}
-    <h3>{% t gr.name %}</h3>
+  {% for group in site.data.test.rankings %}
+    <h3>{% t pages.scorer_ranking.group %} {{ group.groupNumber }}</h3>
     <table class="table table-striped" id="{{gr.id}}">
       <thead>
         <tr>
@@ -31,10 +30,16 @@ groups:
         </tr>
       </thead>
       <tbody>
-        
+        {% for scorer in group.scorers %}
+          <tr>
+            <td>{{ forloop.index }}</td>
+            <td>{{ scorer.scorer }}</td>
+            <td>{{ scorer.team }}</td>
+            <td>{{ scorer.goals }}</td>
+          </tr>
+        {% endfor %}
       </tbody>
     </table>
     <div class="loader"></div>
-    {% endfor %}
   {% endfor %}
 </div>

@@ -29,6 +29,7 @@ pages:
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: Les classements sont réalisés en fonction des résultats publiés sur le site football.ch
     headline: Classements buteurs par groupe
+    group: "Groupe"
     groups:
       group1: Groupe 1
       group2: Groupe 2
