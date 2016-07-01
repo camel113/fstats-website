@@ -1,6 +1,7 @@
 #!/usr/bin/ruby
 require 'httparty'
 eval(File.read("import/aff3.rb"))
+eval(File.read("import/aff4.rb"))
 # # 3eme ligue AFF global
 # response = HTTParty.get('http://127.0.0.1:8080/teams/global/aff/3')
 
