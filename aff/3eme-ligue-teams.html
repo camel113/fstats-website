@@ -47,9 +47,9 @@ headline: pages.teams_ranking.headline
           <tbody>
 
             {% for team in group[1].teams %}
-              <tr>
+              <tr data-evolution='[1,3]'>
                 <td>{{team.rank}}</td>
-                <td>{{team.team}}</td>
+                <td><a href="#">{{team.team}}</a></td>
                 <td>{{team.goalsfor}}</td>
                 <td>{{team.goalsagainst}}</td>
                 <td>{{team.won}}</td>

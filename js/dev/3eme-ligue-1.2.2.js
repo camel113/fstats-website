@@ -28,6 +28,18 @@ $(document).ready(function(){
         rankingChoice.init(3)
 
         $.getJSON('http://127.0.0.1:8080/teams/global/aff/3',function(data){
+            $.each( data.teams,function(i, team){
+                if(team.group == 1){
+                    group1DataSet.push({label:team.team,data:team.evolution,fill:false,borderColor:lineColors[group1DataSet.length],pointBackgroundColor:lineColors[group1DataSet.length],backgroundColor:lineColors[group1DataSet.length]})
+                }
+                if(team.group == 2){
+                    group2DataSet.push({label:team.team,data:team.evolution,fill:false})
+                }
+                if(team.group == 3){
+                    group3DataSet.push({label:team.team,data:team.evolution,fill:false})
+                }
+            })
+            console.log(group1DataSet)
             $(".chart-link").on("click",function(){
                 if($(this).data("group") == "31"){
                     makeChart.init(group1DataSet)
@@ -281,33 +293,6 @@ var teamDefencesRankingManager = {
         $(groupId).find('tbody').append('<tr><td>'+ranking+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
         $('#global-defense tbody').append('<tr><td>'+teamDefencesRankingManager.globalRankingDefense+'</td><td>'+team.team+'</td><td>'+team.rank+'</td><td>'+team.group+'</td><td>'+team.goalsfor+'</td><td><strong>'+team.goalsagainst+'</strong></td><td>'+team.won+'</td><td>'+team.tied+'</td><td>'+team.lost+'</td><td>('+team.fairplay+')</td><td>'+team.points+'</td></tr>')
                 teamDefencesRankingManager.globalRankingDefense++;
-    }
-}
-
-
-var makeChart = {
-    init: function(dataset){
-        var ctx = $("#myChart");
-        var myChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: [1,2,3,4,5,6,7,8,9,10,11],
-                datasets: dataset
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero:true
-                        }
-                    }]
-                }
-            }
-        });
-        makeChart.display()
-    },
-    display: function(){
-        $("#myModal").modal()
     }
 }
 
