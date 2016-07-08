@@ -38,12 +38,10 @@ var makeChart = {
                     mode: 'single',
                     callbacks: {
                         label: function(tooltipItems, data) {
-                            console.log(data)
                             return data.datasets[tooltipItems.yLabel-1].label;
                         },
                         title: function(tooltipItems, data) { 
-                            console.log(tooltipItems)
-                            return "";
+                            return tooltipItems[0].yLabel;
                         }
                     }
                 },
