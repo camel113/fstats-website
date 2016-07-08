@@ -1,4 +1,4 @@
-var lineColors = ['#F44336','#9C27B0','#3F51B5','#2196F3','#009688','#8BC34A','#FFEB3B','#FF9800','#795548','#E91E63','#673AB7','#00BCD4','#CDDC39']
+var lineColors = ['#F44336','#9C27B0','#3F51B5','#2196F3','#009688','#8BC34A','#C6FF00','#FFEB3B','#FF9800','#795548','#E91E63','#00BCD4','#CDDC39','#FFC107','#673AB7']
 $(document).ready(function(){
 
     var groups = []
@@ -37,8 +37,9 @@ var makeChart = {
                     enabled: true,
                     mode: 'single',
                     callbacks: {
-                        label: function(tooltipItems, data) { 
-                            return data.datasets[tooltipItems.index].label;
+                        label: function(tooltipItems, data) {
+                            console.log(data)
+                            return data.datasets[tooltipItems.yLabel-1].label;
                         },
                         title: function(tooltipItems, data) { 
                             console.log(tooltipItems)
@@ -50,7 +51,8 @@ var makeChart = {
                     yAxes: [{
                         ticks: {
                             beginAtZero:true,
-                            max:12
+                            max:12,
+                            reverse: true
                         }
                     }]
                 }
