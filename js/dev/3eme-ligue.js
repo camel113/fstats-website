@@ -33,10 +33,24 @@ var makeChart = {
                 datasets: dataset
             },
             options: {
+                tooltips: {
+                    enabled: true,
+                    mode: 'single',
+                    callbacks: {
+                        label: function(tooltipItems, data) { 
+                            return data.datasets[tooltipItems.index].label;
+                        },
+                        title: function(tooltipItems, data) { 
+                            console.log(tooltipItems)
+                            return "";
+                        }
+                    }
+                },
                 scales: {
                     yAxes: [{
                         ticks: {
-                            beginAtZero:true
+                            beginAtZero:true,
+                            max:12
                         }
                     }]
                 }
