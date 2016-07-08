@@ -3,7 +3,6 @@ $(document).ready(function(){
 
     var groups = []
 
-    var group1DataSet = []
     $('.team-standard').each(function(){
         var groupId = $(this).attr('id')
         groups[groupId] = []
@@ -20,6 +19,7 @@ $(document).ready(function(){
             })
         })
     })
+    rankingChoice.init(Object.keys(groups).length)
 })
 
 var makeChart = {
@@ -60,5 +60,31 @@ var makeChart = {
     },
     display: function(){
         $("#myModal").modal()
+    }
+}
+
+var rankingChoice = {
+    groupCount: 0,
+    init: function(nbGroups){
+        var group, rankingType;
+        rankingChoice.groupCount = nbGroups;
+        rankingChoice.hideRankings()
+        $('#global, #global-standard').show()
+        rankingChoice.groupChoice()
+    },
+    groupChoice: function(){
+        $("#group-choice, #rank-choice").on('change',function() {
+            rankingChoice.hideRankings();
+            group = $("#group-choice option:selected").val()
+            rankingType = $("#rank-choice option:selected").val()
+            $('#'+group).show()
+            $('#'+group+'-'+rankingType).show() 
+        });
+    },
+    hideRankings: function(){
+        for (var i = 1; i <= rankingChoice.groupCount; i++) {
+            $('#group'+i).hide()
+        };
+        $('#global, .ranking').hide()
     }
 }
