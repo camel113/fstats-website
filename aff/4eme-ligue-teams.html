@@ -7,28 +7,6 @@ data_path_region: aff
 data_path_ligue: ligue4
 ---
 <div class="groups" id="aff-4-teams">
-  <div id="table-choice" class="col-xs-12">
-    <div class="form-group">
-      <label class="col-xs-5 col-md-2">Groupe</label>
-      <div class="col-xs-7 col-md-2">
-        <select class="form-control" id="group-choice">
-          <option value="global">{% t pages.teams_ranking.global %}</option>
-          <option value="group1">1</option>
-          <option value="group2">2</option>
-          <option value="group3">3</option>
-          <option value="group4">4</option>
-          <option value="group5">5</option>
-        </select>
-      </div>
-      <label class="col-xs-5 col-md-2">{% t pages.teams_ranking.ranking %}</label>
-      <div class="col-xs-7 col-md-2">
-        <select class="form-control" id="rank-choice">
-          <option value="standard">{% t pages.teams_ranking.general %}</option>
-          <option value="attack">{% t pages.teams_ranking.attack %}</option>
-          <option value="defense">{% t pages.teams_ranking.defense %}</option>
-        </select>
-      </div>
-    </div>
-  </div>
+  {% include teams-ranking-header.html %}
   {% include teams-ranking-table.html %}
 </div>

@@ -1,0 +1,22 @@
+<div id="table-choice" class="col-xs-12">
+  <div class="form-group">
+    <label class="col-xs-5 col-md-2">Groupe</label>
+    <div class="col-xs-7 col-md-2">
+      <select class="form-control" id="group-choice">
+        <option value="global">{% t pages.teams_ranking.global %}</option>
+        {% for group in site.data[page.data_path_region][page.data_path_ligue].standard %}
+          <option value="{{group[0]}}">{{forloop.index}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    
+    <label class="col-xs-5 col-md-2">{% t pages.teams_ranking.ranking %}</label>
+    <div class="col-xs-7 col-md-2">
+      <select class="form-control" id="rank-choice">
+        <option value="standard">{% t pages.teams_ranking.general %}</option>
+        <option value="attack">{% t pages.teams_ranking.attack %}</option>
+        <option value="defense">{% t pages.teams_ranking.defense %}</option>
+      </select>
+    </div>
+  </div>
+</div>
