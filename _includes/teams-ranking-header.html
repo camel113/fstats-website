@@ -1,9 +1,10 @@
+{% assign groups_length = site.data[page.data_path_region][page.data_path_ligue].standard.size %}
 <div id="table-choice" class="col-xs-12">
   <div class="form-group">
-    <label {% if site.data[page.data_path_region][page.data_path_ligue].standard.size  == 1 %} style="display:none" {%endif%} class="col-xs-5 col-md-2">Groupe</label>
-    <div {% if site.data[page.data_path_region][page.data_path_ligue].standard.size  == 1 %} style="display:none" {%endif%} class="col-xs-7 col-md-2">
+    <label {% if groups_length == 1 %} style="display:none" {%endif%} class="col-xs-5 col-md-2">Groupe</label>
+    <div {% if groups_length == 1 %} style="display:none" {%endif%} class="col-xs-7 col-md-2">
       <select class="form-control" id="group-choice">
-        {% if site.data[page.data_path_region][page.data_path_ligue].standard.size  == 1 %}
+        {% if groups_length  == 1 %}
           <option value="group1" selected>Audi</option>
         {% else %}
           <option value="global">{% t pages.teams_ranking.global %}</option>
