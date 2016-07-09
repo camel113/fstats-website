@@ -117,6 +117,7 @@
 {% endfor %}
 
 <!-- <div class="groups col-xs-12" id="global"> -->
+{% if site.data[page.data_path_region][page.data_path_ligue].global-standard %}
 <div class="row ranking" id="global-standard">
   <div class="col-xs-12">
   <h4>{% t pages.teams_ranking.global %}</h4>
@@ -158,6 +159,8 @@
     </table>
   </div>
 </div>
+{% endif %}
+{% if site.data[page.data_path_region][page.data_path_ligue].global-attack %}
 <div class="row ranking" id="global-attack">
   <div class="col-xs-12">
     <h4>{% t pages.teams_ranking.global %}</h4>
@@ -199,6 +202,8 @@
     </table>
   </div>
 </div>
+{% endif %}
+{% if site.data[page.data_path_region][page.data_path_ligue].global-defense %}
 <div class="row ranking" id="global-defense">
   <div class="col-xs-12">
   <h4>{% t pages.teams_ranking.global %}</h4>
@@ -240,6 +245,7 @@
     </table>
   </div>
 </div>
+{% endif %}
 <div class="modal fade modal-fullscreen" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">

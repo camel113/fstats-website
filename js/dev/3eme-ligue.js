@@ -69,7 +69,11 @@ var rankingChoice = {
         var group, rankingType;
         rankingChoice.groupCount = nbGroups;
         rankingChoice.hideRankings()
-        $('#global, #global-standard').show()
+        if($('#global, #global-standard').length > 0){
+            $('#global, #global-standard').show()
+        }else{
+            $('#group1-standard').show()
+        }
         rankingChoice.groupChoice()
     },
     groupChoice: function(){
