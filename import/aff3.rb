@@ -75,6 +75,14 @@ end
 
 leagues = []
 
+# AFF 2eme ligue
+groups = [*1..1]
+region = 'aff'
+league = 2
+filePath = "_data/aff/ligue2/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+
 # AFF 3eme ligue
 groups = [*1..3]
 region = 'aff'
