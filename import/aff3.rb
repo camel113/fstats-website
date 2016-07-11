@@ -1,8 +1,8 @@
 #!/usr/bin/ruby
 require 'httparty'
+require 'fileutils'
 
 urlPath = "http://127.0.0.1:8080"
-filePath = "_data/aff/ligue3/"
 
 def create_global_rankings_files(league,region,filePath,urlPath)
   response = HTTParty.get(urlPath+'/teams/global/aff/'+league)
@@ -50,15 +50,44 @@ def create_league_data(region,league,groups,urlPath,filePath)
   groups.each { |x| create_standard_rankings_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
 end
 
+def create_directories(filePath)
+  dirname = File.dirname(filePath+'random')
+  unless File.directory?(dirname)
+    FileUtils.mkdir_p(dirname)
+  end
+  unless File.directory?(dirname+'/standard')
+    FileUtils.mkdir_p(dirname+'/standard')
+  end
+  unless File.directory?(dirname+'/attack')
+    FileUtils.mkdir_p(dirname+'/attack')
+  end
+  unless File.directory?(dirname+'/defense')
+    FileUtils.mkdir_p(dirname+'/defense')
+  end
+end
+
 leagues = []
 
 # AFF 3eme ligue
 groups = [*1..3]
 region = 'aff'
 league = 3
-create_global_rankings_files(league.to_s,region,filePath,urlPath)
-leagues.push({:groups => groups, :region => region, :league => league})
-leagues.each { |l| create_league_data(l[:region],l[:league],l[:groups],urlPath,filePath)}
+filePath = "_data/aff/ligue3/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+
+# AFF 4eme ligue
+groups = [*1..5]
+region = 'aff'
+league = 4
+filePath = "_data/aff/ligue4/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+
+leagues.each { |l| create_league_data(l[:region],l[:league],l[:groups],urlPath,l[:filePath])}
+
+
+
 
 
 # response = HTTParty.get(urlPath+'/scorerRanking/3/aff')
