@@ -43,11 +43,18 @@ def create_standard_rankings_by_group (group,league,region,filePath,urlPath)
   end
 end
 
-def create_league_data(region,league,groups,urlPath,filePath)
+def create_league_data(region,league,groups,filePath,urlPath)
   create_global_rankings_files(league.to_s,region,filePath,urlPath)
   groups.each { |x| create_defense_rankings_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
   groups.each { |x| create_attack_rankings_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
   groups.each { |x| create_standard_rankings_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
+end
+
+def create_scorers_data(league,region,filePath,urlPath)
+  response = HTTParty.get(urlPath+'/scorerRanking/'+league.to_s+'/'+region)
+  File.open(filePath+"scorers.json","w") do |f|
+    f.write(response.body)
+  end
 end
 
 def create_directories(filePath)
@@ -84,7 +91,10 @@ filePath = "_data/aff/ligue4/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 
-leagues.each { |l| create_league_data(l[:region],l[:league],l[:groups],urlPath,l[:filePath])}
+leagues.each { |l| 
+  create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
+  create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
+}
 
 
 
