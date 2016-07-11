@@ -37,7 +37,7 @@ def create_attack_rankings_by_group (group,league,region,filePath,urlPath)
 end
 
 def create_standard_rankings_by_group (group,league,region,filePath,urlPath)
-  response = HTTParty.get(urlPath+'/teams/standard/'+region+'/'+league+'/'+group)
+  response = HTTParty.get(urlPath+'/teams/global/'+region+'/'+league+'/'+group)
   File.open(filePath+"standard/group"+group+".json","w") do |f|
     f.write(response.body)
   end
