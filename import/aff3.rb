@@ -122,7 +122,44 @@ leagues.each { |l|
   create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
 }
 
+# ACVF 3eme ligue
+groups = [*1..4]
+region = 'acvf'
+league = 3
+filePath = "_data/acvf/ligue3/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 
+leagues.each { |l| 
+  create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
+  create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
+}
+
+# ACVF 4eme ligue
+groups = [*1..8]
+region = 'acvf'
+league = 4
+filePath = "_data/acvf/ligue4/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+
+leagues.each { |l| 
+  create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
+  create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
+}
+
+# ACVF 4eme ligue
+groups = [*1..7]
+region = 'acvf'
+league = 5
+filePath = "_data/acvf/ligue5/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+
+leagues.each { |l| 
+  create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
+  create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
+}
 
 
 
