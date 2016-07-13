@@ -12,13 +12,20 @@ pages:
     acvf_3_women: ACVF 3ème ligue Féminine
     acvf_3_teams: ACVF 3ème ligue classements
     acvf_4_teams: ACVF 4ème ligue classements
+    meta:
+      acvf_3: ACVF 3ème ligue | Buteurs
+      acvf_4: ACVF 4ème ligue | Buteurs
+      acvf_5: ACVF 5ème ligue | Buteurs
+      aff_3: AFF 3ème ligue | Buteurs
+      aff_4: AFF 4ème ligue | Buteurs
+      aff_5: AFF 5ème ligue | Buteurs
   descriptions:
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
     aff_4: Classement buteurs championnat de football AFF (Fribourg) 4ème ligue.
     aff_5: Classement buteurs championnat de football AFF (Fribourg) 5ème ligue.
     aff_3_women: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue Féminine.
     aff_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 3ème ligue."
-    aff_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 3ème ligue."
+    aff_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 4ème ligue."
     acvf_3: Classement buteurs championnat de football ACVF (Vaud) 3ème ligue.
     acvf_4: Classement buteurs championnat de football ACVF (Vaud) 4ème ligue.
     acvf_5: Classement buteurs championnat de football ACVF (VAUD) 5ème ligue.

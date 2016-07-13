@@ -12,6 +12,13 @@ pages:
     acvf_3_women: "ACVF 3. Liga Frauen"
     acvf_3_teams: "ACVF 3. Liga Ranglisten"
     acvf_4_teams: "ACVF 4. Liga Ranglisten"
+    meta:
+      aff_3: "FFV 3. Liga | Torschützen"
+      aff_4: "FFV 4. Liga | Torschützen"
+      aff_5: "FFV 5. Liga | Torschützen"
+      acvf_3: "ACVF 3. Liga | Torschützen"
+      acvf_4: "ACVF 4. Liga | Torschützen"
+      acvf_5: "ACVF 5. Liga | Torschützen"
   descriptions:
     aff_3: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 3. Liga."
     aff_4: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 4. Liga."
