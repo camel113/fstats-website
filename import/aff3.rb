@@ -5,17 +5,17 @@ require 'fileutils'
 urlPath = "http://127.0.0.1:8080"
 
 def create_global_rankings_files(league,region,filePath,urlPath)
-  response = HTTParty.get(urlPath+'/teams/global/aff/'+league)
+  response = HTTParty.get(urlPath+'/teams/global/'+region+'/'+league)
   File.open(filePath+"global-standard.json","w") do |f|
     f.write(response.body)
   end
 
-  response = HTTParty.get(urlPath+'/teams/defense/aff/'+league)
+  response = HTTParty.get(urlPath+'/teams/defense/'+region+'/'+league)
   File.open(filePath+"global-defense.json","w") do |f|
     f.write(response.body)
   end
 
-  response = HTTParty.get(urlPath+'/teams/attack/aff/'+league)
+  response = HTTParty.get(urlPath+'/teams/attack/'+region+'/'+league)
   File.open(filePath+"global-attack.json","w") do |f|
     f.write(response.body)
   end
@@ -106,6 +106,14 @@ groups = [*1..5]
 region = 'aff'
 league = 5
 filePath = "_data/aff/ligue5/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+
+# ACVF 2eme ligue
+groups = [*1..2]
+region = 'acvf'
+league = 2
+filePath = "_data/acvf/ligue2/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 
