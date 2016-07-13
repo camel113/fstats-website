@@ -44,7 +44,9 @@ def create_standard_rankings_by_group (group,league,region,filePath,urlPath)
 end
 
 def create_league_data(region,league,groups,filePath,urlPath)
-  create_global_rankings_files(league.to_s,region,filePath,urlPath)
+  if(groups.length > 1)
+    create_global_rankings_files(league.to_s,region,filePath,urlPath)
+  end
   groups.each { |x| create_defense_rankings_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
   groups.each { |x| create_attack_rankings_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
   groups.each { |x| create_standard_rankings_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
