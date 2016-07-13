@@ -26,16 +26,20 @@ pages:
       aff_4: AFF 4ème ligue | Buteurs
       aff_5: AFF 5ème ligue | Buteurs
   descriptions:
+    aff_2: Classement buteurs championnat de football AFF (Fribourg) 2ème ligue.
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
     aff_4: Classement buteurs championnat de football AFF (Fribourg) 4ème ligue.
     aff_5: Classement buteurs championnat de football AFF (Fribourg) 5ème ligue.
     aff_3_women: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue Féminine.
+    aff_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 2ème ligue."
     aff_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 3ème ligue."
     aff_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 4ème ligue."
+    acvf_2: Classement buteurs championnat de football ACVF (Vaud) 2ème ligue.
     acvf_3: Classement buteurs championnat de football ACVF (Vaud) 3ème ligue.
     acvf_4: Classement buteurs championnat de football ACVF (Vaud) 4ème ligue.
     acvf_5: Classement buteurs championnat de football ACVF (VAUD) 5ème ligue.
     aff_3_women: Classement buteurs championnat de football ACVF (Vaud) 3ème ligue Féminine.
+    acvf_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 2ème ligue."
     acvf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 3ème ligue."
     acvf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 4ème ligue."
   scorer_ranking:
