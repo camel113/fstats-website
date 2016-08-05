@@ -8,6 +8,7 @@ pages:
     aff_2_teams: "FFV 2. Liga Ranglisten"
     aff_3_teams: "FFV 3. Liga Ranglisten"
     aff_4_teams: "FFV 4. Liga Ranglisten"
+    aff_5_teams: "FFV 5. Liga Ranglisten"
     acvf_3: "ACVF 2. Liga"
     acvf_3: "ACVF 3. Liga"
     acvf_4: "ACVF 4. Liga"
@@ -16,6 +17,7 @@ pages:
     acvf_3_teams: "ACVF 2. Liga Ranglisten"
     acvf_3_teams: "ACVF 3. Liga Ranglisten"
     acvf_4_teams: "ACVF 4. Liga Ranglisten"
+    acvf_5_teams: "ACVF 5. Liga Ranglisten"
     meta:
       aff_2: "FFV 2. Liga | Torschützen"
       aff_3: "FFV 3. Liga | Torschützen"
@@ -34,6 +36,7 @@ pages:
     aff_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft FFV (Freiburg)"
     aff_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft FFV (Freiburg)"
     aff_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FFV (Freiburg)"
+    aff_5_teams: "Rangliste der besten Offenensiven und Defensiven der 5. Liga Meisterschaft FFV (Freiburg)"
     acvf_2: "Torschützen-Rangliste Meisterschaft ACVF (Waadt) 2. Liga."
     acvf_3: "Torschützen-Rangliste Meisterschaft ACVF (Waadt) 3. Liga."
     acvf_4: "Torschützen-Rangliste Meisterschaft ACVF (Waadt) 4. Liga."
@@ -42,6 +45,7 @@ pages:
     acvf_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft ACVF (Waadt)"
     acvf_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft ACVF (Waadt)"
     acvf_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ACVF (Waadt)"
+    acvf_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ACVF (Waadt)"
   scorer_ranking:
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
     info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."
