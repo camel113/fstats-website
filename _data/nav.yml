@@ -106,7 +106,34 @@
           path: "/5eme-ligue-teams"
 - title: "AVF"
   subcategories:
-    - title: "Bientôt disponible"
+    - title: "2ème ligue"
+      path: "/avf"
+      subpages:
+        - title: "Buteurs"
+          path: "/2eme-ligue"
+        - title: "Teams"
+          path: "/2eme-ligue-teams"
+    - title: "3ème ligue"
+      path: "/avf"
+      subpages:
+        - title: "Buteurs"
+          path: "/3eme-ligue"
+        - title: "Teams"
+          path: "/3eme-ligue-teams"
+    - title: "4ème ligue"
+      path: "/avf"
+      subpages:
+        - title: "Buteurs"
+          path: "/4eme-ligue"
+        - title: "Teams"
+          path: "/4eme-ligue-teams"
+    - title: "5ème ligue"
+      path: "/avf"
+      subpages:
+        - title: "Buteurs"
+          path: "/5eme-ligue"
+        - title: "Teams"
+          path: "/5eme-ligue-teams"
 - title: "ANF"
   subcategories:
     - title: "Bientôt disponible"

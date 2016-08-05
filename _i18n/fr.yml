@@ -27,6 +27,14 @@ pages:
     acgf_3_teams: ACGF 3ème ligue classements
     acgf_4_teams: ACGF 4ème ligue classements
     acgf_5_teams: ACGF 5ème ligue classements
+    avf_2: AVF 2ème ligue
+    avf_3: AVF 3ème ligue
+    avf_4: AVF 4ème ligue
+    avf_5: AVF 5ème ligue
+    avf_2_teams: AVF 2ème ligue classements
+    avf_3_teams: AVF 3ème ligue classements
+    avf_4_teams: AVF 4ème ligue classements
+    avf_5_teams: AVF 5ème ligue classements
     meta:
       acvf_2: ACVF 2ème ligue | Buteurs
       acvf_3: ACVF 3ème ligue | Buteurs
@@ -40,6 +48,10 @@ pages:
       acgf_3: ACGF 3ème ligue | Buteurs
       acgf_4: ACGF 4ème ligue | Buteurs
       acgf_5: ACGF 5ème ligue | Buteurs
+      avf_2: AVF 2ème ligue | Buteurs
+      avf_3: AVF 3ème ligue | Buteurs
+      avf_4: AVF 4ème ligue | Buteurs
+      avf_5: AVF 5ème ligue | Buteurs
   descriptions:
     aff_2: Classement buteurs championnat de football AFF (Fribourg) 2ème ligue.
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
@@ -67,6 +79,14 @@ pages:
     acgf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 3ème ligue."
     acgf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 4ème ligue."
     acgf_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 5ème ligue."
+    avf_2: Classement buteurs championnat de football AVF (Valais) 2ème ligue.
+    avf_3: Classement buteurs championnat de football AVF (Valais) 3ème ligue.
+    avf_4: Classement buteurs championnat de football AVF (Valais) 4ème ligue.
+    avf_5: Classement buteurs championnat de football AVF (Valais) 5ème ligue.
+    avf_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AVF (Valais) 2ème ligue."
+    avf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AVF (Valais) 3ème ligue."
+    avf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AVF (Valais) 4ème ligue."
+    avf_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AVF (Valais) 5ème ligue."
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: Les classements sont réalisés en fonction des résultats publiés sur le site football.ch
