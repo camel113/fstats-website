@@ -18,6 +18,15 @@ pages:
     acvf_3_teams: ACVF 3ème ligue classements
     acvf_4_teams: ACVF 4ème ligue classements
     acvf_5_teams: ACVF 5ème ligue classements
+    acgf_2: ACGF 2ème ligue
+    acgf_3: ACGF 3ème ligue
+    acgf_4: ACGF 4ème ligue
+    acgf_5: ACGF 5ème ligue
+    acgf_3_women: ACGF 3ème ligue Féminine
+    acgf_2_teams: ACGF 2ème ligue classements
+    acgf_3_teams: ACGF 3ème ligue classements
+    acgf_4_teams: ACGF 4ème ligue classements
+    acgf_5_teams: ACGF 5ème ligue classements
     meta:
       acvf_2: ACVF 2ème ligue | Buteurs
       acvf_3: ACVF 3ème ligue | Buteurs
@@ -27,6 +36,10 @@ pages:
       aff_3: AFF 3ème ligue | Buteurs
       aff_4: AFF 4ème ligue | Buteurs
       aff_5: AFF 5ème ligue | Buteurs
+      acgf_2: ACGF 2ème ligue | Buteurs
+      acgf_3: ACGF 3ème ligue | Buteurs
+      acgf_4: ACGF 4ème ligue | Buteurs
+      acgf_5: ACGF 5ème ligue | Buteurs
   descriptions:
     aff_2: Classement buteurs championnat de football AFF (Fribourg) 2ème ligue.
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
@@ -40,12 +53,20 @@ pages:
     acvf_2: Classement buteurs championnat de football ACVF (Vaud) 2ème ligue.
     acvf_3: Classement buteurs championnat de football ACVF (Vaud) 3ème ligue.
     acvf_4: Classement buteurs championnat de football ACVF (Vaud) 4ème ligue.
-    acvf_5: Classement buteurs championnat de football ACVF (VAUD) 5ème ligue.
+    acvf_5: Classement buteurs championnat de football ACVF (Vaud) 5ème ligue.
     aff_3_women: Classement buteurs championnat de football ACVF (Vaud) 3ème ligue Féminine.
     acvf_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 2ème ligue."
     acvf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 3ème ligue."
     acvf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 4ème ligue."
     acvf_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 5ème ligue."
+    acgf_2: Classement buteurs championnat de football ACGF (Genève) 2ème ligue.
+    acgf_3: Classement buteurs championnat de football ACGF (Genève) 3ème ligue.
+    acgf_4: Classement buteurs championnat de football ACGF (Genève) 4ème ligue.
+    acgf_5: Classement buteurs championnat de football ACGF (Genève) 5ème ligue.
+    acgf_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 2ème ligue."
+    acgf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 3ème ligue."
+    acgf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 4ème ligue."
+    acgf_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 5ème ligue."
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: Les classements sont réalisés en fonction des résultats publiés sur le site football.ch
