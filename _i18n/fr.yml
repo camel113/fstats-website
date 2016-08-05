@@ -35,6 +35,14 @@ pages:
     avf_3_teams: AVF 3ème ligue classements
     avf_4_teams: AVF 4ème ligue classements
     avf_5_teams: AVF 5ème ligue classements
+    anf_2: ANF 2ème ligue
+    anf_3: ANF 3ème ligue
+    anf_4: ANF 4ème ligue
+    anf_5: ANF 5ème ligue
+    anf_2_teams: ANF 2ème ligue classements
+    anf_3_teams: ANF 3ème ligue classements
+    anf_4_teams: ANF 4ème ligue classements
+    anf_5_teams: ANF 5ème ligue classements
     meta:
       acvf_2: ACVF 2ème ligue | Buteurs
       acvf_3: ACVF 3ème ligue | Buteurs
@@ -52,6 +60,10 @@ pages:
       avf_3: AVF 3ème ligue | Buteurs
       avf_4: AVF 4ème ligue | Buteurs
       avf_5: AVF 5ème ligue | Buteurs
+      anf_2: ANF 2ème ligue | Buteurs
+      anf_3: ANF 3ème ligue | Buteurs
+      anf_4: ANF 4ème ligue | Buteurs
+      anf_5: ANF 5ème ligue | Buteurs
   descriptions:
     aff_2: Classement buteurs championnat de football AFF (Fribourg) 2ème ligue.
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
@@ -87,6 +99,14 @@ pages:
     avf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AVF (Valais) 3ème ligue."
     avf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AVF (Valais) 4ème ligue."
     avf_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AVF (Valais) 5ème ligue."
+    anf_2: Classement buteurs championnat de football ANF (Neuchâtel) 2ème ligue.
+    anf_3: Classement buteurs championnat de football ANF (Neuchâtel) 3ème ligue.
+    anf_4: Classement buteurs championnat de football ANF (Neuchâtel) 4ème ligue.
+    anf_5: Classement buteurs championnat de football ANF (Neuchâtel) 5ème ligue.
+    anf_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ANF (Neuchâtel) 2ème ligue."
+    anf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ANF (Neuchâtel) 3ème ligue."
+    anf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ANF (Neuchâtel) 4ème ligue."
+    anf_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ANF (Neuchâtel) 5ème ligue."
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: Les classements sont réalisés en fonction des résultats publiés sur le site football.ch
