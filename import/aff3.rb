@@ -60,9 +60,9 @@ def create_scorers_data(league,region,filePath,urlPath)
 end
 
 def create_directories(filePath)
-  dirname = File.dirname(filePath+'random')
-  unless File.directory?(dirname)
-    FileUtils.mkdir_p(dirname)
+  dirname = File.dirname(filePath+"random")
+  unless File.directory?(dirname+'/stats')
+    FileUtils.mkdir_p(dirname+'/stats')
   end
   unless File.directory?(dirname+'/standard')
     FileUtils.mkdir_p(dirname+'/standard')
@@ -72,6 +72,25 @@ def create_directories(filePath)
   end
   unless File.directory?(dirname+'/defense')
     FileUtils.mkdir_p(dirname+'/defense')
+  end
+end
+
+def generate_stats_for_regions_league(league,region,filePath,urlPath)
+  response = HTTParty.get(urlPath+'/stats/top10scorers/'+region+'/'+league.to_s)
+  File.open(filePath+"stats/scorersByLeagueAndRegion.json","w") do |f|
+    f.write(response.body)
+  end
+end
+
+def generate_stats_for_leagues_accross_region(league,urlPath)
+  filePath = "_data/"
+  dirname = File.dirname(filePath+"random")
+  unless File.directory?(dirname+'/stats')
+    FileUtils.mkdir_p(dirname+'/stats')
+  end
+  response = HTTParty.get(urlPath+'/stats/top10scorers/'+league.to_s)
+  File.open(filePath+"stats/scorersLeague"+league.to_s+".json","w") do |f|
+    f.write(response.body)
   end
 end
 
@@ -120,7 +139,10 @@ leagues.push({:groups => groups, :region => region, :league => league, :filePath
 leagues.each { |l| 
   create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
   create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
+  generate_stats_for_regions_league(l[:league],l[:region],l[:filePath],urlPath)
+  generate_stats_for_leagues_accross_region(l[:league],urlPath)
 }
+
 
 # ACVF 3eme ligue
 groups = [*1..4]
