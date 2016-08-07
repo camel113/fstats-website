@@ -76,8 +76,9 @@ def create_directories(filePath)
 end
 
 def generate_stats_for_regions_league(league,region,filePath,urlPath)
+  File.delete(filePath+"stats/scorersByLeagueAndRegion.json")
   response = HTTParty.get(urlPath+'/stats/top10scorers/'+region+'/'+league.to_s)
-  File.open(filePath+"stats/scorersByLeagueAndRegion.json","w") do |f|
+  File.open(filePath+"stats/scorers.json","w") do |f|
     f.write(response.body)
   end
 end
