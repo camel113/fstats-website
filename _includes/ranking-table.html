@@ -5,7 +5,7 @@
 </p>
 {% for group in site.data[page.data_path_region][page.data_path_ligue].scorers.rankings %}
 <h3>{% t pages.scorer_ranking.group %} {{ group.groupNumber }}</h3>
-<table class="table table-striped" id="{{group.groupNumber}}">
+<table class="table table-striped scorer-ranking" id="{{group.groupNumber}}">
   <thead>
     <tr>
         <th>#</th>

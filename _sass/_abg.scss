@@ -1,36 +1,49 @@
-.groups .table-striped{
+.ranking table{
 	color: #333;
-	tbody tr{
-		td {
-		  font-size: 0.8em; 
-		  @media (max-width: 768px){
-		  	padding: 8px 4px;
-		  }
-		  @media (min-width: 568px) {
-		    font-size: 1em;
-		  }
-		  @media (max-width: 500px){
-		  	&:last-child{
-		  		text-align: center;
-		  	}
-		  }
+	@media (max-width: 550px){
+		font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 0.8em;
+		tr{
+			td,th{
+				padding: 8px 2px;
+			}
+			th{
+				font-size: 0.8em;
+				min-width: 21px;
+			}
+			td{
+				&:nth-child(2){
+					word-break: break-word;
+					min-width: 70px;
+					max-width: 100px;
+				}
+			}
 		}
 	}
 }
+.scorer-ranking{
+	color: #333;
+}
+.page-header{
+	margin-top: 70px;
+	h1,h2{
+		text-align: center;
+	}
+}
 .instagram{
-	background:     // left bottom
-    radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
-    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
-    // left top
-    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
-    //  right top
-    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
-    // right bottom
-    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+background:     // left bottom
+radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+  // left top
+  radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+  radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+  //  right top
+  radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+  radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+  // right bottom
+  radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
 
-    /////// create a base coat to smooth
-    /////// corner gradients
-    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  /////// create a base coat to smooth
+  /////// corner gradients
+  linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 }
