@@ -42,6 +42,15 @@ h2{
 }
 .scorer-ranking{
 	color: #333;
+	@media (max-width: 768px){
+		tr{
+			td,th{
+				&:first-child{
+					padding: 8px 1px;
+				}
+			}
+		}
+	}
 }
 .page-header{
 	margin-top: 70px;
@@ -50,6 +59,18 @@ h2{
 	}
 	h1,h2{
 		text-align: center;
+	}
+}
+.blog-post{
+	margin-top:60px;
+	h2{
+		text-transform: none !important;
+	}
+}
+.blog-post-image{
+	text-align:center;
+	img{
+		display: inline;
 	}
 }
 .instagram{

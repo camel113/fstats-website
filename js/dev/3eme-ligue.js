@@ -9,7 +9,7 @@ $(document).ready(function(){
         $(this).find('table tbody tr').each(function(){
             var teamName = ($(this).find("td:nth-child(2)").text())
             var evolution = ($(this).data('evolution'))
-            groups[groupId].push({label:teamName,data:evolution,fill:false,borderColor:lineColors[groups[groupId].length],pointBackgroundColor:lineColors[groups[groupId].length],backgroundColor:lineColors[groups[groupId].length]})
+            groups[groupId].push({label:teamName,data:evolution,fill:false,lineTension: 0,borderColor:lineColors[groups[groupId].length],pointBackgroundColor:lineColors[groups[groupId].length],backgroundColor:lineColors[groups[groupId].length]})
         })
         $(this).find('.table tbody tr a').each(function(){
             $(this).on('click',function(e){
@@ -30,26 +30,20 @@ var makeChart = {
             type: 'line',
             data: {
                 labels: [1,2,3,4,5,6,7,8,9,10,11],
-                datasets: dataset
+                datasets: dataset,
+                lineTension: 0
             },
             options: {
+                lineTension: 0,
                 tooltips: {
                     enabled: true,
-                    mode: 'single',
-                    callbacks: {
-                        label: function(tooltipItems, data) {
-                            return data.datasets[tooltipItems.yLabel-1].label;
-                        },
-                        title: function(tooltipItems, data) { 
-                            return tooltipItems[0].yLabel;
-                        }
-                    }
+                    mode: 'single'
                 },
                 scales: {
                     yAxes: [{
                         ticks: {
                             beginAtZero:true,
-                            max:12,
+                            max:13,
                             reverse: true
                         }
                     }]
