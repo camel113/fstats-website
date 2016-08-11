@@ -15,7 +15,7 @@ layout: default
           </div>                       
         </a><!--work link-->
         <ul class="list-inline post-detail">
-            <li><i class="fa fa-calendar"></i>{{ post.date }}</li>
+            <li><i class="fa fa-calendar"></i>{{ post.date | date: "%-d %B %Y"}}</li>
         </ul>
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <p>{{ post.excerpt }}</p>
