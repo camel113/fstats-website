@@ -9,7 +9,7 @@ layout: default
 					<img src="{{site.url}}/images/posts/headers/{{page.image}}" class="img-responsive" alt="workimg">
 				</div>                       
 				<ul class="list-inline post-detail">
-					<li><i class="fa fa-calendar"></i>{{page.date | date: "%-d %B %Y"}}</li>
+					<li><i class="fa fa-calendar"></i>{{ post.date | date: "%-d/%m/%Y"}}</li>
 				</ul>
 				<h2>{{page.title}}</h2>
 				{{content}}
