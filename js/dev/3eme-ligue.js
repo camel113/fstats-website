@@ -9,7 +9,7 @@ $(document).ready(function(){
         var groupId = $(this).attr('id')
         groups[groupId] = []
         $(this).find('table tbody tr').each(function(){
-            var teamName = ($(this).find("td:nth-child(2)").text())
+            var teamName = ($(this).find(".team-short-name").text())
             var evolution = ($(this).data('evolution'))
             groups[groupId].push({label:teamName,data:evolution,fill:false,lineTension: 0,borderColor:lineColors[groups[groupId].length],pointBackgroundColor:lineColors[groups[groupId].length],backgroundColor:lineColors[groups[groupId].length]})
         })
@@ -26,12 +26,12 @@ $(document).ready(function(){
 
 var makeChart = {
     init: function(dataset){
-        console.log(dataset)
+        console.log(dataset.length)
         var ctx = $("#myChart");
         var myChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: [1,2,3,4,5,6,7,8,9,10,11],
+                labels: ["10.08","16.08","23.08","30.08","06.09","13.09","20.09","27.09","04.10","11.10","18.10","25.10","01.11","08.11"],
                 datasets: dataset,
                 lineTension: 0
             },
@@ -45,8 +45,12 @@ var makeChart = {
                     yAxes: [{
                         ticks: {
                             beginAtZero:true,
-                            max:13,
-                            reverse: true
+                            min:1,
+                            max:dataset.length,
+                            reverse: true,
+                            autoSkip: false,
+                            stepSize: 1,
+                            maxTicksLimit:dataset.length
                         }
                     }]
                 }

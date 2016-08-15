@@ -21,7 +21,12 @@
           {% for team in group[1].teams %}
             <tr data-evolution='{{team.evolution | join: "," | prepend: "[" | append: "]"}}'>
               <td>{{team.rank}}</td>
-              <td><a href="#">{{team.team}}</a></td>
+              <td>
+                <a href="#">
+                  {% include team-short-name.html param=team.team %}
+                  <span class="team-name">{{team.team}}</span>
+                </a>
+              </td>
               <td>{{team.goalsfor}}</td>
               <td>{{team.goalsagainst}}</td>
               <td>{{team.won}}</td>
@@ -60,7 +65,10 @@
           {% for team in group[1].teams %}
             <tr>
               <td>{{ forloop.index}}</td>
-              <td>{{team.team}}</td>
+              <td>
+                {% include team-short-name.html param=team.team %}
+                <span class="team-name">{{team.team}}</span>
+              </td>
               <td>{{team.rank}}</td>
               <td><strong>{{team.goalsfor}}</strong></td>
               <td>{{team.goalsagainst}}</td>
@@ -99,7 +107,10 @@
           {% for team in group[1].teams %}
             <tr>
               <td>{{ forloop.index}}</td>
-              <td>{{team.team}}</td>
+              <td>
+                {% include team-short-name.html param=team.team %}
+                <span class="team-name">{{team.team}}</span>
+              </td>
               <td>{{team.rank}}</td>
               <td>{{team.goalsfor}}</td>
               <td><strong>{{team.goalsagainst}}</strong></td>
@@ -142,7 +153,10 @@
           {% for team in teams[1] %}
             <tr>
               <td>{{ forloop.index}}</td>
-              <td>{{team.team}}</td>
+              <td>
+                {% include team-short-name.html param=team.team %}
+                <span class="team-name">{{team.team}}</span>
+              </td>
               <td>{{team.rank}}</td>
               <td>{{team.group}}</td>
               <td>{{team.goalsfor}}</td>
@@ -185,7 +199,10 @@
           {% for team in teams[1] %}
             <tr>
               <td>{{ forloop.index}}</td>
-              <td>{{team.team}}</td>
+              <td>
+                {% include team-short-name.html param=team.team %}
+                <span class="team-name">{{team.team}}</span>
+              </td>
               <td>{{team.rank}}</td>
               <td>{{team.group}}</td>
               <td><strong>{{team.goalsfor}}</strong></td>
@@ -228,7 +245,10 @@
           {% for team in teams[1] %}
             <tr>
               <td>{{ forloop.index}}</td>
-              <td>{{team.team}}</td>
+              <td>
+                {% include team-short-name.html param=team.team %}
+                <span class="team-name">{{team.team}}</span>
+              </td>
               <td>{{team.rank}}</td>
               <td>{{team.group}}</td>
               <td>{{team.goalsfor}}</td>
@@ -251,14 +271,14 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Évolution du classement</h4>
+        <p class="modile-advice">Sur smartphone en mode horizontal ;-)</p>
       </div>
       <div class="modal-body">
         <canvas id="myChart" width="400" height="400"></canvas>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
