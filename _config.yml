@@ -19,3 +19,4 @@ exclude_from_localizations: ["js", "images", "css", "rankings","_posts"]
 exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","gulpfile.js","README.m","feed.xml"]
 gems: 
   - jekyll-multiple-languages-plugin
+  - jekyll-sitemap
