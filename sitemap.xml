@@ -5,72 +5,77 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>http://www.footballtopscorers.ch/</loc>
+  <loc>http://www.footstats.ch/</loc>
   <changefreq>monthly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/aff/3eme-ligue</loc>
+  <loc>http://www.footstats.ch/aff/3eme-ligue</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/aff/4eme-ligue</loc>
+  <loc>http://www.footstats.ch/aff/4eme-ligue</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/acvf/3eme-ligue</loc>
+  <loc>http://www.footstats.ch/acvf/3eme-ligue</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/acvf/4eme-ligue</loc>
+  <loc>http://www.footstats.ch/acvf/4eme-ligue</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/acvf/5eme-ligue</loc>
+  <loc>http://www.footstats.ch/acvf/5eme-ligue</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/aff/5eme-ligue</loc>
+  <loc>http://www.footstats.ch/aff/5eme-ligue</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/acvf/3eme-ligue-feminine</loc>
+  <loc>http://www.footstats.ch/acvf/3eme-ligue-feminine</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/acvf/4eme-ligue-teams</loc>
+  <loc>http://www.footstats.ch/acvf/4eme-ligue-teams</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/acvf/3eme-ligue-teams</loc>
+  <loc>http://www.footstats.ch/acvf/3eme-ligue-teams</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/aff/4eme-ligue-teams</loc>
+  <loc>http://www.footstats.ch/aff/4eme-ligue-teams</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/aff/4eme-ligue-teams</loc>
+  <loc>http://www.footstats.ch/aff/4eme-ligue-teams</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/aff/3eme-ligue-feminine</loc>
+  <loc>http://www.footstats.ch/aff/3eme-ligue-feminine</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.footballtopscorers.ch/topbuts</loc>
+  <loc>http://www.footstats.ch/topbuts</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://www.footstats.ch/app</loc>
   <changefreq>monthly</changefreq>
   <priority>0.90</priority>
 </url>
