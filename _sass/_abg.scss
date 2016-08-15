@@ -134,6 +134,11 @@ table{
 		display: none;
 	}
 }
+.navbar-brand{
+	@media (max-width:768px){
+		font-size: 28px;
+	}
+}
 .instagram{
 background:     // left bottom
 radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
