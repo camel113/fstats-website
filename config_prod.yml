@@ -1,0 +1,22 @@
+# Site settings
+title: "Foostats | Classements buteurs | Foot amateur Suisse"
+title_de: "Torschützen-Ranglisten | Topscorers | Amateurfussball Schweiz"
+description_de: "Torschützen- und Mannschafts-Rangliste für die Amateur-Meisterschaften der Kantone Waadt und Freiburg"
+description: "Classements buteurs et équipes pour les championnats amateurs de football des cantons de Vaud et Fribourg"
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.footstats.ch" # the base hostname & protocol for your site
+# url: "http://localhost:4000" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+sass:
+  sass_dir: _sass
+  style: compressed
+# exclude: [dpackage.json,gulpfile.js,js/dev,node_modules,README.m]
+languages: ["fr", "de"]
+exclude_from_localizations: ["js", "images", "css", "rankings","_posts"]
+exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","gulpfile.js","README.m","feed.xml","includes/analytics.html"]
+gems: 
+  - jekyll-multiple-languages-plugin
+  - jekyll-sitemap

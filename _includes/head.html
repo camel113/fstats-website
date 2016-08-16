@@ -21,5 +21,7 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href="{{ "/css/magnific-popup.css" | prepend: site.baseurl_root }}" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl_root }}">
-  {% include analytics.html %}
+  {% if jekyll.environment == "production" %}
+    {% include analytics.html %}
+  {% endif %}
 </head>
