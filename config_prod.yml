@@ -16,7 +16,7 @@ sass:
 # exclude: [dpackage.json,gulpfile.js,js/dev,node_modules,README.m]
 languages: ["fr", "de"]
 exclude_from_localizations: ["js", "images", "css", "rankings","_posts"]
-exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","gulpfile.js","README.m","feed.xml","includes/analytics.html"]
+exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","gulpfile.js","README.m","feed.xml","includes/analytics.html","*-stats-scorers.html"]
 gems: 
   - jekyll-multiple-languages-plugin
   - jekyll-sitemap
