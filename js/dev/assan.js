@@ -1,8 +1,8 @@
-$(document).ready(function () {
+define(["jquery","bootstrap"], function($) {$(document).ready(function () {
 
 //smooth scroll
 
-
+    console.log("ASSAN")
     $(function () {
         $('.scroll-to a[href*="#"]:not([href="#"])').on('click',function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -100,3 +100,4 @@ navigation:true,
     );
     wow.init();
 });
+})

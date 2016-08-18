@@ -9,6 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://localhost:4000" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
+name: "TEST"
 
 sass:
   sass_dir: _sass
@@ -16,7 +17,7 @@ sass:
 # exclude: [dpackage.json,gulpfile.js,js/dev,node_modules,README.m]
 languages: ["fr", "de"]
 exclude_from_localizations: ["js", "images", "css", "rankings","_posts"]
-exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","gulpfile.js","README.m","feed.xml"]
+exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","gulpfile.js","README.m","feed.xml","js/dev"]
 gems: 
   - jekyll-multiple-languages-plugin
   - jekyll-sitemap
