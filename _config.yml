@@ -21,3 +21,5 @@ exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.
 gems: 
   - jekyll-multiple-languages-plugin
   - jekyll-sitemap
+
+future: true
