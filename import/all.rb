@@ -2,7 +2,7 @@
 require 'httparty'
 require 'fileutils'
 
-urlPath = "http://127.0.0.1:8080"
+urlPath = "http://127.0.0.1:8082"
 
 def create_global_rankings_files(league,region,filePath,urlPath)
   response = HTTParty.get(urlPath+'/teams/global/'+region+'/'+league)
