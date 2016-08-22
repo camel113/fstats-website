@@ -39,6 +39,8 @@
       subpages:
         - title: "Buteurs"
           path: "/3eme-ligue-feminine"
+        - title: "Teams"
+          path: "/3eme-ligue-feminine-teams"
 - title: "ACVF"
   subcategories:
     - title: "2ème ligue"
@@ -74,6 +76,8 @@
       subpages:
         - title: "Buteurs"
           path: "/3eme-ligue-feminine"
+        - title: "Teams"
+          path: "/3eme-ligue-feminine-teams"
 - title: "ACGF"
   subcategories:
     - title: "2ème ligue"
