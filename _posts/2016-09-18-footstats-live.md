@@ -13,7 +13,7 @@ Si _aucun match n'est acutellement disponible_ :-) c'est que personne n'a choisi
 
 [![App Live sans matchs de foot]({{site.url}}/images/posts/app/app-no-matchs.jpg){: .post-large-image }]({{site.url}}/images/posts/app/app-no-matchs.jpg){: .post-small-image-link }
 
-Par contre si un ou plusieurs utilisateurs ont choisit de reporter un match, alors l'écran Live devient tout de suite plus intéressant. Il présente tous les matchs que l'on peut suivre en direct à coup sûr. Lorsqu'un de ces match à commencé, une petite barre verte ainsi que le temps s'affiche sur le côté gauche. A droite on retrouve le score. Si l'on sélectionne un match, s'affiche alors le détail des buteurs de celui-ci.
+Par contre si un ou plusieurs utilisateurs ont choisit de reporter un match, alors l'écran *Live* devient tout de suite plus intéressant. Il présente tous les matchs que l'on peut suivre en direct à coup sûr. Lorsqu'un de ces matchs à commencé, une petite barre verte ainsi que le temps s'affiche sur le côté gauche. A droite on retrouve le score. Si l'on sélectionne un match, s'affiche alors le détail des buteurs de celui-ci.
 
 [![App Login]({{site.url}}/images/posts/app/app-live.jpg){: .post-large-image }]({{site.url}}/images/posts/app/app-live.jpg){: .post-small-image-link }
 
@@ -29,7 +29,7 @@ Une fois que l'on a fait son choix, il suffit de presser sur _Je veux reporter c
 
 [![App Login]({{site.url}}/images/posts/app/app-je-veux.jpg){: .post-large-image }]({{site.url}}/images/posts/app/app-je-veux.jpg){: .post-small-image-link }
 
-Le match se trouve alors dans _Mes matchs_ et c'est depuis là que l'on peut ajouter des buts en cliquant simplement sur le symbole _+_ en haut à droite de l'écran.
+Le match se trouve alors dans _Mes matchs_ et c'est depuis là que l'on peut ajouter des buts en cliquant simplement sur le symbole *+* en haut à droite de l'écran.
 
 [![App Login]({{site.url}}/images/posts/app/app-mes-matchs.jpg){: .post-large-image }]({{site.url}}/images/posts/app/app-mes-matchs.jpg){: .post-small-image-link }
 
@@ -39,6 +39,6 @@ Il ne suffit plus qu'à ajouter la minute à laquelle le goal a été inscrit, d
 
 Voilà, le but est enregistré et tous les utilisateurs de l'app en sont informés!
 
-Si vous avez des questions, des remarques ou des suggestions d'améliorations, écrivez nous un mail à contact@footstats.ch ou directement sur facebook ou instagram.
+Si vous avez des questions, des remarques ou des suggestions d'améliorations, écrivez nous un mail à contact@footstats.ch ou directement sur Facebook ou Instagram.
 
 Pour les utilisateurs Android et autres, il va falloir malheureusement attendre encore un peu :-S
