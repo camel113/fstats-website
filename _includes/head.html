@@ -9,6 +9,8 @@
   <meta property="og:url" content="{{ site.url }}"/>
   <meta property="og:description" content="{% if page.description_for_facebook %}{{ page.description_for_facebook }}{% else %}{% t meta.facebook_description %}{% endif %}" />
   <meta property="og:title" content="{% if page.title_for_facebook %}{{ page.title_for_facebook }}{% else %}{% t meta.facebook_title %}{% endif %}" />
+  <meta property="og:type" content="{% if page.id %}article{% else %}website{% endif %}" />
+  
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.baseurl_root }}">
 
@@ -22,4 +24,5 @@
   {% if jekyll.environment == "production" %}
     {% include analytics.html %}
   {% endif %}
+
 </head>
