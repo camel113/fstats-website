@@ -7,6 +7,8 @@
   <meta name="description" content="{% if page.description_meta %}{% t page.description_meta %}{% elsif page.description %}{{ page.description }}{% else %}{% t meta.site_description %}{% endif %}">
 
   <meta property="og:url" content="{{ site.url }}"/>
+  <meta property="og:description" content="{% if page.description_for_facebook %}{{ page.description_for_facebook }}{% else %}{% t meta.facebook_description %}{% endif %}" />
+  <meta property="og:title" content="{% if page.title_for_facebook %}{{ page.title_for_facebook }}{% else %}{% t meta.facebook_title %}{% endif %}" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.baseurl_root }}">
 
