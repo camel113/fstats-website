@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>{% if page.title_meta %}Football | {% t page.title_meta %}{% else %}{% t meta.site_title %}{% endif %}</title>
-  <meta name="description" content="{% if page.description_meta %}{% t page.description_meta %}{% else %}{% t meta.site_description %}{% endif %}">
+  <meta name="description" content="{% if page.description_meta %}{% t page.description_meta %}{% elsif page.description %}{{ page.description }}{% else %}{% t meta.site_description %}{% endif %}">
 
   <meta property="og:url" content="{{ site.url }}"/>
   <meta property="og:description" content="{% t meta.facebook_description %}" />

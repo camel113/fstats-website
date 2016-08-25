@@ -4,6 +4,7 @@ title:  Footstats live en détails
 date:   2016-08-25 10:43:16 +0200
 image: footstats-live-app.jpg
 categories: news application
+description: L'app footstats live en détail. Découvrez comment suivre le football amateur en direct.
 ---
 Depuis le mois de juin derniers et les finales de promotion 2015/2016, _footstats_ propose une application qui permet de vivre en direct n'importe quel match de football amateur en Suisse romande. Pour que cela soit possible, _footstats_ a besoin des footballeurs amateurs, de leurs dirigeants et surtout de leurs supporters. Eh oui, si l'app permet de vivre en direct tous ces matchs, c'est grâce aux utilisateurs qui sont sur place le jour du match et qui reporte en direct le score. Pour ceux qui sont curieux de savoir comment ça fonctionne voici une petite démonstration illustrée.
 
