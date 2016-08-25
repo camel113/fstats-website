@@ -10,7 +10,7 @@
   <meta property="og:description" content="{% if page.description_for_facebook %}{{ page.description_for_facebook }}{% else %}{% t meta.facebook_description %}{% endif %}" />
   <meta property="og:title" content="{% if page.title_for_facebook %}{{ page.title_for_facebook }}{% else %}{% t meta.facebook_title %}{% endif %}" />
   <meta property="og:type" content="{% if page.id %}article{% else %}website{% endif %}" />
-  
+  <meta property="og:image" content="{% if page.image_for_facebook %}{{ site.url }}{{ page.image_for_facebook }}{% else %}{{ site.url }}/images/posts/headers/footstats.png{% endif %}" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.baseurl_root }}">
 
