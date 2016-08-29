@@ -8,18 +8,19 @@ sitemap: false
 	  <thead>
 	    <tr>
 	        <th>#</th>
-	        <th>Colonne 1</th>
-	        <th>Colonne 2</th>
-	        <th><i class="fa fa-futbol-o"></i></th>
+	        <th>Team</th>
+	        <th>Buts contre</th>
+	        <th>Points</th>
+	        <!-- <th><i class="fa fa-futbol-o"></i></th> -->
 	    </tr>
 	  </thead>
 	  <tbody>
-	    {% for scorer in site.data[page.data_path_region][page.data_path_ligue].stats.scorers.top5scorers %}
+	    {% for team in site.data.acvf.ligue2.global-defense.teams %}
 	      <tr>
 	        <td>{{ forloop.index }}</td>
-	        <td>{{ scorer.scorer }}</td>
-	        <td>{{ scorer.team }}</td>
-	        <td>{{ scorer.goals }}</td>
+	        <td>{{ team.team }}</td>
+	        <td>{{ team.goalsagainst }}</td>
+	        <td>{{ team.points }}</td>
 	      </tr>
 	    {% endfor %}
 	  </tbody>
