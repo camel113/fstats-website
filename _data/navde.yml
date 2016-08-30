@@ -2,6 +2,13 @@
   path: "/"
 - title: "FFV"
   subcategories:
+    - title: "2. Liga"
+      path: "/de/aff"
+      subpages:
+        - title: "Scorers"
+          path: "/2eme-ligue"
+        - title: "Teams"
+          path: "/2eme-ligue-teams"
     - title: "3. Liga"
       path: "/de/aff"
       subpages:
@@ -30,6 +37,13 @@
           path: "/3eme-ligue-feminine"
 - title: "ACVF"
   subcategories:
+    - title: "2. Liga"
+      path: "/de/acvf"
+      subpages:
+        - title: "Scorers"
+          path: "/2eme-ligue"
+        - title: "Teams"
+          path: "/2eme-ligue-teams"
     - title: "3. Liga"
       path: "/de/acvf"
       subpages:
