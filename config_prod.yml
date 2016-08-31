@@ -16,8 +16,8 @@ sass:
   style: compressed
 # exclude: [dpackage.json,gulpfile.js,js/dev,node_modules,README.m]
 languages: ["fr", "de"]
-exclude_from_localizations: ["js", "images", "css", "rankings","_posts"]
-exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","gulpfile.js","README.m","feed.xml","includes/analytics.html","*-stats-scorers.html","global-stats.html"]
+exclude_from_localizations: ["js", "images", "css", "rankings","_posts","import","libs","stats","config_prod.yml"]
+exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","gulpfile.js","README.m","feed.xml","includes/analytics.html","*/global-stats.html"]
 gems: 
   - jekyll-multiple-languages-plugin
   - jekyll-sitemap
