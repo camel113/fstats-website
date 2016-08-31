@@ -1,5 +1,5 @@
 ---
-layout: stats-scorers
+layout: stats-template1
 sitemap: false
 ---
 <div class="" id="">
@@ -25,4 +25,32 @@ sitemap: false
 	    {% endfor %}
 	  </tbody>
 	</table>
+</div>
+
+<div class="stats-table-social-post" id="">
+	<table class="table table-striped" id="">
+	  <thead>
+	    <tr>
+	        <th>#</th>
+	        <th>Nom</th>
+	        <th>Team</th>
+	        <th>Canton</th>
+	        <th><i class="fa fa-futbol-o"></i></th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    {% for player in site.data.stats.scorersLeague2.top10scorers %}
+	      <tr>
+	        <td>{{ forloop.index }}</td>
+	        <td>{{ player.scorer }}</td>
+	        <td>{{ player.team }}</td>
+	        <td>{% if player.region == "acvf" %}Vaud{% elsif player.region == "aff" %}Fribourg{% elsif player.region == "anf" %}Neuchâtel{% elsif player.region == "avf" %}Valais{% elsif player.region == "acgf" %}Genève{% endif %}</td>
+	        <td>{{ player.goals }}</td>
+	      </tr>
+	    {% endfor %}
+	  </tbody>
+	</table>
+</div>
+<div class="stats-table-social-post-info" id="">
+  <h2>Zoa nzteurs wm 3wnw kuhge vyusuisw</h2>
 </div>
