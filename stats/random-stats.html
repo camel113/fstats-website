@@ -1,56 +1,84 @@
 ---
 layout: stats-template1
 sitemap: false
+region: global
 ---
-<div class="" id="">
-  <h1>{{ page.title }}</h1>
-	<table class="table table-striped" id="">
-	  <thead>
-	    <tr>
-	        <th>#</th>
-	        <th>Team</th>
-	        <th>Buts contre</th>
-	        <th>Points</th>
-	        <!-- <th><i class="fa fa-futbol-o"></i></th> -->
-	    </tr>
-	  </thead>
-	  <tbody>
-	    {% for team in site.data.acvf.ligue2.global-defense.teams %}
-	      <tr>
-	        <td>{{ forloop.index }}</td>
-	        <td>{{ team.team }}</td>
-	        <td>{{ team.goalsagainst }}</td>
-	        <td>{{ team.points }}</td>
-	      </tr>
-	    {% endfor %}
-	  </tbody>
-	</table>
+
+<div class="stats-social-container" id="">
+	<div class="stats-table-social-post" id="">
+		<table class="table table-striped">
+		  <thead>
+		    <tr>
+		        <th>#</th>
+		        <th>Team</th>
+		        <th>Buts contre</th>
+		        <th>Points</th>
+		        <!-- <th><i class="fa fa-futbol-o"></i></th> -->
+		    </tr>
+		  </thead>
+		  <tbody>
+		    {% for team in site.data.acvf.ligue2.global-defense.teams %}
+		      <tr>
+		        <td>{{ forloop.index }}</td>
+		        <td>{{ team.team }}</td>
+		        <td>{{ team.goalsagainst }}</td>
+		        <td>{{ team.points }}</td>
+		      </tr>
+		    {% endfor %}
+		  </tbody>
+		</table>
+	</div>
+	<div class="stats-table-social-post-info">
+	  <h2>Def</h2>
+	</div>
 </div>
 
-<div class="stats-table-social-post" id="">
-	<table class="table table-striped" id="">
-	  <thead>
-	    <tr>
-	        <th>#</th>
-	        <th>Nom</th>
-	        <th>Team</th>
-	        <th>Canton</th>
-	        <th><i class="fa fa-futbol-o"></i></th>
-	    </tr>
-	  </thead>
-	  <tbody>
-	    {% for player in site.data.stats.scorersLeague2.top10scorers %}
-	      <tr>
-	        <td>{{ forloop.index }}</td>
-	        <td>{{ player.scorer }}</td>
-	        <td>{{ player.team }}</td>
-	        <td>{% if player.region == "acvf" %}Vaud{% elsif player.region == "aff" %}Fribourg{% elsif player.region == "anf" %}Neuchâtel{% elsif player.region == "avf" %}Valais{% elsif player.region == "acgf" %}Genève{% endif %}</td>
-	        <td>{{ player.goals }}</td>
-	      </tr>
-	    {% endfor %}
-	  </tbody>
-	</table>
+<div class="stats-social-container" id="">
+	<div class="stats-table-social-post" id="">
+		<table class="table table-striped">
+		  <thead>
+		    <tr>
+		        <th>#</th>
+		        <th>Nom</th>
+		        <th>Team</th>
+		        <th>Canton</th>
+		        <th><i class="fa fa-futbol-o"></i></th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    {% for player in site.data.stats.scorersLeague2.top10scorers %}
+		      <tr>
+		        <td>{{ forloop.index }}</td>
+		        <td>{{ player.scorer }}</td>
+		        <td>{{ player.team }}</td>
+		        <td>{% if player.region == "acvf" %}Vaud{% elsif player.region == "aff" %}Fribourg{% elsif player.region == "anf" %}Neuchâtel{% elsif player.region == "avf" %}Valais{% elsif player.region == "acgf" %}Genève{% endif %}</td>
+		        <td>{{ player.goals }}</td>
+		      </tr>
+		    {% endfor %}
+		  </tbody>
+		</table>
+	</div>
+	<div class="stats-table-social-post-info">
+	  <h2>Buteurs par regions</h2>
+	</div>
 </div>
-<div class="stats-table-social-post-info" id="">
-  <h2>Zoa nzteurs wm 3wnw kuhge vyusuisw</h2>
+
+<div class="stats-social-container" id="stats-collect">
+	<div class="stats-table-social-post" id="">
+		<table class="table table-striped">
+		  <thead>
+		    <tr>
+		       <th><i class="fa fa-futbol-o"></i>  Depuis le 15.08.2016 footstats a collecté  <i class="fa fa-futbol-o"></i></th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr><td>1937 Buts</td></tr>
+		    <tr><td>1385 Buteurs</td></tr>
+		    <tr><td>728 Équipes</td></tr>
+		  </tbody>
+		</table>
+	</div>
+	<div class="stats-table-social-post-info">
+	  <h2>Osef</h2>
+	</div>
 </div>

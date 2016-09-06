@@ -14,7 +14,8 @@ requirejs.config({
         wow:"wow.min",
         owl:"../libs/owl-carousel/owl.carousel.min",
         jquery: "//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min",
-        bootstrap: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min"
+        bootstrap: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min",
+        chart: "chart"
     },
     shim: {
         bootstrap: {

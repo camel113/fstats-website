@@ -1,4 +1,4 @@
-define(["jquery","bootstrap","jquery_magnific_popup","jquery_easing","jquery_flexslider","jquery_scrollTo","owl","wow"], function($) {
+define(["jquery","bootstrap","jquery_magnific_popup","jquery_easing","jquery_flexslider","jquery_scrollTo","owl","wow","chart"], function($) {
     var lineColors = ['#F44336','#9C27B0','#3F51B5','#2196F3','#009688','#8BC34A','#C6FF00','#FFEB3B','#FF9800','#795548','#E91E63','#00BCD4','#CDDC39','#FFC107','#673AB7']
     $(document).ready(function(){
         console.log("test")
