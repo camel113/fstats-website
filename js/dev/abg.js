@@ -1,17 +1,19 @@
 define(["jquery","bootstrap","jquery_magnific_popup","jquery_easing","jquery_flexslider","jquery_scrollTo","owl","wow","chart"], function($) {
     var lineColors = ['#F44336','#9C27B0','#3F51B5','#2196F3','#009688','#8BC34A','#C6FF00','#FFEB3B','#FF9800','#795548','#E91E63','#00BCD4','#CDDC39','#FFC107','#673AB7']
     $(document).ready(function(){
-        console.log("test")
+        
         $('.post-small-image-link').magnificPopup({type: 'image'});
 
         var groups = []
-
+        var teamEvolutionSize = 0
         $('.team-standard').each(function(){
             var groupId = $(this).attr('id')
             groups[groupId] = []
             $(this).find('table tbody tr').each(function(){
                 var teamName = ($(this).find(".team-short-name").text())
                 var evolution = ($(this).data('evolution'))
+                teamEvolutionSize = evolution.length
+                console.log(teamEvolutionSize)
                 groups[groupId].push({label:teamName,data:evolution,fill:false,lineTension: 0,borderColor:lineColors[groups[groupId].length],pointBackgroundColor:lineColors[groups[groupId].length],backgroundColor:lineColors[groups[groupId].length]})
             })
             $(this).find('.table tbody tr a').each(function(){
@@ -73,12 +75,23 @@ define(["jquery","bootstrap","jquery_magnific_popup","jquery_easing","jquery_fle
 
     var makeChart = {
         init: function(dataset){
+            console.log("###")
+            var myLabels = ["16.08","23.08","30.08"]
+            var labelsToRemoveToFitData = (myLabels.length - dataset[0].data.length)
+            if( labelsToRemoveToFitData > 0){
+                for (i = 0; i < labelsToRemoveToFitData; i++) { 
+                    myLabels.shift()
+                }
+            }
+            console.log(dataset[0].data.length)
             console.log(dataset.length)
+            console.log(dataset[0].data.length)
+            console.log("###")
             var ctx = $("#myChart");
             var myChart = new Chart(ctx, {
                 type: 'line',
                 data: {
-                    labels: ["10.08","16.08","23.08","30.08","06.09","13.09","20.09","27.09","04.10","11.10","18.10","25.10","01.11","08.11"],
+                    labels: myLabels,
                     datasets: dataset,
                     lineTension: 0
                 },
