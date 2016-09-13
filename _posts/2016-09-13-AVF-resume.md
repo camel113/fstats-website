@@ -6,7 +6,7 @@ image: resumeAVF1309.jpg
 categories: news avf
 description_for_facebook: Les stats et les classements buteurs pour l'AVF (Valais)
 title_for_facebook: AVF - Les stats de la semaine
-image_for_facebook: /images/posts/headers/resumeAVF1309.jpg
+image_for_facebook: /images/facebook/resumeAVF1309.jpg
 ---
 Chaque mardi (à partir d'aujourd'hui), retrouvez tous les classements buteurs du canton du Valais (AVF) par ligue.
 
