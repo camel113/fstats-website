@@ -6,7 +6,7 @@ image: resumeACVF1409.jpg
 categories: news acvf
 description_for_facebook: Maxime Renault du FC Italia Nyon I prend la tête du classement de 3ème ligue. Vincent Rapin du FC Corcelles-Payerne I est maintenant seul en première position avec déjà 10 buts inscrits!
 title_for_facebook: ACVF - Les stats de la semaine
-image_for_facebook: /images/posts/headers/resumeACVF1409.jpg
+image_for_facebook: /images/facebook/resumeACVF1409.jpg
 ---
 Chaque mercredi retrouvez tous les classements buteurs du canton de Vaud (ACVF) par ligue. Cette semaine Gentian Bunjaku du FC Lausanne-Sport?! (d'après football.ch) ou du FC Stade Nyonnais d'après nos données conserve la tête pour la 2ème ligue. Maxime Renault du FC Italia Nyon I prend la tête du classement de 3ème ligue. Vincent Rapin du FC Corcelles-Payerne I est maintenant seul en première position en 4ème ligue avec déjà 10 buts inscrits! Enfin Daniil Danilov avec le FC Stade-Lausanne-Ouchy III domine le classement de 5ème ligue et Morganne Borel FC Saint-Sulpice I Féminines celui de 3ème ligue féminine, tous les deux avec 9 goals marqués.
 
