@@ -3,7 +3,7 @@ layout: post
 title:  ANF - Les stats de la semaine
 date:   2016-09-15 12:30:16 +0200
 image: resumeANF1509.jpg
-categories: news acvf
+categories: news anf
 description_for_facebook: Le top des buteurs dans le canton de Neuchâtel. Christophe Hostettler du FC Etoile-Sporting, Bastian Nicoud FC Marin-Sports I, Ulisse Mandiango FC Ticino II, David Janko FC Coffrane II et Lucien Pfammatter du FC Floria II
 title_for_facebook: ANF - Les stats de la semaine
 image_for_facebook: /images/facebook/resumeANF1509.jpg
