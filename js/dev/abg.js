@@ -26,6 +26,8 @@ define(["jquery","bootstrap","jquery_magnific_popup","jquery_easing","jquery_fle
         })
         rankingChoice.init(Object.keys(groups).length)
 
+        $('<div class="alert alert-info alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><a href="/topbuts"><strong>Concours footstats.ch</strong>, gagne le maillot de ton choix!</a></div>').insertBefore('.scorer-ranking')
+
         /* ASSAN PART */ 
 
         //smooth scroll
@@ -76,7 +78,7 @@ define(["jquery","bootstrap","jquery_magnific_popup","jquery_easing","jquery_fle
     var makeChart = {
         init: function(dataset){
             console.log("###")
-            var myLabels = ["08.09"]
+            var myLabels = ["08.09","15.09"]
             var labelsToRemoveToFitData = (myLabels.length - dataset[0].data.length)
             if( labelsToRemoveToFitData > 0){
                 for (i = 0; i < labelsToRemoveToFitData; i++) { 

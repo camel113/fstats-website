@@ -15,7 +15,7 @@ sass:
   sass_dir: _sass
   style: compressed
 # exclude: [dpackage.json,gulpfile.js,js/dev,node_modules,README.m]
-languages: ["fr", "de"]
+languages: ["fr"]
 exclude_from_localizations: ["js", "images", "css", "rankings","_posts","aff","acvf","acgf","anf","avf","import","libs","stats","config_prod.yml"]
 exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","gulpfile.js","README.m","feed.xml","js/dev"]
 gems: 
