@@ -5,11 +5,11 @@ date:   2016-09-19 20:00:00 +0200
 image: resumeACGF1909.jpg
 image-mobile: resumeACGF1909-mobile.jpg
 categories: news acgf
-description_for_facebook: Le top des buteurs dans le canton de Fribourg.
-title_for_facebook: AFF - Les stats de la semaine
-image_for_facebook: /images/facebook/resumeAFF1609.jpg
+description_for_facebook: Le top des buteurs dans le canton de Genève.
+title_for_facebook: ACGF - Les stats de la semaine
+image_for_facebook: /images/facebook/resumeACGF1909.jpg
 ---
-Chaque lundi (à partir d'aujourd'hui), retrouvez tous les classements buteurs du canton de Genève (AFF) par ligue.
+Chaque lundi (à partir d'aujourd'hui), retrouvez tous les classements buteurs du canton de Genève (ACGF) par ligue.
 
 Si vous constatez des erreurs ou des oublis dans nos classements. Laissez-nous un message sur Facebook ou Instagram. Vous avez aussi la possiblité de nous écrire à contact@footstats.ch ou par whatsapp au 0774502327.
 
