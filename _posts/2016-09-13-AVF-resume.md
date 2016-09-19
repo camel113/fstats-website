@@ -3,6 +3,7 @@ layout: post
 title:  AVF - Les stats de la semaine
 date:   2016-09-13 09:30:16 +0200
 image: resumeAVF1309.jpg
+image-mobile: resumeAVF1309.jpg
 categories: news avf
 description_for_facebook: Les stats et les classements buteurs pour l'AVF (Valais)
 title_for_facebook: AVF - Les stats de la semaine

@@ -8,12 +8,10 @@ layout: default
     	<div class="blog-post">
         <a href="{{ post.url }}">
           <div class="item-img-wrap">
-            <img src="images/posts/headers/{{post.image}}" class="img-responsive" alt="">
-            <div class="item-img-overlay">
-              <span></span>
-            </div>
+            <img src="images/posts/headers/{{post.image}}" class="img-responsive desktop-image" alt="">
+            <img src="images/posts/headers/{{post.image-mobile}}" class="img-responsive mobile-image" alt="">
           </div>                       
-        </a><!--work link-->
+        </a><!--work links-->
         <ul class="list-inline post-detail">
             <li><i class="fa fa-calendar"></i>{{ post.date | date: "%-d/%m/%Y"}}</li>
         </ul>

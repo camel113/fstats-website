@@ -3,6 +3,7 @@ layout: post
 title:  Footstats live en détails
 date:   2016-08-25 10:43:16 +0200
 image: footstats-live-app.jpg
+image-mobile: footstats-live-app.jpg
 categories: news application
 description_for_facebook: Découvrez comment utiliser l'app qui vous permet de suivre le football amateur en direct.
 title_for_facebook: L'app footstats live en détail

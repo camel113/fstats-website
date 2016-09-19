@@ -5,8 +5,9 @@ layout: default
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="blog-post">
-				<div class="blog-post-image">
-					<img src="{{site.url}}/images/posts/headers/{{page.image}}" class="img-responsive" alt="workimg">
+				<div class="blog-post-image item-img-wrap">
+					<img src="{{site.url}}/images/posts/headers/{{page.image}}" class="img-responsive desktop-image" alt="Classement">
+          <img src="{{site.url}}/images/posts/headers/{{page.image-mobile}}" class="img-responsive mobile-image" alt="Classement">
 				</div>                       
 				<ul class="list-inline post-detail">
 					<li><i class="fa fa-calendar"></i>{{ page.date | date: "%-d/%m/%Y"}}</li>

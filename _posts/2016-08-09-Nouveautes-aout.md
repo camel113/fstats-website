@@ -3,6 +3,7 @@ layout: post
 title:  "footballtopscorers.ch devient footstats.ch"
 date:   2016-08-09 07:43:16 +0200
 image: footstats.png
+image-mobile: footstats.png
 categories: news
 ---
 Ce changement n'implique pas uniquement le relooking du site, il inclut un grand nombre de nouveautés à découvrir tout au long de la saison 2016/2017. Pour commencer nous sommes fier d'annoncer l'arrivée des classements pour les cantons de Genève (ACGF), Neuchâtel (ANF) et Valais (AVF). Nous avons également ajouté les classements buteurs et équipes complets pour la 2ème et 5ème ligue.

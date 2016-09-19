@@ -3,6 +3,7 @@ layout: post
 title:  ACVF - Les stats de la semaine
 date:   2016-09-14 15:30:16 +0200
 image: resumeACVF1409.jpg
+image-mobile: resumeACVF1409.jpg
 categories: news acvf
 description_for_facebook: Maxime Renault du FC Italia Nyon I prend la tête du classement de 3ème ligue. Vincent Rapin du FC Corcelles-Payerne I est maintenant seul en première position avec déjà 10 buts inscrits!
 title_for_facebook: ACVF - Les stats de la semaine

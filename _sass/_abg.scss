@@ -81,7 +81,33 @@ h2{
 	.post-large-image{
 		width: 100%;
 		margin: 0 auto;
-    	display: block;
+  	display: block;
+  	&.mobile-image{
+			display: none;
+			@media (max-width: 768px){
+				display: block;
+				max-width: 480px;
+			}
+		}
+		&.desktop-image{
+			display: block;
+			@media (max-width: 768px){
+				display: none;
+			}
+		}
+	}
+	.mobile-image{
+		display: none;
+		@media (max-width: 768px){
+			display: block;
+			max-width: 480px;
+		}
+	}
+	.desktop-image{
+		display: block;
+		@media (max-width: 768px){
+			display: none;
+		}
 	}
 }
 .blog-post-image{

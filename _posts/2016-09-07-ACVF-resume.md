@@ -3,6 +3,7 @@ layout: post
 title:  ACVF - Les stats de la semaine
 date:   2016-09-07 15:30:16 +0200
 image: resumeACVF0709.png
+image-mobile: resumeACVF0709.png
 categories: news acvf
 description_for_facebook: Les stats et les classements buteurs pour l'ACVF
 title_for_facebook: ACVF - Les stats de la semaine
