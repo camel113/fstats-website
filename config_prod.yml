@@ -21,3 +21,7 @@ exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.
 gems: 
   - jekyll-multiple-languages-plugin
   - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: "/page:num/"

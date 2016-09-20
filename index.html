@@ -4,12 +4,12 @@ layout: default
 <div class="container">
 	<div class="row">
     <div class="col-md-10 col-md-offset-1">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     	<div class="blog-post">
         <a href="{{ post.url }}">
           <div class="item-img-wrap">
-            <img src="images/posts/headers/{{post.image}}" class="img-responsive desktop-image" alt="">
-            <img src="images/posts/headers/{{post.image-mobile}}" class="img-responsive mobile-image" alt="">
+            <img src="{{site.url}}/images/posts/headers/{{post.image}}" class="img-responsive desktop-image" alt="">
+            <img src="{{site.url}}/images/posts/headers/{{post.image-mobile}}" class="img-responsive mobile-image" alt="">
           </div>                       
         </a><!--work links-->
         <ul class="list-inline post-detail">
@@ -20,6 +20,22 @@ layout: default
         <p><a href="{{ post.url }}" class="btn btn-theme-dark">Lire la suite...</a></p>
     </div>
     {% endfor %}
+    <!-- Pagination links -->
+    <ul class="pager">
+      {% if paginator.previous_page %}
+        <li class="previous"><a href="{{ paginator.previous_page_path }}" class="previous">Précédant</a></li>
+      {% else %}
+        <li class="previous"><span class="previous">Précédant</span></li>
+      {% endif %}
+      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <li class="next"><a href="{{ paginator.next_page_path }}" class="next">Suivant</a></li>
+      {% else %}
+        <li class="next"><span class="next ">Suivant</span></li>
+      {% endif %}
+    </ul>
     </div>
   </div>
 </div>
+
+
