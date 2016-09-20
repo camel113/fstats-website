@@ -4,7 +4,7 @@ title:  AVF - Les stats de la semaine
 date:   2016-09-20 16:00:00 +0200
 image: resumeAVF2009.jpg
 image-mobile: resumeAVF2009-mobile.jpg
-categories: news acgf
+categories: news avf
 description_for_facebook: Le top des buteurs dans le canton du Valais.
 title_for_facebook: ACVF - Les stats de la semaine
 image_for_facebook: /images/facebook/resumeAVF2009.jpg
