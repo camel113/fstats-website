@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  ACVF - Les stats de la semaine
-date:   2016-09-21 11:50:00 +0200
+date:   2016-09-21 11:45:00 +0200
 image: resumeACVF2109.jpg
 image-mobile: resumeACVF2109-mobile.jpg
 categories: news acvf
