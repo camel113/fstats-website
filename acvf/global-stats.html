@@ -66,25 +66,31 @@ region: acvf
 		  	<tr>
 		  	{% assign players = site.data.acvf.ligue2.stats.scorers.top5scorers %}
 			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
-			        <td>2ème ligue</td>
+			        <td>2ème</td>
 			        <td>{{players[0].goals}}</td>
 		    </tr>
 		    <tr>
 		  	{% assign players = site.data.acvf.ligue3.stats.scorers.top5scorers %}
 			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
-			        <td>3ème ligue</td>
+			        <td>3ème</td>
 			        <td>{{players[0].goals}}</td>
 		    </tr>
 		    <tr>
 		  	{% assign players = site.data.acvf.ligue4.stats.scorers.top5scorers %}
 			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
-			        <td>4ème ligue</td>
+			        <td>4ème</td>
 			        <td>{{players[0].goals}}</td>
 		    </tr>
 		    <tr>
 		  	{% assign players = site.data.acvf.ligue5.stats.scorers.top5scorers %}
 			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
-			        <td>5ème ligue</td>
+			        <td>5ème</td>
+			        <td>{{players[0].goals}}</td>
+		    </tr>
+		    <tr>
+		  	{% assign players = site.data.acvf.ligue30.stats.scorers.top5scorers %}
+			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
+			        <td>3ème F.</td>
 			        <td>{{players[0].goals}}</td>
 		    </tr>
 		  </tbody>
