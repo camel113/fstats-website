@@ -22,8 +22,10 @@
             <tr data-evolution='{{team.evolution | join: "," | prepend: "[" | append: "]"}}'>
               <td>{{team.rank}}</td>
               <td>
-                {% include team-short-name.html param=team.team %}
-                <span class="team-name">{{team.team}}</span>
+                <a href="">
+                  {% include team-short-name.html param=team.team %}
+                  <span class="team-name">{{team.team}}</span>
+                </a>
               </td>
               <td>{{team.goalsfor}}</td>
               <td>{{team.goalsagainst}}</td>
