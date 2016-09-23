@@ -89,6 +89,48 @@ region: acgf
 </div>
 <div class="stats-social-container" id="ligue2">
 	<div class="stats-table-social-post">
+		<table class="table">
+		  <thead>
+		    <tr>
+		        <th>Ligue</th>
+		        <th>Team</th>
+		        <th><i class="fa fa-futbol-o"></i></th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	<tr>
+		  	{% assign teams = site.data.acgf.ligue2.attack.group1.teams %}
+		  				<td>2</td>
+			        <td>{{teams[0].team}}</td>
+			        <td>{{teams[0].goalsfor}}</td>
+		    </tr>
+		    <tr>
+		  	{% assign teams = site.data.acgf.ligue3.global-attack.teams %}
+		  				<td>3</td>
+			        <td>{{teams[0].team}}{% if teams[1].goalsfor == teams[0].goalsfor %}, {{teams[1].team}}{% endif %}{% if teams[2].goalsfor == teams[0].goalsfor %}, {{teams[2].team}}{% endif %}</td>
+			        <td>{{teams[0].goalsfor}}</td>
+		    </tr>
+		    <tr>
+		  	{% assign teams = site.data.acgf.ligue4.global-attack.teams %}
+		  				<td>4</td>
+			        <td>{{teams[0].team}}{% if teams[1].goalsfor == teams[0].goalsfor %}, {{teams[1].team}}{% endif %}{% if teams[2].goalsfor == teams[0].goalsfor %}, {{teams[2].team}}{% endif %}</td>
+			        <td>{{teams[0].goalsfor}}</td>
+		    </tr>
+		    <tr>
+		  	{% assign teams = site.data.acgf.ligue5.global-attack.teams %}
+		  				<td>5</td>
+			        <td>{{teams[0].team}}{% if teams[1].goalsfor == teams[0].goalsfor %}, {{teams[1].team}}{% endif %}{% if teams[2].goalsfor == teams[0].goalsfor %}, {{teams[2].team}}{% endif %}</td>
+			        <td>{{teams[0].goalsfor}}</td>
+		    </tr>
+		  </tbody>
+		</table>
+	</div>
+	<div class="stats-table-social-post-info">
+	  <h2>Top attaques ACGF</h2>
+	</div>
+</div>
+<div class="stats-social-container" id="ligue2">
+	<div class="stats-table-social-post">
 		<table class="table" id="">
 		  <thead>
 		    <tr>
