@@ -103,6 +103,15 @@ h2{
 			max-width: 480px;
 		}
 	}
+	.item-img-wrap{
+		.mobile-image{
+			display: none;
+			@media (max-width: 768px){
+				display: inline;
+				max-width: 480px;
+			}
+		}
+	}
 	.desktop-image{
 		display: block;
 		@media (max-width: 768px){
