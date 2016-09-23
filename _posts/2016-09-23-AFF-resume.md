@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  AFF - Les stats de la semaine
-date:   2016-09-22 11:25:00 +0200
+date:   2016-09-23 11:45:00 +0200
 image: resumeAFF2309.jpg
 image-mobile: resumeAFF2309-mobile.jpg
 categories: news aff
