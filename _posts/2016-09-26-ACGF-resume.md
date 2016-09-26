@@ -14,8 +14,8 @@ Chaque lundi, retrouvez tous les classements buteurs du canton de Genève (ACGF)
 Si vous constatez des erreurs ou des oublis dans nos classements. Laissez-nous un message sur Facebook ou Instagram. Vous avez aussi la possiblité de nous écrire à contact@footstats.ch ou par whatsapp au 0774502327.
 
 _Le classement des équipes qui marquent le plus de buts par ligue_
-[![ACGF ranking 2ème ligue]({{site.url}}/images/posts/rankings/resumeACGF21909.jpg){: .post-large-image .desktop-image }]({{site.url}}/images/posts/rankings/resumeACGF21909.jpg){: .post-small-image-link }
-[![ACGF ranking 2ème ligue]({{site.url}}/images/posts/rankings/resumeACGF21909-mobile.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/rankings/resumeACGF21909-mobile.jpg){: .post-small-image-link }
+[![ACGF ranking teams]({{site.url}}/images/posts/rankings/resumeACGF21909.jpg){: .post-large-image .desktop-image }]({{site.url}}/images/posts/rankings/resumeACGF21909.jpg){: .post-small-image-link }
+[![ACGF ranking teams]({{site.url}}/images/posts/rankings/resumeACGF21909-mobile.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/rankings/resumeACGF21909-mobile.jpg){: .post-small-image-link }
 
 _Les meilleurs buteurs de 2ème ligue_ :: [Classements complets]({{site.url}}/acgf/2eme-ligue)
 [![ACGF ranking 2ème ligue]({{site.url}}/images/posts/rankings/resumeACGF21909.jpg){: .post-large-image .desktop-image }]({{site.url}}/images/posts/rankings/resumeACGF21909.jpg){: .post-small-image-link }
