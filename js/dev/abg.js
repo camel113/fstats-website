@@ -26,8 +26,6 @@ define(["jquery","bootstrap","jquery_magnific_popup","jquery_easing","jquery_fle
         })
         rankingChoice.init(Object.keys(groups).length)
 
-        $('<div class="alert alert-info alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><a href="/topbuts"><strong>Concours footstats.ch</strong>, gagne le maillot de ton choix!</a></div>').insertBefore('.scorer-ranking')
-
         /* ASSAN PART */ 
 
         //smooth scroll
