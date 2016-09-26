@@ -11,7 +11,7 @@ image_for_facebook: /images/facebook/resumeACGF2609.jpg
 ---
 Chaque lundi, retrouvez tous les classements buteurs du canton de Genève (ACGF) par ligue. Nouveau depuis cette semaine découvrez qui sont les équipes qui marquent le plus de buts par ligue.
 
-Aucun changement chez les premiers de classements buteurs cette semaine. Cepandant, Yann Babel (FC Veyrier Sports 3) est maintenant seul en tête en 5ème ligue.
+Aucun changement chez les premiers de classements buteurs cette semaine. Cependant, Yann Babel (FC Veyrier Sports 3) est maintenant seul en tête en 5ème ligue.
 
 NOUVEAU à partir de cette semaine, retrouvez les équipes qui marquent le plus de buts par ligue.
 
