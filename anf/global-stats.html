@@ -50,6 +50,90 @@ region: anf
 		<table class="table">
 		  <thead>
 		    <tr>
+		        <th>Ligue</th>
+		        <th>Team</th>
+		        <th><i class="fa fa-futbol-o"></i></th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	<tr>
+		  	{% assign teams = site.data.anf.ligue2.attack.group1.teams %}
+		  				<td>2</td>
+			        <td>{{teams[0].team}}</td>
+			        <td>{{teams[0].goalsfor}}</td>
+		    </tr>
+		    <tr>
+		  	{% assign teams = site.data.anf.ligue3.global-attack.teams %}
+		  				<td>3</td>
+			        <td>{{teams[0].team}}{% if teams[1].goalsfor == teams[0].goalsfor %}, {{teams[1].team}}{% endif %}{% if teams[2].goalsfor == teams[0].goalsfor %}, {{teams[2].team}}{% endif %}</td>
+			        <td>{{teams[0].goalsfor}}</td>
+		    </tr>
+		    <tr>
+		  	{% assign teams = site.data.anf.ligue4.global-attack.teams %}
+		  				<td>4</td>
+			        <td>{{teams[0].team}}{% if teams[1].goalsfor == teams[0].goalsfor %}, {{teams[1].team}}{% endif %}{% if teams[2].goalsfor == teams[0].goalsfor %}, {{teams[2].team}}{% endif %}</td>
+			        <td>{{teams[0].goalsfor}}</td>
+		    </tr>
+		    <tr>
+		  	{% assign teams = site.data.anf.ligue5.global-attack.teams %}
+		  				<td>5</td>
+			        <td>{{teams[0].team}}{% if teams[1].goalsfor == teams[0].goalsfor %}, {{teams[1].team}}{% endif %}{% if teams[2].goalsfor == teams[0].goalsfor %}, {{teams[2].team}}{% endif %}</td>
+			        <td>{{teams[0].goalsfor}}</td>
+		    </tr>
+		  </tbody>
+		</table>
+	</div>
+	<div class="stats-table-social-post-info">
+	  <h2>Top attaques ANF</h2>
+	</div>
+</div>
+<div class="stats-social-container" id="facebook">
+	<div class="stats-table-social-post">
+		<table class="table">
+		  <thead>
+		    <tr>
+		        <th><i class="fa fa-male"></i></th>
+		        <th>Ligue</th>
+		        <th><i class="fa fa-futbol-o"></i></th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	<tr>
+		  	{% assign players = site.data.anf.ligue2.stats.scorers.top5scorers %}
+			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <br/><b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
+			        <td>2</td>
+			        <td>{{players[0].goals}}</td>
+		    </tr>
+		    <tr>
+		  	{% assign players = site.data.anf.ligue3.stats.scorers.top5scorers %}
+			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <br/><b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
+			        <td>3</td>
+			        <td>{{players[0].goals}}</td>
+		    </tr>
+		    <tr>
+		  	{% assign players = site.data.anf.ligue4.stats.scorers.top5scorers %}
+			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <br/><b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
+			        <td>4</td>
+			        <td>{{players[0].goals}}</td>
+		    </tr>
+		    <tr>
+		  	{% assign players = site.data.anf.ligue5.stats.scorers.top5scorers %}
+			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <br/><b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
+			        <td>5</td>
+			        <td>{{players[0].goals}}</td>
+		    </tr>
+		  </tbody>
+		</table>
+	</div>
+	<div class="stats-table-social-post-info">
+	  <h2></h2>
+	</div>
+</div>
+<div class="stats-social-container" id="ligue2">
+	<div class="stats-table-social-post">
+		<table class="table">
+		  <thead>
+		    <tr>
 		        <th><i class="fa fa-male"></i></th>
 		        <th>Ligue</th>
 		        <th><i class="fa fa-futbol-o"></i></th>
