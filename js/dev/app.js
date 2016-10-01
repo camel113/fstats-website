@@ -5,7 +5,7 @@
 // directory.
 requirejs.config({
     baseUrl: '/js',
-    urlArgs: "bust=v1.0.2",
+    urlArgs: "bust=v1.0.3",
     paths: {
         app: './',
         jquery_magnific_popup: "jquery.magnific-popup.min",

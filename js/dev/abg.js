@@ -4,6 +4,8 @@ define(["jquery","bootstrap","jquery_magnific_popup","jquery_easing","jquery_fle
         
         $('.post-small-image-link').magnificPopup({type: 'image'});
 
+        $('<div class="alert alert-info alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Prochaine mise à jour des classements lundi 03/10/2016 à 22h00</div>').insertBefore('.scorer-ranking')
+
         var groups = []
         var teamEvolutionSize = 0
         $('.team-standard').each(function(){
