@@ -13,7 +13,7 @@ Chaque lundi, retrouvez tous les classements buteurs du canton de Genève (ACGF)
 
 Stéphane Huguein (CS Italien GE) garde la tête en 2ème ligue avec ses 7 buts. En 3ème ligue Johnny Nogueira (FC Saint-Paul 1) et Frederik Ellegaard (US Meinier 1) avec leurs 7 buts détrônent Gianluca Prezioso (US Genève-Poste FC 1). En 4ème ligue, Lucas Duarte (FC City 2) est rejoint par Flamur Selmani (US Carouge FC 2). Tous les deux ont marqué 8 goals. Enfin en 5ème ligue, Yann Babel (FC Veyrier Sports 3) est toujours en première position cette semaine avec 7 unités.
 
-Du côté des équipes qui marquent le plus de buts, FC Plan-les-Ouates domine toujours la 2ème ligue. Le FC Versoix 1 a rejoint Meyrin FC 2 en 3ème ligue. US Carouge FC 2 toujours devant en 4ème ligue et Avanchet-Sport FC 2 prend les rennes en 5ème ligue.
+Du côté des équipes qui marquent le plus de buts, FC Plan-les-Ouates domine toujours la 2ème ligue. Le FC Versoix 1 a rejoint Meyrin FC 2 en 3ème ligue. US Carouge FC 2 toujours devant en 4ème ligue et Avanchet-Sport FC 2 prend les rênes en 5ème ligue.
 
 Si vous constatez des erreurs ou des oublis dans nos classements. Laissez-nous un message sur Facebook ou Instagram. Vous avez aussi la possiblité de nous écrire à contact@footstats.ch ou par whatsapp au 0774502327.
 
