@@ -162,7 +162,7 @@ region: acvf
 		  	<tr>
 		  	{% assign teams = site.data.acvf.ligue2.attack.group1.teams %}
 		  				<td>2</td>
-			        <td>{{teams[0].team}}</td>
+			        <td>{{teams[0].team}}{% if teams[1].goalsfor == teams[0].goalsfor %}, {{teams[1].team}}{% endif %}{% if teams[2].goalsfor == teams[0].goalsfor %}, {{teams[2].team}}{% endif %}</td>
 			        <td>{{teams[0].goalsfor}}</td>
 		    </tr>
 		    <tr>
