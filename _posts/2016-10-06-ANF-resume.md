@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  ANF - Les stats de la semaine
-date:   2016-10-06 11:25:00 +0200
+date:   2016-10-06 11:10:00 +0200
 image: resumeANF0610.jpg
 image-mobile: resumeANF0610-mobile.jpg
 categories: news anf
