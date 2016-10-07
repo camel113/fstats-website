@@ -11,7 +11,7 @@ image_for_facebook: /images/facebook/resumeAFF3009.jpg
 ---
 Chaque vendredi, retrouvez les meilleurs buteurs et les meilleures équipes dans les championnats de football amateur du canton de Fribourg.
 
-Marco Fasel (FC Ueberstorf) encore et toujours en première position en 2ème ligue avec 10 buts. En 3ème ligue Ilirjan Mehmetaj avec ses 10 buts (FC Avenches I) devance désormais d'une longueur Ahmet Sefa (FC Piamont I). En 4ème ligue changement de leader encore une fois avec Ugur Köktas (FC Central FR IIa) et ses 7 unités. Pas de mouvement pour la première place en 5ème ligue, Nematollah Alizada (FC Fribourg III) est toujours en place avec ses 11 goals. Enfin chez les femmes, du changement cette semaine avec Tania Alexandra Santos (FC Sarine-Ouest) prend les commandes avec 13 buts.
+Marco Fasel (FC Ueberstorf) encore et toujours en première position en 2ème ligue avec 10 buts. En 3ème ligue Ilirjan Mehmetaj avec ses 7 buts (FC Avenches I) devance désormais d'une longueur Ahmet Sefa (FC Piamont I). En 4ème ligue changement de leader encore une fois avec Ugur Köktas (FC Central FR IIa) et ses 7 unités. Pas de mouvement pour la première place en 5ème ligue, Nematollah Alizada (FC Fribourg III) est toujours en place avec ses 11 goals. Enfin chez les femmes, du changement cette semaine avec Tania Alexandra Santos (FC Sarine-Ouest) prend les commandes avec 13 buts.
 
 NOUVEAU Maintenant dans le résumé de la semaine les meilleures attaques du canton.
 
