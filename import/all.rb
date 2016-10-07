@@ -59,6 +59,13 @@ def create_scorers_data(league,region,filePath,urlPath)
   end
 end
 
+def create_topflop_data(region,filePath,urlPath)
+  response = HTTParty.get(urlPath+'/stats/topflop/'+region)
+  File.open(filePath+"/topflop.json","w") do |f|
+    f.write(response.body)
+  end
+end
+
 def create_directories(filePath)
   dirname = File.dirname(filePath+"random")
   unless File.directory?(dirname+'/stats')
@@ -95,7 +102,7 @@ def generate_stats_for_leagues_accross_region(league,urlPath)
 end
 
 leagues = []
-
+regions = []
 # AFF 2eme ligue
 groups = [*1..1]
 region = 'aff'
@@ -103,6 +110,7 @@ league = 2
 filePath = "_data/aff/ligue2/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
 
 # AFF 3eme ligue
 groups = [*1..3]
@@ -135,6 +143,7 @@ league = 30
 filePath = "_data/aff/ligue30/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
 
 # ACVF 2eme ligue
 groups = [*1..2]
@@ -183,6 +192,7 @@ league = 2
 filePath = "_data/acgf/ligue2/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
 
 # ACGF 3eme ligue
 groups = [*1..2]
@@ -215,6 +225,7 @@ league = 2
 filePath = "_data/anf/ligue2/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
 
 # ANF 3eme ligue
 groups = [*1..2]
@@ -248,6 +259,7 @@ league = 2
 filePath = "_data/avf/ligue2/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
 
 # AVF 3eme ligue
 groups = [*1..2]
@@ -279,3 +291,12 @@ leagues.each { |l|
   generate_stats_for_regions_league(l[:league],l[:region],l[:filePath],urlPath)
   generate_stats_for_leagues_accross_region(l[:league],urlPath)
 }
+# def create_topflop_data(region,filePath,urlPath)
+#   response = HTTParty.get(urlPath+'/topflop/'+region)
+#   File.open(filePath+"topflop.json","w") do |f|
+#     f.write(response.body)
+#   end
+# end
+# regions.each { |r|
+#   create_topflop_data(r,'_data/'+r,urlPath)
+# }
