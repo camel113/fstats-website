@@ -73,9 +73,6 @@
 .item-img-wrap:hover .item-img-overlay span{
     opacity: 1;
 }
-.item-img-wrap:hover img{ 
-    @include transform (scale(1.1));
-}
 
 
 /*flex slider*/
