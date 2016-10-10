@@ -7,7 +7,7 @@ image-mobile: resumeACGF1010-mobile.jpg
 categories: news acgf
 description_for_facebook: Top buteurs et équipe dans le canton de Genève
 title_for_facebook: ACGF - Les stats de la semaine
-image_for_facebook: /images/facebook/resumeACGF0310.jpg
+image_for_facebook: /images/facebook/resumeACGF1010.jpg
 ---
 Chaque lundi, retrouvez les classements buteurs du canton de Genève (ACGF) par ligue ainsi que les stats des meilleures équipes.
 
