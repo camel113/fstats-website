@@ -3,6 +3,71 @@ layout: stats-template1
 sitemap: false
 region: acgf
 ---
+<table class="table" id="topflop">
+	<thead>
+		<tr> <th>2e ligue</th> <th>3e ligue</th> <th>4e ligue</th> <th>5e ligue</th> </tr> 
+	</thead>
+	<tbody> 
+		{% assign topFlopTeams =site.data.acgf.topflop.rankings %}
+		<tr> <td>Top attaque</td> <td>Top attaque</td> <td>Top attaque</td> <td>Top attaque</td> </tr>
+		{% assign league2_topFlopTeams = topFlopTeams | where:"league","2" %}
+		{% assign league3_topFlopTeams = topFlopTeams | where:"league","3" %}
+		{% assign league4_topFlopTeams = topFlopTeams | where:"league","4" %}
+		{% assign league5_topFlopTeams = topFlopTeams | where:"league","5" %}
+		<tr>
+			<td>	
+				{% for topTeam in league2_topFlopTeams[0].top %}
+					{{topTeam.team}}<br/>
+				{% endfor %}
+				{{league2_topFlopTeams[0].top[0].goalsForAverage}}
+			</td>
+			<td>	
+				{% for topTeam in league3_topFlopTeams[0].top %}
+					{{topTeam.team}}<br/>
+				{% endfor %}
+				{{league3_topFlopTeams[0].top[0].goalsForAverage}}
+			</td>
+			<td>	
+				{% for topTeam in league4_topFlopTeams[0].top %}
+					{{topTeam.team}}<br/>
+				{% endfor %}
+				{{league4_topFlopTeams[0].top[0].goalsForAverage}}
+			</td>
+			<td>	
+				{% for topTeam in league5_topFlopTeams[0].top %}
+					{{topTeam.team}}<br/>
+				{% endfor %}
+				{{league5_topFlopTeams[0].top[0].goalsForAverage}}
+			</td>
+		</tr>
+		<tr> <td>Flop attaque</td> <td>Flop attaque</td> <td>Flop attaque</td> <td>Flop attaque</td> </tr>
+		<tr>
+			<td>	
+				{% for flopTeam in league2_topFlopTeams[0].flop %}
+					{{flopTeam.team}}<br/>
+				{% endfor %}
+				{{league2_topFlopTeams[0].flop[0].goalsForAverage}}
+			</td>
+			<td>	
+				{% for flopTeam in league3_topFlopTeams[0].flop %}
+					{{flopTeam.team}}<br/>
+				{% endfor %}
+				{{league3_topFlopTeams[0].flop[0].goalsForAverage}}
+			</td>
+			<td>	
+				{% for flopTeam in league4_topFlopTeams[0].flop %}
+					{{flopTeam.team}}<br/>
+				{% endfor %}
+				{{league4_topFlopTeams[0].flop[0].goalsForAverage}}
+			</td>
+			<td>	
+				{% for flopTeam in league5_topFlopTeams[0].flop %}
+					{{flopTeam.team}}<br/>
+				{% endfor %}
+				{{league5_topFlopTeams[0].flop[0].goalsForAverage}}
+			</td>
+		</tr>
+</table>
 <div class="stats-social-container" id="">
 	<div class="" id="all-leagues">
 		<table class="table table-striped">
@@ -22,7 +87,7 @@ region: acgf
 		    </tr>
 		    <tr>
 		  	{% assign players = site.data.acgf.ligue3.stats.scorers.top5scorers %}
-			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
+			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <br/><b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <br/><b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
 			        <td>3ème ligue</td>
 			        <td>{{players[0].goals}}</td>
 		    </tr>
@@ -64,7 +129,7 @@ region: acgf
 		    </tr>
 		    <tr>
 		  	{% assign players = site.data.acgf.ligue3.stats.scorers.top5scorers %}
-			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <br/><b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
+			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <br/><b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <br/><b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
 			        <td>3</td>
 			        <td>{{players[0].goals}}</td>
 		    </tr>
@@ -106,7 +171,7 @@ region: acgf
 		    </tr>
 		    <tr>
 		  	{% assign players = site.data.acgf.ligue3.stats.scorers.top5scorers %}
-			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <br/><b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
+			        <td><b>{{players[0].scorer}}</b> <i>{{players[0].team}}</i>{% if players[1].goals == players[0].goals %}, <br/><b>{{players[1].scorer}}</b> <i>{{players[1].team}}</i>{% endif %}{% if players[2].goals == players[0].goals %}, <br/><b>{{players[2].scorer}}</b> <i>{{players[2].team}}</i>{% endif %}</td>
 			        <td>3</td>
 			        <td>{{players[0].goals}}</td>
 		    </tr>

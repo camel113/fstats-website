@@ -297,6 +297,6 @@ leagues.each { |l|
 #     f.write(response.body)
 #   end
 # end
-# regions.each { |r|
-#   create_topflop_data(r,'_data/'+r,urlPath)
-# }
+regions.each { |r|
+  create_topflop_data(r,'_data/'+r,urlPath)
+}
