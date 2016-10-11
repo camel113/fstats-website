@@ -3,7 +3,71 @@ layout: stats-template1
 sitemap: false
 region: avf
 ---
-
+<table class="table" id="topflop">
+	<thead>
+		<tr> <th>2e ligue</th> <th>3e ligue</th> <th>4e ligue</th> <th>5e ligue</th> </tr> 
+	</thead>
+	<tbody> 
+		{% assign topFlopTeams =site.data.avf.topflop.rankings %}
+		<tr> <td>Top attaque</td> <td>Top attaque</td> <td>Top attaque</td> <td>Top attaque</td> </tr>
+		{% assign league2_topFlopTeams = topFlopTeams | where:"league","2" %}
+		{% assign league3_topFlopTeams = topFlopTeams | where:"league","3" %}
+		{% assign league4_topFlopTeams = topFlopTeams | where:"league","4" %}
+		{% assign league5_topFlopTeams = topFlopTeams | where:"league","5" %}
+		<tr>
+			<td>	
+				{% for topTeam in league2_topFlopTeams[0].top %}
+					{{topTeam.team}}<br/>
+				{% endfor %}
+				{{league2_topFlopTeams[0].top[0].goalsForAverage}}
+			</td>
+			<td>	
+				{% for topTeam in league3_topFlopTeams[0].top %}
+					{{topTeam.team}}<br/>
+				{% endfor %}
+				{{league3_topFlopTeams[0].top[0].goalsForAverage}}
+			</td>
+			<td>	
+				{% for topTeam in league4_topFlopTeams[0].top %}
+					{{topTeam.team}}<br/>
+				{% endfor %}
+				{{league4_topFlopTeams[0].top[0].goalsForAverage}}
+			</td>
+			<td>	
+				{% for topTeam in league5_topFlopTeams[0].top %}
+					{{topTeam.team}}<br/>
+				{% endfor %}
+				{{league5_topFlopTeams[0].top[0].goalsForAverage}}
+			</td>
+		</tr>
+		<tr> <td>Flop attaque</td> <td>Flop attaque</td> <td>Flop attaque</td> <td>Flop attaque</td> </tr>
+		<tr>
+			<td>	
+				{% for flopTeam in league2_topFlopTeams[0].flop %}
+					{{flopTeam.team}}<br/>
+				{% endfor %}
+				{{league2_topFlopTeams[0].flop[0].goalsForAverage}}
+			</td>
+			<td>	
+				{% for flopTeam in league3_topFlopTeams[0].flop %}
+					{{flopTeam.team}}<br/>
+				{% endfor %}
+				{{league3_topFlopTeams[0].flop[0].goalsForAverage}}
+			</td>
+			<td>	
+				{% for flopTeam in league4_topFlopTeams[0].flop %}
+					{{flopTeam.team}}<br/>
+				{% endfor %}
+				{{league4_topFlopTeams[0].flop[0].goalsForAverage}}
+			</td>
+			<td>	
+				{% for flopTeam in league5_topFlopTeams[0].flop %}
+					{{flopTeam.team}}<br/>
+				{% endfor %}
+				{{league5_topFlopTeams[0].flop[0].goalsForAverage}}
+			</td>
+		</tr>
+</table>
 <div class="stats-social-container" id="resume">
 	<div class="stats-table-social-post">
 		<table class="table">
@@ -86,48 +150,6 @@ region: avf
 	</div>
 	<div class="stats-table-social-post-info">
 	  <h2></h2>
-	</div>
-</div>
-<div class="stats-social-container" id="ligue2">
-	<div class="stats-table-social-post">
-		<table class="table">
-		  <thead>
-		    <tr>
-		        <th>Ligue</th>
-		        <th>Team</th>
-		        <th><i class="fa fa-futbol-o"></i></th>
-		    </tr>
-		  </thead>
-		  <tbody>
-		  	<tr>
-		  	{% assign teams = site.data.avf.ligue2.attack.group1.teams %}
-		  				<td>2</td>
-			        <td>{{teams[0].team}}</td>
-			        <td>{{teams[0].goalsfor}}</td>
-		    </tr>
-		    <tr>
-		  	{% assign teams = site.data.avf.ligue3.global-attack.teams %}
-		  				<td>3</td>
-			        <td>{{teams[0].team}}{% if teams[1].goalsfor == teams[0].goalsfor %}, {{teams[1].team}}{% endif %}{% if teams[2].goalsfor == teams[0].goalsfor %}, {{teams[2].team}}{% endif %}</td>
-			        <td>{{teams[0].goalsfor}}</td>
-		    </tr>
-		    <tr>
-		  	{% assign teams = site.data.avf.ligue4.global-attack.teams %}
-		  				<td>4</td>
-			        <td>{{teams[0].team}}{% if teams[1].goalsfor == teams[0].goalsfor %}, {{teams[1].team}}{% endif %}{% if teams[2].goalsfor == teams[0].goalsfor %}, {{teams[2].team}}{% endif %}</td>
-			        <td>{{teams[0].goalsfor}}</td>
-		    </tr>
-		    <tr>
-		  	{% assign teams = site.data.avf.ligue5.global-attack.teams %}
-		  				<td>5</td>
-			        <td>{{teams[0].team}}{% if teams[1].goalsfor == teams[0].goalsfor %}, {{teams[1].team}}{% endif %}{% if teams[2].goalsfor == teams[0].goalsfor %}, {{teams[2].team}}{% endif %}</td>
-			        <td>{{teams[0].goalsfor}}</td>
-		    </tr>
-		  </tbody>
-		</table>
-	</div>
-	<div class="stats-table-social-post-info">
-	  <h2>Top attaques AVF</h2>
 	</div>
 </div>
 <div class="stats-social-container" id="ligue2">
