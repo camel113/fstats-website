@@ -184,6 +184,7 @@ league = 30
 filePath = "_data/acvf/ligue30/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
 
 # ACGF 2eme ligue
 groups = [*1..1]
