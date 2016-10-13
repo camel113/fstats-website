@@ -38,5 +38,5 @@ _Les meilleurs buteurs de 3ème ligue féminine_ :: [Classements complets]({{sit
 [![ACVF ranking 5ème ligue]({{site.url}}/images/posts/rankings/resumeACVF301210-mobile.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/rankings/resumeACVF301210-mobile.jpg){: .post-small-image-link }
 
 _Les meilleurs et les pires ratios buts/match_
-[![ACVF topflop]({{site.url}}/images/posts/rankings/topflopACVF1210.jpg){: .post-large-image .desktop-image}]({{site.url}}/images/posts/rankings/topflopACVF1210.jpg){: .post-small-image-link }
-[![ACVF topflop]({{site.url}}/images/posts/rankings/topflopACVF1210.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/rankings/topflopACVF1210.jpg){: .post-small-image-link }
+[![ACVF topflop]({{site.url}}/images/posts/topflop/ACVF1210.jpg){: .post-large-image .desktop-image}]({{site.url}}/images/posts/topflop/ACVF1210.jpg){: .post-small-image-link }
+[![ACVF topflop]({{site.url}}/images/posts/topflop/ACVF1210.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/topflop/ACVF1210.jpg){: .post-small-image-link }

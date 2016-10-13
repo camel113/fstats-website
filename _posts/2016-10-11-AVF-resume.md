@@ -34,5 +34,5 @@ _Les meilleurs buteurs de 5ème ligue_ :: [Classements complets]({{site.url}}/av
 [![AVF ranking 5ème ligue]({{site.url}}/images/posts/rankings/resumeAVF51110-mobile.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/rankings/resumeAVF51110-mobile.jpg){: .post-small-image-link }
 
 _Les meilleurs et les pires ratios buts/match_
-[![AVF topflop]({{site.url}}/images/posts/rankings/topflopAVF1110.jpg){: .post-large-image .desktop-image}]({{site.url}}/images/posts/rankings/topflopAVF1110.jpg){: .post-small-image-link }
-[![AVF topflop]({{site.url}}/images/posts/rankings/topflopAVF1110.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/rankings/topflopAVF1110.jpg){: .post-small-image-link }
+[![AVF topflop]({{site.url}}/images/posts/topflop/AVF1110.jpg){: .post-large-image .desktop-image}]({{site.url}}/images/posts/topflop/AVF1110.jpg){: .post-small-image-link }
+[![AVF topflop]({{site.url}}/images/posts/topflop/AVF1110.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/topflop/AVF1110.jpg){: .post-small-image-link }

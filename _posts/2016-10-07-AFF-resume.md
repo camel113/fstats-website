@@ -42,5 +42,5 @@ _3ème ligue féminine_
 [![AFF ranking 5ème ligue]({{site.url}}/images/posts/rankings/resumeAFF300710-mobile.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/rankings/resumeAFF300710-mobile.jpg){: .post-small-image-link }
 
 _Les meilleurs et les pires ratios buts/match_
-[![AFF topflop]({{site.url}}/images/posts/rankings/topflopAFF0710.jpg){: .post-large-image .desktop-image}]({{site.url}}/images/posts/rankings/topflopAFF0710.jpg){: .post-small-image-link }
-[![AFF topflop]({{site.url}}/images/posts/rankings/topflopAFF0710.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/rankings/topflopAFF0710.jpg){: .post-small-image-link }
+[![AFF topflop]({{site.url}}/images/posts/topflop/AFF0710.jpg){: .post-large-image .desktop-image}]({{site.url}}/images/posts/topflop/AFF0710.jpg){: .post-small-image-link }
+[![AFF topflop]({{site.url}}/images/posts/topflop/AFF0710.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/topflop/AFF0710.jpg){: .post-small-image-link }
