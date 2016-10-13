@@ -11,11 +11,9 @@ image_for_facebook: /images/facebook/resumeANF1310.jpg
 ---
 Chaque jeudi, retrouvez les meilleurs buteurs dans les championnats de football amateur du canton de Neuchâtel.
 
-Footstats.ch fait son maximum pour rendre le football amateur toujours plus passionnant grâce aux chiffres récupérés sur football.ch. Depuis cette semaine, nous publierons les statistiques des équipes qui ont le meilleur et le moins bon ratio de buts marqués par match. Et on commencer fort cette semaine avec le FC Corcelles-Payerne et ses 6.9 buts marqués par match qui est en première position en 4ème ligue mais qui est également l'équipe qui marque le plus de buts dans le canton de Vaud.
+Footstats.ch fait son maximum pour rendre le football amateur toujours plus passionnant grâce aux chiffres récupérés sur football.ch. Chaque semaine nous publierons les statistiques des équipes qui ont le meilleur et le moins bon ratio de buts marqués par match. Cette semaine, l'équipe qui marque le plus dans le canton est le FC Cornaux I (4e ligue) avec ses 6.7 buts marqués par match.
 
-Depuis cette semaine c'est Dardan Vuthaj (FC Cortaillod) qui domine la 2ème ligue avec 9 buts inscrits. Bastian Nicoud (FC Marin-Sports I) conserve la tête en 3ème ligue. En 4ème ligue, David Janko (FC Coffrane II) et lui aussi toujours à la première place. Enfin c'est Lucien Pfammatter (FC Floria II) qui a pris la première place à Dylan Marques (FC Couvet II) en 5ème ligue.
-
-Du côté des équipes qui marquent le plus de buts, le FC Etoile-Sporting I est désormais en tête en 2ème ligue. En 3ème, 4ème et 5ème ligue les premiers de classements restent inchangés.
+Chez les buteurs, Dardan Vuthaj (FC Cortaillod) domine toujours la 2ème ligue avec 9 buts. En 3ème ligue il y a du changement puisque c'est Selmid Turkanovic (FC La Sagne) avec 12 buts qui passe devant Bastian Nicoud (FC Marin-Sports I). En 4ème ligue, c'est Anton Ahmetaj (FC Cornaux I) qui met tout le monde d'accord cette semaine. Il en est à 17 réalisations alors que son premier poursuivant, Durim Shala (FC Môtiers I) n'en est qu'à 13. Et pour terminer en 5ème ligue nous avons aussi un nouveau leader en la personne de Loïc Eppner (FC Deportivo II) qui en est à 10 buts.
 
 Si vous constatez des erreurs ou des oublis dans nos classements. Laissez-nous un message sur Facebook ou Instagram. Vous avez aussi la possiblité de nous écrire à contact@footstats.ch ou par whatsapp au 0774502327.
 
