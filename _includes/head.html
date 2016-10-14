@@ -6,7 +6,7 @@
   <title>{% if page.title_meta %}Football | {% t page.title_meta %}{% else %}{% t meta.site_title %}{% endif %}</title>
   <meta name="description" content="{% if page.description_meta %}{% t page.description_meta %}{% elsif page.description %}{{ page.description }}{% else %}{% t meta.site_description %}{% endif %}">
 
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+  <meta property="og:url" content="{{ site.url }}{{ page.url | downcase | remove: '.html' }}"/>
   <meta property="og:description" content="{% if page.description_for_facebook %}{{ page.description_for_facebook }}{% else %}{% t meta.facebook_description %}{% endif %}" />
   <meta property="og:title" content="{% if page.title_for_facebook %}{{ page.title_for_facebook }}{% else %}{% t meta.facebook_title %}{% endif %}" />
   <meta property="og:type" content="{% if page.id %}article{% else %}website{% endif %}" />
