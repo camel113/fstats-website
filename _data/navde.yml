@@ -68,6 +68,8 @@
       subpages:
         - title: "Scorers"
           path: "/3eme-ligue-feminine"
+        - title: "Teams"
+          path: "/5eme-ligue-teams"
 - title: "WFV"
   subcategories:
     - title: "2. Liga"
@@ -96,5 +98,5 @@
       subpages:
         - title: "Scorers"
           path: "/5eme-ligue"
-    - title: "3. Liga Frauen"
-      path: "/de/avf"
+        - title: "Teams"
+          path: "/5eme-ligue-teams"
