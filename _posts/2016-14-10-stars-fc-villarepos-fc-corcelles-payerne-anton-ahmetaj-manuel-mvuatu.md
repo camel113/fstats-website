@@ -7,7 +7,7 @@ image-mobile: stars-1-mobile.jpg
 categories: stars
 description_for_facebook: Le suspens autour du FC Villarepos, l'attaque de feu du FC Corcelles-Payerne ou les buteurs Anton Ahmetaj et Manuel Mvuatu.
 title_for_facebook: Les stars du week-end
-image_for_facebook: /images/facebook/stars-1.png
+image_for_facebook: /images/facebook/stars-1.jpg
 ---
 
 Tous les vendredi (ou presque) on vous présente les stars du week-end. Cette semaine avec le FC Villarepos et sa défense de fer, le FC Corcelles-Payerne et son attaque flamboyante et enfin 2 goleadores qui tenteront de se départager. En fin d’article vous trouverez notre sélection de matchs à suivre ce prochains jour pour voir des buts.
