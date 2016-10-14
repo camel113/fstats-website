@@ -202,3 +202,10 @@ radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
   /////// corner gradients
   linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 }
+.social-icon.matchdone{
+	border: none;
+	line-height: 26px !important;
+	img{
+		width: 100%;
+	}
+}
