@@ -25,15 +25,15 @@ _Les meilleurs buteurs de 2ème ligue_ :: [Classements complets]({{site.url}}/af
 [![AFF ranking 2ème ligue]({{site.url}}/images/posts/rankings/resumeAFF20710.jpg){: .post-large-image .desktop-image }]({{site.url}}/images/posts/rankings/resumeAFF20710.jpg){: .post-small-image-link }
 [![AFF ranking 2ème ligue]({{site.url}}/images/posts/rankings/resumeAFF20710-mobile.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/rankings/resumeAFF20710-mobile.jpg){: .post-small-image-link }
 
-_Les meilleurs buteurs de 2ème ligue_ :: [Classements complets]({{site.url}}/aff/2eme-ligue)
+_Les meilleurs buteurs de 3ème ligue_ :: [Classements complets]({{site.url}}/aff/3eme-ligue)
 [![AFF ranking 3ème ligue]({{site.url}}/images/posts/rankings/resumeAFF30710.jpg){: .post-large-image .desktop-image}]({{site.url}}/images/posts/rankings/resumeAFF30710.jpg){: .post-small-image-link }
 [![AFF ranking 3ème ligue]({{site.url}}/images/posts/rankings/resumeAFF30710-mobile.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/rankings/resumeAFF30710-mobile.jpg){: .post-small-image-link }
 
-_Les meilleurs buteurs de 2ème ligue_ :: [Classements complets]({{site.url}}/aff/2eme-ligue)
+_Les meilleurs buteurs de 4ème ligue_ :: [Classements complets]({{site.url}}/aff/4eme-ligue)
 [![AFF ranking 4ème ligue]({{site.url}}/images/posts/rankings/resumeAFF40710.jpg){: .post-large-image .desktop-image}]({{site.url}}/images/posts/rankings/resumeAFF40710.jpg){: .post-small-image-link }
 [![AFF ranking 4ème ligue]({{site.url}}/images/posts/rankings/resumeAFF40710-mobile.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/rankings/resumeAFF40710-mobile.jpg){: .post-small-image-link }
 
-_Les meilleurs buteurs de 2ème ligue_ :: [Classements complets]({{site.url}}/aff/2eme-ligue)
+_Les meilleurs buteurs de 5ème ligue_ :: [Classements complets]({{site.url}}/aff/5eme-ligue)
 [![AFF ranking 5ème ligue]({{site.url}}/images/posts/rankings/resumeAFF50710.jpg){: .post-large-image .desktop-image}]({{site.url}}/images/posts/rankings/resumeAFF50710.jpg){: .post-small-image-link }
 [![AFF ranking 5ème ligue]({{site.url}}/images/posts/rankings/resumeAFF50710-mobile.jpg){: .post-large-image .mobile-image }]({{site.url}}/images/posts/rankings/resumeAFF50710-mobile.jpg){: .post-small-image-link }
 
