@@ -68,3 +68,33 @@
       subpages:
         - title: "Scorers"
           path: "/3eme-ligue-feminine"
+- title: "WFV"
+  subcategories:
+    - title: "2. Liga"
+      path: "/de/avf"
+      subpages:
+        - title: "Scorers"
+          path: "/2eme-ligue"
+        - title: "Teams"
+          path: "/2eme-ligue-teams"
+    - title: "3. Liga"
+      path: "/de/avf"
+      subpages:
+        - title: "Scorers"
+          path: "/3eme-ligue"
+        - title: "Teams"
+          path: "/3eme-ligue-teams"
+    - title: "4. Liga"
+      path: "/de/avf"
+      subpages:
+        - title: "Scorers"
+          path: "/4eme-ligue"
+        - title: "Teams"
+          path: "/4eme-ligue-teams"
+    - title: "5. Liga"
+      path: "/de/avf"
+      subpages:
+        - title: "Scorers"
+          path: "/5eme-ligue"
+    - title: "3. Liga Frauen"
+      path: "/de/avf"
