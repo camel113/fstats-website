@@ -2,7 +2,7 @@
 layout: post
 title:  AVF - Les stats de la semaine
 date:   2016-10-11 11:00:00 +0200
-image: resumeAVF0410.jpg
+image: resumeAVF1110.jpg
 image-mobile: resumeAVF1110-mobile.jpg
 categories: news avf
 description_for_facebook: Le top des buteurs et les meilleures équipes dans le canton du Valais
