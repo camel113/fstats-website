@@ -11,7 +11,7 @@ image_for_facebook: /images/facebook/resumeAVF1810.jpg
 ---
 Avec 4.1 buts marqués par match, le FC Vétroz et US Port-Valais sont désormais les meilleures attaques du canton.
 
-Du côté des buteurs, les semaines passent et se ressemblent. Manuel Mvuatu (FC Chippis) reste intouchable en tête du classement de 2e ligue. Il reste bien évidemment le meilleur buteur toutes ligues confondues au niveau de l'AVF. Kevin Bakashala (FC Vétroz) est toujours en tête du classement de 3ème ligue avec maintenant 14 réalisations. En 4ème ligue Sébastien Cimino (FC Erde) reste devant avec ses 16 buts. S. Cimino est le seul à pouvoir menacé M. Mvuatu pour le titre de goleador valaisan du 1er tour chez les actifs. Ces deux joueurs sont même bien placé au niveau romand puisque vous pu lire vendredi passé que M. Mvuatu est en tête du classement des buteurs. Enfin en 5ème ligue Kilian Bumann (FC Brig-Glis 3) mène toujours la cours avec 10 buts.
+Du côté des buteurs, les semaines passent et se ressemblent. Manuel Mvuatu (FC Chippis) reste intouchable en tête du classement de 2e ligue. Il reste bien évidemment le meilleur buteur toutes ligues confondues au niveau de l'AVF. Kevin Bakashala (FC Vétroz) est toujours en tête du classement de 3ème ligue avec maintenant 14 réalisations. En 4ème ligue Sébastien Cimino (FC Erde) reste devant avec ses 16 buts. Il est le seul à pouvoir menacé M. Mvuatu pour le titre de goleador valaisan du 1er tour chez les actifs. Enfin en 5ème ligue Kilian Bumann (FC Brig-Glis 3) mène toujours la cours avec 10 buts.
 
 Si vous constatez des erreurs ou des oublis dans nos classements. Laissez-nous un message sur Facebook ou Instagram. Vous avez aussi la possiblité de nous écrire à contact@footstats.ch ou par whatsapp au 0774502327.
 
