@@ -76,7 +76,7 @@ define(["jquery","bootstrap","jquery_magnific_popup","jquery_easing","jquery_fle
     var makeChart = {
         init: function(dataset){
             console.log("###")
-            var myLabels = ["08.09","15.09","22.09","29.09","06.10","13.10"]
+            var myLabels = ["08.09","15.09","22.09","29.09","06.10","13.10","20.10"]
             var labelsToRemoveToFitData = (myLabels.length - dataset[0].data.length)
             if( labelsToRemoveToFitData > 0){
                 for (i = 0; i < labelsToRemoveToFitData; i++) { 
