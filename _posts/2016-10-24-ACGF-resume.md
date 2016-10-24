@@ -7,7 +7,7 @@ image-mobile: resumeACGF2410-mobile.jpg
 categories: news acgf
 description_for_facebook: Olympique de Genève FC 2 meilleure attaque du canton. Top buteurs&#58; Huguein Stéphane, Lirim Demiri, Gianluca Prezioso, Dylan Prezioso, Flamur Selmani, Michel Liyouck, Anthony Moussa et Alex Da Silva.
 title_for_facebook: ACGF - Les stats de la semaine
-image_for_facebook: /images/facebook/resumeACGF2410.jpg
+image_for_facebook: /images/facebook/resumeACGF2410.png
 ---
 Olympique de Genève FC reste la meilleure attaque de 4ème ligue et du canton.
 
