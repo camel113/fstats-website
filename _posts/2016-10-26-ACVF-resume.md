@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  ACVF - Les stats de la semaine
-date:   2016-10-26 11:40:00 +0200
+date:   2016-10-26 11:20:00 +0200
 image: resumeACVF2610.jpg
 image-mobile: resumeACVF2610-mobile.jpg
 categories: news acvf
