@@ -5,7 +5,7 @@ date:   2016-10-26 11:20:00 +0200
 image: resumeACVF2610.jpg
 image-mobile: resumeACVF2610-mobile.jpg
 categories: news acvf
-description_for_facebook: Top attaque&#58; FC Corcelles-Payerne 1. Top buteurs&#58; Bajrami Valjon, Marjan Jankuloski, Veselin Georgiev, Daniele Kilinc, Joao Fernando Da Silva, Fabio Jorge Pinto, Myriam Furrer 
+description_for_facebook: Top attaque&#58; FC Corcelles-Payerne 1. Top buteurs&#58; Bajrami Valjon, Veselin Georgiev, Joao Fernando Da Silva, Fabio Jorge Pinto, Myriam Furrer 
 title_for_facebook: ACVF - Les stats de la semaine
 image_for_facebook: /images/facebook/resumeACVF2610.jpg
 ---
