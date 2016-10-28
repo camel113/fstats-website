@@ -9,6 +9,22 @@ layout: default
   js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.7&appId=583536318486411";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 <div class="container">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
@@ -20,7 +36,9 @@ layout: default
 				<ul class="list-inline post-detail">
 					<li><i class="fa fa-calendar"></i>{{ page.date | date: "%-d/%m/%Y"}}</li>
 				</ul>
-				<div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button_count"></div>
+				
+				<div><div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button_count"></div></div>
+				<div><a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a></div>
 				<h2>{{page.title}}</h2>
 				{{content}}
 			</div><!--blog post-->
