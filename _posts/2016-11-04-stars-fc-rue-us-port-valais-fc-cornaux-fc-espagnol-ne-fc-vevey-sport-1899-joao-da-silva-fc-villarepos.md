@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Les stars du week-end&#58; Joao Da Silva, US Port-Valais, FC Rue, FC Villarepos, FC Cornaux I, FC Vevey Sports 1899, FC Espagnol NE
-date:   2016-11-04 13:40:00 +0200
+date:   2016-11-04 16:40:00 +0200
 image: stars-4.jpg
 image-mobile: stars-4.jpg
 categories: stars
