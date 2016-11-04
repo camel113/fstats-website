@@ -7,7 +7,7 @@ image-mobile: stars-4.jpg
 categories: stars
 description_for_facebook: Le carton du FC Espagnol NE et le FC Cornaux on fire. Les forteresses US Port-Valais, FC Rue et FC Villarepos. La progression du FC Vevey Sports 1899 et la tornade Joao Da Silva
 title_for_facebook: Les stars du week-end
-image_for_facebook: /images/facebook/stars-3.jpg
+image_for_facebook: /images/facebook/stars-4.jpg
 ---
 
 Tous les vendredis (ou presque) on vous présente les stars du week-end. Cette semaine avec le FC Cornaux _on fire_, la tornade Joao Fernando Da Silva et les forteresses US Port-Valais, FC Rue et FC Villarepos. En fin d’article vous trouverez notre sélection de matchs de football amateur à suivre ces prochains jours pour voir du spectacle.
