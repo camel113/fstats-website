@@ -13,7 +13,7 @@ Olympique de Genève FC reste en tête du classement des meilleures attaques de 
 
 Du côté des buteurs, en 2e ligue, Stéphane Huguein (CS Italien GE) est rejoint par deux autres joueurs. Miguel Salgado (Sport Genève Benfica) et David Salan (FC Aïre-le-Lignon) sont maintenant eux aussi à 8 réalisations. En 3e ligue, ils sont désormais quatre à se partager la première place. Lirim Demiri (Meyrin FC 2), Jorge Eliecer Estrada (FC Geneva 1), Michael Bleve (FC Versoix 1) et Nicolas Vitkieviez (US Carouge FC 1). Ils ont tous inscrits 10 buts. En 4e ligue, Flamur Selmani (US Carouge FC 2) garde seul les commandes avec 15 goals inscrits. C'est donc le meilleur buteur du canton. Et pour terminer, en 5e ligue, Alex Da Silva (CS Interstar 3) reste en tête avec ses 14 buts.
 
-Si vous constatez des erreurs ou des oublis dans nos classements. Laissez-nous un message sur Facebook ou Instagram. Vous avez aussi la possiblité de nous écrire à contact@footstats.ch ou par whatsapp au 0774502327.
+Si vous constatez des erreurs ou des oublis dans nos classements. Laissez-nous un message sur Facebook ou Instagram. Vous avez aussi la possiblité de nous écrire à contact@footstats.ch ou par whatsapp au +41774502373.
 
 _Les meilleurs buteurs de 2ème ligue_ :: [Classements complets]({{site.url}}/acgf/2eme-ligue)
 [![ACGF ranking 2ème ligue]({{site.url}}/images/posts/rankings/resumeACGF20711.jpg){: .post-large-image .desktop-image }]({{site.url}}/images/posts/rankings/resumeACGF20711.jpg){: .post-small-image-link }

@@ -13,7 +13,7 @@ FC Corcelles-Payerne I toujours meilleure attaque de 4e ligue et du canton.
 
 Chez les buteurs, aucun changement cette semaine.
 
-Si vous constatez des erreurs ou des oublis dans nos classements. Laissez-nous un message sur Facebook ou Instagram. Vous avez aussi la possiblité de nous écrire à contact@footstats.ch ou par whatsapp au 0774502327.
+Si vous constatez des erreurs ou des oublis dans nos classements. Laissez-nous un message sur Facebook ou Instagram. Vous avez aussi la possiblité de nous écrire à contact@footstats.ch ou par whatsapp au +41774502373.
 
 _Les meilleurs buteurs de 2ème ligue_ :: [Classements complets]({{site.url}}/acvf/2eme-ligue)
 [![ACVF ranking 2ème ligue]({{site.url}}/images/posts/rankings/resumeACVF20911.jpg){: .post-large-image .desktop-image }]({{site.url}}/images/posts/rankings/resumeACVF20911.jpg){: .post-small-image-link }
