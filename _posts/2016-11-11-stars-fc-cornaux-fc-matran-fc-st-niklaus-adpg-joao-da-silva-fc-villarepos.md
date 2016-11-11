@@ -16,11 +16,11 @@ Nous cherchons sans cesse à rendre le football amateur toujours plus intéressa
 
 Le __FC Villarepos__ redevient la meilleure défense (0.4/buts encaissés par match) de Suisse romande. Mais il faut savoir que les fribourgeois n'ont pas joué le week-end passé. Toutefois, au vu de leur parcours héroïque durant ce premier tour, leur première place au niveau des défenses pour notre dernier article est méritée!
 
-Le __FC Cornaux__ (4e ligue Neuchâtel) reste seul en tête des meilleures attaques. Avec 6.1 buts marqués par match les neuchâtelois conservent une petite avance sur leur premier poursuivant le FC FC Corcelles-Payerne et ses 5.9 buts marqués par match.
+Le __FC Cornaux__ (4e ligue Neuchâtel) reste seul en tête des meilleures attaques. Avec 6.1 buts marqués par match les neuchâtelois conservent une petite avance sur leur premier poursuivant le FC Corcelles-Payerne et ses 5.9 buts marqués par match.
 
 L'évolution des 5 dernières semaines est à mettre au compte du __FC Matran__ en 4e ligue fribourgoise. L'équipe est passée de la 11e à la 4e position (+7) au classement du groupe 2.
 
-Cette semaine nous avons deux équipes qui se partagent le carton du week-end passé. _ADPG 1_ en 5e ligue genevoise a battu FC Rapid Jonction Bosna 2 sur le score de  __11-0__. C'est également le score que le __FC St. Niklaus__ a imposé au FC Raron 2 en 4e ligue valaisanne. D'autres équipes ont marqués plus de buts mais ce sont eux qui se sont imposés avec le plus grand écart.
+Cette semaine nous avons deux équipes qui se partagent le carton du week-end passé. __ADPG 1__ en 5e ligue genevoise a battu FC Rapid Jonction Bosna 2 sur le score de  __11-0__. C'est également le score que le __FC St. Niklaus__ a imposé au FC Raron 2 en 4e ligue valaisanne. D'autres équipes ont marqués plus de buts mais ce sont eux qui se sont imposés avec le plus grand écart.
 
 Le groupe 5 de 4e ligue vaudoise reste le groupe le plus prolifique en buts (6.1/match). Le groupe où on en marque le moins reste celui de 2e ligue valaisanne (3/match).
 
