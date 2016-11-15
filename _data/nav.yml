@@ -1,9 +1,5 @@
 - title: "Home"
   path: "/"
-- title: "App"
-  path: "/app.html"
-- title: "Concours"
-  path: "/topbuts"
 - title: "AFF"
   subcategories:
     - title: "2ème ligue"
