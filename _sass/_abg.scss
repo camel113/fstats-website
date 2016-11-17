@@ -209,3 +209,24 @@ radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
 		width: 100%;
 	}
 }
+
+.blog-post table{
+	margin: 15px auto;
+	color: #333;
+	th{
+		font-weight: bold;
+		padding: 6px 13px;
+	  border: 1px solid #ddd;
+	}
+	tr{
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+	}
+	td {
+    padding: 6px 2px;
+    border: 1px solid #ddd;
+	}
+	tr:nth-child(2n) {
+    background-color: #f8f8f8;
+  }
+}
