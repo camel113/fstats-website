@@ -7,7 +7,7 @@ image-mobile: ligue-2.jpg
 categories: ligue statistiques
 description_for_facebook: Découvrez les classements et stats inédites sur la 2e ligue en Suisse romande
 title_for_facebook: Les chiffres du 1er tour
-image_for_facebook: /images/facebook/ligue-2.jpg
+image_for_facebook: /images/facebook/ligue-2b.jpg
 ---
 
 C’est la fin du premier tour, on vous a promis plusieurs surprises et nouveautés pour occuper votre hiver et pimenter votre deuxième tour. On commence donc par vous offrir les statistiques inédites de 2e ligue du premier tour en Suisse romande.
