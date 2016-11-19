@@ -1,34 +1,119 @@
 pages:
   titles:
+    aff_2: AFF 2ème ligue
     aff_3: AFF 3ème ligue
     aff_4: AFF 4ème ligue
     aff_5: AFF 5ème ligue
     aff_3_women: AFF 3ème ligue Féminine
+    aff_2_teams: AFF 2ème ligue classements
     aff_3_teams: AFF 3ème ligue classements
     aff_4_teams: AFF 4ème ligue classements
+    aff_5_teams: AFF 5ème ligue classements
+    acvf_2: ACVF 2ème ligue
     acvf_3: ACVF 3ème ligue
     acvf_4: ACVF 4ème ligue
     acvf_5: ACVF 5ème ligue
     acvf_3_women: ACVF 3ème ligue Féminine
+    acvf_2_teams: ACVF 2ème ligue classements
     acvf_3_teams: ACVF 3ème ligue classements
     acvf_4_teams: ACVF 4ème ligue classements
+    acvf_5_teams: ACVF 5ème ligue classements
+    acgf_2: ACGF 2ème ligue
+    acgf_3: ACGF 3ème ligue
+    acgf_4: ACGF 4ème ligue
+    acgf_5: ACGF 5ème ligue
+    acgf_3_women: ACGF 3ème ligue Féminine
+    acgf_2_teams: ACGF 2ème ligue classements
+    acgf_3_teams: ACGF 3ème ligue classements
+    acgf_4_teams: ACGF 4ème ligue classements
+    acgf_5_teams: ACGF 5ème ligue classements
+    avf_2: AVF 2ème ligue
+    avf_3: AVF 3ème ligue
+    avf_4: AVF 4ème ligue
+    avf_5: AVF 5ème ligue
+    avf_2_teams: AVF 2ème ligue classements
+    avf_3_teams: AVF 3ème ligue classements
+    avf_4_teams: AVF 4ème ligue classements
+    avf_5_teams: AVF 5ème ligue classements
+    anf_2: ANF 2ème ligue
+    anf_3: ANF 3ème ligue
+    anf_4: ANF 4ème ligue
+    anf_5: ANF 5ème ligue
+    anf_2_teams: ANF 2ème ligue classements
+    anf_3_teams: ANF 3ème ligue classements
+    anf_4_teams: ANF 4ème ligue classements
+    anf_5_teams: ANF 5ème ligue classements
+    meta:
+      acvf_2: ACVF 2ème ligue | Buteurs
+      acvf_3: ACVF 3ème ligue | Buteurs
+      acvf_3_women: ACVF 3ème ligue féminie | Buteurs
+      acvf_4: ACVF 4ème ligue | Buteurs
+      acvf_5: ACVF 5ème ligue | Buteurs
+      aff_2: AFF 2ème ligue | Buteurs
+      aff_3: AFF 3ème ligue | Buteurs
+      aff_3_women: AFF 3ème ligue féminine| Buteurs
+      aff_4: AFF 4ème ligue | Buteurs
+      aff_5: AFF 5ème ligue | Buteurs
+      acgf_2: ACGF 2ème ligue | Buteurs
+      acgf_3: ACGF 3ème ligue | Buteurs
+      acgf_4: ACGF 4ème ligue | Buteurs
+      acgf_5: ACGF 5ème ligue | Buteurs
+      avf_2: AVF 2ème ligue | Buteurs
+      avf_3: AVF 3ème ligue | Buteurs
+      avf_4: AVF 4ème ligue | Buteurs
+      avf_5: AVF 5ème ligue | Buteurs
+      anf_2: ANF 2ème ligue | Buteurs
+      anf_3: ANF 3ème ligue | Buteurs
+      anf_4: ANF 4ème ligue | Buteurs
+      anf_5: ANF 5ème ligue | Buteurs
   descriptions:
+    aff_2: Classement buteurs championnat de football AFF (Fribourg) 2ème ligue.
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
     aff_4: Classement buteurs championnat de football AFF (Fribourg) 4ème ligue.
     aff_5: Classement buteurs championnat de football AFF (Fribourg) 5ème ligue.
     aff_3_women: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue Féminine.
+    aff_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 2ème ligue."
     aff_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 3ème ligue."
-    aff_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 3ème ligue."
+    aff_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 4ème ligue."
+    aff_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFF (Fribourg) 5ème ligue."
+    acvf_2: Classement buteurs championnat de football ACVF (Vaud) 2ème ligue.
     acvf_3: Classement buteurs championnat de football ACVF (Vaud) 3ème ligue.
     acvf_4: Classement buteurs championnat de football ACVF (Vaud) 4ème ligue.
-    acvf_5: Classement buteurs championnat de football ACVF (VAUD) 5ème ligue.
-    aff_3_women: Classement buteurs championnat de football ACVF (Vaud) 3ème ligue Féminine.
+    acvf_5: Classement buteurs championnat de football ACVF (Vaud) 5ème ligue.
+    acvf_3_women: Classement buteurs championnat de football ACVF (Vaud) 3ème ligue Féminine.
+    acvf_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 2ème ligue."
     acvf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 3ème ligue."
     acvf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 4ème ligue."
+    acvf_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACVF (Vaud) 5ème ligue."
+    acgf_2: Classement buteurs championnat de football ACGF (Genève) 2ème ligue.
+    acgf_3: Classement buteurs championnat de football ACGF (Genève) 3ème ligue.
+    acgf_4: Classement buteurs championnat de football ACGF (Genève) 4ème ligue.
+    acgf_5: Classement buteurs championnat de football ACGF (Genève) 5ème ligue.
+    acgf_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 2ème ligue."
+    acgf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 3ème ligue."
+    acgf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 4ème ligue."
+    acgf_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 5ème ligue."
+    avf_2: Classement buteurs championnat de football AVF (Valais) 2ème ligue.
+    avf_3: Classement buteurs championnat de football AVF (Valais) 3ème ligue.
+    avf_4: Classement buteurs championnat de football AVF (Valais) 4ème ligue.
+    avf_5: Classement buteurs championnat de football AVF (Valais) 5ème ligue.
+    avf_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AVF (Valais) 2ème ligue."
+    avf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AVF (Valais) 3ème ligue."
+    avf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AVF (Valais) 4ème ligue."
+    avf_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AVF (Valais) 5ème ligue."
+    anf_2: Classement buteurs championnat de football ANF (Neuchâtel) 2ème ligue.
+    anf_3: Classement buteurs championnat de football ANF (Neuchâtel) 3ème ligue.
+    anf_4: Classement buteurs championnat de football ANF (Neuchâtel) 4ème ligue.
+    anf_5: Classement buteurs championnat de football ANF (Neuchâtel) 5ème ligue.
+    anf_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ANF (Neuchâtel) 2ème ligue."
+    anf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ANF (Neuchâtel) 3ème ligue."
+    anf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ANF (Neuchâtel) 4ème ligue."
+    anf_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ANF (Neuchâtel) 5ème ligue."
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
-    info: Les classements sont réalisés en fonction des résultats publiés sur le site football.ch
+    info: Si vous constatez des erreurs ou des oublis écrivez-nous sur Facebook, Instagram par whatsapp au +41774502373 ou à contact@footstats.ch.
     headline: Classements buteurs par groupe
+    group: "Groupe"
     groups:
       group1: Groupe 1
       group2: Groupe 2
@@ -43,7 +128,7 @@ pages:
     player_club: Club
   teams_ranking:
     headline: "Classements classique, attaque, défense"
-    global: global
+    global: Global
     general: Général
     attack: Attaque
     defense: Défense
@@ -52,13 +137,13 @@ pages:
     club: Club
     goals_for_abbrevitation: "+"
     goals_against_abbrevitation: "-"
-    matchs_win_abbrevitation: g
-    matchs_draw_abbrevitation: "n"
-    matchs_lost_abbrevitation: "p"
+    matchs_win_abbrevitation: G
+    matchs_draw_abbrevitation: "N"
+    matchs_lost_abbrevitation: "P"
     fairplay_abbrevitation: "f"
-    points_abbrevitation: "pt"
-    group_abbrevitation: "gr"
-    position_abbrevitation: "po"
+    points_abbrevitation: "Pts"
+    group_abbrevitation: "Gr"
+    position_abbrevitation: "Pos"
   home:
     description_1: "Classements des buteurs des championnats de football fribourgeois AFF et vaudois ACVF de 3ème (y compris féminine), 4ème et 5ème ligue."
     description_2: "Classements classiques, meilleures attaques et défenses de 3ème, 4ème et 5ème ligue vaud et fribourg."
@@ -67,12 +152,15 @@ pages:
   other:
     last_update: Dernière mise à jour
   top_buts:
-    title: "Footballtopscorers | Concours top buts foot amateur suisse"
+    title: "Footstats | Concours top buts foot amateur suisse"
     description: "Envoyez nous les vidéos de vos plus beaux buts en tentez de gagner une paire de chaussure Nike Hypervenom Phantom II"
+  app:
+    title: "Footstats | Live App"
+    description: "Score en direct football amateur en Suisse Romande"
 layout:
   follow_us: Suivez-nous
 meta: 
-  site_title: "Footballtopscorers | Classements buteurs | Foot amateur Suisse"
-  site_description: Classements buteurs et équipes pour les championnats amateurs de football des cantons de Vaud et Fribourg
-  facebook_title: Classements buteurs et équipes (3ème/4ème/5ème ligue) Vaud et Fribourg.
-  facebook_description: Classements équipes et buteurs Vaud/Fribourg
+  site_title: "Footstats | Stats & Buteurs | Foot amateur Suisse"
+  site_description: Classements buteurs et équipes pour les championnats amateurs de football des cantons de Vaud, Fribourg, Neuchâtel, Valais et Genève
+  facebook_title: Classements buteurs et stats équipes VD/FR/NE/VS/GE
+  facebook_description: Classements buteurs et stats équipes championnat de football 2ème/3ème/4ème/5ème ligues

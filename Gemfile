@@ -1,2 +1,5 @@
+source 'https://rubygems.org'
 gem 'jekyll-multiple-languages-plugin'
-gem 'jekyll', '2.4.0'
+gem 'jekyll-sitemap'
+gem 'jekyll'
+gem 'jekyll-paginate'

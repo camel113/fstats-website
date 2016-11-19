@@ -1,15 +1,29 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.7&appId=583536318486411";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="blog-post">
+				<div class="blog-post-image item-img-wrap">
+					<img src="{{site.url}}/images/posts/headers/{{page.image}}" class="img-responsive desktop-image" alt="Classement">
+          <img src="{{site.url}}/images/posts/headers/{{page.image-mobile}}" class="img-responsive mobile-image" alt="Classement">
+				</div>                       
+				<ul class="list-inline post-detail">
+					<li><i class="fa fa-calendar"></i>{{ page.date | date: "%-d/%m/%Y"}}</li>
+				</ul>
+				<div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button_count"></div>
+				<h2>{{page.title}}</h2>
+				{{content}}
+			</div><!--blog post-->
+		</div><!--col-->
+	</div><!--row for blog post-->
 </div>

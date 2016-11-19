@@ -1,1 +1,1 @@
-var stars=0;$(document).ready(function(){$(".joueur").on("click",function(){$(this).hasClass("selected")?($(this).removeClass("selected"),stars--):3>stars&&($(this).addClass("selected"),stars++)})});
+var stars=0;$(document).ready(function(){console.log("STARS"),$(".joueur").on("click",function(){$(this).hasClass("selected")?($(this).removeClass("selected"),stars--):3>stars&&($(this).addClass("selected"),stars++)})});

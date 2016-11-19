@@ -1,20 +1,16 @@
 <header class="site-header">
-
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar navbar-default navbar-static-top yamm sticky" role="navigation">
+    <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">football<span>topscorers</span>.ch</a>
+        <a class="navbar-brand" href="/">{{ site.name }}</a>
       </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
+      <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
         {% if site.lang == "de" %}
           {% assign name = site.data.navde %}
@@ -24,15 +20,18 @@
         {% for region in name %}
           {% if region.subcategories != null %}
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{region.title}}<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{region.title}}<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
                 {% for subcategory in region.subcategories %}
-                  <li class="dropdown-header">{{ subcategory.title }}</li>
-                  {% if subcategory.subpages != null %}
-                    {% for page in subcategory.subpages %}
-                      <li><a href="{{ site.url }}{{ subcategory.path }}{{ page.path }}">{{ page.title }}</a></li>
-                    {% endfor %}
-                  {% endif %}
+                  <li class="dropdown-submenu"><a href="#">{{ subcategory.title }}</a>
+                    <ul class="dropdown-menu">
+                    {% if subcategory.subpages != null %}
+                      {% for page in subcategory.subpages %}
+                        <li><a href="{{ site.url }}{{ subcategory.path }}{{ page.path }}">{{ page.title }}</a></li>
+                      {% endfor %}
+                    {% endif %}
+                    </ul>
+                  </li>
                 {% endfor %}
               </ul>
             </li>
@@ -43,13 +42,10 @@
         {% if site.lang == "de" %}
           <li><a href="{{ site.url | append: page.url }}" >Fr</a></li>
         {% else if site.lang == "fr" %}
-          <li><a href="{{ '/de' | prepend: site.url | append: page.url }}" >De</a></li>
+          <li><a href="{{ '/de/aff/3eme-ligue-teams' | prepend: site.url }}" >De</a></li>
         {% endif %}
         </ul>
-
-      </div>
-
-    </div>
-  </nav>
-
+      </div><!--/.nav-collapse -->
+    </div><!--container-->
+  </div>
 </header>

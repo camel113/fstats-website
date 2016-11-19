@@ -1,55 +1,14 @@
 ---
 layout: page
 title: pages.titles.acvf_4
+title_meta: pages.titles.meta.acvf_4
 description: pages.descriptions.acvf_4
+description_meta: pages.descriptions.acvf_4
 headline: pages.scorer_ranking.headline
-groups:
-  - group-info: 
-    - name: pages.scorer_ranking.groups.group1
-      id: group1
-  - group-info: 
-    - name: pages.scorer_ranking.groups.group2
-      id: group2
-  - group-info: 
-    - name: pages.scorer_ranking.groups.group3
-      id: group3
-  - group-info: 
-    - name: pages.scorer_ranking.groups.group4
-      id: group4
-  - group-info: 
-    - name: pages.scorer_ranking.groups.group5
-      id: group5
-  - group-info: 
-    - name: pages.scorer_ranking.groups.group6
-      id: group6
-  - group-info: 
-    - name: pages.scorer_ranking.groups.group7
-      id: group7
-  - group-info: 
-    - name: pages.scorer_ranking.groups.group8
-      id: group8
+data_path_file: scorers
+data_path_region: acvf
+data_path_ligue: ligue4
 ---
 <div class="groups" id="acvf-4">
-  <p class="rankingDescription">{% t pages.scorer_ranking.update %}</p>
-  <p class="rankingDescription">{% t pages.scorer_ranking.info %}</p>
-  <p class="lastUpdate" title="{% t pages.other.last_update %}"><i class="fa fa-refresh"></i>&nbsp;</p>
-  {% for group in page.groups %}
-    {% for gr in group.group-info %}
-    <h3>{% t gr.name %}</h3>
-    <table class="table table-striped" id="{{gr.id}}">
-      <thead>
-        <tr>
-            <th>#</th>
-            <th>{% t pages.scorer_ranking.player_name %}</th>
-            <th>{% t pages.scorer_ranking.player_club %}</th>
-            <th><i class="fa fa-futbol-o"></i></th>
-        </tr>
-      </thead>
-      <tbody>
-        
-      </tbody>
-    </table>
-    <div class="loader"></div>
-    {% endfor %}
-  {% endfor %}
+  {% include ranking-table.html %}
 </div>

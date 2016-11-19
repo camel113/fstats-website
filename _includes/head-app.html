@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>{% if page.title_meta %}Football | {% t page.title_meta %}{% else %}{% t meta.site_title %}{% endif %}</title>
+  <meta name="description" content="{% if page.description_meta %}{% t page.description_meta %}{% else %}{% t meta.site_description %}{% endif %}">
+
+  <meta property="og:url" content="{{ site.url }}"/>
+  <meta property="og:description" content="{% t meta.facebook_description %}" />
+  <meta property="og:title" content="{% t meta.facebook_title %}" />
+  <meta property="og:image" content="{{ '/images/affFbPreview.png' | prepend: site.baseurl_root }}" />
+  <meta property="og:image" content="{{ '/images/newFootballTopScorersFeaturesFbPreview.png' | prepend: site.baseurl_root }}" />
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.baseurl_root }}">
+
+  <link rel="icon" href="http://www.footstats.ch/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://www.footstats.ch/favicon.ico" type="image/x-icon">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="{{ "/libs/owl-carousel/owl.carousel.css" | prepend: site.baseurl_root }}" rel="stylesheet" type="text/css">
+  <link href="{{ "/libs/owl-carousel/owl.theme.css" | prepend: site.baseurl_root }}" rel="stylesheet" type="text/css">
+  <link href="{{ "/libs/owl-carousel/owl.transitions.css" | prepend: site.baseurl_root }}" rel="stylesheet" type="text/css">
+  <link href="{{ "/css/flexslider.css" | prepend: site.baseurl_root }}" rel="stylesheet" type="text/css">
+  <link href="{{ "/css/magnific-popup.css" | prepend: site.baseurl_root }}" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl_root }}">
+  <link rel="stylesheet" href="{{ "/css/app.css" | prepend: site.baseurl_root }}">
+  {% if jekyll.environment == "production" %}
+    {% include analytics.html %}
+  {% endif %}
+</head>

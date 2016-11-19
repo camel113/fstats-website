@@ -1,0 +1,10 @@
+{% assign short_team_name = "" %}
+{% assign teamName = include.param | split: " " %}
+{% for teamNamePart in teamName%}
+  {% if teamNamePart.size > 2 or teamNamePart == "Le" or teamNamePart == "La" or teamNamePart == "du"%}
+    {% if teamNamePart != "III" and teamNamePart != "IIA" and teamNamePart != "IIB" and teamNamePart != "IIIA" and teamNamePart != "IIIB" abd teamNamePart != "IIII" %}
+      {% assign short_team_name = short_team_name | append: " "| | append: teamNamePart %}
+    {% endif %}
+  {% endif %}
+{%endfor%}
+<span class="team-short-name">{{ short_team_name | strip }}</span>
