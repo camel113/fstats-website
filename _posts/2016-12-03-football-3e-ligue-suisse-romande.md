@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  3e ligue&#58; Les chiffres du 1er tour
-date:   2016-12-03 16:20:00 +0200
+date:   2016-12-02 16:30:00 +0200
 image: ligue-3.jpg
 image-mobile: ligue-3.jpg
 categories: ligue statistiques
