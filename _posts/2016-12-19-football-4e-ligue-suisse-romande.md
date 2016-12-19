@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  4e ligue&#58; Les chiffres du 1er tour
-date:   2016-12-19 16:30:00 +0200
+date:   2016-12-19 15:30:00 +0200
 image: ligue-4.jpg
 image-mobile: ligue-4.jpg
 categories: ligue statistiques
