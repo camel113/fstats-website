@@ -50,7 +50,7 @@ __Les équipes qui ont tout perdu :__
 | :-------------: |:-------------:| :-----:|
 | A. Da Silva | CS Interstar (GE)| 15 |
 | F. J. Pinto | CS Chavannes Epenex (VD) | 15 |
-| D. Marques | FC Aigle (VD) | 15 |
+| D. Marques | FC Couvet (NE) | 15 |
 | B. Suard | FC Siviriez (FR) | 15 |
 | F. Mac-Kay | Avanchet-Sport FC (GE) | 14 |
 | A. Badibanga | FC Stade-Lausanne-Ouchy (VD) | 14 |
