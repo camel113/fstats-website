@@ -152,4 +152,13 @@ define(["jquery","bootstrap","jquery_magnific_popup","jquery_easing","jquery_fle
             $('#global, .ranking').hide()
         }
     }
+
+    console.log($("#product-single"))
+    $("#product-single").owlCarousel({
+        navigation : true, 
+        slideSpeed : 300,
+        pagination : false,
+        singleItem:true,
+        navigationText: ["<i class='pe-7s-angle-left'>", "<i class='pe-7s-angle-right'>"]
+    });
 })
