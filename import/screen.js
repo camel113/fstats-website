@@ -57,7 +57,7 @@ async.eachSeries(regions, function(item, callback) {
 
 			  page.clipRect = { top: 0, left: 0, width: width, height: height };
 			  window.setTimeout(function () {
-			    page.render('images/facebook/'+today+'-image-'+item+'-facbook.png');
+			    page.render('images/facebook/'+today+'-image-'+item+'-facebook.png');
 			    callback()
 			  }, 500);
 			})

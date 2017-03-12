@@ -132,7 +132,7 @@ def create_post_image_by_region(region)
 end
 
 
-def create_post_by_region(region)
+def create_post_by_region(region,canton)
 	date = Time.now.strftime("%Y-%m-%d")
 	File.open("_posts/"+date+"-resume-"+region+".md","w") do |f|
 		f.write('---')
@@ -148,6 +148,12 @@ def create_post_by_region(region)
 		f.write('image-mobile: '+date+'-image-'+region+'-mobile.png')
 		f.write "\n"
 		f.write('categories: resume '+region)
+		f.write "\n"
+		f.write "description_for_facebook: Chaque semaine retrouvez le top des buteurs du canton "+canton+"."
+		f.write "\n"
+		f.write "title_for_facebook: "+region.upcase+" - Top buteurs"
+		f.write "\n"
+		f.write "image_for_facebook: /images/facebook/"+date+"-image-"+region+"-facebook.png"
 		f.write "\n"
 		f.write('---')
 		f.write "\n"
@@ -183,10 +189,10 @@ def create_post_by_region(region)
 	end
 end
 
-regions = ["aff","acvf","acgf","avf","anf"]
+regions = [{:acronym=>"aff",:canton=>"de Fribourg"},{:acronym=>"acvf",:canton=>"de Vaud"},{:acronym=>"anf",:canton=>"de Neuchâtel"},{:acronym=>"avf",:canton=>"du Valais"},{:acronym=>"acgf",:canton=>"de Genève"}]
 
 regions.each { |r|
-  create_post_by_region(r)
-  create_post_image_by_region(r)
+  create_post_by_region(r[:acronym],r[:canton])
+  create_post_image_by_region(r[:acronym])
 }
 result = exec("phantomjs import/screen.js")
