@@ -27,7 +27,7 @@ def create_post_image_by_region(region)
 		   	if index >= 1 && i["goals"] != previousGoals
 		   		f.write("</td>")
 		   		f.write("<td>"+x.to_s+"</td>")
-		 			f.write("<td>#{i['goals']}</td>")
+	 			f.write("<td>"+previousGoals.to_s+"</td>")
 		   		f.write('</tr>')
 		   		break
 		   	else
@@ -36,7 +36,7 @@ def create_post_image_by_region(region)
 		   		if index == 0
 		   			f.write('<tr>')
 		   			f.write("<td>")
-		 			end
+		 		end
 		   		f.write("<b>#{i['scorer']}</b>")
 		   		f.write("<i> #{i['team']}</i></br>")
 		   		previousGoals = i["goals"]
@@ -68,7 +68,7 @@ def create_post_image_by_region(region)
 		   	if index >= 1 && i["goals"] != previousGoals
 		   		f.write("</td>")
 		   		f.write("<td>"+x.to_s+"</td>")
-		 			f.write("<td>#{i['goals']}</td>")
+		 		f.write("<td>"+previousGoals.to_s+"</td>")
 		   		f.write('</tr>')
 		   		break
 		   	else
@@ -77,7 +77,48 @@ def create_post_image_by_region(region)
 		   		if index == 0
 		   			f.write('<tr>')
 		   			f.write("<td>")
-		 			end
+	 			end
+		   		f.write("<b>#{i['scorer']}</b>")
+		   		f.write("<i> #{i['team']}</i></br>")
+		   		previousGoals = i["goals"]
+		   	end
+			end
+		}
+		f.write('</tbody></table></div>')
+		f.write '</div>'
+	 	
+	end
+
+	File.open("posts-images/"+date+"-image-facebook-"+region+".html","w") do |f|
+	
+		f.write('---')
+		f.write "\n"
+		f.write "layout: resume-region-image"
+		f.write "\n"
+		f.write('---')
+		f.write "\n"
+		f.write('<div class="stats-social-container '+region+' facebook" id="resume">')
+		f.write('<div class="stats-table-social-post"><table class="table">')
+		f.write('<thead><tr><th><i class="fa fa-male"></i></th><th>Ligue</th><th><i class="fa fa-futbol-o"></i></th></tr></thead>')
+		f.write('<tbody>')
+		[*2..5].each { |x| 
+			file = File.read('_data/'+region+'/ligue'+x.to_s+'/stats/scorers.json')
+			jsondata = JSON.parse(file)
+			previousGoals = 0
+			jsondata['top5scorers'].each_with_index do |i,index|
+		   	if index >= 1 && i["goals"] != previousGoals
+		   		f.write("</td>")
+		   		f.write("<td>"+x.to_s+"</td>")
+		 		f.write("<td>"+previousGoals.to_s+"</td>")
+		   		f.write('</tr>')
+		   		break
+		   	else
+		   		puts "#{i['scorer']} #{i['goals']}"
+		   		puts "#{index}"
+		   		if index == 0
+		   			f.write('<tr>')
+		   			f.write("<td>")
+	 			end
 		   		f.write("<b>#{i['scorer']}</b>")
 		   		f.write("<i> #{i['team']}</i></br>")
 		   		previousGoals = i["goals"]
