@@ -494,3 +494,21 @@ TOP BARS
     }
 }
 
+/* The ribbons */
+
+.corner-ribbon{
+    width: 88px;
+    padding-left: 5px;
+    background: #e43;
+    position: absolute;
+    font-size: 10px;
+    top: -2px;
+    left: -37px;
+    text-align: center;
+    color: #f0f0f0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.li-ribbon{
+    overflow: hidden;
+}
