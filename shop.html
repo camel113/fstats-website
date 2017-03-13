@@ -33,10 +33,11 @@ layout: default
                   </div>
                   <div class="size">
                       <span>Size:</span> 
-                      <select><option>38</option><option>40</option><option>42</option><option>44</option></select>
+                      <select id="size-selector"><option>S</option><option>M</option><option>L</option></select>
                   </div>
                   <div class="add-buttons">
-                      <a href="#" data-toggle="tooltip" data-placement="top" title="Add to cart" class="btn btn-skin btn-lg"><i class="fa fa-shopping-cart"></i>Commander</a>
+                      <button id="buy" data-toggle="tooltip" data-placement="top" title="Add to cart" class="btn btn-skin btn-lg snipcart-add-item" class="snipcart-add-item" data-item-id="1" data-item-max-quantity="2" data-item-custom1-name="Taille"
+    data-item-custom1-options="S|M|L" data-item-custom1-value="M" data-item-name="Cadenza" data-item-price="30.00" data-item-weight="1" data-item-url="{{ "/shop.html" | prepend: site.url }}"><i class="fa fa-shopping-cart"></i>Commander</button>
                   </div>
               </div>
           </div>

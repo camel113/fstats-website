@@ -1,5 +1,9 @@
 var lineColors = ['#F44336','#9C27B0','#3F51B5','#2196F3','#009688','#8BC34A','#C6FF00','#FFEB3B','#FF9800','#795548','#E91E63','#00BCD4','#CDDC39','#FFC107','#673AB7']
 $(document).ready(function(){
+
+    $('#size-selector').change(function() {
+        $('#buy').data('item-custom1-value', $(this).val());
+    });
     
     $('.post-small-image-link').magnificPopup({type: 'image'});
 
@@ -152,7 +156,7 @@ var rankingChoice = {
     }
 }
 
-console.log($("#product-single"))
+
 $("#product-single").owlCarousel({
     navigation : true, 
     slideSpeed : 300,
