@@ -66,6 +66,12 @@ h2{
 	h2{
 		text-transform: none !important;
 	}
+	h4{
+		text-align: center;
+	}
+	ul{
+		color: #555;
+	}
 	.post-small-image{
 		max-width: 220px;
 		width: 100%;
@@ -100,7 +106,6 @@ h2{
 		display: none;
 		@media (max-width: 768px){
 			display: block;
-			max-width: 480px;
 		}
 	}
 	.item-img-wrap{
@@ -108,7 +113,6 @@ h2{
 			display: none;
 			@media (max-width: 768px){
 				display: inline;
-				max-width: 480px;
 			}
 		}
 	}

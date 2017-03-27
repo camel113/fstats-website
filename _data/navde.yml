@@ -1,5 +1,7 @@
 - title: "Home"
   path: "/"
+- title: "Live"
+  path: "http://live.footstats.ch"
 - title: "FFV"
   subcategories:
     - title: "2. Liga"
