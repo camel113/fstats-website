@@ -139,7 +139,7 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write "layout: post"
 		f.write "\n"
-		f.write "title: "+region.upcase+" - Les stats de la semaine"
+		f.write "title: "+region.upcase+" - Meilleurs buteurs"
 		f.write "\n"
 		f.write('date: '+date+' 11:00:00 +0200')
 		f.write "\n"
@@ -149,7 +149,7 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write('categories: resume '+region)
 		f.write "\n"
-		f.write "description_for_facebook: Chaque semaine retrouvez le top des buteurs du canton "+canton+"."
+		f.write "description_for_facebook: Classements buteurs du canton "+canton+"."
 		f.write "\n"
 		f.write "title_for_facebook: "+region.upcase+" - Top buteurs"
 		f.write "\n"
@@ -157,10 +157,12 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write('---')
 		f.write "\n"
-		f.write "<p>Retrouvez les meilleurs buteurs "+region.upcase+" des championnats de football amateur de la 2e à la 5e ligue.</p>"
+		f.write "<p>Les meilleurs buteurs "+region.upcase+" des championnats de football amateur de la 2e à la 5e ligue.</p>"
 		f.write "\n"
+		f.write "<p>Merci de nous annoncer <b>les transferts</b> de cet hiver afin de maintenir nos données à jour.</p>"
 		f.write "\n"
-		f.write "<p>Si vous constatez des erreurs ou des oublis dans nos classements. Laissez-nous un message sur Facebook ou Instagram. Vous avez aussi la possiblité de nous écrire à contact@footstats.ch ou par whatsapp au +41774502373.</p>"
+		f.write "<p>La saison reprend! Pour donner et suivre en direct les matchs de vos équipes préférées, rendez-vous sur <a href='http://live.footstats.ch'>live.footstats.ch</a>.</p>"
+		f.write "\n"
 		f.write "\n"
 		[*2..5].each { |x| 
 			f.write "<p>Les meilleurs buteurs de #{x}ème ligue</p>"
@@ -190,6 +192,8 @@ def create_post_by_region(region,canton)
 end
 
 regions = [{:acronym=>"aff",:canton=>"de Fribourg"},{:acronym=>"acvf",:canton=>"de Vaud"},{:acronym=>"anf",:canton=>"de Neuchâtel"},{:acronym=>"avf",:canton=>"du Valais"},{:acronym=>"acgf",:canton=>"de Genève"}]
+
+regions = [{:acronym=>"acgf",:canton=>"de Genève"}]
 
 regions.each { |r|
   create_post_by_region(r[:acronym],r[:canton])
