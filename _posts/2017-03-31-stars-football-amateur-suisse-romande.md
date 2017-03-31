@@ -28,4 +28,4 @@ Sa 01.04.2017 19:00 FC Orbe II - __FC Croy I__
 
 Sa 01.04.2017 18:00 FC Naters 2 - __FC Chippis__
 
-Sa 01.04.2017 19:15 FC Hauterive II - FC Cornaux I
+Sa 01.04.2017 19:15 FC Hauterive II - __FC Cornaux I__
