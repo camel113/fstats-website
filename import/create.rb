@@ -193,7 +193,7 @@ end
 
 regions = [{:acronym=>"aff",:canton=>"de Fribourg"},{:acronym=>"acvf",:canton=>"de Vaud"},{:acronym=>"anf",:canton=>"de Neuchâtel"},{:acronym=>"avf",:canton=>"du Valais"},{:acronym=>"acgf",:canton=>"de Genève"}]
 
-regions = [{:acronym=>"aff",:canton=>"de Fribourg"}]
+regions = [{:acronym=>"acgf",:canton=>"de Genève"}]
 
 regions.each { |r|
   create_post_by_region(r[:acronym],r[:canton])
