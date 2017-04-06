@@ -3,8 +3,8 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>{% if page.title_meta %}Football | {% t page.title_meta %}{% else %}{% t meta.site_title %}{% endif %}</title>
-  <meta name="description" content="{% if page.description_meta %}{% t page.description_meta %}{% elsif page.description %}{{ page.description }}{% else %}{% t meta.site_description %}{% endif %}">
+  <title>{% if page.fr_only_title_meta %}{{page.fr_only_title_meta}}{% elsif page.title_meta %}{% t page.title_meta %}| Football{% else %}{% t meta.site_title %}{% endif %}</title>
+  <meta name="description" content="{% if page.fr_only_description_meta %}{{page.fr_only_description_meta}}{% elsif page.description_meta %}{% t page.description_meta %}{% elsif page.description %}{{ page.description }}{% else %}{% t meta.site_description %}{% endif %}">
 
   <meta property="og:url" content="{{ site.url }}{{ page.url | downcase | remove: '.html' }}"/>
   <meta property="og:description" content="{% if page.description_for_facebook %}{{ page.description_for_facebook }}{% else %}{% t meta.facebook_description %}{% endif %}" />
