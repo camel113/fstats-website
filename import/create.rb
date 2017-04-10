@@ -163,7 +163,7 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write "<p>Les meilleurs buteurs "+region.upcase+" des championnats de football amateur de la 2e à la 5e ligue.</p>"
 		f.write "\n"
-		f.write "<p>Merci de nous annoncer <b>les erreurs</b> en nous envoyant un message sur facebook, twitter ou à contact@footstats.ch</p>"
+		f.write "<p>Merci de nous annoncer <b>les erreurs</b> en nous envoyant un message sur Facebook, Instagram ou à contact@footstats.ch</p>"
 		f.write "\n"
 		f.write "<p>Pour suivre en direct ou donner le score des matchs de vos équipes préférées, rendez-vous sur <a href='http://live.footstats.ch'>live.footstats.ch</a>.</p>"
 		f.write "\n"
