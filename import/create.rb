@@ -163,15 +163,15 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write "<p>Les meilleurs buteurs "+region.upcase+" des championnats de football amateur de la 2e à la 5e ligue.</p>"
 		f.write "\n"
-		f.write "<p>Merci de nous annoncer <b>les transferts</b> de cet hiver afin de maintenir nos données à jour.</p>"
+		f.write "<p>Merci de nous annoncer <b>les erreurs</b> en nous envoyant un message sur facebook, twitter ou à contact@footstats.ch</p>"
 		f.write "\n"
-		f.write "<p>La saison reprend! Pour donner et suivre en direct les matchs de vos équipes préférées, rendez-vous sur <a href='http://live.footstats.ch'>live.footstats.ch</a>.</p>"
+		f.write "<p>Pour suivre en direct ou donner le score des matchs de vos équipes préférées, rendez-vous sur <a href='http://live.footstats.ch'>live.footstats.ch</a>.</p>"
 		f.write "\n"
 		f.write "\n"
 		[*2..5].each { |x| 
 			f.write "<p>Les meilleurs buteurs de #{x}ème ligue</p>"
 			f.write('<table class="table">')
-			f.write('<thead><tr><th><i class="fa fa-male"></i></th><th>Ligue</th><th><i class="fa fa-futbol-o"></i></th></tr></thead>')
+			f.write('<thead><tr><th><i class="fa fa-male"></i></th><th>Team</th><th><i class="fa fa-futbol-o"></i></th></tr></thead>')
 			f.write('<tbody>')
 			file = File.read('_data/'+region+'/ligue'+x.to_s+'/stats/scorers.json')
 			jsondata = JSON.parse(file)
