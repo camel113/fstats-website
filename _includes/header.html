@@ -36,11 +36,7 @@
               </ul>
             </li>
           {% else %}
-            {% if region.title != "Live" %}
-              <li><a href="{{region.path}}">{{region.title}}</a></li>
-            {% else %}
-              <li class="li-ribbon"><div class="corner-ribbon top-left sticky red shadow">NEW</div><a href="{{region.path}}">{{region.title}}</a></li>
-            {% endif %}
+            <li><a href="{{region.path}}">{{region.title}}</a></li>
           {% endif %}
         {% endfor %}
         {% if site.lang == "de" %}
