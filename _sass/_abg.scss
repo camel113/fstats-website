@@ -242,3 +242,16 @@ radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
     text-align: center;
     background-color: #0275d8;
 }
+.not-found{
+	div{
+		text-align: center;
+	}
+	.not-found-title{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	.link-to-home{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
