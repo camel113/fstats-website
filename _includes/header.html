@@ -15,36 +15,31 @@
   <nav>
     <ul class="nav-level-zero">
       <li class="nav-title menu">Menu</li>
-      <li><a href="#!">Shop</a></li>
-      <li class="nav-subnav">
-        <a href="#!">Regions<span class="link-indicator"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
-        <ul class="nav-level">
-          <li class="nav-title"><a href="#" class="nav-back-one-step"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>Regions</li>
-          <li class="nav-subnav">
-            <a href="#!">AFF<span class="link-indicator"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
-            <ul class="nav-level">
-              <li class="nav-title"><a href="#" class="nav-back-one-step"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>AFF</li>
-              <li><a href="#!">2e ligue</a></li>
-              <li><a href="#!">3e ligue</a></li>
-              <li><a href="#!">4e ligue</a></li>
-              <li><a href="#!">5e ligue</a></li>
-            </ul>
-          </li>
-          <li class="nav-subnav">
-            <a href="#!">ANF<span class="link-indicator"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
-            <ul class="nav-level">
-              <li class="nav-title"><a href="#" class="nav-back-one-step"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>ANF</li>
-              <li><a href="#!">2e ligue</a></li>
-              <li><a href="#!">3e ligue</a></li>
-              <li><a href="#!">4e ligue</a></li>
-              <li><a href="#!">5e ligue</a></li>
-            </ul>
-          </li>
-          <li><a href="#!">ACVF</a></li>
-          <li><a href="#!">ACGF</a></li>
-        </ul>
-      </li>
-      <li><a href="#!">A propos</a></li>
+    {% assign navigation = site.data.nav %}
+    {% for element in navigation %}
+      {% if element.subcategories != null %}
+        <li class="nav-subnav">
+          <a href="#!">{{element.title}}<span class="link-indicator"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+          <ul class="nav-level">
+            <li class="nav-title"><a href="#" class="nav-back-one-step"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>{{ element.title }}</li>
+            {% for subcategory in element.subcategories %}
+              {% if subcategory.subpages != null %}
+                <li class="nav-subnav">
+                  <a href="#!">{{subcategory.title}}<span class="link-indicator"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+                  <ul class="nav-level">
+                    <li class="nav-title"><a href="#" class="nav-back-one-step"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>{{subcategory.title}}</li>
+                    {% for page in subcategory.subpages %}
+                      <li><a href="#!">{{page.title}}</a></li>
+                    {% endfor %}
+                  </ul>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+      {% else %}
+        <li><a href="{{element.path}}">{{element.title}}</a></li>
+      {% endif %}
+    {% endfor %}
     </ul>
   </nav>
   <div class="nav-footer">
