@@ -2,40 +2,18 @@
 layout: default
 ---
 <div class="container">
-	<div class="row">
-    <div class="col-md-10 col-md-offset-1">
-    {% for post in paginator.posts %}
-    	<div class="blog-post">
-        <a href="{{ post.url }}">
-          <div class="item-img-wrap">
-            <img src="{{site.url}}/images/posts/headers/{{post.image}}" class="img-responsive desktop-image" alt="">
-            <img src="{{site.url}}/images/posts/headers/{{post.image-mobile}}" class="img-responsive mobile-image" alt="">
-          </div>                       
-        </a><!--work links-->
-        <ul class="list-inline post-detail">
-            <li><i class="fa fa-calendar"></i>{{ post.date | date: "%-d/%m/%Y"}}</li>
-        </ul>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt }}</p>
-        <p><a href="{{ post.url }}" class="btn btn-theme-dark">Lire la suite...</a></p>
-    </div>
+    {% for post in site.posts %}
+      <div class="card">
+      	<a href="{{ post.url }}">
+          <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-mobile}}"/>
+        </a>
+        <div class="card-block">
+          <a href="{{ post.url }}"><h4 class="card-title">{{ post.title }}</h4></a>
+          <a href="{{ post.url }}"><p class="card-text">{{ post.excerpt }}</p></a>
+          <a href="{{ post.url }}"><p class="card-text"><small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ post.date | date: "%-d/%m/%Y"}}</small></p></a>
+        </div>
+      </div>
     {% endfor %}
-    <!-- Pagination links -->
-    <ul class="pager">
-      {% if paginator.previous_page %}
-        <li class="previous"><a href="{{ paginator.previous_page_path }}" class="previous">Précédant</a></li>
-      {% else %}
-        <li class="previous"><span class="previous">Précédant</span></li>
-      {% endif %}
-      <span class="page_number ">Page: {{ paginator.page }} / {{ paginator.total_pages }}</span>
-      {% if paginator.next_page %}
-        <li class="next"><a href="{{ paginator.next_page_path }}" class="next">Suivant</a></li>
-      {% else %}
-        <li class="next"><span class="next ">Suivant</span></li>
-      {% endif %}
-    </ul>
-    </div>
-  </div>
 </div>
 
 
