@@ -1,28 +1,30 @@
-<p class="rankingDescription">{% t pages.scorer_ranking.update %}</p>
-<p class="rankingDescription">{% t pages.scorer_ranking.info %}</p>
-<p class="lastUpdate" title="{% t pages.other.last_update %}">
-  <i class="fa fa-refresh"></i>&nbsp;{{ site.data[page.data_path_region][page.data_path_ligue].scorers.lastUpdate }}
-</p>
+<p><small>{% t pages.scorer_ranking.info %}</small></p>
+<p><small><span class="text-muted d-block"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ site.data[page.data_path_region][page.data_path_ligue].scorers.lastUpdate }}</span></small></p>
 {% for group in site.data[page.data_path_region][page.data_path_ligue].scorers.rankings %}
-<h3>{% t pages.scorer_ranking.group %} {{ group.groupNumber }}</h3>
-<table class="table table-striped scorer-ranking" id="{{group.groupNumber}}">
-  <thead>
-    <tr>
-        <th>#</th>
-        <th>{% t pages.scorer_ranking.player_name %}</th>
-        <th>{% t pages.scorer_ranking.player_club %}</th>
-        <th><i class="fa fa-futbol-o"></i></th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for scorer in group.scorers %}
+<div class="scorer-ranking">
+  <h3>{% t pages.scorer_ranking.group %} {{ group.groupNumber }}</h3>
+  <table class="table table-sm">
+    <thead>
       <tr>
-        <td>{{ forloop.index }}</td>
-        <td>{{ scorer.scorer }}</td>
-        <td>{{ scorer.team }}</td>
-        <td>{{ scorer.goals }}</td>
+        <th>#</th>
+        <th><i class="fa fa-male"></i></th>
+        <th><i class="fa fa-futbol-o"></i></th>
       </tr>
-    {% endfor %}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      {% for scorer in group.scorers %}
+        <tr>
+          <td>{{ forloop.index }}</td>
+          <td>
+            {{ scorer.scorer }}
+            <span class="d-block team-name">
+              <small>{{ scorer.team }}</small>
+            </span>
+          </td>
+          <td>{{ scorer.goals }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 {% endfor %}
