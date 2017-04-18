@@ -78,7 +78,7 @@ def create_post_image_by_region(region)
 		   			f.write('<tr>')
 		   			f.write("<td>")
 	 			end
-		   		f.write("<b>#{i['scorer']}</b>")
+		   		f.write("<b>#{i['scorer']}</b></br>")
 		   		f.write("<i> #{i['team']}</i></br>")
 		   		previousGoals = i["goals"]
 		   	end

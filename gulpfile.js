@@ -32,7 +32,7 @@ jekyllDir.assets.js = jekyllDir.assets.path + 'js/';
 jekyllDir.jekyll = ['./*.html', '_posts/*', '_layouts/*', '_includes/*']
 
 // watch files for changes and reload
-gulp.task('serve', function() {
+gulp.task('serve',['build'], function() {
   browserSync({
     server: {
       baseDir: '_site'
@@ -43,14 +43,18 @@ gulp.task('serve', function() {
   gulp.watch(assetsDevDir.styles, ['sass:dev','sass:prod']);
   gulp.watch(assetsDevDir.js, ['js:dev',  'js:prod']);
 });
-gulp.task('build:jekyll:dev', function() {
-    var shellCommand = 'bundle exec jekyll build --config _config.yml';
+gulp.task('build:jekyll', function() {
+    var shellCommand = 'bundle exec jekyll build --incremental --config _config.yml';
     return gulp.src('')
       .pipe(run(shellCommand))
       .on('error', gutil.log);
 });
-gulp.task('build:jekyll:watch', ['build:jekyll:dev'], function(callback) {
-    runSequence('build:jekyll:dev',['sass:dev','js:dev'],callback);
+gulp.task('build:jekyll:watch', ['build:jekyll'], function(cb) {
+  browserSync.reload();
+  cb();
+});
+gulp.task('build', function(cb) {
+  runSequence(['sass:prod', 'js:prod'],'build:jekyll',cb);
 });
 gulp.task('sass:dev', function () {
   return gulp.src(assetsDevDir.styles)
