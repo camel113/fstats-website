@@ -7,6 +7,7 @@ var run = require('gulp-run');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
+var runSequence  = require('run-sequence');
 
 const base_path = './';
 var assetsDevDir = {
@@ -40,7 +41,7 @@ gulp.task('serve', function() {
   });
   gulp.watch(jekyllDir.jekyll, ['build:jekyll:watch']);
   gulp.watch(assetsDevDir.styles, ['sass:dev','sass:prod']);
-  gulp.watch(assetsDevDir.js, ['js:dev','js:prod']);
+  gulp.watch(assetsDevDir.js, ['js:dev',  'js:prod']);
 });
 gulp.task('build:jekyll:dev', function() {
     var shellCommand = 'bundle exec jekyll build --config _config.yml';
@@ -49,8 +50,7 @@ gulp.task('build:jekyll:dev', function() {
       .on('error', gutil.log);
 });
 gulp.task('build:jekyll:watch', ['build:jekyll:dev'], function(callback) {
-    browserSync.reload();
-    callback();
+    runSequence('build:jekyll:dev',['sass:dev','js:dev'],callback);
 });
 gulp.task('sass:dev', function () {
   return gulp.src(assetsDevDir.styles)

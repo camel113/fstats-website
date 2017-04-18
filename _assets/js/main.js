@@ -1,18 +1,24 @@
 (function($) {
   $(function() {
+    navManager.init()
+    rankingChoice.init()
+  });
+})(jQuery);
+
+var navManager = {
+  init: function(){
     $('.toggle-overlay').click(function() {
       $('aside').toggleClass('open');
       $('.visible').toggleClass('visible');
     });
     $('nav li.nav-subnav a').click(function(){
-    	$(this).next('ul').toggleClass('visible');
+      $(this).next('ul').toggleClass('visible');
     })
     $('.nav-back-one-step').on('click',function(){
-    	$(this).parent().parent().toggleClass('visible')
+      $(this).parent().parent().toggleClass('visible')
     })
-    rankingChoice.init()
-  });
-})(jQuery);
+  }
+}
 
 var rankingChoice = {
   groupCount: 0,
