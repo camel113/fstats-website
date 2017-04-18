@@ -1,33 +1,41 @@
 var gulp = require('gulp');
-var less = require('gulp-less');  
-var path = require('path');
-var uglify = require('gulp-uglify');
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+var cp = require('child_process');
+var gutil = require('gulp-util');
+var run = require('gulp-run');
 
-var paths = {
-  mainStyleSheet: 'less/main.less',
-  lessStyles: 'less/*.less',
-  js: 'js/dev/*.js'
-}
+// Set the path variables
+const base_path = './',
+  src = base_path + '_dev/src',
+  dist = base_path + 'assets',
+  paths = {  
+    js: src + '/js/*.js',
+    scss: [ src +'/sass/*.scss',
+            src +'/sass/**/* .scss',
+            src +'/sass/**/**/*.scss'],
+    jekyll: ['index.html', '_posts/*', '_layouts/*', '_includes/*']
+  };
 
-gulp.task('mainCss', function () {  
-  return gulp.src(paths.mainStyleSheet)
-    .pipe(less({
-      paths: [ path.join(__dirname, 'less', 'includes') ]
-    }))
-    .on('error', function(err){ console.log(err.message); })
-    .pipe(gulp.dest('css'))
+// watch files for changes and reload
+gulp.task('serve', function() {
+  browserSync({
+    server: {
+      baseDir: '_site'
+    },
+    port: 4000
+  });
+  gulp.watch(paths.jekyll, ['build:jekyll:watch']);
 });
 
-gulp.task('watch', function() {
-  gulp.watch(paths.lessStyles, ['mainCss']);
-  gulp.watch(paths.js, ['compress']);
+gulp.task('build:jekyll:local', function() {
+    var shellCommand = 'bundle exec jekyll build --config _config.yml';
+
+    return gulp.src('')
+      .pipe(run(shellCommand))
+      .on('error', gutil.log);
 });
-
-gulp.task('compress', function() {
-  gulp.src('js/dev/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('js'))
+gulp.task('build:jekyll:watch', ['build:jekyll:local'], function(callback) {
+    browserSync.reload();
+    callback();
 });
-
-gulp.task('default', ['watch'])
-
