@@ -5,12 +5,15 @@ var cp = require('child_process');
 var gutil = require('gulp-util');
 var run = require('gulp-run');
 var sass = require('gulp-sass');
+var uglify = require('gulp-uglify');
+var pump = require('pump');
 
 const base_path = './';
 var assetsDevDir = {
   path: base_path + '_assets/',
 }
 assetsDevDir.styles = assetsDevDir.path + 'styles/*.scss';
+assetsDevDir.js = assetsDevDir.path + 'js/*.js';
 var siteDir = {
   path: base_path + '_site/',
   assets: {}
@@ -36,9 +39,9 @@ gulp.task('serve', function() {
     port: 4000
   });
   gulp.watch(jekyllDir.jekyll, ['build:jekyll:watch']);
-  gulp.watch(assetsDevDir.styles, ['sass:dev']);
+  gulp.watch(assetsDevDir.styles, ['sass:dev','sass:prod']);
+  gulp.watch(assetsDevDir.js, ['js:dev','js:prod']);
 });
-
 gulp.task('build:jekyll:dev', function() {
     var shellCommand = 'bundle exec jekyll build --config _config.yml';
     return gulp.src('')
@@ -59,4 +62,18 @@ gulp.task('sass:prod', function () {
   return gulp.src(assetsDevDir.styles)
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest(jekyllDir.assets.styles))
+});
+gulp.task('js:dev', function (cb) {
+  return gulp.src(assetsDevDir.js)
+    .pipe(gulp.dest(siteDir.assets.js))
+    .pipe(reload({stream: true}));
+});
+gulp.task('js:prod', function (cb) {
+  pump([
+        gulp.src(assetsDevDir.js),
+        uglify(),
+        gulp.dest(jekyllDir.assets.js)
+    ],
+    cb
+  );
 });
