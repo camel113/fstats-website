@@ -1,8 +1,12 @@
 $link-color:#3D4248;
 .card{
-	margin: 20px 0px;	
+	margin: 20px 0px 0px;	
 	.card-text{
-    margin-bottom: .75rem;
+    	margin-bottom: .75rem;
+	}
+	.card-block{
+		padding-left: 0;
+    	padding-right: 0;
 	}
 	a{
 		color:$link-color;
@@ -14,4 +18,5 @@ $link-color:#3D4248;
 			width: 100%;
 		}
 	}
+	border:none;
 }

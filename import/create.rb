@@ -133,10 +133,10 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write "<p>Les meilleurs buteurs "+region.upcase+" des championnats de football amateur de la 2e à la 5e ligue.</p>"
 		f.write "\n"
+		f.write "\n"
 		f.write "<p>Merci de nous annoncer <b>les erreurs</b> en nous envoyant un message sur Facebook, Instagram ou à contact@footstats.ch</p>"
 		f.write "\n"
 		f.write "<p>Pour suivre en direct ou donner le score des matchs de vos équipes préférées, rendez-vous sur <a href='http://live.footstats.ch'>live.footstats.ch</a>.</p>"
-		f.write "\n"
 		f.write "\n"
 		[*2..5].each { |x| 
 			f.write "<p>Les meilleurs buteurs de #{x}ème ligue</p>"
@@ -167,7 +167,7 @@ end
 
 regions = [{:acronym=>"aff",:canton=>"de Fribourg"},{:acronym=>"acvf",:canton=>"de Vaud"},{:acronym=>"anf",:canton=>"de Neuchâtel"},{:acronym=>"avf",:canton=>"du Valais"},{:acronym=>"acgf",:canton=>"de Genève"}]
 
-regions = [{:acronym=>"aff",:canton=>"de Fribourg"}]
+regions = [{:acronym=>"acgf",:canton=>"de Genève"}]
 
 sizes = [300,500,800,1100,2200]
 regions.each { |r|
