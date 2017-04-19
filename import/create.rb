@@ -44,7 +44,6 @@ def create_post_image_by_region(region,size)
 			end
 		}
 		f.write('</tbody></table></div>')
-		f.write '<h1>'+size.to_s+'</h1>'
 		f.write '</div>'
 	 	
 	end
