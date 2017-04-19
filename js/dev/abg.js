@@ -79,7 +79,7 @@ $(document).ready(function(){
 var makeChart = {
     init: function(dataset){
         console.log("###")
-        var myLabels = ["08.09","15.09","22.09","29.09","06.10","13.10","20.10","27.10","03.11","10.11","30.03","07.04"]
+        var myLabels = ["08.09","15.09","22.09","29.09","06.10","13.10","20.10","27.10","03.11","10.11","30.03","07.04","12.04","19.04"]
         var labelsToRemoveToFitData = (myLabels.length - dataset[0].data.length)
         if( labelsToRemoveToFitData > 0){
             for (i = 0; i < labelsToRemoveToFitData; i++) { 
