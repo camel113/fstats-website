@@ -43,18 +43,18 @@ table{
 	padding: 20px;
 }
 $image-height: 300px;
-.size400.stats-social-container{
-	width: 400px;
-	height: $image-height;
+.size300.stats-social-container{
+	width: 300px;
+	height: 195px;
 	padding: 20px;
 	.stats-table-social-post{
 		width: 100%;
 		margin: auto;
 	}
 }
-.size600.stats-social-container{
-	width: 600px;
-	height: $image-height;
+.size500.stats-social-container{
+	width: 500px;
+	height: 325px;
 	padding: 20px;
 	.stats-table-social-post{
 		width: 80%;
@@ -63,7 +63,7 @@ $image-height: 300px;
 }
 .size800.stats-social-container{
 	width: 800px;
-	height: $image-height;
+	height: 520px;
 	padding: 20px;
 	.stats-table-social-post{
 		width: 60%;
@@ -78,9 +78,9 @@ $image-height: 300px;
 		}
 	}
 }
-.size1000.stats-social-container{
-	width: 1000px;
-	height: $image-height;
+.size1100.stats-social-container{
+	width: 1100px;
+	height: 715px;
 	padding: 20px;
 	.stats-table-social-post{
 		width: 50%;
@@ -95,9 +95,9 @@ $image-height: 300px;
 		}
 	}
 }
-.size1200.stats-social-container{
-	width: 1200px;
-	height: $image-height;
+.size2200.stats-social-container{
+	width: 2200px;
+	height: 1430px;
 	padding: 20px;
 	.stats-table-social-post{
 		width: 40%;
@@ -110,15 +110,6 @@ $image-height: 300px;
 		i{
 			font-size: 1em;
 		}
-	}
-}
-.size2400.stats-social-container{
-	width: 2400px;
-	height: $image-height;
-	padding: 20px;
-	.stats-table-social-post{
-		width: 100%;
-		margin: auto;
 	}
 }
 .facebook.stats-social-container{

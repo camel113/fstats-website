@@ -5,9 +5,11 @@ fr_only_title_meta: AFF - Meilleurs buteurs - 19/04/2017
 fr_only_description_meta: Les meilleurs buteurs AFF des championnats de football amateur de la 2e à la 5e ligue - 19/04/2017
 date: 2017-04-19 11:00:00 +0200
 image: 2017-04-19-image-aff.png
-image-400: 2017-04-19-image-aff-size400.png
-image-600: 2017-04-19-image-aff-size600.png
+image-300: 2017-04-19-image-aff-size300.png
+image-500: 2017-04-19-image-aff-size500.png
 image-800: 2017-04-19-image-aff-size800.png
+image-1100: 2017-04-19-image-aff-size1100.png
+image-2200: 2017-04-19-image-aff-size2200.png
 categories: resume aff
 description_for_facebook: Classements buteurs du canton de Fribourg.
 title_for_facebook: AFF - Top buteurs

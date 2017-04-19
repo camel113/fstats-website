@@ -44,6 +44,7 @@ def create_post_image_by_region(region,size)
 			end
 		}
 		f.write('</tbody></table></div>')
+		f.write '<h1>'+size.to_s+'</h1>'
 		f.write '</div>'
 	 	
 	end
@@ -111,11 +112,15 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write('image: '+date+'-image-'+region+'.png')
 		f.write "\n"
-		f.write('image-400: '+date+'-image-'+region+'-size400.png')
+		f.write('image-300: '+date+'-image-'+region+'-size300.png')
 		f.write "\n"
-		f.write('image-600: '+date+'-image-'+region+'-size600.png')
+		f.write('image-500: '+date+'-image-'+region+'-size500.png')
 		f.write "\n"
 		f.write('image-800: '+date+'-image-'+region+'-size800.png')
+		f.write "\n"
+		f.write('image-1100: '+date+'-image-'+region+'-size1100.png')
+		f.write "\n"
+		f.write('image-2200: '+date+'-image-'+region+'-size2200.png')
 		f.write "\n"
 		f.write('categories: resume '+region)
 		f.write "\n"
@@ -165,7 +170,7 @@ regions = [{:acronym=>"aff",:canton=>"de Fribourg"},{:acronym=>"acvf",:canton=>"
 
 regions = [{:acronym=>"aff",:canton=>"de Fribourg"}]
 
-sizes = [400,600,800,1000,1200]
+sizes = [300,500,800,1100,2200]
 regions.each { |r|
   create_post_by_region(r[:acronym],r[:canton])
   sizes.each { |s|
