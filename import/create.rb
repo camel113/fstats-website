@@ -5,9 +5,9 @@ require 'json'
 
 
 
-def create_post_image_by_region(region)
+def create_post_image_by_region(region,size)
 	date = Time.now.strftime("%Y-%m-%d")
-	File.open("posts-images/"+date+"-image-"+region+".html","w") do |f|
+	File.open("posts-images/"+date+"-image-size"+size.to_s+"-"+region+".html","w") do |f|
 	
 		f.write('---')
 		f.write "\n"
@@ -15,48 +15,7 @@ def create_post_image_by_region(region)
 		f.write "\n"
 		f.write('---')
 		f.write "\n"
-		f.write('<div class="stats-social-container '+region+'" id="resume">')
-		f.write('<div class="stats-table-social-post"><table class="table">')
-		f.write('<thead><tr><th><i class="fa fa-male"></i></th><th>Ligue</th><th><i class="fa fa-futbol-o"></i></th></tr></thead>')
-		f.write('<tbody>')
-		[*2..5].each { |x| 
-			file = File.read('_data/'+region+'/ligue'+x.to_s+'/stats/scorers.json')
-			jsondata = JSON.parse(file)
-			previousGoals = 0
-			jsondata['top5scorers'].each_with_index do |i,index|
-		   	if index >= 1 && i["goals"] != previousGoals
-		   		f.write("</td>")
-		   		f.write("<td>"+x.to_s+"</td>")
-	 			f.write("<td>"+previousGoals.to_s+"</td>")
-		   		f.write('</tr>')
-		   		break
-		   	else
-		   		puts "#{i['scorer']} #{i['goals']}"
-		   		puts "#{index}"
-		   		if index == 0
-		   			f.write('<tr>')
-		   			f.write("<td>")
-		 		end
-		   		f.write("<b>#{i['scorer']}</b>")
-		   		f.write("<i> #{i['team']}</i></br>")
-		   		previousGoals = i["goals"]
-		   	end
-			end
-		}
-		f.write('</tbody></table></div>')
-		f.write '</div>'
-	 	
-	end
-
-	File.open("posts-images/"+date+"-image-mobile-"+region+".html","w") do |f|
-	
-		f.write('---')
-		f.write "\n"
-		f.write "layout: resume-region-image"
-		f.write "\n"
-		f.write('---')
-		f.write "\n"
-		f.write('<div class="stats-social-container '+region+' mobile" id="resume">')
+		f.write('<div class="stats-social-container '+region+' size'+size.to_s+'" id="resume">')
 		f.write('<div class="stats-table-social-post"><table class="table">')
 		f.write('<thead><tr><th><i class="fa fa-male"></i></th><th>Ligue</th><th><i class="fa fa-futbol-o"></i></th></tr></thead>')
 		f.write('<tbody>')
@@ -78,7 +37,7 @@ def create_post_image_by_region(region)
 		   			f.write('<tr>')
 		   			f.write("<td>")
 	 			end
-		   		f.write("<b>#{i['scorer']}</b></br>")
+		   		f.write("<b>#{i['scorer']}")
 		   		f.write("<i> #{i['team']}</i></br>")
 		   		previousGoals = i["goals"]
 		   	end
@@ -89,6 +48,10 @@ def create_post_image_by_region(region)
 	 	
 	end
 
+end
+
+def create_facebook_image_by_region(region)
+	date = Time.now.strftime("%Y-%m-%d")
 	File.open("posts-images/"+date+"-image-facebook-"+region+".html","w") do |f|
 	
 		f.write('---')
@@ -131,13 +94,12 @@ def create_post_image_by_region(region)
 	end
 end
 
-
 def create_post_by_region(region,canton)
 	date = Time.now.strftime("%Y-%m-%d")
 	File.open("_posts/"+date+"-resume-"+region+".md","w") do |f|
 		f.write('---')
 		f.write "\n"
-		f.write "layout: post"
+		f.write "layout: new-post"
 		f.write "\n"
 		f.write "title: "+region.upcase+" - Meilleurs buteurs"
 		f.write "\n"
@@ -149,7 +111,11 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write('image: '+date+'-image-'+region+'.png')
 		f.write "\n"
-		f.write('image-mobile: '+date+'-image-'+region+'-mobile.png')
+		f.write('image-400: '+date+'-image-'+region+'-size400.png')
+		f.write "\n"
+		f.write('image-600: '+date+'-image-'+region+'-size600.png')
+		f.write "\n"
+		f.write('image-800: '+date+'-image-'+region+'-size800.png')
 		f.write "\n"
 		f.write('categories: resume '+region)
 		f.write "\n"
@@ -199,8 +165,11 @@ regions = [{:acronym=>"aff",:canton=>"de Fribourg"},{:acronym=>"acvf",:canton=>"
 
 regions = [{:acronym=>"aff",:canton=>"de Fribourg"}]
 
+sizes = [400,600,800,1000,1200]
 regions.each { |r|
   create_post_by_region(r[:acronym],r[:canton])
-  create_post_image_by_region(r[:acronym])
+  sizes.each { |s|
+  	create_post_image_by_region(r[:acronym],s)
+  }
 }
 result = exec("phantomjs import/screen.js")

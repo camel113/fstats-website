@@ -5,7 +5,7 @@ layout: default
     {% for post in site.posts %}
       <div class="card">
       	<a href="{{ post.url }}">
-          <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-mobile}}"/>
+          <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-mobile}}"  srcset="{{site.url}}/images/posts/headers/{{post.image-400}} 1000w, {{site.url}}/images/posts/headers/{{post.image-600}} 2000w" alt="yah"/>
         </a>
         <div class="card-block">
           <a href="{{ post.url }}"><h4 class="card-title">{{ post.title }}</h4></a>
