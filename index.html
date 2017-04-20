@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="container">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
   
       {% capture modulo %}{{ forloop.index0 | modulo:3 }}{% endcapture %}
 
@@ -27,10 +27,7 @@ layout: default
       {% endif %}
 
     {% endfor %}
-</div>
-
-<div class="container">
-    {% for post in site.posts %}
-      
-    {% endfor %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next"></a>
+    {% endif %}
 </div>
