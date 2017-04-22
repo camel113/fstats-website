@@ -3,6 +3,7 @@
     navManager.init()
     rankingChoice.init()
     infiniteScroll.init()
+    $('#league-stats').smoothState();
   });
 })(jQuery);
 
