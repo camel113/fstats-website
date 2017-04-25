@@ -29,7 +29,7 @@
                   <ul class="nav-level">
                     <li class="nav-title"><a href="#" class="nav-back-one-step"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>{{subcategory.title}}</li>
                     {% for page in subcategory.subpages %}
-                      <li><a href="#!">{{page.title}}</a></li>
+                      <li><a href="{{subcategory.path}}{{page.path}}">{{page.title}}</a></li>
                     {% endfor %}
                   </ul>
               {% endif %}

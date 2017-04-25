@@ -36,7 +36,10 @@ jekyllDir.jekyll = ['./*.html', '_posts/*', '_layouts/*', '_includes/*']
 gulp.task('serve',['build'], function() {
   browserSync({
     server: {
-      baseDir: '_site'
+      baseDir: '_site',
+      serveStaticOptions: {
+        extensions: ["html"]
+      }
     },
     port: 4000
   });
