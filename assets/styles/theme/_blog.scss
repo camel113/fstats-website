@@ -1,0 +1,22 @@
+$link-color:#3D4248;
+.card{
+	margin: 20px 0px 0px;	
+	.card-text{
+    	margin-bottom: .75rem;
+	}
+	.card-block{
+		padding-left: 0;
+    	padding-right: 0;
+	}
+	a{
+		color:$link-color;
+    &:focus, &:hover{
+      text-decoration: none;
+      color:$link-color;
+    }
+		.card-img-top{
+			width: 100%;
+		}
+	}
+	border:none;
+}

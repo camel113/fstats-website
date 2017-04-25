@@ -8,12 +8,13 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 var runSequence  = require('run-sequence');
+var sourcemaps = require('gulp-sourcemaps');
 
 const base_path = './';
 var assetsDevDir = {
   path: base_path + '_assets/',
 }
-assetsDevDir.styles = assetsDevDir.path + 'styles/*.scss';
+assetsDevDir.styles = assetsDevDir.path + 'styles/**/*.scss';
 assetsDevDir.js = assetsDevDir.path + 'js/*.js';
 var siteDir = {
   path: base_path + '_site/',
@@ -66,6 +67,7 @@ gulp.task('sass:prod', function () {
   return gulp.src(assetsDevDir.styles)
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest(jekyllDir.assets.styles))
+    .pipe(reload({stream: true}));
 });
 gulp.task('js:dev', function (cb) {
   return gulp.src(assetsDevDir.js)
