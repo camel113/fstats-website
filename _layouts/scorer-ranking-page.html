@@ -3,21 +3,9 @@ layout: default
 facebook_meta_title: meta.facebook_title
 facebook_meta_description: meta.facebook_description
 ---
-<div class="container ligue-scorers" id="league-stats">
-	<ul class="nav nav-pills nav-justified">
-	  <li class="nav-item">
-	    <a class="nav-link active" href="#">Active</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link" href="/aff/2eme-ligue-teams.html">Longer nav link</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link" href="#">Link</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link disabled" href="#">Disabled</a>
-	  </li>
-	</ul>
+<div id="league-stats">
+<div class="container ligue-scorers">
+	{% include tab-teams-scorers.html %}
 	<h1>{% t page.title %}</h1>
   <h2>{% t page.headline %}</h2>
   <p><small>{% t pages.scorer_ranking.info %}</small></p>
@@ -50,4 +38,5 @@ facebook_meta_description: meta.facebook_description
 	  </table>
 	</div>
 	{% endfor %}
+</div>
 </div>

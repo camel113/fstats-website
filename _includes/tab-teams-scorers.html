@@ -1,0 +1,22 @@
+{% if page.layout == "scorer-ranking-page" %}
+	{% assign scorers = true %}
+{%else%}
+	{% assign scorers = false %}
+{%endif%}
+{% if page.data_path_ligue == "ligue2" %}
+	{% assign ligue = 2 %}
+{%elsif page.data_path_ligue == "ligue3"%}
+	{% assign ligue = 3 %}
+{%elsif page.data_path_ligue == "ligue4"%}
+	{% assign ligue = 4 %}
+{%elsif page.data_path_ligue == "ligue5"%}
+	{% assign ligue = 5 %}
+{%endif%}
+<ul class="nav nav-pills nav-justified">
+  <li class="nav-item">
+    <a class="nav-link {%if scorers %}active{%endif%}" href="/{{page.data_path_region}}/{{ligue}}eme-ligue.html">Buteurs</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link {%if scorers == false %}active{%endif%}" href="/{{page.data_path_region}}/{{ligue}}eme-ligue-teams.html">Équipes</a>
+  </li>
+</ul>
