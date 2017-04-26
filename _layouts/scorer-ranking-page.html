@@ -11,7 +11,7 @@ facebook_meta_description: meta.facebook_description
 			</div>
 		</div>
 		<div class="row justify-content-md-center">
-			<div class="col col-md-6">
+			<div class="col col-md-8 col-lg-6">
 				<h1>{% t page.title %}</h1>
 			  <h2>{% t page.headline %}</h2>
 			  <p><small>{% t pages.scorer_ranking.info %}</small></p>
@@ -20,7 +20,7 @@ facebook_meta_description: meta.facebook_description
 			</div>
 		</div>
 		<div class="row justify-content-md-center">
-			<div class="scorer-ranking col col-md-6">
+			<div class="scorer-ranking col col-md-8 col-lg-6">
 				{% for group in site.data[page.data_path_region][page.data_path_ligue].scorers.rankings %}
 			  <h3>{% t pages.scorer_ranking.group %} {{ group.groupNumber }}</h3>
 			  <table class="table table-sm">

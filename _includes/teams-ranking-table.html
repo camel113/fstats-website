@@ -1,6 +1,6 @@
 {% for group in site.data[page.data_path_region][page.data_path_ligue].standard %}
   <div class="row ranking team-standard justify-content-md-center" id="{{group[0]}}-standard">
-    <div class="col-12 col-md-6"">
+    <div class="col-12 col-md-8 col-lg-6"">
       <h4>{% t pages.scorer_ranking.group %} {{ group[0] | remove: "group" }}</h4>
       <table class="table table-striped table-condensed">
         <thead>
@@ -44,7 +44,7 @@
 {% endfor %}
 {% for group in site.data[page.data_path_region][page.data_path_ligue].attack %}
   <div class="row ranking justify-content-md-center" id="{{group[0]}}-attack">
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-8 col-lg-6">
       <h4>{% t pages.scorer_ranking.group %} {{ group[0] | remove: "group" }}</h4>
       <table class="table table-striped table-condensed">
         <thead>
@@ -84,7 +84,7 @@
 {% endfor %}
 {% for group in site.data[page.data_path_region][page.data_path_ligue].defense %}
   <div class="row ranking justify-content-md-center" id="{{group[0]}}-defense">
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-8 col-lg-6">
     <h4>{% t pages.scorer_ranking.group %} {{ group[0] | remove: "group" }}</h4>
       <table class="table table-striped table-condensed">
         <thead>
@@ -126,7 +126,7 @@
 <!-- <div class="groups col-xs-12" id="global"> -->
 {% if site.data[page.data_path_region][page.data_path_ligue].global-standard %}
 <div class="row ranking gloabal-ranking justify-content-md-center" id="global-standard">
-  <div class="col-12 col-md-6">
+  <div class="col-12 col-md-8 col-lg-6">
   <h4>{% t pages.teams_ranking.global %}</h4>
     <table class="table table-striped">
       <thead>
@@ -168,7 +168,7 @@
 {% endif %}
 {% if site.data[page.data_path_region][page.data_path_ligue].global-attack %}
 <div class="row ranking gloabal-ranking justify-content-md-center" id="global-attack">
-  <div class="col-12 col-md-6">
+  <div class="col-12 col-md-8 col-lg-6">
     <h4>{% t pages.teams_ranking.global %}</h4>
     <table class="table table-striped">
       <thead>
@@ -211,7 +211,7 @@
 {% endif %}
 {% if site.data[page.data_path_region][page.data_path_ligue].global-defense %}
 <div class="row ranking gloabal-ranking justify-content-md-center" id="global-defense">
-  <div class="col-12 col-md-6">
+  <div class="col-12 col-md-8 col-lg-6">
   <h4>{% t pages.teams_ranking.global %}</h4>
     <table class="table table-striped">
       <thead>
