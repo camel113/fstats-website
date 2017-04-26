@@ -131,6 +131,8 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write('---')
 		f.write "\n"
+		f.write '<div class="row justify-content-md-center">'
+		f.write '<div class="col col-md-8 col-lg-6">'
 		f.write "<p>Les meilleurs buteurs "+region.upcase+" des championnats de football amateur de la 2e à la 5e ligue.</p>"
 		f.write "\n"
 		f.write "\n"
@@ -138,10 +140,14 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write "<p>Pour suivre en direct ou donner le score des matchs de vos équipes préférées, rendez-vous sur <a href='http://live.footstats.ch'>live.footstats.ch</a>.</p>"
 		f.write "\n"
+		f.write('</div></div>')
+		f.write "\n"
 		[*2..5].each { |x| 
+			f.write '<div class="row justify-content-md-center">'
+			f.write '<div class="col col-md-8 col-lg-6">'
 			f.write "<p>Les meilleurs buteurs de #{x}ème ligue</p>"
 			f.write('<table class="table">')
-			f.write('<thead><tr><th><i class="fa fa-male"></i></th><th>Team</th><th><i class="fa fa-futbol-o"></i></th></tr></thead>')
+			f.write('<thead><tr><th><i class="fa fa-male"></i></th><th><i class="fa fa-futbol-o"></i></th></tr></thead>')
 			f.write('<tbody>')
 			file = File.read('_data/'+region+'/ligue'+x.to_s+'/stats/scorers.json')
 			jsondata = JSON.parse(file)
@@ -153,21 +159,22 @@ def create_post_by_region(region,canton)
 		   		puts "#{i['scorer']} #{i['goals']}"
 		   		puts "#{index}"
 		   		f.write('<tr>')
-		   		f.write("<td>#{i['scorer']}</td>")
-		   		f.write("<td>#{i['team']}</td>")
+		   		f.write("<td>#{i['scorer']}")
+		   		f.write("<span class='d-block team-name'><small>#{i['team']}</small></span>")
+		   		f.write("</td>")		   		
 		   		f.write("<td>#{i['goals']}</td>")
 		   		f.write('</tr>')
 		   		previousGoals = i["goals"]
 		   	end
 			end
-			f.write('</tbody></table>')
+			f.write('</tbody></table></div></div>')
 		}
 	end
 end
 
 regions = [{:acronym=>"aff",:canton=>"de Fribourg"},{:acronym=>"acvf",:canton=>"de Vaud"},{:acronym=>"anf",:canton=>"de Neuchâtel"},{:acronym=>"avf",:canton=>"du Valais"},{:acronym=>"acgf",:canton=>"de Genève"}]
 
-regions = [{:acronym=>"acgf",:canton=>"de Genève"}]
+regions = [{:acronym=>"acvf",:canton=>"de Vaud"}]
 
 sizes = [300,500,800,1100,2200]
 regions.each { |r|
