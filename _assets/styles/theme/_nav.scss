@@ -8,7 +8,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 100%;
+    height: $navbar-height;
       span{
         background-image: url(../images/hamburger.svg);
         background-repeat: no-repeat;
