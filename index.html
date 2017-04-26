@@ -1,7 +1,8 @@
 ---
 layout: default
+home: true
 ---
-<div class="container">
+<div class="container scroll-content">
     {% for post in paginator.posts %}
   
       {% capture modulo %}{{ forloop.index0 | modulo:3 }}{% endcapture %}

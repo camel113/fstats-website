@@ -61,14 +61,14 @@ var infiniteScroll = {
       // adding a temp. dom object to load the next page
       var list = $("<div></div>");
       // call load method and get the div.post-list node
-      list.load(url + " div.container", function(response, status, xhr) {
+      list.load(url + " div.scroll-content", function(response, status, xhr) {
         // check if we doesn't get any error
         if ( status != "error" ) {
           // copy all childrens of our temp container to the real container
           // note: jQuery load will copy the div.post-list node as well,
           // so use the childrens and move them
-          var container = $("div.container");
-          list.children("div.container").children().each(
+          var container = $("div.scroll-content");
+          list.children("div.scroll-content").children().each(
             function(key, value){
               container.append(value);
             }
