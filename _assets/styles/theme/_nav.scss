@@ -197,6 +197,20 @@ nav ul{
     visibility: visible;
   }
 }
+.desktop-nav{
+  height: 100%;
+  .nav{
+    align-items:center;
+    height: 100%;
+    a{
+      color: $navbar-color;
+      &.dropdown-item.active, &.dropdown-item:active {
+        color: #fff;
+        background-color: $navbar-color;
+      }
+    }
+  }
+}
 .switch-ranks{
   margin-top: 20px;
   .nav-link{
