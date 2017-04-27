@@ -86,8 +86,8 @@ gulp.task('generate-service-worker', function(callback) {
   
   var rootDir = '_site';
 
-  swPrecache.write(`./service-worker.js`, {
-    staticFileGlobs: [rootDir + '/acvf/*.html',rootDir + '/anf/*.html',rootDir + '/aff/*.html',rootDir + '/acgf/*.html',rootDir + '/avf/*.html',rootDir + '/assets/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'],
+  swPrecache.write('./service-worker.js', {
+    staticFileGlobs: [rootDir + '/assets/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'],
     stripPrefix: rootDir
   }, callback);
 });
