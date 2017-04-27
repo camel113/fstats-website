@@ -1,5 +1,13 @@
 (function($) {
   $(function() {
+
+    if ('serviceWorker' in navigator) {
+      console.log("serviceWorker")
+      navigator.serviceWorker.register('/service-worker.js', {
+        scope: '/'
+      });
+    }
+
     navManager.init()
     if($('.ligue-teams').length>0){
       rankingChoice.init()

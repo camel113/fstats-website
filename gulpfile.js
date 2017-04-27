@@ -9,6 +9,8 @@ var uglify = require('gulp-uglify');
 var pump = require('pump');
 var runSequence  = require('run-sequence');
 var sourcemaps = require('gulp-sourcemaps');
+var path = require('path');
+var swPrecache = require('sw-precache');
 
 const base_path = './';
 var assetsDevDir = {
@@ -78,4 +80,14 @@ gulp.task('js:prod', function (cb) {
     ],
     cb
   );
+});
+
+gulp.task('generate-service-worker', function(callback) {
+  
+  var rootDir = '_site';
+
+  swPrecache.write(`./service-worker.js`, {
+    staticFileGlobs: [rootDir + '/acvf/*.html',rootDir + '/anf/*.html',rootDir + '/aff/*.html',rootDir + '/acgf/*.html',rootDir + '/avf/*.html',rootDir + '/assets/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'],
+    stripPrefix: rootDir
+  }, callback);
 });
