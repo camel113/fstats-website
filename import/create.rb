@@ -131,21 +131,19 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write('---')
 		f.write "\n"
-		f.write '<div class="row justify-content-md-center">'
-		f.write '<div class="col col-md-8 col-lg-6">'
-		f.write "<p>Les meilleurs buteurs "+region.upcase+" des championnats de football amateur de la 2e à la 5e ligue.</p>"
+		f.write "Les meilleurs buteurs "+region.upcase+" des championnats de football amateur de la 2e à la 5e ligue."
 		f.write "\n"
 		f.write "\n"
-		f.write "<p>Merci de nous annoncer <b>les erreurs</b> en nous envoyant un message sur Facebook, Instagram ou à contact@footstats.ch</p>"
+		f.write "Merci de nous annoncer <b>les erreurs</b> en nous envoyant un message sur Facebook, Instagram ou à contact@footstats.ch"
 		f.write "\n"
-		f.write "<p>Pour suivre en direct ou donner le score des matchs de vos équipes préférées, rendez-vous sur <a href='http://live.footstats.ch'>live.footstats.ch</a>.</p>"
 		f.write "\n"
-		f.write('</div></div>')
+		f.write "Pour suivre en direct ou donner le score des matchs de vos équipes préférées, rendez-vous sur <a href='http://live.footstats.ch'>live.footstats.ch</a>."
+		f.write "\n"
 		f.write "\n"
 		[*2..5].each { |x| 
-			f.write '<div class="row justify-content-md-center">'
-			f.write '<div class="col col-md-8 col-lg-6">'
-			f.write "<p>Les meilleurs buteurs de #{x}ème ligue</p>"
+			f.write "Les meilleurs buteurs de #{x}ème ligue"
+			f.write "\n"
+			f.write "\n"
 			f.write('<table class="table">')
 			f.write('<thead><tr><th><i class="fa fa-male"></i></th><th><i class="fa fa-futbol-o"></i></th></tr></thead>')
 			f.write('<tbody>')
@@ -167,7 +165,7 @@ def create_post_by_region(region,canton)
 		   		previousGoals = i["goals"]
 		   	end
 			end
-			f.write('</tbody></table></div></div>')
+			f.write('</tbody></table>')
 		}
 	end
 end
