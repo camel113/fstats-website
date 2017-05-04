@@ -179,6 +179,7 @@ regions.each { |r|
   create_post_by_region(r[:acronym],r[:canton])
   sizes.each { |s|
   	create_post_image_by_region(r[:acronym],s)
+  	create_facebook_image_by_region(r[:acronym])
   }
 }
 result = exec("phantomjs import/screen.js")
