@@ -172,7 +172,7 @@ end
 
 regions = [{:acronym=>"aff",:canton=>"de Fribourg"},{:acronym=>"acvf",:canton=>"de Vaud"},{:acronym=>"anf",:canton=>"de Neuchâtel"},{:acronym=>"avf",:canton=>"du Valais"},{:acronym=>"acgf",:canton=>"de Genève"}]
 
-regions = [{:acronym=>"acvf",:canton=>"de Vaud"}]
+regions = [{:acronym=>"aff",:canton=>"de Fribourg"}]
 
 sizes = [300,500,800,1100,2200]
 regions.each { |r|
