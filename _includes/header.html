@@ -1,4 +1,4 @@
-<a href="{{ site.url }}/shop/" class="shop-tease">Footstats shop, maillot dès de 59.-!</a>
+<a href="{{ site.url }}shop" class="shop-tease">Footstats shop // Maillot Shaqiri à 59.-</a>
 <header class="site-header">
   <div class="navbar navbar-default navbar-static-top yamm sticky" role="navigation">
     <div class="container">
@@ -37,7 +37,11 @@
               </ul>
             </li>
           {% else %}
-            <li><a href="{{region.path}}">{{region.title}}</a></li>
+            {% if region.title != "Shop" %}
+              <li><a href="{{region.path}}">{{region.title}}</a></li>
+            {% else %}
+              <li class="li-ribbon"><div class="corner-ribbon top-left sticky red shadow">NEW</div><a href="{{region.path}}">{{region.title}}</a></li>
+            {% endif %}
           {% endif %}
         {% endfor %}
         {% if site.lang == "de" %}
