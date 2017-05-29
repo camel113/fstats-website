@@ -5,7 +5,7 @@ var moment = require('moment');
 var today = (moment().format('YYYY-MM-DD'))
 
 var regions = ["aff","acgf","avf","anf","acvf"]
-regions = ["anf"]
+regions = ["acgf"]
 async.eachSeries(regions, function(item, callback) {
 	page.open('http://localhost:4000/posts-images/'+today+'-image-'+item+'.html', function() {
 		console.log('http://localhost:4000/posts-images/'+today+'-image-'+item+'.html')
