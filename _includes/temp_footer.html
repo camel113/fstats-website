@@ -15,6 +15,10 @@
     $(document).ready(function(){
         Snipcart.api.configure('split_firstname_and_lastname', true);
         Snipcart.execute('registerLocale', 'fr', {"company_name":"Société"});
+        $('#buy').click(function() {
+            fbq('track', 'InitiateCheckout');
+        });
+
         // Snipcart.subscribe('page.change', function (page) {
         //     if(page == 'billing-address' || page == 'shipping-address'){
         //         $("#snip-company").closest("div").hide();
