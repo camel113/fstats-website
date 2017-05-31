@@ -1,6 +1,15 @@
 div[data-for='company'],div[data-for='province'] {
   display: none;
 }
+.cards{
+	p{
+		margin-bottom: 5px;
+	}
+	img{
+		max-width: 150px;
+		margin-bottom: 10px;
+	}
+}
 .single-product{
 	.btn-skin{
 	    background-color:$skincolor;
