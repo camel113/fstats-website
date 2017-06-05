@@ -18,7 +18,9 @@
         $('#buy').click(function() {
             fbq('track', 'InitiateCheckout');
         });
-
+        $('.private-ad').click(function() {
+            fbq('track', 'privateAd');
+        });
         // Snipcart.subscribe('page.change', function (page) {
         //     if(page == 'billing-address' || page == 'shipping-address'){
         //         $("#snip-company").closest("div").hide();
