@@ -101,3 +101,15 @@ div[data-for='company'],div[data-for='province'] {
 .shop-concept{
 	margin-top:30px;
 }
+.panel-advertising{
+	img{
+		float: left;
+		margin-top: 5px;
+	}
+	span{
+		display: block;
+		@media (min-width: 440px){
+			margin-top: 15px;
+		}
+	}
+}

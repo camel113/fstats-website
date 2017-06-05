@@ -3,6 +3,14 @@
 <p class="lastUpdate" title="{% t pages.other.last_update %}">
   <i class="fa fa-refresh"></i>&nbsp;{{ site.data[page.data_path_region][page.data_path_ligue].scorers.lastUpdate }}
 </p>
+<a href="https://www.footstats.ch/shop">
+  <div class="panel panel-default panel-advertising">
+    <div class="panel-body">
+      <img height="42" width="42" src="/images/men/maillot-thailande-vert-fluo-noir-90-minutes-yama.jpg">
+      <span>Footstats shop - Maillot de foot - Thaïlande<span>
+    </div>
+  </div>
+</a>
 {% for group in site.data[page.data_path_region][page.data_path_ligue].scorers.rankings %}
 <h3>{% t pages.scorer_ranking.group %} {{ group.groupNumber }}</h3>
 <table class="table table-striped scorer-ranking" id="{{group.groupNumber}}">
