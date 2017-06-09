@@ -2,8 +2,8 @@
   path: "/"
 - title: "Shop"
   path: "https://www.footstats.ch/shop"
-- title: "Live"
-  path: "http://live.footstats.ch"
+- title: "Concours"
+  path: "/topbuts"
 - title: "AFF"
   subcategories:
     - title: "2ème ligue"
