@@ -1,0 +1,12 @@
+---
+layout: default
+home: true
+---
+<div class="container scroll-content">
+    {% for post in paginator.posts %}
+      
+    {% endfor %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next"></a>
+    {% endif %}
+</div>
