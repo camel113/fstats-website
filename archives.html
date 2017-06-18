@@ -3,10 +3,7 @@ layout: default
 home: true
 ---
 <div class="container scroll-content">
-    {% for post in paginator.posts %}
-      
+    {% for archive in site.archives reversed %}
+      <a href="{{archive.url}}" class="archive-link">{{archive.date | date: "%-d/%m/%Y"}} - {{archive.title}}</a>
     {% endfor %}
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next"></a>
-    {% endif %}
 </div>
