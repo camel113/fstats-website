@@ -1,8 +1,13 @@
 (function($) {
+
   $(function() {
+    $('.shop-product-gallery').slick({
+      "arrows":false,
+      "dots":true
+    });
 
     if ('serviceWorker' in navigator) {
-      console.log("serviceWorker")
+      console.log("serviceWorkerXXX")
       navigator.serviceWorker.register('/service-worker.js', {
         scope: '/'
       });
