@@ -14,7 +14,7 @@ name: "FOOTSTATS.CH"
 # exclude: [dpackage.json,gulpfile.js,js/dev,node_modules,README.m]
 languages: ["fr"]
 exclude_from_localizations: ["js", "images", "css", "rankings","_posts","aff","acvf","acgf","anf","avf","import","libs","stats","config_prod.yml"]
-exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","gulpfile.js","README.m","feed.xml","js/dev","topbuts","app","*/global-stats.html"]
+exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","gulpfile.js","README.m","feed.xml","js/dev","app","*/global-stats.html"]
 gems: 
   - jekyll-multiple-languages-plugin
   - jekyll-sitemap
