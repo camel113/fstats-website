@@ -68,8 +68,7 @@ gulp.task('sass:prod', function () {
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest(jekyllDir.assets.styles))
     .pipe(gulp.dest(siteDir.assets.styles))
-    .pipe(sourcemaps.write('./maps'))
-    .pipe(reload({stream: true}));
+    .pipe(browserSync.stream());
 });
 gulp.task('js:prod', function (cb) {
   pump([
