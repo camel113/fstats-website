@@ -1,7 +1,7 @@
 - title: "Home"
   path: "/"
-- title: "Live"
-  path: "http://live.footstats.ch"
+- title: "Shop"
+  path: "https://www.footstats.ch/shop"
 - title: "Classements"
   subcategories:
     - title: "AFF"
