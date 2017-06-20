@@ -310,19 +310,28 @@ nav ul {
   margin-top: 10px; }
 
 #footer {
-  text-align: center;
   background-color: #111;
-  padding-top: 10px; }
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 500px 0px 500px #111; }
   #footer p {
     color: #aeaeae;
     font-size: 13px;
     margin-bottom: 0.5rem; }
+  #footer a, #footer a:hover, #footer a:visited {
+    text-decoration: none; }
   #footer .list-inline {
     padding-left: 0;
     list-style: none;
     margin-bottom: 0; }
     #footer .list-inline > li {
       display: inline-block; }
+  #footer .links-list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0; }
+    #footer .links-list li > a {
+      color: #fff; }
   #footer .footer-social li {
     padding: 0px; }
   #footer .si-colored-facebook, #footer .si-facebook:hover {

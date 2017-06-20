@@ -1,11 +1,15 @@
 #footer{
-  text-align: center;
   background-color:#111;
-  padding-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 500px 0px 500px #111;
   p {
     color: #aeaeae;
     font-size: 13px;
     margin-bottom: 0.5rem;
+  }
+  a,a:hover,a:visited{
+    text-decoration: none;
   }
   .list-inline {
     padding-left: 0;
@@ -13,6 +17,14 @@
     margin-bottom: 0;
     &>li{
       display: inline-block;
+    }
+  }
+  .links-list{
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    li>a{
+      color: #fff;
     }
   }
   .footer-social li {
