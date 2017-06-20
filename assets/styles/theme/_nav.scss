@@ -1,13 +1,14 @@
 $navbar-height:55px;
 $navbar-color:#3D4248;
-header{
+
+.site-header{
   height:$navbar-height;
   box-shadow: 0 0 1px 1px #ccc;
   .toggle-overlay{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 100%;
+    height: $navbar-height;
       span{
         background-image: url(../images/hamburger.svg);
         background-repeat: no-repeat;
@@ -195,5 +196,28 @@ nav ul{
   .visible{
     left: 0;
     visibility: visible;
+  }
+}
+.desktop-nav{
+  height: 100%;
+  .nav{
+    align-items:center;
+    height: 100%;
+    a{
+      color: $navbar-color;
+      &.dropdown-item.active, &.dropdown-item:active {
+        color: #fff;
+        background-color: $navbar-color;
+      }
+    }
+  }
+}
+.switch-ranks{
+  margin-top: 20px;
+  .nav-link{
+    color: #000;
+  }
+  .nav-pills .nav-link.active{
+    background: $navbar-color;
   }
 }
