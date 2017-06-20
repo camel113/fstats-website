@@ -1,13 +1,16 @@
 (function($) {
 
   $(function() {
+    
     $('.shop-product-gallery').slick({
       "arrows":false,
       "dots":true
     });
 
+    Snipcart.api.configure('split_firstname_and_lastname', true);
+    Snipcart.execute('registerLocale', 'fr', {"company_name":"Société"});
+
     if ('serviceWorker' in navigator) {
-      console.log("serviceWorkerXXX")
       navigator.serviceWorker.register('/service-worker.js', {
         scope: '/'
       });
