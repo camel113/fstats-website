@@ -1,14 +1,6 @@
 ---
 layout: default
 ---
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.7&appId=583536318486411";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <div class="container">
 	<div class="row justify-content-md-center">
 		<div class="col-md-10">
@@ -21,14 +13,6 @@ layout: default
 				</ul>
 				<div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button_count"></div>
 				<h2>{{page.title}}</h2>
-				<a class="private-ad" href="https://www.footstats.ch/shop">
-				  <div class="panel panel-default panel-advertising">
-				    <div class="panel-body">
-				      <img height="42" width="42" src="/images/men/maillot-thailande-vert-fluo-noir-90-minutes-yama.jpg">
-				      <span>Footstats shop - Maillot de foot - Thaïlande<span>
-				    </div>
-				  </div>
-				</a>
 				{{content}}
 			</div><!--blog post-->
 		</div><!--col-->
