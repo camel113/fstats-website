@@ -2,6 +2,8 @@
   path: "/"
 - title: "Shop"
   path: "https://www.footstats.ch/shop"
+- title: "Concours"
+  path: "/topbuts"
 - title: "Classements"
   subcategories:
     - title: "AFF"
