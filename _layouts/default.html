@@ -6,9 +6,11 @@
   <body>
     {% include header.html %}
     {{ content }}
-    {% unless page.home == true %}
-    	{% include footer.html %}
-		{% endunless %}
+    {% if page.footer == "shop" %}
+    	{% include footer-shop.html %}
+		{% else %}
+			{% include footer.html %}
+		{% endif %}
 		<a href="#0" class="cd-top">Top</a>
   </body>
 

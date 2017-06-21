@@ -20,6 +20,9 @@
     text-align: center;
     padding: 10px 16px;
     font-weight: 700;
+    @media (max-width: 768px){
+    	margin-bottom: 30px;
+  	}
 	}
 	.list-inline{
 		margin-left: 0;
@@ -44,6 +47,9 @@
 	}
 	.description,.livraison{
 		margin-bottom: 40px;
+		@media (max-width: 768px){
+    	margin-bottom: 20px;
+  	}
 	}
 }
 div[data-for='company'] {
