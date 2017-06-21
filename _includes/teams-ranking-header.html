@@ -1,27 +1,40 @@
 {% assign groups_length = site.data[page.data_path_region][page.data_path_ligue].standard.size %}
+<div class="row justify-content-md-center">
+  <div class="col col-md-8 col-lg-6">
+    <h1>{% t page.title %}</h1>
+    <h2>{% t page.headline %}</h2>
+    <p><small>{% t pages.scorer_ranking.info %}</small></p>
+    <p><small><span class="text-muted d-block"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ site.data[page.data_path_region][page.data_path_ligue].scorers.lastUpdate }}</span></small></p>
+  </div>
+</div>
 <div id="table-choice" class="row">
-  <div class="form-group">
-    <label {% if groups_length == 1 %} style="display:none" {%endif%} class="col-xs-5 col-md-2">Groupe</label>
-    <div {% if groups_length == 1 %} style="display:none" {%endif%} class="col-xs-7 col-md-2">
-      <select class="form-control" id="group-choice">
-        {% if groups_length  == 1 %}
-          <option value="group1" selected>Audi</option>
-        {% else %}
-          <option value="global">{% t pages.teams_ranking.global %}</option>
-          {% for group in site.data[page.data_path_region][page.data_path_ligue].standard %}
-            <option value="group{{forloop.index}}">{{forloop.index}}</option>
-          {% endfor %}
-        {% endif %}
-      </select>
+  <div class="col-12 col-md-12 offset-md-3 form-group">
+    <div class="row">
+      <label {% if groups_length == 1 %} style="display:none" {%endif%} class="col-5 col-md-2">Groupe</label>
+      <div {% if groups_length == 1 %} style="display:none" {%endif%} class="col-7 col-md-2">
+        <select class="form-control" id="group-choice">
+          {% if groups_length  == 1 %}
+            <option value="group1" selected>Audi</option>
+          {% else %}
+            <option value="global">{% t pages.teams_ranking.global %}</option>
+            {% for group in site.data[page.data_path_region][page.data_path_ligue].standard %}
+              <option value="group{{forloop.index}}">{{forloop.index}}</option>
+            {% endfor %}
+          {% endif %}
+        </select>
+      </div>
     </div>
-    
-    <label class="col-xs-5 col-md-2">{% t pages.teams_ranking.ranking %}</label>
-    <div class="col-xs-7 col-md-2">
-      <select class="form-control" id="rank-choice">
-        <option value="standard">{% t pages.teams_ranking.general %}</option>
-        <option value="attack">{% t pages.teams_ranking.attack %}</option>
-        <option value="defense">{% t pages.teams_ranking.defense %}</option>
-      </select>
+  </div>
+  <div class="col-12 offset-md-3">
+    <div class="row form-group">
+      <label class="col-5 col-md-2">{% t pages.teams_ranking.ranking %}</label>
+      <div class="col-7 col-md-2">
+        <select class="form-control" id="rank-choice">
+          <option value="standard">{% t pages.teams_ranking.general %}</option>
+          <option value="attack">{% t pages.teams_ranking.attack %}</option>
+          <option value="defense">{% t pages.teams_ranking.defense %}</option>
+        </select>
+      </div>
     </div>
   </div>
 </div>

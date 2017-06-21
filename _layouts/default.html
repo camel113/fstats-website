@@ -6,8 +6,10 @@
   <body>
     {% include header.html %}
     {{ content }}
-    {% include footer.html %}
-    {% include temp_footer.html %}
+    {% unless page.home == true %}
+    	{% include footer.html %}
+		{% endunless %}
+		<a href="#0" class="cd-top">Top</a>
   </body>
 
 </html>
