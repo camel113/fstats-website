@@ -7,6 +7,15 @@
       "dots":true
     });
 
+    $('.shop-product-checkout').on('click', function(event){
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Checkout',
+        eventAction: 'click',
+        eventLabel: 'Cadenza'
+      });
+    });
+
     Snipcart.api.configure('split_firstname_and_lastname', true);
     Snipcart.execute('registerLocale', 'fr', {"company_name":"Société"});
 
