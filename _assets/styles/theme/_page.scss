@@ -2,3 +2,24 @@
 	margin-top:20px;
 	margin-bottom:20px;
 }
+.private-ad{
+	display:flex;
+	justify-content:center;
+	.ad-img{
+		width: 120px;
+		text-align:center;
+		img{
+			margin:auto;
+			max-height: 100px;
+		}
+	}
+	.ad-desc{
+		width: 150px;
+		margin-top: 5px;
+		line-height: 1.2;
+		a{
+			font-size: 13px;
+			text-decoration: underline;
+		}
+	}
+}
