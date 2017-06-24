@@ -1,0 +1,23 @@
+<table class="table table-striped scorer-ranking" id="{{group.groupNumber}}">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th><i class="fa fa-male"></i></th>
+      <th><i class="fa fa-futbol-o"></i></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for scorer in include.scorers %}
+      <tr>
+        <td>{{ forloop.index }}</td>
+        <td>
+          {{ scorer.scorer }}
+          <span class="d-block team-name">
+            <small>{{ scorer.team }}</small>
+          </span>
+        </td>
+        <td>{{ scorer.goals }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

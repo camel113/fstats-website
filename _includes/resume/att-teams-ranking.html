@@ -1,0 +1,20 @@
+<table class="table table-striped scorer-ranking" id="{{group.groupNumber}}">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Team</th>
+      <th>Buts/Match</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for team in include.teams %}
+      <tr>
+        <td>{{ forloop.index }}</td>
+        <td>
+          {{ team.name }}
+        </td>
+        <td>{{ team.moyenne }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
