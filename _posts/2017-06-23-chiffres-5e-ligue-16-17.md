@@ -16,13 +16,13 @@ title_for_facebook: 5e ligue - Le palmarès de la saison 16/17
 image_for_facebook: /images/facebook/2017-06-23-image-chiffres-5eligue-facebook.png
 scorers: data.5eligue
 ---
-La saison 16/17 est maintenant terminée depuis quelques semaines et certains préparent déjà la saison prochaine. Chez Footstats on profite de la trêve pour vous proposer les chiffres marquants de la saison passée avec entre autres les meilleures équipes, le top des buteurs et d’autres chiffres inédits.
+La saison 16/17 est maintenant terminée depuis quelques semaines et certains préparent déjà la saison prochaine. Chez Footstats on profite de la trêve pour vous proposer les chiffres marquants de la saison passée avec entre autres les meilleures équipes, le top des buteurs et d’autres statistiques inédites.
 
 Durant la pause hivernale, ils étaient quatre à se partager la première place du classement des buteurs. __Fabio Jorge Pinto__ (CS Chavannes Epenex/VD) a sur tirer son épingle du jeu puisqu’il dépasse aujourd’hui tous ces concurrents grâce aux 35 buts qu’il a inscrits.
 
 {% include post-ranking.html scorers=site.data.5eligue.scorers %}
 
-On recense au total __8961 buts__ marqués par __2833 buteurs__ cette saison. Le groupe le plus prolifique en but est celui de 5e ligue fribourgeoise où 6.1 buts sont marqués en moyenne par match tandis que le groupe 2 valaisan est celui qui recense la moins bonne moyenne avec « seulement » 4.1 buts en moyenne par match.
+On recense au total __8961 buts__ marqués par __2833 buteurs__ cette saison. Le groupe le plus prolifique en buts est celui de 5e ligue fribourgeoise où 6.1 buts sont marqués en moyenne par match tandis que le groupe 2 valaisan est celui qui recense la moins bonne moyenne avec « seulement » 4.1 buts en moyenne par match.
 
 Du côté des équipes le __FC Deportivo__ (NE) est à la première place du classement des meilleures attaques avec 100 goals marqués pour une moyenne de 6.1 buts/match. Dans ce classement c’est le __FC Savièse__ (VS) qui porte le bonnet d’âne avec seulement 13 buts marqués en 22 rencontres (moyenne : 0.6 buts/matchs). 
 
