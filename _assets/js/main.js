@@ -7,26 +7,6 @@
       "dots":true
     });
 
-    $('.shop-product-checkout').on('click', function(event){
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'Checkout',
-        eventAction: 'click',
-        eventLabel: 'Cadenza'
-      });
-    });
-
-    $('.private-ad').on('click', function(event){
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'Ad-Click',
-        eventAction: 'click',
-        eventLabel: 'Cadenza'
-      });
-    });
-
-    Snipcart.api.configure('split_firstname_and_lastname', true);
-    Snipcart.execute('registerLocale', 'fr', {"company_name":"Société"});
 
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/service-worker.js', {
@@ -34,6 +14,8 @@
       });
     }
 
+    snipcartConfig.init()
+    analyticsConfig.init()
     navManager.init()
     if($('.ligue-teams').length>0){
       rankingChoice.init()
@@ -187,5 +169,33 @@ var rankingChoice = {
         $('#group'+i).hide()
     };
     $('#global, .ranking').hide()
+  }
+}
+
+var analyticsConfig = {
+  init: function(){
+    $('.shop-product-checkout').on('click', function(event){
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Checkout',
+        eventAction: 'click',
+        eventLabel: 'Cadenza'
+      });
+    });
+
+    $('.private-ad').on('click', function(event){
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Ad-Click',
+        eventAction: 'click',
+        eventLabel: 'Cadenza'
+      });
+    });
+  }
+}
+var snipcartConfig = {
+  init: function(){
+    Snipcart.api.configure('split_firstname_and_lastname', true);
+    Snipcart.execute('registerLocale', 'fr', {"company_name":"Société"});
   }
 }
