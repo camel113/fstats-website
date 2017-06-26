@@ -3,12 +3,12 @@ layout: default
 ---
 <article class="container blog-article">
 	<div class="row justify-content-md-center">
-    <div class="col col-md-8 col-lg-6 article-img">
+    <div class="col-12 col-md-8 col-lg-6 article-img">
     	<img class="card-img-top" src="{{site.url}}/images/posts/headers/{{page.image-300}}"  srcset="{{site.url}}/images/posts/headers/{{page.image-500}} 500w, {{site.url}}/images/posts/headers/{{page.image-800}} 800w, {{site.url}}/images/posts/headers/{{page.image-1100}} 1100w, {{site.url}}/images/posts/headers/{{page.image-2200}} 2200w" alt="yah"/>
   	</div>    
 	</div>
   <div class="row justify-content-md-center">
-    <div class="col col-md-8 col-lg-6 article-img">
+    <div class="col-12 col-md-8 col-lg-6 article-img">
     	<h1>{{page.title}}</h1>
     	<p><small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ page.date | date: "%-d/%m/%Y"}}</small></p>
     </div>    
@@ -18,7 +18,7 @@ layout: default
     <div class="ad-desc"><a href="{{site.url}}/shop">Actuellement sur Footstats Shop Maillot Cadenza CHF 19.-</a></div>
   </div>
   <div class="row justify-content-md-center">
-    <div class="col col-md-8 col-lg-6">
+    <div class="col-12 col-md-8 col-lg-6">
 	{{content}}
     </div>
   </div>
