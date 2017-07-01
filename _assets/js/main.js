@@ -181,6 +181,8 @@ var analyticsConfig = {
         eventAction: 'click',
         eventLabel: 'Cadenza'
       });
+
+      fbq('track', 'InitiateCheckout');
     });
 
     $('.private-ad').on('click', function(event){
