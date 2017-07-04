@@ -193,6 +193,14 @@ var analyticsConfig = {
         eventLabel: 'Cadenza'
       });
     });
+
+    $('.job-tease').on('click', function(event){
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Job-Tease-Click',
+        eventAction: 'click',
+      });
+    });
   }
 }
 var snipcartConfig = {
