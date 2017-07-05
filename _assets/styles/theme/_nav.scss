@@ -1,7 +1,11 @@
-$navbar-height:55px;
+$navbar-utils-height:30px;
+$navbar-breadcrumb-height:40px;
+$navbar-nav-height:40px;
+$navbar-height:$navbar-utils-height+$navbar-breadcrumb-height+$navbar-nav-height;
 $navbar-color:#3D4248;
+$navbar-bg-color:#fff;
 
-.site-header{
+header{
   height:$navbar-height;
   box-shadow: 0 0 1px 1px #ccc;
   .toggle-overlay{
@@ -16,12 +20,6 @@ $navbar-color:#3D4248;
         width: 55px;
         height: 22px;
       } 
-  }
-  .title{
-    img{
-      width: 100px;
-      max-width: 100%;
-    }
   }
 }
 aside {
@@ -67,15 +65,7 @@ aside {
       font-size: 13px;
       margin-bottom: 0.5rem;
     }
-    .list-inline {
-      padding-left: 0;
-      list-style: none;
-      margin-bottom: 0.5rem;
-      &>li{
-        display: inline-block;
-      }
-    }
-    .footer-social li {
+    .header-social li {
       padding: 0px;
     }
     .si-colored-facebook, .si-facebook:hover {
@@ -199,7 +189,8 @@ nav ul{
   }
 }
 .desktop-nav{
-  height: 100%;
+  background-color: $navbar-bg-color;
+  height: $navbar-nav-height;
   .nav{
     align-items:center;
     height: 100%;
@@ -210,6 +201,53 @@ nav ul{
         background-color: $navbar-color;
       }
     }
+  }
+}
+.desktop-nav-utils{
+  height: $navbar-utils-height;
+  width: 100%;
+  background: #f3f3f3;
+  display: flex;
+  align-items:center;
+  .list-inline{
+    margin-bottom: 0;
+  }
+  .other-links{
+    flex-basis: 40%;
+    a{
+      color: $navbar-color;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  .social-links{
+    flex-basis: 10%;
+    padding-left:20px;
+    li{
+      vertical-align: middle;
+    }
+    a{
+      color: $navbar-color;
+      margin-right: 15px;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  .language-selector{
+    flex-basis: 50%;
+    text-align:right;
+    padding-right:20px;
+  }
+}
+.desktop-nav-breadcrumb{
+  height: $navbar-breadcrumb-height;
+  background: $navbar-bg-color;
+  border-bottom:1px solid rgba(0,0,0,.1);
+  img{
+    width: 100px;
+    max-width: 100%;
   }
 }
 .switch-ranks{

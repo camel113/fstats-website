@@ -1,5 +1,4 @@
-<a href="/jobs" class="job-tease">Footstats cherche des talents!</a>
-<header class="container-fluid site-header">
+<header>
   <div class="row hidden-md-up mobile-nav">
     <div class="col-8 title">
       <h1>
@@ -10,16 +9,50 @@
     </div>
     <div class="col-4"><div class="toggle-overlay"><span></span></div></div>
   </div>
-  <div class="container hidden-sm-down desktop-nav">
+  <div class="hidden-sm-down desktop-nav-utils">
+    <ul class="list-inline social-links">
+      <li>
+        <a href="https://www.facebook.com/footstats.ch/" class="">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/footstats.ch/" class="">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+    <ul class="list-inline other-links">
+      <li>
+        <a href="#">Concours</a>
+      </li>
+      <li>
+        <a href="#">Shop</a>
+      </li>
+    </ul>
+    <ul class="list-inline language-selector">
+      <li>
+        <a href="#">FR</a>
+      </li>
+      <li>
+        <a href="#">DE</a>
+      </li>
+    </ul>
+  </div>
+  <div class="container hidden-sm-down desktop-nav-breadcrumb">
     <div class="row">
-      <div class="col-2 title">
+      <div class="col-xs-12">
         <h1>
           <a href="{{site.url}}">
             <img src="/images/footstats2.png" alt="Footstats" />
           </a>
         </h1>
       </div>
-      <div class="col-10">
+    </div>
+  </div>
+  <div class="container hidden-sm-down desktop-nav">
+    <div class="row">
+      <div class="col-xs-12">
         <ul class="nav">
           {% assign navigation = site.data.nav %}
           {% for element in navigation %}
@@ -34,8 +67,6 @@
                   </div>
                 </li>
               {% endfor %}
-            {% else %}
-            <li class="nav-item"><a class="nav-link" href="{{element.path}}">{{element.title}}</a></li>
             {% endif %}
           {% endfor %}
         </ul>
