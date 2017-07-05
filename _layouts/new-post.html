@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <article class="container blog-article">
 	<div class="row justify-content-md-center">
     <div class="col-12 col-md-8 col-lg-6 article-img">
@@ -12,6 +21,15 @@ layout: default
     	<h1>{{page.title}}</h1>
     	<p><small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ page.date | date: "%-d/%m/%Y"}}</small></p>
     </div>    
+  </div>
+  <!-- Your share button code -->
+  <div class="row justify-content-md-center">
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="fb-share-button" 
+        data-href="http://www.your-domain.com/your-page.html" 
+        data-layout="button_count">
+      </div>
+    </div>
   </div>
   <div class="private-ad">
     <div class="ad-img"><a href="{{site.url}}/shop"><img class="img-fluid mx-auto" src="{{ '/images/shop/cadenza-1.jpg' | prepend: site.url }}" alt="Cadenza YAMAHA" /></a></div>
