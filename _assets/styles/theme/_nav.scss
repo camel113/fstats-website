@@ -260,6 +260,25 @@ aside.open {
     width: 100px;
     max-width: 100%;
   }
+  ul.nav-breadcrumb{
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    li{
+      padding-left: 25px;
+      &:nth-child(1):before {
+        content: '';
+        display: inline-block;
+        height: 16px;
+        position: relative;
+        width: 1px;
+        border-left: 1px solid rgba(0,0,0,.1);
+        left: -15px;
+        top: 2px;
+      }
+    }
+  }
 }
 .switch-ranks{
   margin-top: 20px;

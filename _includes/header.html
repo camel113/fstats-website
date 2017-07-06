@@ -27,12 +27,12 @@
       </li>
     </ul>
     <ul class="list-inline other-links">
-      <li>
-        <a href="#">Concours</a>
-      </li>
-      <li>
-        <a href="#">Shop</a>
-      </li>
+      {% assign utilsnav = site.data.nav.utils %}
+      {% for util in utilsnav %}
+        <li>
+          <a href="{{util.path}}">{{ util.title }}</a>
+        </li>
+      {% endfor %}
     </ul>
     <ul class="list-inline language-selector">
       <li>
@@ -52,27 +52,31 @@
           </a>
         </h1>
       </div>
+      <ul class="nav-breadcrumb"><li>{% t page.title %}</li></ul>
     </div>
   </div>
   <div class="container hidden-sm-down desktop-nav">
     <div class="row">
       <div class="col-xs-12">
         <ul class="nav">
-          {% assign navigation = site.data.nav %}
-          {% for element in navigation %}
-            {% if element.subcategories != null %}
-              {% for subcategory in element.subcategories %}
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ subcategory.title }}</a>
-                  <div class="dropdown-menu">
-                    {% for page in subcategory.subpages %}
-                      <a class="dropdown-item" href="{{subcategory.path}}{{page.path}}">{{page.title}}</a>
-                    {% endfor %}
-                  </div>
-                </li>
-              {% endfor %}
-            {% endif %}
-          {% endfor %}
+          {% assign regionnav = site.data.nav.regions %}
+          {% if page.data_path_region == null %}
+            {% for region in regionnav.regions %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{region.path}}{{region.subpages.first.path}}">{{ region.title }}</a>
+              </li>
+            {% endfor %}
+          {% else %}
+            {% assign subnav = regionnav.regions | where:'path', page.data_path_region %}
+            <li class="nav-item">
+              <a class="nav-link" href="/{{page.data_path_region}}">{{ subnav[0].title }}</a>
+            </li>
+            {% for subpage in subnav[0].subpages %}
+              <li class="nav-item">
+                <a class="nav-link" href="/{{page.data_path_region}}/{{subpage.path}}">{{ subpage.title }}</a>
+              </li>
+            {% endfor %}
+          {% endif %}
         </ul>
       </div>
     </div>
@@ -83,31 +87,24 @@
   <nav>
     <ul class="nav-level-zero">
       <li class="nav-title menu">Menu</li>
-    {% assign navigation = site.data.nav %}
-    {% for element in navigation %}
-      {% if element.subcategories != null %}
-        <li class="nav-subnav">
-          <a href="#!">{{element.title}}<span class="link-indicator"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
-          <ul class="nav-level">
-            <li class="nav-title"><a href="#" class="nav-back-one-step"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>{{ element.title }}</li>
-            {% for subcategory in element.subcategories %}
-              {% if subcategory.subpages != null %}
-                <li class="nav-subnav">
-                  <a href="#!">{{subcategory.title}}<span class="link-indicator"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
-                  <ul class="nav-level">
-                    <li class="nav-title"><a href="#" class="nav-back-one-step"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>{{subcategory.title}}</li>
-                    {% for page in subcategory.subpages %}
-                      <li><a href="{{subcategory.path}}{{page.path}}">{{page.title}}</a></li>
-                    {% endfor %}
-                  </ul>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </li>
-      {% else %}
-        <li><a href="{{element.path}}">{{element.title}}</a></li>
-      {% endif %}
-    {% endfor %}
+    {% assign regionnav = site.data.nav.regions %}
+      <li class="nav-subnav">
+        <a href="#!">{{regionnav.title}}<span class="link-indicator"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+        <ul class="nav-level">
+          <li class="nav-title"><a href="#" class="nav-back-one-step"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>{{ element.title }}</li>
+          {% for region in regionnav.regions %}
+            <li class="nav-subnav">
+              <a href="#!">{{region.title}}<span class="link-indicator"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+              <ul class="nav-level">
+                <li class="nav-title"><a href="#" class="nav-back-one-step"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>{{region.title}}</li>
+                {% for page in region.subpages %}
+                  <li><a href="/{{region.path}}/{{page.path}}">{{page.title}}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
     </ul>
     <div class="nav-footer">
       <p>Pour rester informé</p>
