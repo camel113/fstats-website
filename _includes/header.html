@@ -35,12 +35,10 @@
       {% endfor %}
     </ul>
     <ul class="list-inline language-selector">
-      <li>
-        <a href="#">FR</a>
-      </li>
-      <li>
-        <a href="#">DE</a>
-      </li>
+      {% capture link1 %}/de{{ page.url}}{% endcapture %}
+      <li><a href="{{ link1 }}" >DE</a></li>
+      {% capture link2 %}{{ page.url  }}{% endcapture %}
+      <li><a href="{{ link2 }}" >FR</a></li>
     </ul>
   </div>
   <div class="container hidden-sm-down desktop-nav-breadcrumb">
@@ -69,11 +67,11 @@
           {% else %}
             {% assign subnav = regionnav.regions | where:'path', page.data_path_region %}
             <li class="nav-item">
-              <a class="nav-link" href="/{{page.data_path_region}}">{{ subnav[0].title }}</a>
+              <a class="nav-link" href="{{site.baseurl}}/{{page.data_path_region}}">{{ subnav[0].title }}</a>
             </li>
             {% for subpage in subnav[0].subpages %}
               <li class="nav-item">
-                <a class="nav-link" href="/{{page.data_path_region}}/{{subpage.path}}">{{ subpage.title }}</a>
+                <a class="nav-link" href="{{site.baseurl}}/{{page.data_path_region}}{{subpage.path}}">{{ subpage.title }}</a>
               </li>
             {% endfor %}
           {% endif %}
