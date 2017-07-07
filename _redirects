@@ -1,1 +1,1 @@
-/news/*/2016/:month:/:date/:slug /archives/2016-:month-:date-:slug 301
+/news/*/2016/:month:/:date/:slug /archives/2016%2D:month%2D:date%2D:slug 301 301
