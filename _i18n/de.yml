@@ -26,6 +26,22 @@ pages:
     avf_3_teams: "WFV 3. Liga"
     avf_4_teams: "WFV 4. Liga"
     avf_5_teams: "WFV 5. Liga"
+    anf_2: ANF 2. Liga
+    anf_3: ANF 3. Liga
+    anf_4: ANF 4. Liga
+    anf_5: ANF 5. Liga
+    anf_2_teams: ANF 2. Liga
+    anf_3_teams: ANF 3. Liga
+    anf_4_teams: ANF 4. Liga
+    anf_5_teams: ANF 5. Liga
+    acgf_2: ACGF 2. Liga
+    acgf_3: ACGF 3. Liga
+    acgf_4: ACGF 4. Liga
+    acgf_5: ACGF 5. Liga
+    acgf_2_teams: ACGF 2. Liga
+    acgf_3_teams: ACGF 3. Liga
+    acgf_4_teams: ACGF 4. Liga
+    acgf_5_teams: ACGF 5. Liga
     meta:
       aff_2: "FFV 2. Liga | Torschützen"
       aff_3: "FFV 3. Liga | Torschützen"
@@ -39,6 +55,14 @@ pages:
       avf_3: "WFV 3. Liga | Torschützen"
       avf_4: "WFV 4. Liga | Torschützen"
       avf_5: "WFV 5. Liga | Torschützen"
+      acgf_2: "ACGF 2. Liga | Torschützen"
+      acgf_3: "ACGF 3. Liga | Torschützen"
+      acgf_4: "ACGF 4. Liga | Torschützen"
+      acgf_5: "ACGF 5. Liga | Torschützen"
+      anf_2: "ANF 2. Liga | Torschützen"
+      anf_3: "ANF 3. Liga | Torschützen"
+      anf_4: "ANF 4. Liga | Torschützen"
+      anf_5: "ANF 5. Liga | Torschützen"
   descriptions:
     aff_2: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 2. Liga."
     aff_3: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 3. Liga."
@@ -66,6 +90,22 @@ pages:
     avf_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft WFV (Wallis)"
     avf_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft WFV (Wallis)"
     avf_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft WFV (Wallis)"
+    acgf_2: "Torschützen-Rangliste Meisterschaft ACGF (Genf) 2. Liga."
+    acgf_3: "Torschützen-Rangliste Meisterschaft ACGF (Genf) 3. Liga."
+    acgf_4: "Torschützen-Rangliste Meisterschaft ACGF (Genf) 4. Liga."
+    acgf_5: "Torschützen-Rangliste Meisterschaft ACGF (Genf) 5. Liga."
+    acgf_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft ACGF (Genf)"
+    acgf_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft ACGF (Genf)"
+    acgf_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ACGF (Genf)"
+    acgf_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ACGF (Genf)"
+    anf_2: "Torschützen-Rangliste Meisterschaft ANF (Neuenburg) 2. Liga."
+    anf_3: "Torschützen-Rangliste Meisterschaft ANF (Neuenburg) 3. Liga."
+    anf_4: "Torschützen-Rangliste Meisterschaft ANF (Neuenburg) 4. Liga."
+    anf_5: "Torschützen-Rangliste Meisterschaft ANF (Neuenburg) 5. Liga."
+    anf_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft ANF (Neuenburg)"
+    anf_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft ANF (Neuenburg)"
+    anf_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ANF (Neuenburg)"
+    anf_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ANF (Neuenburg)"
   scorer_ranking:
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
     info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."
