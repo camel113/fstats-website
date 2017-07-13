@@ -55,8 +55,8 @@ regions:
         path: "/4eme-ligue"
       - title: "5e ligue"
         path: "/5eme-ligue"
-  - title: "AVF"
-    path: "avf"
+  - title: "AFV"
+    path: "afv"
     subpages:
       - title: "2e ligue"
         path: "/2eme-ligue"
