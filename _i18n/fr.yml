@@ -75,6 +75,14 @@ pages:
     fvnws_3_teams: FVNWS 3ème ligue
     fvnws_4_teams: FVNWS 4ème ligue
     fvnws_5_teams: FVNWS 5ème ligue
+    ofv_2: OFV 2ème ligue
+    ofv_3: OFV 3ème ligue
+    ofv_4: OFV 4ème ligue
+    ofv_5: OFV 5ème ligue
+    ofv_2_teams: OFV 2ème ligue
+    ofv_3_teams: OFV 3ème ligue
+    ofv_4_teams: OFV 4ème ligue
+    ofv_5_teams: OFV 5ème ligue
     meta:
       acvf_2: ACVF 2ème ligue | Buteurs
       acvf_3: ACVF 3ème ligue | Buteurs
@@ -114,6 +122,10 @@ pages:
       fvnws_3: FVNWS 3ème ligue | Buteurs
       fvnws_4: FVNWS 4ème ligue | Buteurs
       fvnws_5: FVNWS 5ème ligue | Buteurs
+      ofv_2: OFV 2ème ligue | Buteurs
+      ofv_3: OFV 3ème ligue | Buteurs
+      ofv_4: OFV 4ème ligue | Buteurs
+      ofv_5: OFV 5ème ligue | Buteurs
   descriptions:
     aff_2: Classement buteurs championnat de football AFF (Fribourg) 2ème ligue.
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
@@ -189,6 +201,14 @@ pages:
     fvnws_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVNWS (Nordwestschweiz) 3ème ligue."
     fvnws_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVNWS (Nordwestschweiz) 4ème ligue."
     fvnws_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVNWS (Nordwestschweiz) 5ème ligue."
+    ofv_2: Classement buteurs championnat de football OFV (Ostschweizer) 2ème ligue.
+    ofv_3: Classement buteurs championnat de football OFV (Ostschweizer) 3ème ligue.
+    ofv_4: Classement buteurs championnat de football OFV (Ostschweizer) 4ème ligue.
+    ofv_5: Classement buteurs championnat de football OFV (Ostschweizer) 5ème ligue.
+    ofv_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Ostschweizer) 2ème ligue."
+    ofv_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Ostschweizer) 3ème ligue."
+    ofv_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Ostschweizer) 4ème ligue."
+    ofv_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Ostschweizer) 5ème ligue."
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: Si vous constatez des erreurs ou des oublis écrivez-nous sur Facebook, Instagram ou à contact@footstats.ch.

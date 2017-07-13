@@ -74,6 +74,14 @@ pages:
     fvnws_3_teams: FVNWS 3. Liga
     fvnws_4_teams: FVNWS 4. Liga
     fvnws_5_teams: FVNWS 5. Liga
+    ofv_2: OFV 2. Liga
+    ofv_3: OFV 3. Liga
+    ofv_4: OFV 4. Liga
+    ofv_5: OFV 5. Liga
+    ofv_2_teams: OFV 2. Liga
+    ofv_3_teams: OFV 3. Liga
+    ofv_4_teams: OFV 4. Liga
+    ofv_5_teams: OFV 5. Liga
     meta:
       aff_2: "FFV 2. Liga | Torschützen"
       aff_3: "FFV 3. Liga | Torschützen"
@@ -113,6 +121,10 @@ pages:
       fvnws_3: "FVNWS 3. Liga | Torschützen"
       fvnws_4: "FVNWS 4. Liga | Torschützen"
       fvnws_5: "FVNWS 5. Liga | Torschützen"
+      ofv_2: "OFV 2. Liga | Torschützen"
+      ofv_3: "OFV 3. Liga | Torschützen"
+      ofv_4: "OFV 4. Liga | Torschützen"
+      ofv_5: "OFV 5. Liga | Torschützen"
   descriptions:
     aff_2: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 2. Liga."
     aff_3: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 3. Liga."
@@ -188,6 +200,14 @@ pages:
     fvnws_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft FVNWS (Nordwestschweiz)"
     fvnws_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVNWS (Nordwestschweiz)"
     fvnws_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVNWS (Nordwestschweiz)"
+    ofv_2: "Torschützen-Rangliste Meisterschaft OFV (Ostschweizer) 2. Liga."
+    ofv_3: "Torschützen-Rangliste Meisterschaft OFV (Ostschweizer) 3. Liga."
+    ofv_4: "Torschützen-Rangliste Meisterschaft OFV (Ostschweizer) 4. Liga."
+    ofv_5: "Torschützen-Rangliste Meisterschaft OFV (Ostschweizer) 5. Liga."
+    ofv_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft OFV (Ostschweizer)"
+    ofv_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft OFV (Ostschweizer)"
+    ofv_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft OFV (Ostschweizer)"
+    ofv_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft OFV (Ostschweizer)"
   scorer_ranking:
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
     info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."
