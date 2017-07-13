@@ -66,6 +66,14 @@ pages:
     ifv_3_teams: IFV 3. Liga
     ifv_4_teams: IFV 4. Liga
     ifv_5_teams: IFV 5. Liga
+    fvnws_2: FVNWS 2. Liga
+    fvnws_3: FVNWS 3. Liga
+    fvnws_4: FVNWS 4. Liga
+    fvnws_5: FVNWS 5. Liga
+    fvnws_2_teams: FVNWS 2. Liga
+    fvnws_3_teams: FVNWS 3. Liga
+    fvnws_4_teams: FVNWS 4. Liga
+    fvnws_5_teams: FVNWS 5. Liga
     meta:
       aff_2: "FFV 2. Liga | Torschützen"
       aff_3: "FFV 3. Liga | Torschützen"
@@ -101,6 +109,10 @@ pages:
       ifv_3: "IFV 3. Liga | Torschützen"
       ifv_4: "IFV 4. Liga | Torschützen"
       ifv_5: "IFV 5. Liga | Torschützen"
+      fvnws_2: "FVNWS 2. Liga | Torschützen"
+      fvnws_3: "FVNWS 3. Liga | Torschützen"
+      fvnws_4: "FVNWS 4. Liga | Torschützen"
+      fvnws_5: "FVNWS 5. Liga | Torschützen"
   descriptions:
     aff_2: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 2. Liga."
     aff_3: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 3. Liga."
@@ -168,6 +180,14 @@ pages:
     ifv_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft IFV (Innerschweizerischer)"
     ifv_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft IFV (Innerschweizerischer)"
     ifv_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft IFV (Innerschweizerischer)"
+    fvnws_2: "Torschützen-Rangliste Meisterschaft FVNWS (Nordwestschweiz) 2. Liga."
+    fvnws_3: "Torschützen-Rangliste Meisterschaft FVNWS (Nordwestschweiz) 3. Liga."
+    fvnws_4: "Torschützen-Rangliste Meisterschaft FVNWS (Nordwestschweiz) 4. Liga."
+    fvnws_5: "Torschützen-Rangliste Meisterschaft FVNWS (Nordwestschweiz) 5. Liga."
+    fvnws_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft FVNWS (Nordwestschweiz)"
+    fvnws_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft FVNWS (Nordwestschweiz)"
+    fvnws_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVNWS (Nordwestschweiz)"
+    fvnws_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVNWS (Nordwestschweiz)"
   scorer_ranking:
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
     info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."

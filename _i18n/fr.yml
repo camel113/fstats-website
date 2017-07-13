@@ -67,6 +67,14 @@ pages:
     ifv_3_teams: IFV 3ème ligue
     ifv_4_teams: IFV 4ème ligue
     ifv_5_teams: IFV 5ème ligue
+    fvnws_2: FVNWS 2ème ligue
+    fvnws_3: FVNWS 3ème ligue
+    fvnws_4: FVNWS 4ème ligue
+    fvnws_5: FVNWS 5ème ligue
+    fvnws_2_teams: FVNWS 2ème ligue
+    fvnws_3_teams: FVNWS 3ème ligue
+    fvnws_4_teams: FVNWS 4ème ligue
+    fvnws_5_teams: FVNWS 5ème ligue
     meta:
       acvf_2: ACVF 2ème ligue | Buteurs
       acvf_3: ACVF 3ème ligue | Buteurs
@@ -102,6 +110,10 @@ pages:
       ifv_3: IFV 3ème ligue | Buteurs
       ifv_4: IFV 4ème ligue | Buteurs
       ifv_5: IFV 5ème ligue | Buteurs
+      fvnws_2: FVNWS 2ème ligue | Buteurs
+      fvnws_3: FVNWS 3ème ligue | Buteurs
+      fvnws_4: FVNWS 4ème ligue | Buteurs
+      fvnws_5: FVNWS 5ème ligue | Buteurs
   descriptions:
     aff_2: Classement buteurs championnat de football AFF (Fribourg) 2ème ligue.
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
@@ -169,6 +181,14 @@ pages:
     ifv_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football IFV (Innerschweizerischer) 3ème ligue."
     ifv_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football IFV (Innerschweizerischer) 4ème ligue."
     ifv_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football IFV (Innerschweizerischer) 5ème ligue."
+    fvnws_2: Classement buteurs championnat de football FVNWS (Nordwestschweiz) 2ème ligue.
+    fvnws_3: Classement buteurs championnat de football FVNWS (Nordwestschweiz) 3ème ligue.
+    fvnws_4: Classement buteurs championnat de football FVNWS (Nordwestschweiz) 4ème ligue.
+    fvnws_5: Classement buteurs championnat de football FVNWS (Nordwestschweiz) 5ème ligue.
+    fvnws_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVNWS (Nordwestschweiz) 2ème ligue."
+    fvnws_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVNWS (Nordwestschweiz) 3ème ligue."
+    fvnws_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVNWS (Nordwestschweiz) 4ème ligue."
+    fvnws_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVNWS (Nordwestschweiz) 5ème ligue."
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: Si vous constatez des erreurs ou des oublis écrivez-nous sur Facebook, Instagram ou à contact@footstats.ch.
