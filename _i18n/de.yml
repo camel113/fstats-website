@@ -58,6 +58,14 @@ pages:
     fvbj_3_teams: FVBJ 3. Liga
     fvbj_4_teams: FVBJ 4. Liga
     fvbj_5_teams: FVBJ 5. Liga
+    ifv_2: IFV 2. Liga
+    ifv_3: IFV 3. Liga
+    ifv_4: IFV 4. Liga
+    ifv_5: IFV 5. Liga
+    ifv_2_teams: IFV 2. Liga
+    ifv_3_teams: IFV 3. Liga
+    ifv_4_teams: IFV 4. Liga
+    ifv_5_teams: IFV 5. Liga
     meta:
       aff_2: "FFV 2. Liga | Torschützen"
       aff_3: "FFV 3. Liga | Torschützen"
@@ -89,6 +97,10 @@ pages:
       fvbj_3: "FVBJ 3. Liga | Torschützen"
       fvbj_4: "FVBJ 4. Liga | Torschützen"
       fvbj_5: "FVBJ 5. Liga | Torschützen"
+      ifv_2: "IFV 2. Liga | Torschützen"
+      ifv_3: "IFV 3. Liga | Torschützen"
+      ifv_4: "IFV 4. Liga | Torschützen"
+      ifv_5: "IFV 5. Liga | Torschützen"
   descriptions:
     aff_2: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 2. Liga."
     aff_3: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 3. Liga."
@@ -148,6 +160,14 @@ pages:
     fvbj_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft FVBJ (Bern Jura)"
     fvbj_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVBJ (Bern Jura)"
     fvbj_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVBJ (Bern Jura)"
+    ifv_2: "Torschützen-Rangliste Meisterschaft IFV (Innerschweizerischer) 2. Liga."
+    ifv_3: "Torschützen-Rangliste Meisterschaft IFV (Innerschweizerischer) 3. Liga."
+    ifv_4: "Torschützen-Rangliste Meisterschaft IFV (Innerschweizerischer) 4. Liga."
+    ifv_5: "Torschützen-Rangliste Meisterschaft IFV (Innerschweizerischer) 5. Liga."
+    ifv_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft IFV (Innerschweizerischer)"
+    ifv_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft IFV (Innerschweizerischer)"
+    ifv_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft IFV (Innerschweizerischer)"
+    ifv_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft IFV (Innerschweizerischer)"
   scorer_ranking:
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
     info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."

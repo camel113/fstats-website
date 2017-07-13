@@ -59,6 +59,14 @@ pages:
     fvbj_3_teams: FVBJ 3ème ligue
     fvbj_4_teams: FVBJ 4ème ligue
     fvbj_5_teams: FVBJ 5ème ligue
+    ifv_2: IFV 2ème ligue
+    ifv_3: IFV 3ème ligue
+    ifv_4: IFV 4ème ligue
+    ifv_5: IFV 5ème ligue
+    ifv_2_teams: IFV 2ème ligue
+    ifv_3_teams: IFV 3ème ligue
+    ifv_4_teams: IFV 4ème ligue
+    ifv_5_teams: IFV 5ème ligue
     meta:
       acvf_2: ACVF 2ème ligue | Buteurs
       acvf_3: ACVF 3ème ligue | Buteurs
@@ -90,6 +98,10 @@ pages:
       fvbj_3: FVBJ 3ème ligue | Buteurs
       fvbj_4: FVBJ 4ème ligue | Buteurs
       fvbj_5: FVBJ 5ème ligue | Buteurs
+      ifv_2: IFV 2ème ligue | Buteurs
+      ifv_3: IFV 3ème ligue | Buteurs
+      ifv_4: IFV 4ème ligue | Buteurs
+      ifv_5: IFV 5ème ligue | Buteurs
   descriptions:
     aff_2: Classement buteurs championnat de football AFF (Fribourg) 2ème ligue.
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
@@ -149,6 +161,14 @@ pages:
     fvbj_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVBJ (Bern Jura) 3ème ligue."
     fvbj_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVBJ (Bern Jura) 4ème ligue."
     fvbj_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVBJ (Bern Jura) 5ème ligue."
+    ifv_2: Classement buteurs championnat de football IFV (Innerschweizerischer) 2ème ligue.
+    ifv_3: Classement buteurs championnat de football IFV (Innerschweizerischer) 3ème ligue.
+    ifv_4: Classement buteurs championnat de football IFV (Innerschweizerischer) 4ème ligue.
+    ifv_5: Classement buteurs championnat de football IFV (Innerschweizerischer) 5ème ligue.
+    ifv_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football IFV (Innerschweizerischer) 2ème ligue."
+    ifv_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football IFV (Innerschweizerischer) 3ème ligue."
+    ifv_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football IFV (Innerschweizerischer) 4ème ligue."
+    ifv_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football IFV (Innerschweizerischer) 5ème ligue."
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: Si vous constatez des erreurs ou des oublis écrivez-nous sur Facebook, Instagram ou à contact@footstats.ch.
