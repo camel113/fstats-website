@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  ANF - Les stats de la semaine
 date:   2016-09-15 12:30:16 +0200
 image: resumeANF1509.jpg

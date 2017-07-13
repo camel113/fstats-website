@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  AFF - Les stats de la semaine
 date:   2016-09-30 17:45:00 +0200
 image: resumeAFF3009.jpg

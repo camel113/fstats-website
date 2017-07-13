@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  Les stars de la semaine&#58; Flamur Selmani, FC Corcelles-Payerne, FC Villarepos et FC Grand-Saconnex
 fr_only_title_meta: Stars - Foot amateur Suisse romande - 02/06/2017
 fr_only_description_meta: Les stars du football amateur en Suisse romande de la 2e à la 5e ligue - 02/06/2017

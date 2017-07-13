@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  Les stars de la semaine&#58; Manuel Mvuatu, FC Deportivo, FC Villarepos, FC Grône, FC Grandson-Tuileries, US Port-Valais, CS Interstar et FC Satigny
 date:   2017-04-07 16:00:00 +0200
 image: 2017-04-07-stars.png

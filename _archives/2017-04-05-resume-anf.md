@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title: ANF - Meilleurs buteurs
 date: 2017-04-05 11:00:00 +0200
 image: 2017-04-05-image-anf.png

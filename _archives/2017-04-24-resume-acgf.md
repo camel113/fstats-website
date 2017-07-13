@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title: ACGF - Meilleurs buteurs
 fr_only_title_meta: ACGF - Meilleurs buteurs - 24/04/2017
 fr_only_description_meta: Les meilleurs buteurs ACGF des championnats de football amateur de la 2e à la 5e ligue - 24/04/2017

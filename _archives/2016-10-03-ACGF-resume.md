@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  ACGF - Les stats de la semaine
 date:   2016-10-03 21:00:00 +0200
 image: resumeACGF0310.jpg

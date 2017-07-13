@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  Les stars de la semaine&#58; Anton Ahmetaj, Mvuatu Manuel, FC Deportivo et FC Croy
 date:   2017-03-31 16:00:00 +0200
 image: 2017-03-31-stars.png

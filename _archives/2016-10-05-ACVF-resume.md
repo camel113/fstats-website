@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  ACVF - Les stats de la semaine
 date:   2016-10-05 11:45:00 +0200
 image: resumeACVF0510.jpg

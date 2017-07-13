@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  Les stars du week-end&#58; Joao Da Silva, Manuel Mvuatu, Olympique de Genève FC, FC Villarepos et FC Corcelles-Payerne.
 date:   2016-10-21 13:40:00 +0200
 image: stars-2.png

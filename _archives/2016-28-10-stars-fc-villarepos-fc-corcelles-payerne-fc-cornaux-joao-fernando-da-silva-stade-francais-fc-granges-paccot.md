@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  Les stars du week-end&#58; Joao Da Silva, FC Granges-Paccot, FC Villarepos, FC Corcelles-Payerne, FC Cornaux et Stade Francais 2
 date:   2016-10-28 13:40:00 +0200
 image: stars-3.jpg

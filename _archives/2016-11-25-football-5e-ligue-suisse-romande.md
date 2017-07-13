@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  5e ligue&#58; Les chiffres du 1er tour
 date:   2016-11-25 16:20:00 +0200
 image: ligue-5.jpg

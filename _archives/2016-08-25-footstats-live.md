@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  Footstats live en détails
 date:   2016-08-25 10:43:16 +0200
 image: footstats-live-app.jpg

@@ -1,5 +1,7 @@
 ---
 layout: post
+translate: false
+translate: false
 title:  "footballtopscorers.ch devient footstats.ch"
 date:   2016-08-09 07:43:16 +0200
 image: footstats.png

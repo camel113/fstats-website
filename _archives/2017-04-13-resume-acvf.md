@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title: ACVF - Meilleurs buteurs
 fr_only_title_meta: ACVF - Meilleurs buteurs - 13/04/2017
 fr_only_description_meta: Les meilleurs buteurs ACVF des championnats de football amateur de la 2e à la 5e ligue - 13/04/2017

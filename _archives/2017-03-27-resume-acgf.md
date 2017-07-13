@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title: ACGF - Meilleurs buteurs
 date: 2017-03-27 11:00:00 +0200
 image: 2017-03-27-image-acgf.png
