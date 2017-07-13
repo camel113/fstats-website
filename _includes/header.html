@@ -35,7 +35,11 @@
       {% endfor %}
     </ul>
     <ul class="list-inline language-selector">
-      {% capture link1 %}/de{{ page.url}}{% endcapture %}
+      {% if page.translate != false %}
+        {% capture link1 %}/de{{ page.url}}{% endcapture %}
+      {% else %}
+        {% capture link1 %}/de{% endcapture %}
+      {% endif %}
       <li><a href="{{ link1 }}" >DE</a></li>
       {% capture link2 %}{{ page.url  }}{% endcapture %}
       <li><a href="{{ link2 }}" >FR</a></li>

@@ -14,6 +14,7 @@ categories: resume anf
 description_for_facebook: Classements buteurs du canton de Neuchâtel.
 title_for_facebook: ANF - Top buteurs
 image_for_facebook: /images/facebook/2017-06-15-image-anf-facebook.png
+translate: false
 ---
 Les meilleurs buteurs ANF des championnats de football amateur de la 2e à la 5e ligue.
 

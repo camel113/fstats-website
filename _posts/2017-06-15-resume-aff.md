@@ -14,6 +14,7 @@ categories: resume aff
 description_for_facebook: Classements buteurs du canton de Fribourg.
 title_for_facebook: AFF - Top buteurs
 image_for_facebook: /images/facebook/2017-06-15-image-aff-facebook.png
+translate: false
 ---
 Les meilleurs buteurs AFF des championnats de football amateur de la 2e à la 5e ligue.
 

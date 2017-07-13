@@ -14,6 +14,7 @@ categories: resume acvf
 description_for_facebook: Classements buteurs du canton de Vaud.
 title_for_facebook: ACVF - Top buteurs
 image_for_facebook: /images/facebook/2017-06-15-image-acvf-facebook.png
+translate: false
 ---
 Les meilleurs buteurs ACVF des championnats de football amateur de la 2e à la 5e ligue.
 

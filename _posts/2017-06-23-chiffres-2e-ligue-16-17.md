@@ -13,6 +13,7 @@ categories: palmares
 description_for_facebook: Les chiffres inédits de la 2e ligue en Suisse romande
 title_for_facebook: 2e ligue - Le palmarès de la saison 16/17
 image_for_facebook: /images/facebook/2017-07-02-image-chiffres-2eligue-facebook.png
+translate: false
 ---
 Tout au long de la saison les équipes et joueurs de ligues inférieures ont tendance à occuper les premières places de nos classements. La fin de saison 16/17 est l’occasion parfaite pour faire le point sur les meilleures équipes et joueurs et les statistiques inédites de 2e ligue au niveau Suisse Romand.
 

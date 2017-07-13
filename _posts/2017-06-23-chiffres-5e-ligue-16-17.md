@@ -14,6 +14,7 @@ description_for_facebook: Les chiffres inédits de la 5e ligue en Suisse romande
 title_for_facebook: 5e ligue - Le palmarès de la saison 16/17
 image_for_facebook: /images/facebook/2017-06-23-image-chiffres-5eligue-facebook.png
 scorers: data.5eligue
+translate: false
 ---
 La saison 16/17 est maintenant terminée depuis quelques semaines et certains préparent déjà la saison prochaine. Chez Footstats on profite de la trêve pour vous proposer les chiffres marquants de la saison passée avec entre autres les meilleures équipes, le top des buteurs et d’autres statistiques inédites.
 
