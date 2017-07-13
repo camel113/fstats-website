@@ -156,6 +156,7 @@ pages:
   app:
     title: "Footstats | Live App"
     description: "Score en direct football amateur en Suisse Romande"
+  about: About
 layout:
   follow_us: "Folge uns"
 meta: 

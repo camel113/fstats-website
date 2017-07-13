@@ -54,7 +54,9 @@
           </a>
         </h1>
       </div>
-      <ul class="nav-breadcrumb"><li>{{ page.title }}</li></ul>
+      {% if page.title %}
+      <ul class="nav-breadcrumb"><li>{% if page.translate != false %}{% t page.title %}{% else %}{{ page.title }}{% endif %}</li></ul>
+      {% endif %}
     </div>
   </div>
   <div class="container hidden-sm-down desktop-nav">

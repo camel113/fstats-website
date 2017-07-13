@@ -154,6 +154,7 @@ pages:
   top_buts:
     title: "Footstats | Concours top buts foot amateur suisse"
     description: "Envoyez nous les vidéos de vos plus beaux buts en tentez de gagner une paire de chaussure Nike Hypervenom Phantom II"
+  about: About
   app:
     title: "Footstats | Live App"
     description: "Score en direct football amateur en Suisse Romande"
