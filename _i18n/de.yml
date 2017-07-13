@@ -42,6 +42,14 @@ pages:
     acgf_3_teams: ACGF 3. Liga
     acgf_4_teams: ACGF 4. Liga
     acgf_5_teams: ACGF 5. Liga
+    afv_2: AFV 2. Liga
+    afv_3: AFV 3. Liga
+    afv_4: AFV 4. Liga
+    afv_5: AFV 5. Liga
+    afv_2_teams: AFV 2. Liga
+    afv_3_teams: AFV 3. Liga
+    afv_4_teams: AFV 4. Liga
+    afv_5_teams: AFV 5. Liga
     meta:
       aff_2: "FFV 2. Liga | Torschützen"
       aff_3: "FFV 3. Liga | Torschützen"
@@ -65,6 +73,10 @@ pages:
       anf_3: "ANF 3. Liga | Torschützen"
       anf_4: "ANF 4. Liga | Torschützen"
       anf_5: "ANF 5. Liga | Torschützen"
+      afv_2: "AFV 2. Liga | Torschützen"
+      afv_3: "AFV 3. Liga | Torschützen"
+      afv_4: "AFV 4. Liga | Torschützen"
+      afv_5: "AFV 5. Liga | Torschützen"
   descriptions:
     aff_2: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 2. Liga."
     aff_3: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 3. Liga."
@@ -108,6 +120,14 @@ pages:
     anf_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft ANF (Neuenburg)"
     anf_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ANF (Neuenburg)"
     anf_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ANF (Neuenburg)"
+    afv_2: "Torschützen-Rangliste Meisterschaft AFV (Aargau) 2. Liga."
+    afv_3: "Torschützen-Rangliste Meisterschaft AFV (Aargau) 3. Liga."
+    afv_4: "Torschützen-Rangliste Meisterschaft AFV (Aargau) 4. Liga."
+    afv_5: "Torschützen-Rangliste Meisterschaft AFV (Aargau) 5. Liga."
+    afv_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft AFV (Aargau)"
+    afv_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft AFV (Aargau)"
+    afv_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft AFV (Aargau)"
+    afv_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft AFV (Aargau)"
   scorer_ranking:
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
     info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."
