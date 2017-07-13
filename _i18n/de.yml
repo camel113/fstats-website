@@ -50,6 +50,14 @@ pages:
     afv_3_teams: AFV 3. Liga
     afv_4_teams: AFV 4. Liga
     afv_5_teams: AFV 5. Liga
+    fvbj_2: FVBJ 2. Liga
+    fvbj_3: FVBJ 3. Liga
+    fvbj_4: FVBJ 4. Liga
+    fvbj_5: FVBJ 5. Liga
+    fvbj_2_teams: FVBJ 2. Liga
+    fvbj_3_teams: FVBJ 3. Liga
+    fvbj_4_teams: FVBJ 4. Liga
+    fvbj_5_teams: FVBJ 5. Liga
     meta:
       aff_2: "FFV 2. Liga | Torschützen"
       aff_3: "FFV 3. Liga | Torschützen"
@@ -77,6 +85,10 @@ pages:
       afv_3: "AFV 3. Liga | Torschützen"
       afv_4: "AFV 4. Liga | Torschützen"
       afv_5: "AFV 5. Liga | Torschützen"
+      fvbj_2: "FVBJ 2. Liga | Torschützen"
+      fvbj_3: "FVBJ 3. Liga | Torschützen"
+      fvbj_4: "FVBJ 4. Liga | Torschützen"
+      fvbj_5: "FVBJ 5. Liga | Torschützen"
   descriptions:
     aff_2: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 2. Liga."
     aff_3: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 3. Liga."
@@ -128,6 +140,14 @@ pages:
     afv_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft AFV (Aargau)"
     afv_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft AFV (Aargau)"
     afv_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft AFV (Aargau)"
+    fvbj_2: "Torschützen-Rangliste Meisterschaft FVBJ (Bern Jura) 2. Liga."
+    fvbj_3: "Torschützen-Rangliste Meisterschaft FVBJ (Bern Jura) 3. Liga."
+    fvbj_4: "Torschützen-Rangliste Meisterschaft FVBJ (Bern Jura) 4. Liga."
+    fvbj_5: "Torschützen-Rangliste Meisterschaft FVBJ (Bern Jura) 5. Liga."
+    fvbj_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft FVBJ (Bern Jura)"
+    fvbj_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft FVBJ (Bern Jura)"
+    fvbj_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVBJ (Bern Jura)"
+    fvbj_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVBJ (Bern Jura)"
   scorer_ranking:
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
     info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."
