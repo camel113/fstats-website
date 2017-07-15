@@ -4,6 +4,7 @@ $navbar-nav-height:40px;
 $navbar-height:$navbar-utils-height+$navbar-breadcrumb-height+$navbar-nav-height;
 $navbar-nav-mobile-height:55px;
 $navbar-color:#3D4248;
+$navbar-color-hover:#6E7176;
 $navbar-bg-color:#fff;
 .header-desktop{
   height:$navbar-height;
@@ -207,6 +208,9 @@ aside.open {
     height: 100%;
     a{
       color: $navbar-color;
+      &:hover{
+        color: $navbar-color-hover;
+      }
       &.dropdown-item.active, &.dropdown-item:active {
         color: #fff;
         background-color: $navbar-color;
@@ -229,6 +233,7 @@ aside.open {
       color: $navbar-color;
       &:hover{
         text-decoration: none;
+        color: $navbar-color-hover;
       }
     }
   }
@@ -250,6 +255,13 @@ aside.open {
     flex-basis: 50%;
     text-align:right;
     padding-right:20px;
+    a{
+      color: $navbar-color;
+      font-size: 0.9em;
+      &:hover{
+        text-decoration: none;
+      }
+    }
   }
 }
 .desktop-nav-breadcrumb{
