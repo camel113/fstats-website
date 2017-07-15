@@ -92,6 +92,13 @@
   <nav>
     <ul class="nav-level-zero">
       <li class="nav-title menu">Menu</li>
+      {% if page.translate != false %}
+        {% capture link1 %}/de{{ page.url}}{% endcapture %}
+      {% else %}
+        {% capture link1 %}/de{% endcapture %}
+      {% endif %}
+      {% capture link2 %}{{ page.url  }}{% endcapture %}
+      <li class="language-selector"><a href="{{ link1 }}" >de</a><a href="{{ link2 }}" >fr</a></li>
     {% assign regionnav = site.data.nav.regions %}
       <li class="nav-subnav">
         <a href="#!">{{regionnav.title}}<span class="link-indicator"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
@@ -110,6 +117,12 @@
           {% endfor %}
         </ul>
       </li>
+      {% assign mobilenav = site.data.nav.mobile-nav %}
+      {% for mobilelink in mobilenav %}
+        <li>
+          <a href="{{mobilelink.path}}">{{ mobilelink.title }}</a>
+        </li>
+      {% endfor %}
     </ul>
     <div class="nav-footer">
       <p>Pour rester informé</p>

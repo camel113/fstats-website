@@ -49,6 +49,9 @@ aside {
     margin-left:0;
     padding-left:0;
     overflow-y: scroll;
+    &>.nav-subnav{
+      padding-top:20px;
+    }
     li{
       padding:10px 0px 10px 49px;
       font-size: 1.25rem;
@@ -69,8 +72,6 @@ aside {
       line-height: 35px;
       padding-left: 10px;
       padding-top: 10px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid rgba(61,66,72,0.15);
       text-transform: uppercase;
       font-size: 1rem;
       .nav-back-one-step,.nav-home{
@@ -81,6 +82,19 @@ aside {
       }
       a{
         display: inline;
+      }
+    }
+    li.language-selector{
+      border-bottom: 1px solid rgba(61,66,72,0.15);
+      padding-top:0;
+      padding-bottom:20px;
+      a{
+        display: inline-block;
+        width: 55px;
+        background-color: #ddd;
+        text-align: center;
+        margin-right: 5px;
+        font-size: 0.9em;
       }
     }
     .menu{
