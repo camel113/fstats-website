@@ -5,53 +5,61 @@ facebook_meta_description: meta.facebook_description
 ---
 <div id="league-stats">
 	<div class="container ligue-scorers">
-		<div class="row">
-			<div class="col">
-			{% include tab-teams-scorers.html %}
+		{% if site.data[page.data_path_region][page.data_path_ligue].scorers.lastUpdate != null %}
+			<div class="row">
+				<div class="col-12">
+				{% include tab-teams-scorers.html %}
+				</div>
 			</div>
-		</div>
-		<div class="row justify-content-md-center">
-			<div class="col-12 col-md-8 col-lg-6">
-				<h1>{% t page.title %}</h1>
-			  <h2>{% t page.headline %}</h2>
-			  <p><small>{% t pages.scorer_ranking.info %}</small></p>
-				<p><small><span class="text-muted d-block"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ site.data[page.data_path_region][page.data_path_ligue].scorers.lastUpdate }}</span></small></p>
-				
+			<div class="row justify-content-md-center">
+				<div class="col-12 col-md-8 col-lg-6">
+					<h1>{% t page.title %}</h1>
+				  <h2>{% t page.headline %}</h2>
+				  <p><small>{% t pages.scorer_ranking.info %}</small></p>
+					<p><small><span class="text-muted d-block"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ site.data[page.data_path_region][page.data_path_ligue].scorers.lastUpdate }}</span></small></p>
+					
+				</div>
 			</div>
-		</div>
-		<div class="private-ad">
-	    <div class="ad-img"><a href="{{site.url}}/shop"><img class="img-fluid mx-auto" src="{{ '/images/shop/cadenza-1.jpg' | prepend: site.url }}" alt="Cadenza YAMAHA" /></a></div>
-	    <div class="ad-desc"><a href="{{site.url}}/shop">Actuellement sur Footstats Shop Maillot Cadenza CHF 19.-</a></div>
-	  </div>
-		<div class="row justify-content-md-center">
-			<div class="scorer-ranking col-12 col-md-8 col-lg-6">
-				{% for group in site.data[page.data_path_region][page.data_path_ligue].scorers.rankings %}
-			  <h3>{% t pages.scorer_ranking.group %} {{ group.groupNumber }}</h3>
-			  <table class="table table-sm">
-			    <thead>
-			      <tr>
-			        <th>#</th>
-			        <th><i class="fa fa-male"></i></th>
-			        <th><i class="fa fa-futbol-o"></i></th>
-			      </tr>
-			    </thead>
-			    <tbody>
-			      {% for scorer in group.scorers %}
-			        <tr>
-			          <td>{{ forloop.index }}</td>
-			          <td>
-			            {{ scorer.scorer }}
-			            <span class="d-block team-name">
-			              <small>{{ scorer.team }}</small>
-			            </span>
-			          </td>
-			          <td>{{ scorer.goals }}</td>
-			        </tr>
-			      {% endfor %}
-			    </tbody>
-			  </table>
-			{% endfor %}
+			<div class="private-ad">
+		    <div class="ad-img"><a href="{{site.url}}/shop"><img class="img-fluid mx-auto" src="{{ '/images/shop/cadenza-1.jpg' | prepend: site.url }}" alt="Cadenza YAMAHA" /></a></div>
+		    <div class="ad-desc"><a href="{{site.url}}/shop">Actuellement sur Footstats Shop Maillot Cadenza CHF 19.-</a></div>
+		  </div>
+			<div class="row justify-content-md-center">
+				<div class="scorer-ranking col-12 col-md-8 col-lg-6">
+					{% for group in site.data[page.data_path_region][page.data_path_ligue].scorers.rankings %}
+				  <h3>{% t pages.scorer_ranking.group %} {{ group.groupNumber }}</h3>
+				  <table class="table table-sm">
+				    <thead>
+				      <tr>
+				        <th>#</th>
+				        <th><i class="fa fa-male"></i></th>
+				        <th><i class="fa fa-futbol-o"></i></th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      {% for scorer in group.scorers %}
+				        <tr>
+				          <td>{{ forloop.index }}</td>
+				          <td>
+				            {{ scorer.scorer }}
+				            <span class="d-block team-name">
+				              <small>{{ scorer.team }}</small>
+				            </span>
+				          </td>
+				          <td>{{ scorer.goals }}</td>
+				        </tr>
+				      {% endfor %}
+				    </tbody>
+				  </table>
+				{% endfor %}
+				</div>
 			</div>
-		</div>
+		{% else %}
+			<div class="row justify-content-center no-data-available-info">
+				<div class="col-12">
+					<p>{% t pages.scorer_ranking.no_data %}</p>
+				</div>
+			</div>
+		{% endif %}
 	</div>
 </div>

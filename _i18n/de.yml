@@ -213,6 +213,7 @@ pages:
     info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."
     headline: "Torschützen-Rangliste pro Gruppe"
     group: "Gruppe"
+    no_data: "Traduire"
     groups:
       group1: "Gruppe 1"
       group2: "Gruppe 2"

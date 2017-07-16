@@ -214,6 +214,7 @@ pages:
     info: Si vous constatez des erreurs ou des oublis écrivez-nous sur Facebook, Instagram ou à contact@footstats.ch.
     headline: Classements buteurs par groupe
     group: "Groupe"
+    no_data: "Pas de données disponibles pour le moment."
     groups:
       group1: Groupe 1
       group2: Groupe 2
