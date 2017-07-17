@@ -250,7 +250,7 @@ pages:
     fvrz_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVRZ (Region Zürich)"
   scorer_ranking:
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
-    info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."
+    info: 'Traduire'
     headline: "Torschützen-Rangliste pro Gruppe"
     group: "Gruppe"
     no_data: "Traduire"

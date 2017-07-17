@@ -132,8 +132,8 @@ regions:
         path: "/4eme-ligue"
       - title: "5e ligue"
         path: "/5eme-ligue"
-  - title: "FVRZ"
-    path: "fvrz"
+  - title: "FTDC"
+    path: "fdtc"
     subpages:
       - title: "2e ligue"
         path: "/2eme-ligue"

@@ -2,3 +2,5 @@
   path: "https://www.footstats.ch/shop"
 - title: "Concours"
   path: "/topbuts"
+- title: "Signaler une erreur"
+  path: "/erreurs-oublis"
