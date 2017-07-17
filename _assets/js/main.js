@@ -22,6 +22,7 @@
     }
     infiniteScroll.init()
     backToTop.init()
+    errorReportForm.init()
 
     var options = {
       prefetch: true,
@@ -212,6 +213,7 @@ var snipcartConfig = {
 
 var errorReportForm = {
   init: function(){
+    console.log("errorReportForm")
     $("#errors-report-form").submit(function(e) {
       e.preventDefault();
 
