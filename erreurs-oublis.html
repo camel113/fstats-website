@@ -1,7 +1,7 @@
 ---
 layout: default
 description: Formulaire de report d'erreurs ou d'oublis dans les classements buteurs
-title: Formulaire erreurs et oublis classements
+title: Formulaire de report
 translate: false
 ---
 <div class="container standard-page">
@@ -10,18 +10,18 @@ translate: false
       <h1>Formulaire de report d'erreurs ou d'oublis dans les classements buteurs.</h1>
       <p>Afin de mettre correctement nos données à jour, nous avons besoin de connaître lors de quel match l'erreur et/ou l'oubli s'est produit. Pour cela nous avons impérativement besoin du lien du match sur le site <a href="http://www.football.ch" rel="nofollow">football.ch</a></p>
       <p>Pour tout autre problème, contactez-nous directement par email à: <a href="mailto:contact@footstats.ch">contact@footstats.ch</a></p>
-      <form netlify name="rankingsErrors" action="Merci">
+      <form netlify name="rankingsErrors" id="errors-report-form" action="Merci">
 				<div class="form-group">
 				  <label for="email">Votre adresse email</label>
-				  <input type="email" name="email" class="form-control" id="email" placeholder="Adresse email">
+				  <input type="email" name="email" class="form-control" id="email" required placeholder="Adresse email">
 				</div>
 				<div class="form-group">
   				<label for="url">Lien du match sur football.ch</label>
-				  <input type="url" name="url" class="form-control" id="url-match" placeholder="http://www.football.ch/...">
+				  <input type="url" name="url" class="form-control" id="url-match" required placeholder="http://www.football.ch/...">
   			</div>
 				<div class="form-group">
     			<label for="exampleTextarea">Informations</label>
-    			<textarea class="form-control" name="info" id="exampleTextarea" rows="3" placeholder="Indiquez ici quels sont les buteurs oubliés ou les erreurs dans le résumé du match sur football.ch"></textarea>
+    			<textarea class="form-control" name="info" id="exampleTextarea" rows="3" required placeholder="Indiquez ici quels sont les buteurs oubliés ou les erreurs dans le résumé du match sur football.ch"></textarea>
   			</div>
   			<button type="submit" class="btn btn-primary">Envoyer</button>
 			</form>

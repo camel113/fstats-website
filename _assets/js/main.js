@@ -1,6 +1,24 @@
 (function($) {
 
   $(function() {
+
+    console.log("test")
+
+    $("#errors-report-form").submit(function(e) {
+      e.preventDefault();
+
+      var $form = $(this);
+
+      var posting = $.post($form.attr("action"), $form.serialize())
+
+      posting.done(function() {
+        console.log("sent")
+      });
+      posting.fail(function() {
+        console.log("fail")
+      });
+
+    });
     
     $('.shop-product-gallery').slick({
       "arrows":false,
