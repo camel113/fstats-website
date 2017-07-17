@@ -1,24 +1,6 @@
 (function($) {
 
   $(function() {
-
-    console.log("test")
-
-    $("#errors-report-form").submit(function(e) {
-      e.preventDefault();
-
-      var $form = $(this);
-
-      var posting = $.post($form.attr("action"), $form.serialize())
-
-      posting.done(function() {
-        console.log("sent")
-      });
-      posting.fail(function() {
-        console.log("fail")
-      });
-
-    });
     
     $('.shop-product-gallery').slick({
       "arrows":false,
@@ -225,5 +207,27 @@ var snipcartConfig = {
   init: function(){
     Snipcart.api.configure('split_firstname_and_lastname', true);
     Snipcart.execute('registerLocale', 'fr', {"company_name":"Société"});
+  }
+}
+
+var errorReportForm = {
+  init: function(){
+    $("#errors-report-form").submit(function(e) {
+      e.preventDefault();
+
+      var $form = $(this);
+
+      var posting = $.post($form.attr("action"), $form.serialize())
+
+      posting.done(function() {
+        $("errors-report-form-container").hide()
+        $("errors-report-form-success").show()
+      });
+      posting.fail(function() {
+        $("errors-report-form-container").hide()
+        $("#errors-report-form-fail").show()
+      });
+
+    });
   }
 }

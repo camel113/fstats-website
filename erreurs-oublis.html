@@ -6,7 +6,7 @@ translate: false
 ---
 <div class="container standard-page">
   <section class="row justify-content-md-center">
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6" id="errors-report-form-container">
       <h1>Formulaire de report d'erreurs ou d'oublis dans les classements buteurs.</h1>
       <p>Afin de mettre correctement nos données à jour, nous avons besoin de connaître lors de quel match l'erreur et/ou l'oubli s'est produit. Pour cela nous avons impérativement besoin du lien du match sur le site <a href="http://www.football.ch" rel="nofollow">football.ch</a></p>
       <p>Pour tout autre problème, contactez-nous directement par email à: <a href="mailto:contact@footstats.ch">contact@footstats.ch</a></p>
@@ -25,6 +25,20 @@ translate: false
   			</div>
   			<button type="submit" class="btn btn-primary">Envoyer</button>
 			</form>
+    </div>
+    <div class="col-12 col-md-6 after-form" id="errors-report-form-fail">
+      <div id="errors-report-form-fail">
+        <h1>Ooops!</h1>
+        <p>Une erreur s'est produite. <a href="/erreurs-oublis">Clique ici</a> pour essayer à nouveau.</p>
+        <p>Si le problème persiste, contacte nous directement par email à <a href="mailto:contact@footstats.ch">contact@footstats.ch</a></p>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 after-form" id="errors-report-form-success">
+      <div >
+        <h1>Merci pour ta contribution!</h1>
+        <p>Nous allons traiter ta demandes dans les plus brefs délais. Dès que ce sera fait, nous te tiendrons au courant par email.</p>
+        <p><a href="/erreurs-oublis">Clique ici</a> si tu souhaites envoyer d'autres reports d'erreurs.</p>
+      </div>
     </div>
   </section>
 </div>
