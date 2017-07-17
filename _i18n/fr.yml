@@ -91,6 +91,14 @@ pages:
     sofv_3_teams: SOFV 3ème ligue
     sofv_4_teams: SOFV 4ème ligue
     sofv_5_teams: SOFV 5ème ligue
+    fvrz_2: FVRZ 2ème ligue
+    fvrz_3: FVRZ 3ème ligue
+    fvrz_4: FVRZ 4ème ligue
+    fvrz_5: FVRZ 5ème ligue
+    fvrz_2_teams: FVRZ 2ème ligue
+    fvrz_3_teams: FVRZ 3ème ligue
+    fvrz_4_teams: FVRZ 4ème ligue
+    fvrz_5_teams: FVRZ 5ème ligue
     meta:
       acvf_2: ACVF 2ème ligue | Buteurs
       acvf_3: ACVF 3ème ligue | Buteurs
@@ -138,6 +146,10 @@ pages:
       sofv_3: SOFV 3ème ligue | Buteurs
       sofv_4: SOFV 4ème ligue | Buteurs
       sofv_5: SOFV 5ème ligue | Buteurs
+      fvrz_2: FVRZ 2ème ligue | Buteurs
+      fvrz_3: FVRZ 3ème ligue | Buteurs
+      fvrz_4: FVRZ 4ème ligue | Buteurs
+      fvrz_5: FVRZ 5ème ligue | Buteurs
   descriptions:
     aff_2: Classement buteurs championnat de football AFF (Fribourg) 2ème ligue.
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
@@ -229,6 +241,14 @@ pages:
     sofv_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Soleure) 3ème ligue."
     sofv_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Soleure) 4ème ligue."
     sofv_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Soleure) 5ème ligue."
+    fvrz_2: Classement buteurs championnat de football FVRZ (Région Zürich) 2ème ligue.
+    fvrz_3: Classement buteurs championnat de football FVRZ (Région Zürich) 3ème ligue.
+    fvrz_4: Classement buteurs championnat de football FVRZ (Région Zürich) 4ème ligue.
+    fvrz_5: Classement buteurs championnat de football FVRZ (Région Zürich) 5ème ligue.
+    fvrz_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVRZ (Région Zürich) 2ème ligue."
+    fvrz_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVRZ (Région Zürich) 3ème ligue."
+    fvrz_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVRZ (Région Zürich) 4ème ligue."
+    fvrz_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVRZ (Région Zürich) 5ème ligue."
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: Si vous constatez des erreurs ou des oublis écrivez-nous sur Facebook, Instagram ou à contact@footstats.ch.

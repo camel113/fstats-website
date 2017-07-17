@@ -90,6 +90,14 @@ pages:
     sofv_3_teams: SOFV 3. Liga
     sofv_4_teams: SOFV 4. Liga
     sofv_5_teams: SOFV 5. Liga
+    fvrz_2: FVRZ 2. Liga
+    fvrz_3: FVRZ 3. Liga
+    fvrz_4: FVRZ 4. Liga
+    fvrz_5: FVRZ 5. Liga
+    fvrz_2_teams: FVRZ 2. Liga
+    fvrz_3_teams: FVRZ 3. Liga
+    fvrz_4_teams: FVRZ 4. Liga
+    fvrz_5_teams: FVRZ 5. Liga
     meta:
       aff_2: "FFV 2. Liga | Torschützen"
       aff_3: "FFV 3. Liga | Torschützen"
@@ -137,6 +145,10 @@ pages:
       sofv_3: "SOFV 3. Liga | Torschützen"
       sofv_4: "SOFV 4. Liga | Torschützen"
       sofv_5: "SOFV 5. Liga | Torschützen"
+      fvrz_2: "FVRZ 2. Liga | Torschützen"
+      fvrz_3: "FVRZ 3. Liga | Torschützen"
+      fvrz_4: "FVRZ 4. Liga | Torschützen"
+      fvrz_5: "FVRZ 5. Liga | Torschützen"
   descriptions:
     aff_2: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 2. Liga."
     aff_3: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 3. Liga."
@@ -228,6 +240,14 @@ pages:
     sofv_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft SOFV (Solothurn)"
     sofv_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft SOFV (Solothurn)"
     sofv_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft SOFV (Solothurn)"
+    fvrz_2: "Torschützen-Rangliste Meisterschaft FVRZ (Region Zürich) 2. Liga."
+    fvrz_3: "Torschützen-Rangliste Meisterschaft FVRZ (Region Zürich) 3. Liga."
+    fvrz_4: "Torschützen-Rangliste Meisterschaft FVRZ (Region Zürich) 4. Liga."
+    fvrz_5: "Torschützen-Rangliste Meisterschaft FVRZ (Region Zürich) 5. Liga."
+    fvrz_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft FVRZ (Region Zürich)"
+    fvrz_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft FVRZ (Region Zürich)"
+    fvrz_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVRZ (Region Zürich)"
+    fvrz_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVRZ (Region Zürich)"
   scorer_ranking:
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
     info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."

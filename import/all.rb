@@ -332,10 +332,19 @@ leagues.push({:groups => groups, :region => region, :league => league, :filePath
 regions.push(region)
 
 # SOFV 2eme ligue
-groups = [*1..2]
+groups = [*1..1]
 region = 'sofv'
 league = 2
 filePath = "_data/sofv/ligue2/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# FVRZ 2eme ligue
+groups = [*1..2]
+region = 'fvrz'
+league = 2
+filePath = "_data/fvrz/ligue2/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 regions.push(region)
