@@ -26,8 +26,11 @@
       color: #fff;
     }
   }
-  .footer-social li {
-    padding: 0px;
+  .footer-social{
+    text-align: center;
+    li {
+      padding: 0px;
+    }
   }
   .si-colored-facebook, .si-facebook:hover {
     background-color: #3B5998 !important;
