@@ -222,11 +222,11 @@ var errorReportForm = {
       var posting = $.post($form.attr("action"), $form.serialize())
 
       posting.done(function() {
-        $("errors-report-form-container").hide()
-        $("errors-report-form-success").show()
+        $("#errors-report-form-container").hide()
+        $("#errors-report-form-success").show()
       });
       posting.fail(function() {
-        $("errors-report-form-container").hide()
+        $("#errors-report-form-container").hide()
         $("#errors-report-form-fail").show()
       });
 
