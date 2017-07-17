@@ -83,6 +83,14 @@ pages:
     ofv_3_teams: OFV 3ème ligue
     ofv_4_teams: OFV 4ème ligue
     ofv_5_teams: OFV 5ème ligue
+    sofv_2: SOFV 2ème ligue
+    sofv_3: SOFV 3ème ligue
+    sofv_4: SOFV 4ème ligue
+    sofv_5: SOFV 5ème ligue
+    sofv_2_teams: SOFV 2ème ligue
+    sofv_3_teams: SOFV 3ème ligue
+    sofv_4_teams: SOFV 4ème ligue
+    sofv_5_teams: SOFV 5ème ligue
     meta:
       acvf_2: ACVF 2ème ligue | Buteurs
       acvf_3: ACVF 3ème ligue | Buteurs
@@ -126,6 +134,10 @@ pages:
       ofv_3: OFV 3ème ligue | Buteurs
       ofv_4: OFV 4ème ligue | Buteurs
       ofv_5: OFV 5ème ligue | Buteurs
+      sofv_2: SOFV 2ème ligue | Buteurs
+      sofv_3: SOFV 3ème ligue | Buteurs
+      sofv_4: SOFV 4ème ligue | Buteurs
+      sofv_5: SOFV 5ème ligue | Buteurs
   descriptions:
     aff_2: Classement buteurs championnat de football AFF (Fribourg) 2ème ligue.
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
@@ -209,6 +221,14 @@ pages:
     ofv_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Ostschweizer) 3ème ligue."
     ofv_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Ostschweizer) 4ème ligue."
     ofv_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Ostschweizer) 5ème ligue."
+    sofv_2: Classement buteurs championnat de football SOFV (Soleure) 2ème ligue.
+    sofv_3: Classement buteurs championnat de football SOFV (Soleure) 3ème ligue.
+    sofv_4: Classement buteurs championnat de football SOFV (Soleure) 4ème ligue.
+    sofv_5: Classement buteurs championnat de football SOFV (Soleure) 5ème ligue.
+    sofv_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Soleure) 2ème ligue."
+    sofv_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Soleure) 3ème ligue."
+    sofv_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Soleure) 4ème ligue."
+    sofv_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Soleure) 5ème ligue."
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: Si vous constatez des erreurs ou des oublis écrivez-nous sur Facebook, Instagram ou à contact@footstats.ch.

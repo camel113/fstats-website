@@ -82,6 +82,14 @@ pages:
     ofv_3_teams: OFV 3. Liga
     ofv_4_teams: OFV 4. Liga
     ofv_5_teams: OFV 5. Liga
+    sofv_2: SOFV 2. Liga
+    sofv_3: SOFV 3. Liga
+    sofv_4: SOFV 4. Liga
+    sofv_5: SOFV 5. Liga
+    sofv_2_teams: SOFV 2. Liga
+    sofv_3_teams: SOFV 3. Liga
+    sofv_4_teams: SOFV 4. Liga
+    sofv_5_teams: SOFV 5. Liga
     meta:
       aff_2: "FFV 2. Liga | Torschützen"
       aff_3: "FFV 3. Liga | Torschützen"
@@ -125,6 +133,10 @@ pages:
       ofv_3: "OFV 3. Liga | Torschützen"
       ofv_4: "OFV 4. Liga | Torschützen"
       ofv_5: "OFV 5. Liga | Torschützen"
+      sofv_2: "SOFV 2. Liga | Torschützen"
+      sofv_3: "SOFV 3. Liga | Torschützen"
+      sofv_4: "SOFV 4. Liga | Torschützen"
+      sofv_5: "SOFV 5. Liga | Torschützen"
   descriptions:
     aff_2: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 2. Liga."
     aff_3: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 3. Liga."
@@ -208,6 +220,14 @@ pages:
     ofv_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft OFV (Ostschweizer)"
     ofv_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft OFV (Ostschweizer)"
     ofv_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft OFV (Ostschweizer)"
+    sofv_2: "Torschützen-Rangliste Meisterschaft SOFV (Solothurn) 2. Liga."
+    sofv_3: "Torschützen-Rangliste Meisterschaft SOFV (Solothurn) 3. Liga."
+    sofv_4: "Torschützen-Rangliste Meisterschaft SOFV (Solothurn) 4. Liga."
+    sofv_5: "Torschützen-Rangliste Meisterschaft SOFV (Solothurn) 5. Liga."
+    sofv_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft SOFV (Solothurn)"
+    sofv_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft SOFV (Solothurn)"
+    sofv_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft SOFV (Solothurn)"
+    sofv_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft SOFV (Solothurn)"
   scorer_ranking:
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
     info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."
