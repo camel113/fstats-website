@@ -301,8 +301,7 @@ pages:
     title: Contact Footstats
     description: Formulaire de contact
   errors_report:
-    title:
-    description:
+    title: Formulaire de report d'erreurs et d'oublis
   app:
     title: "Footstats | Live App"
     description: "Score en direct football amateur en Suisse Romande"
@@ -310,6 +309,6 @@ layout:
   follow_us: Suivez-nous
 meta: 
   site_title: "Footstats | Stats & Buteurs | Foot amateur Suisse"
-  site_description: Classements buteurs et équipes pour les championnats amateurs de football des cantons de Vaud, Fribourg, Neuchâtel, Valais et Genève
-  facebook_title: Classements buteurs et stats équipes VD/FR/NE/VS/GE
-  facebook_description: Classements buteurs et stats équipes championnat de football 2ème/3ème/4ème/5ème ligues
+  site_description: Classements buteurs et statistiques équipes pour les championnats amateurs de football en Suisse (2e/3e/4e/5e ligues)
+  facebook_title: Classements buteurs et stats équipes football amateur suisse
+  facebook_description: Classements buteurs et stats équipes championnats de football 2e/3e/4e/5e ligues
