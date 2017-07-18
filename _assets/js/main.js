@@ -54,11 +54,50 @@
         }
       }
     }
-    var smoothState = $('#league-stats').smoothState(options).data('smoothState');
+
+    if($('#league-stats').length>0){
+      smoothState.init()
+    }
 
   });
 })(jQuery);
 
+var smoothState = function(){
+  options: {
+    prefetch: true,
+    cacheLength: 2,
+    onStart: {
+      duration: 250, // Duration of our animation
+      render: function ($container) {
+        // Add your CSS animation reversing class
+        $container.addClass('is-exiting');
+
+        // Restart your animation
+        smoothState.restartCSSAnimations();
+      }
+    },
+    onReady: {
+      duration: 0,
+      render: function ($container, $newContent) {
+        // Remove your CSS animation reversing class
+        $container.removeClass('is-exiting');
+
+        // Inject the new content
+        $container.html($newContent);
+
+      }
+    },
+    onAfter: function($container, $newContent) {
+      if($('.ligue-teams').length>0){
+        rankingChoice.init()
+        backToTop.init()
+      }
+    }
+  },
+  init: function(){
+    var smoothState = $('#league-stats').smoothState(options).data('smoothState');
+  }
+}
 var infiniteScroll = {
   //https://blog.codestack.de/2015/05/17/seo-friendly-infinite-scroll.html
   init: function(){
@@ -71,7 +110,6 @@ var infiniteScroll = {
     })
   },
   loadMoreContent: function(){
-    console.log("LOADMORE")
     var next = $("a.next").first();
     next.each(function(key, value) {
       var url = $(value).attr('href');
@@ -212,7 +250,6 @@ var snipcartConfig = {
 
 var errorReportForm = {
   init: function(){
-    console.log("errorReportForm")
     $("#errors-report-form").submit(function(e) {
       e.preventDefault();
 
