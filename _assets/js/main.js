@@ -14,7 +14,6 @@
       });
     }
 
-    snipcartConfig.init()
     analyticsConfig.init()
     navManager.init()
     if($('.ligue-teams').length>0){
