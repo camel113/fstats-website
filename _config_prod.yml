@@ -17,7 +17,7 @@ sass:
 # exclude: [dpackage.json,gulpfile.js,js/dev,node_modules,README.m]
 languages: ["fr", "de"]
 exclude_from_localizations: ["js", "images", "css", "rankings","_posts","import","libs","stats"]
-exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","package-lock.json","gulpfile.js","README.md","feed.xml","includes/analytics.html","*/global-stats.html","app","posts-images","npm-debug.log"]
+exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","package-lock.json","gulpfile.js","README.md","feed.xml","includes/analytics.html","*/global-stats.html","app","posts-images","npm-debug.log","shop"]
 plugins: 
   - jekyll-sitemap
   - jekyll-paginate
