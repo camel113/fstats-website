@@ -1,79 +1,14 @@
 ---
-title_meta: pages.app.title
-description: pages.app.description
-layout: app
+layout: default
+title: pages.app.title_meta
+description: pages.app.description_meta
 ---
-<section class="intro-section" id="welcome">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7 col-md-offset-1 col-sm-12">
-        <div class="intro_text">
-          <h1>L'app&nbsp;<span>footstats live</span></h1>
-          <p>Pour suivre en direct les résultats des championnats amateurs en Suisse romande.</p>
-          <div class="buttons scroll-to">
-            <a href="#download" class="btn btn-lg btn-skin ">Télécharger!<i class="fa fa-cloud-download"></i></a>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <div class="iphone_holder">
-          <div class="iphone_inner flexslider">
-            <div class="iphone_slider">
-              <ul class="slides">
-                <li><img src="images/app_screenshots/image8.png" alt="" class="img-responsive"></li>
-                <li><img src="images/app_screenshots/image7.jpg" alt="" class="img-responsive"></li>
-                <li><img src="images/app_screenshots/image6.jpg" alt="" class="img-responsive"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="container standard-page">
+  <section class="row justify-content-md-center">
+    <div class="col-12 col-md-6">
+      <h1>{% t pages.app.title %}</h1>
+      <p>{% t pages.app.description %}</p>
+      <img src="/images/facebook/webapp-live.jpg" class="img-fluid" alt="Footstats live">
     </div>
-  </div>
-</section>
-
-
-  <!--screen-shots-->
-
-<section class="shots">
-  <div class="container">
-    <div class="section_heading">
-      <h3>Screen Shots</h3>
-      <hr class="separator">
-      <p>Notre app est une version bêta. N'hésitez pas à nous communiquer votre avis ou les problèmes que vous rencontrez.</p>
-    </div> 
-    <div id="owl-screenshots">
-      <div class="item"><img src="images/app_screenshots/image2.jpg" alt="screenshot" class="img-responsive"></div>
-      <div class="item"><img src="images/app_screenshots/image3.jpg" alt="screenshot" class="img-responsive"></div>
-      <div class="item"><img src="images/app_screenshots/image4.jpg" alt="screenshot" class="img-responsive"></div>
-      <div class="item"><img src="images/app_screenshots/image5.jpg" alt="screenshot" class="img-responsive"></div>
-      <div class="item"><img src="images/app_screenshots/image6.jpg" alt="screenshot" class="img-responsive"></div>
-      <div class="item"><img src="images/app_screenshots/image7.jpg" alt="screenshot" class="img-responsive"></div>
-      <div class="item"><img src="images/app_screenshots/image8.jpg" alt="screenshot" class="img-responsive"></div>
-      <div class="item"><img src="images/app_screenshots/image1.jpg" alt="screenshot" class="img-responsive"></div>
-    </div>
-  </div>
-</section>
-
-
-<!--download section-->
-<section  id="download" class="download-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <div class="section_heading">
-          <h3 class="wow animated fadeInDown" data-wow-delay="0.1s">Télécharger l'App footstats.ch!</h3>
-          <hr class="separator">
-          <p>Disponible sur l'App Store et bientôt sur le Play Store</p>
-        </div>
-        <div class="buttons wow animated bounceIn" data-wow-delay="0.2s">
-          <a href="https://itunes.apple.com/ch/app/footballtopscorers/id1116387146?l=en&mt=8"><img src="images/app-store.png" alt=""></a>
-        </div>
-        <div class='space-30'></div>
-        <img src="images/arrow-up.png" alt="">
-        <span>C'est gratuit!</span>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</div>

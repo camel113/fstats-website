@@ -155,8 +155,10 @@ pages:
     title: "Footstats | Concours top buts foot amateur suisse"
     description: "Envoyez nous les vidéos de vos plus beaux buts en tentez de gagner une paire de chaussure Nike Hypervenom Phantom II"
   app:
-    title: "Footstats | Live App"
-    description: "Score en direct football amateur en Suisse Romande"
+    title: FOOTSTATS Live App
+    description: L'application Footstats Live permet de suivre en direct tous les matchs de football amateur en Suisse. L'application est actuellement en cours d'amélioration.
+    title_meta: "Footstats | Live App"
+    description_meta: "Score en direct football amateur en Suisse"
 layout:
   follow_us: Suivez-nous
 meta: 
