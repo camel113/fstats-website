@@ -3,6 +3,7 @@
 {%else%}
 	{% assign scorers = false %}
 {%endif%}
+{% assign women = "" %}
 {% if page.data_path_ligue == "ligue2" %}
 	{% assign ligue = 2 %}
 {%elsif page.data_path_ligue == "ligue3"%}
@@ -11,14 +12,17 @@
 	{% assign ligue = 4 %}
 {%elsif page.data_path_ligue == "ligue5"%}
 	{% assign ligue = 5 %}
+{%elsif page.data_path_ligue == "ligue30"%}
+	{% assign ligue = 3 %}
+	{% assign women = "-feminine" %}
 {%endif%}
 <div class="row switch-ranks justify-content-center">
 <ul class="nav nav-pills">
   <li class="nav-item">
-    <a class="nav-link {%if scorers %}active{%endif%}" href="/{{page.data_path_region}}/{{ligue}}eme-ligue">Buteurs</a>
+    <a class="nav-link {%if scorers %}active{%endif%}" href="/{{page.data_path_region}}/{{ligue}}eme-ligue{{women}}">Buteurs</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link {%if scorers == false %}active{%endif%}" href="/{{page.data_path_region}}/{{ligue}}eme-ligue-teams">Équipes</a>
+    <a class="nav-link {%if scorers == false %}active{%endif%}" href="/{{page.data_path_region}}/{{ligue}}eme-ligue{{women}}-teams">Équipes</a>
   </li>
 </ul>
 </div>

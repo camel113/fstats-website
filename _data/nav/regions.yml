@@ -11,6 +11,8 @@ regions:
         path: "/4eme-ligue"
       - title: "5e ligue"
         path: "/5eme-ligue"
+      - title: "3e ligue fém."
+        path: "/3eme-ligue-feminine"
   - title: "ACVF"
     path: "acvf"
     subpages:
@@ -22,6 +24,8 @@ regions:
         path: "/4eme-ligue"
       - title: "5e ligue"
         path: "/5eme-ligue"
+      - title: "3e ligue fém."
+        path: "/3eme-ligue-feminine"
   - title: "ACGF"
     path: "acgf"
     subpages:
