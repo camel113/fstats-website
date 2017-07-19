@@ -1,0 +1,9 @@
+/news/*/2016/:month/:date/:slug /archives/2016%2D:month%2D:date%2D:slug 301
+/ligue/statistiques/2016/:month/:date/:slug /archives/2016%2D:month%2D:date%2D:slug 301
+/stars/:year/:month/:date/:slug /archives/:year%2D:month%2D:date%2D:slug 301
+
+/resume/*/2017/01/:date/:slug /archives/2017%2D01%2D:date%2D:slug 301
+/resume/*/2017/02/:date/:slug /archives/2017%2D02%2D:date%2D:slug 301
+/resume/*/2017/03/:date/:slug /archives/2017%2D03%2D:date%2D:slug 301
+/resume/*/2017/04/:date/:slug /archives/2017%2D04%2D:date%2D:slug 301
+/resume/*/2017/05/:date/:slug /archives/2017%2D05%2D:date%2D:slug 301
