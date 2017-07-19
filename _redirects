@@ -1,3 +1,4 @@
 /news/*/2016/:month/:date/:slug /archives/2016%2D:month%2D:date%2D:slug 301
 /ligue/statistiques/2016/:month/:date/:slug /archives/2016%2D:month%2D:date%2D:slug 301
 /stars/:year/:month/:date/:slug /archives/:year%2D:month%2D:date%2D:slug 301
+/resume/:region/2017/01/:date/:slug /archives/:2017%2D:01%2D:date%2D:slug 301
