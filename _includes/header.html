@@ -64,7 +64,11 @@
     <div class="row">
       <div class="col-xs-12">
         <ul class="nav">
-          {% assign regionnav = site.data.nav.regions %}
+          {% if site.lang == 'fr' %}
+            {% assign regionnav = site.data.nav.regions %}
+          {% else %}
+            {% assign regionnav = site.data.nav.regions-de %}
+          {% endif %}
           {% if page.data_path_region == null %}
             {% for region in regionnav.regions %}
               <li class="nav-item">
