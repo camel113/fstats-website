@@ -113,7 +113,7 @@
               <ul class="nav-level">
                 <li class="nav-title"><a href="#" class="nav-back-one-step"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>{{region.title}}</li>
                 {% for page in region.subpages %}
-                  <li><a href="/{{region.path}}{{page.path}}">{{page.title}}</a></li>
+                  <li><a href="{{site.baseurl}}/{{region.path}}{{page.path}}">{{page.title}}</a></li>
                 {% endfor %}
               </ul>
             </li>
