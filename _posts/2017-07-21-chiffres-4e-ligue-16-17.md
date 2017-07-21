@@ -14,11 +14,11 @@ description_for_facebook: Les chiffres inédits de la 4e ligue en Suisse romande
 title_for_facebook: 4e ligue - Le palmarès de la saison 16/17
 image_for_facebook: /images/facebook/2017-07-21-image-chiffres-4eligue-facebook.png
 ---
-Avant de partir en vacances pour quelques jours, il nous restait à publier les statistiques de la 4e ligue en Suisse romande. La 4e ligue c'est un peu la ligue reine chez Footstats puisque c'est celle qui comptabilise le plus de buteurs, le plus d'équipes et par conséquent le plus de vues sur Footstats.ch
+Avant de partir en vacances pour quelques jours il nous restait à publier les statistiques de la 4e ligue en Suisse romande. La 4e ligue c'est un peu la ligue reine chez Footstats puisque c'est celle qui comptabilise le plus de buteurs, le plus d'équipes et par conséquent le plus de vues sur Footstats.ch
 
 Les résumés de la [5e ligue](/palmares/2017/06/20/chiffres-5e-ligue-16-17), la [3e ligue](/palmares/2017/07/12/chiffres-3e-ligue-16-17) et de la [2e ligue](/palmares/2017/07/02/chiffres-2e-ligue-16-17.html) sont déjà disponibles.
 
-Nous cherchons toujours des reporters polyvalents pour offrir encore plus de contenu à la communauté Footstats. Si vous êtes passionné de football et aimez partager votre passion, [ce poste est fait pour vous!](/jobs)
+Nous cherchons toujours des reporters polyvalents pour offrir encore plus de contenu à la communauté Footstats. Si vous êtes passionné de football et aimez partager votre passion, [ce poste est fait pour vous](/jobs)!
 
 On vous le disait en préambule, la 4e ligue est la ligue qui compte le plus d'équipes, __277__ au total parmi lesquel __4266__ buteurs ont inscrit __14232__.  C'est le groupe 2 du canton de Genève qui possède la meilleure moyenne de buts marqués par match (6.1 buts/match).
 
