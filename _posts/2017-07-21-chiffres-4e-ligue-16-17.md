@@ -20,17 +20,17 @@ Les résumés de la [5e ligue](/palmares/2017/06/20/chiffres-5e-ligue-16-17), la
 
 Nous cherchons toujours des reporters polyvalents pour offrir encore plus de contenu à la communauté Footstats. Si vous êtes passionné de football et aimez partager votre passion, [ce poste est fait pour vous](/jobs)!
 
-On vous le disait en préambule, la 4e ligue est la ligue qui compte le plus d'équipes, __277__ au total parmi lesquel __4266__ buteurs ont inscrit __14232__.  C'est le groupe 2 du canton de Genève qui possède la meilleure moyenne de buts marqués par match (6.1 buts/match).
+On vous le disait en préambule, la 4e ligue est la ligue qui compte le plus d'équipes, __277__ au total parmi lesquels __4266__ buteurs ont inscrit __14232__.  C'est le groupe 2 du canton de Genève qui possède la meilleure moyenne de buts marqués par match (6.1 buts/match).
 
-Le meilleur buteur de la saison est __Marc Dufey__ (FC Amical Saint-Prex/VD) avec 41 buts. C'est également le meilleur buteur toutes ligues et canton confondus, bravo à lui!
+Le meilleur buteur de la saison est __Marc Dufey__ (FC Amical Saint-Prex/VD) avec 41 buts. C'est également le meilleur buteur toutes ligues et cantons confondus, bravo à lui!
 
 {% include post-ranking.html scorers=site.data.saison1617.4eligue.scorers %}
 
-Deux équipes se partagent la première place de classements des meilleures attaques. __FC Amical Saint-Prex__ (VD) et __FC Corcelles-Payerne__ (VD) possèdent toutes les deux une moyenne de 5.5 buts marqués par match. La dernière place de ce classement est occupé par __FC Saint-Paul__ (GE) avec une moyenne de 0.5 buts/match, soit 10 buts en 22 matchs.
+Deux équipes se partagent la première place du classement des meilleures attaques. __FC Amical Saint-Prex__ (VD) et __FC Corcelles-Payerne__ (VD) possèdent toutes les deux une moyenne de 5.5 buts marqués par match. La dernière place de ce classement est occupée par __FC Saint-Paul__ (GE) avec une moyenne de 0.5 buts/match, soit 10 buts en 22 matchs.
 
 {% include resume/att-teams-ranking.html teams=site.data.saison1617.4eligueattack.teams %}
 
-Plusieurs équipes dominent le classements des défenes. __FC Granges-Paccot__ (FR), __US Port-Valais__ (VS) et __FC Saint-Légier__ (VD) terminent avec une moyenne de 0.7 buts encaissés par match. La moins bonne équipe est encore une fois __FC Saint-Paul__ avec 8.1 buts encaissés par match soit 179 buts en 22 matchs.
+Plusieurs équipes dominent le classement des défenes. __FC Granges-Paccot__ (FR), __US Port-Valais__ (VS) et __FC Saint-Légier__ (VD) terminent avec une moyenne de 0.7 buts encaissés par match. La moins bonne équipe est encore une fois __FC Saint-Paul__ avec 8.1 buts encaissés par match soit 179 buts en 22 matchs.
 
 {% include resume/def-teams-ranking.html teams=site.data.saison1617.4eliguedefense.teams %}
 
