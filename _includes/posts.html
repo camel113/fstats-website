@@ -7,7 +7,7 @@
       {% endif %}
         <div class="col-12 col-lg-4">
           <div class="card">
-            <a href="{{ post.url }}">
+            <a href="{{ post.url | remove: '.html'}}">
               {% if post.image-300 %}
               <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-300}}"  srcset="{{site.url}}/images/posts/headers/{{post.image-500}} 500w, {{site.url}}/images/posts/headers/{{post.image-800}} 800w, {{site.url}}/images/posts/headers/{{post.image-1100}} 1100w, {{site.url}}/images/posts/headers/{{post.image-2200}} 2200w" alt="yah"/>
               {% else %}
@@ -15,9 +15,9 @@
               {% endif %}
             </a>
             <div class="card-block">
-              <a href="{{ post.url }}"><h4 class="card-title">{{ post.title }}</h4></a>
-              <a href="{{ post.url }}"><p class="card-text">{{ post.excerpt | strip_html }}</p></a>
-              <a href="{{ post.url }}"><p class="card-text"><small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ post.date | date: "%-d/%m/%Y"}}</small></p></a>
+              <a href="{{ post.url | remove: '.html'}}"><h4 class="card-title">{{ post.title }}</h4></a>
+              <a href="{{ post.url | remove: '.html'}}"><p class="card-text">{{ post.excerpt | strip_html }}</p></a>
+              <a href="{{ post.url | remove: '.html'}}"><p class="card-text"><small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ post.date | date: "%-d/%m/%Y"}}</small></p></a>
             </div>
           </div>
         </div>

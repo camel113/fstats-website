@@ -26,7 +26,7 @@ layout: default
   <div class="row justify-content-md-center">
     <div class="col-12 col-md-8 col-lg-6">
       <div class="fb-share-button" 
-        data-href="http://www.your-domain.com/your-page.html" 
+        data-href="{{site.url}}{{page.url | remove: '.html'}}" 
         data-layout="button_count">
       </div>
     </div>
