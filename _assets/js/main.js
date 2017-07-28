@@ -202,9 +202,3 @@ var analyticsConfig = {
     });
   }
 }
-var snipcartConfig = {
-  init: function(){
-    Snipcart.api.configure('split_firstname_and_lastname', true);
-    Snipcart.execute('registerLocale', 'fr', {"company_name":"Société"});
-  }
-}
