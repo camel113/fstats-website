@@ -31,6 +31,8 @@ Redirections are made with Netlify `_redirects` file config.
 
 `import/all.rb` import all the data from _parsing_ service.
 
+`import/create.rb` will create resume post for specific region. Edit the end of this file to choose which region to resume. This will create a post with related generated images. Check also line 99 on this file to give the path where the post should be generated.
+
 ### Others
 for FILE in *.png; do
   convert "$FILE" -resize 100x100 "${FILE%.*}-100x100.png"
