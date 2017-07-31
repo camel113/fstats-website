@@ -5,8 +5,8 @@ fr_only_title_meta: AVF - Meilleurs buteurs - 15/06/2017
 fr_only_description_meta: Les meilleurs buteurs AVF des championnats de football amateur de la 2e à la 5e ligue - 15/06/2017
 date: 2017-06-15 11:00:00 +0200
 image: 2017-06-15-image-avf.png
-image-800: 2017-06-15-image-avf-size800.png
-image-1600: 2017-06-15-image-avf-size1600.png
+image-800: 2017-06-15-image-avf-size800.jpg
+image-1600: 2017-06-15-image-avf-size1600.jpg
 categories: resume avf
 description_for_facebook: Classements buteurs du canton du Valais.
 title_for_facebook: AVF - Top buteurs
