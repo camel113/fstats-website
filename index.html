@@ -14,7 +14,7 @@ home: true
           <div class="card">
             <a href="{{ post.url }}">
               {% if post.image-300 %}
-              <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{page.image-800}}" sizes="(min-width: 992px) 350px, 100vw" alt="{{ post.title }}"/>
+              <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-800}}" alt="{{ post.title }}"/>
               {% else %}
               <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-mobile}}" alt="mobile"/>
               {% endif %}
