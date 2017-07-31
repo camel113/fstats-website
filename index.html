@@ -13,7 +13,7 @@ home: true
         <div class="col-12 col-lg-4">
           <div class="card">
             <a href="{{ post.url | remove: '.html'}}">
-              {% if post.image-300 %}
+              {% if post.image-800 %}
               <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-800}}"  srcset="{{site.url}}/images/posts/headers/{{post.image-800}} 1x, {{site.url}}/images/posts/headers/{{post.image-1600}} 2x" alt="{{post.title}}"/>
               {% else %}
               <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-mobile}}" alt="mobile"/>
