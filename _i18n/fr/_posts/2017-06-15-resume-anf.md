@@ -5,11 +5,8 @@ fr_only_title_meta: ANF - Meilleurs buteurs - 15/06/2017
 fr_only_description_meta: Les meilleurs buteurs ANF des championnats de football amateur de la 2e à la 5e ligue - 15/06/2017
 date: 2017-06-15 11:00:00 +0200
 image: 2017-06-15-image-anf.png
-image-300: 2017-06-15-image-anf-size300.png
-image-500: 2017-06-15-image-anf-size500.png
-image-800: 2017-06-15-image-anf-size800.png
-image-1100: 2017-06-15-image-anf-size1100.png
-image-2200: 2017-06-15-image-anf-size2200.png
+image-800: 2017-06-15-image-anf-size800.jpg
+image-1600: 2017-06-15-image-anf-size1600.jpg
 categories: resume anf
 description_for_facebook: Classements buteurs du canton de Neuchâtel.
 title_for_facebook: ANF - Top buteurs
