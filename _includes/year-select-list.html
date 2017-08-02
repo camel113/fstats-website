@@ -9,8 +9,8 @@
         {%- endif -%}
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="{{page.url | replace:'/2016-2017',''}}">2017-2018</a>
-      <a class="dropdown-item" href="/2016-2017{{page.url}}">2016-2017</a>
+      <a class="dropdown-item" href="{{site.url}}{{page.url | replace:'/2016-2017',''}}">2017-2018</a>
+      <a class="dropdown-item" href="{{site.url}}/2016-2017{{page.url}}">2016-2017</a>
     </div>
   </div>
   </div>
