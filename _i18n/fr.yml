@@ -251,7 +251,7 @@ pages:
     fvrz_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVRZ (Région Zürich) 5ème ligue."
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
-    info: 'Les erreurs, oublis ou autres problèmes sont à signaler via ce <a href="/erreurs-oublis" title="Signaler une erreur ou un problème">formulaire<a/>'
+    info: 'Les erreurs, oublis ou autres problèmes sont à signaler via ce <a href="/erreurs-oublis" title="Signaler une erreur ou un problème">formulaire</a>'
     headline: Classements buteurs par groupe
     group: "Groupe"
     no_data: "Pas de données disponibles pour le moment."
