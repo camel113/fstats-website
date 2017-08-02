@@ -10,6 +10,7 @@ $navbar-color:#3D4248;
     align-items: center;
     height: $navbar-height;
       span{
+        background-image: url(../images/hamburger.png);
         background-image: url(../images/hamburger.svg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
