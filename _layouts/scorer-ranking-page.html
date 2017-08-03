@@ -11,12 +11,12 @@ facebook_meta_description: meta.facebook_description
 
 <div id="league-stats">
 	<div class="container ligue-scorers">
-		{% if data_path.scorers.lastUpdate != null %}
-			<div class="row">
-				<div class="col-12">
-				{% include tab-teams-scorers.html %}
-				</div>
+		<div class="row">
+			<div class="col-12">
+			{% include tab-teams-scorers.html %}
 			</div>
+		</div>
+		{% if data_path.scorers.lastUpdate != null %}
 			<div class="row justify-content-md-center">
 				<div class="col-12 col-md-8 col-lg-6">
 					<h1>{% t page.title %}</h1>
