@@ -349,26 +349,6 @@ create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 regions.push(region)
 
-leagues = []
-regions = []
-
-# AFF 2eme ligue
-groups = [*1..1]
-region = 'aff'
-league = 2
-filePath = "_data/aff/ligue2/"
-create_directories(filePath)
-leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
-regions.push(region)
-
-# AFF 3eme ligue
-groups = [*1..3]
-region = 'aff'
-league = 3
-filePath = "_data/aff/ligue3/"
-create_directories(filePath)
-leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
-
 leagues.each { |l| 
   create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
   create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
