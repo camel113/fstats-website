@@ -1,16 +1,16 @@
 <head>
-  <title>{% if page.fr_only_title_meta %}{{page.fr_only_title_meta}}{% elsif page.title_meta %}{% t page.title_meta %} | Footstats{% else %}{% t meta.site_title %}{% endif %}</title>
+  <title>{% if page.fr_only_title_meta %}{{page.fr_only_title_meta}}{% elsif page.title_meta %}{% t page.title_meta %} | Footstats{% else %}{% t meta.site_title %}{% endif %}{% if page.data_path_season == '2016-2017' %} | 2016-2017 {% endif %}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="/assets/vendors/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="/assets/styles/font-awesome.css" />
   <link rel="stylesheet" type="text/css" href="/assets/styles/main.css" />
   
-  <meta name="description" content="{% if page.fr_only_description_meta %}{{page.fr_only_description_meta}}{% elsif page.description_meta %}{% t page.description_meta %}{% elsif page.description %}{{ page.description }}{% else %}{% t meta.site_description %}{% endif %}">
+  <meta name="description" content="{% if page.data_path_season == '2016-2017' %}2016-2017 - {% endif %}{% if page.fr_only_description_meta %}{{page.fr_only_description_meta}}{% elsif page.description_meta %}{% t page.description_meta %}{% elsif page.description %}{{ page.description }}{% else %}{% t meta.site_description %}{% endif %}">
 
   <meta property="og:url" content="{{ site.url }}{{ page.url | downcase | remove: '.html' }}"/>
   <meta property="og:description" content="{% if page.description_for_facebook %}{{ page.description_for_facebook }}{% else %}{% t meta.facebook_description %}{% endif %}" />
-  <meta property="og:title" content="{% if page.title_for_facebook %}{{ page.title_for_facebook }}{% else %}{% t meta.facebook_title %}{% endif %}" />
+  <meta property="og:title" content="{% if page.data_path_season == '2016-2017' %}2016-2017 - {% endif %}{% if page.title_for_facebook %}{{ page.title_for_facebook }}{% else %}{% t meta.facebook_title %}{% endif %}" />
   <meta property="og:type" content="{% if page.id %}article{% else %}website{% endif %}" />
   <meta property="og:image" content="{% if page.image_for_facebook %}{{ site.url }}{{ page.image_for_facebook }}{% else %}{{ site.url }}/images/posts/headers/footstats.png{% endif %}" />
   <meta property="fb:app_id" content="320239721737368" />
