@@ -1,4 +1,10 @@
-{% for group in site.data[page.data_path_region][page.data_path_ligue].standard %}
+{% if page.data_path_season == '2016-2017' %}
+  {% assign data_path = site.data.archives1617[page.data_path_region][page.data_path_ligue] %}
+{% else %}
+  {% assign data_path = site.data[page.data_path_region][page.data_path_ligue] %}
+{% endif %}
+
+{% for group in data_path.standard %}
   <div class="row ranking team-standard justify-content-md-center" id="{{group[0]}}-standard">
     <div class="col-12 col-md-8 col-lg-6"">
       <h4>{% t pages.scorer_ranking.group %} {{ group[0] | remove: "group" }}</h4>
@@ -40,7 +46,7 @@
     </div>
   </div>
 {% endfor %}
-{% for group in site.data[page.data_path_region][page.data_path_ligue].attack %}
+{% for group in data_path.attack %}
   <div class="row ranking justify-content-md-center" id="{{group[0]}}-attack">
     <div class="col-12 col-md-8 col-lg-6">
       <h4>{% t pages.scorer_ranking.group %} {{ group[0] | remove: "group" }}</h4>
@@ -80,7 +86,7 @@
     </div>
   </div>
 {% endfor %}
-{% for group in site.data[page.data_path_region][page.data_path_ligue].defense %}
+{% for group in data_path.defense %}
   <div class="row ranking justify-content-md-center" id="{{group[0]}}-defense">
     <div class="col-12 col-md-8 col-lg-6">
     <h4>{% t pages.scorer_ranking.group %} {{ group[0] | remove: "group" }}</h4>
@@ -122,7 +128,7 @@
 {% endfor %}
 
 <!-- <div class="groups col-xs-12" id="global"> -->
-{% if site.data[page.data_path_region][page.data_path_ligue].global-standard %}
+{% if data_path.global-standard %}
 <div class="row ranking gloabal-ranking justify-content-md-center" id="global-standard">
   <div class="col-12 col-md-8 col-lg-6">
   <h4>{% t pages.teams_ranking.global %}</h4>
@@ -141,7 +147,7 @@
         </tr>
       </thead>
       <tbody>
-        {% for teams in site.data[page.data_path_region][page.data_path_ligue].global-standard %}
+        {% for teams in data_path.global-standard %}
           {% for team in teams[1] %}
             <tr>
               <td>{{ forloop.index}}</td>
@@ -164,7 +170,7 @@
   </div>
 </div>
 {% endif %}
-{% if site.data[page.data_path_region][page.data_path_ligue].global-attack %}
+{% if data_path.global-attack %}
 <div class="row ranking gloabal-ranking justify-content-md-center" id="global-attack">
   <div class="col-12 col-md-8 col-lg-6">
     <h4>{% t pages.teams_ranking.global %}</h4>
@@ -184,7 +190,7 @@
         </tr>
       </thead>
       <tbody>
-        {% for teams in site.data[page.data_path_region][page.data_path_ligue].global-attack %}
+        {% for teams in data_path.global-attack %}
           {% for team in teams[1] %}
             <tr>
               <td>{{ forloop.index}}</td>
@@ -207,7 +213,7 @@
   </div>
 </div>
 {% endif %}
-{% if site.data[page.data_path_region][page.data_path_ligue].global-defense %}
+{% if data_path.global-defense %}
 <div class="row ranking gloabal-ranking justify-content-md-center" id="global-defense">
   <div class="col-12 col-md-8 col-lg-6">
   <h4>{% t pages.teams_ranking.global %}</h4>
@@ -226,7 +232,7 @@
         </tr>
       </thead>
       <tbody>
-        {% for teams in site.data[page.data_path_region][page.data_path_ligue].global-defense %}
+        {% for teams in data_path.global-defense %}
           {% for team in teams[1] %}
             <tr>
               <td>{{ forloop.index}}</td>
@@ -249,20 +255,3 @@
   </div>
 </div>
 {% endif %}
-<div class="modal fade modal-fullscreen" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Évolution du classement</h4>
-        <p class="modile-advice">Sur smartphone en mode horizontal ;-)</p>
-      </div>
-      <div class="modal-body">
-        <canvas id="myChart" width="400" height="400"></canvas>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
