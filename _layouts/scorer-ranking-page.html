@@ -3,9 +3,15 @@ layout: default
 facebook_meta_title: meta.facebook_title
 facebook_meta_description: meta.facebook_description
 ---
+{% if page.data_path_season == '2016-2017' %}
+	{% assign data_path = site.data.archives1617[page.data_path_region][page.data_path_ligue] %}
+{% else %}
+	{% assign data_path = site.data[page.data_path_region][page.data_path_ligue] %}
+{% endif %}
+
 <div id="league-stats">
 	<div class="container ligue-scorers">
-		{% if site.data[page.data_path_region][page.data_path_ligue].scorers.lastUpdate != null %}
+		{% if data_path.scorers.lastUpdate != null %}
 			<div class="row">
 				<div class="col-12">
 				{% include tab-teams-scorers.html %}
@@ -16,7 +22,7 @@ facebook_meta_description: meta.facebook_description
 					<h1>{% t page.title %}</h1>
 				  <h2>{% t page.headline %}</h2>
 				  <p><small>{% t pages.scorer_ranking.info %}</small></p>
-					<p><small><span class="text-muted d-block"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ site.data[page.data_path_region][page.data_path_ligue].scorers.lastUpdate }}</span></small></p>
+					<p><small><span class="text-muted d-block"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ data_path.scorers.lastUpdate }}</span></small></p>
 					
 				</div>
 			</div>
@@ -27,7 +33,7 @@ facebook_meta_description: meta.facebook_description
 
 			<div class="row justify-content-md-center">
 				<div class="scorer-ranking col-12 col-md-8 col-lg-6">
-					{% for group in site.data[page.data_path_region][page.data_path_ligue].scorers.rankings %}
+					{% for group in data_path.scorers.rankings %}
 				  <h3>{% t pages.scorer_ranking.group %} {{ group.groupNumber }}</h3>
 				  <table class="table table-sm">
 				    <thead>
@@ -59,9 +65,19 @@ facebook_meta_description: meta.facebook_description
 			<div class="row justify-content-center no-data-available-info">
 				<div class="col-12">
 					<h1>{% t page.title %}</h1>
+				</div>
+			</div>
+
+			{% if site.data.archives1617[page.data_path_region][page.data_path_ligue] != null %}
+			{% include year-select-list.html %}
+			{% endif %}
+
+			<div class="row no-data-available-info offset-md-3">
+				<div class="col-12">
 					<p>{% t pages.scorer_ranking.no_data %}</p>
 				</div>
 			</div>
+
 		{% endif %}
 	</div>
 </div>
