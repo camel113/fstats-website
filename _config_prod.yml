@@ -27,7 +27,7 @@ gems:
 paginate: 12
 paginate_path: "/page:num/"
 
-future: true
+future: false
 paginate: 12
 paginate_path: "/page:num/"
 
