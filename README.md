@@ -6,6 +6,20 @@ Some reminders and documentation
 
 Posts are in `_i18n` folder. You can have post only in `fr` or `de` or in both.
 
+### Regions posts
+
+You can create pages which retrieve all the posts with the category related to a region. For example 
+`aff/index.html`
+```
+---
+layout: default
+posts_category: aff
+data_path_region: aff
+---
+{% include posts.html %}
+```
+Will retrieve all the posts with category aff.
+
 ## Multilanguages
 
 We use the [jekyll-multiple-languages-plugin](https://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin) to translate everything. But we made a manual installation with [this code update](https://github.com/blurb/jekyll-multiple-languages-plugin/pull/3/files). We did it because the plugin [won't exclude files containing a front matter](https://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin/issues/75) even if they are in `exclude_from_localizations:[]`.

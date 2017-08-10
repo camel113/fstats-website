@@ -77,9 +77,9 @@
             {% endfor %}
           {% else %}
             {% assign subnav = regionnav.regions | where:'path', page.data_path_region %}
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="{{site.baseurl}}/{{page.data_path_region}}">{{ subnav[0].title }}</a>
-            </li>
+            </li> -->
             {% for subpage in subnav[0].subpages %}
               <li class="nav-item">
                 <a class="nav-link" href="{{site.baseurl}}/{{page.data_path_region}}{{subpage.path}}">{{ subpage.title }}</a>
