@@ -202,8 +202,6 @@ var analyticsConfig = {
       });
     });
   }
-<<<<<<< HEAD
-=======
 }
 var snipcartConfig = {
   init: function(){
@@ -236,5 +234,4 @@ var errorReportForm = {
 
     });
   }
->>>>>>> add-new-regions
 }

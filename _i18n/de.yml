@@ -295,12 +295,6 @@ pages:
     title: "Footstats | Wettbewerb um die besten Tore im schweizer Amateurfussball"
     description: "Schicken Sie uns die Filme Ihrer schönsten Tore und nehmen Sie an einem Wettbewerb für ein Paar Nike Schuhe (Hypervenom Phantom II) teil"
   app:
-<<<<<<< HEAD
-    title: Traduire
-    description: Traduire
-    title_meta: "Footstats | Live App"
-    description_meta: Traduire
-=======
     title: "Footstats | Live App"
     description: "Score en direct football amateur en Suisse Romande"
   about:
@@ -311,7 +305,6 @@ pages:
   errors_report:
     title: Traduire
     description: Traduire
->>>>>>> add-new-regions
 layout:
   follow_us: "Folge uns"
 meta: 

@@ -4,254 +4,269 @@
   {% assign data_path = site.data[page.data_path_region][page.data_path_ligue] %}
 {% endif %}
 
-{% for group in data_path.standard %}
-  <div class="row ranking team-standard justify-content-md-center" id="{{group[0]}}-standard">
-    <div class="col-12 col-md-8 col-lg-6"">
-      <h4>{% t pages.scorer_ranking.group %} {{ group[0] | remove: "group" }}</h4>
-      <table class="table table-striped table-condensed">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>{% t pages.teams_ranking.club %}</th>
-            <th>{% t pages.teams_ranking.goals_for_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.goals_against_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.matchs_win_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.matchs_draw_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.matchs_lost_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.fairplay_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.points_abbrevitation %}</th>
-          </tr>      
-        </thead>
-        <tbody>
-
-          {% for team in group[1].teams %}
-            <tr data-evolution='{{team.evolution | join: "," | prepend: "[" | append: "]"}}'>
-              <td>{{team.rank}}</td>
-              <td>
-                {% include team-short-name.html param=team.team %}
-                <span class="team-name">{{team.team}}</span>
-              </td>
-              <td>{{team.goalsfor}}</td>
-              <td>{{team.goalsagainst}}</td>
-              <td>{{team.won}}</td>
-              <td>{{team.tied}}</td>
-              <td>{{team.lost}}</td>
-              <td>{{team.fairplay}}</td>
-              <td>{{team.points}}</td>
-            </tr>
-          {% endfor%}
-
-        </tbody>
-      </table>
-    </div>
-  </div>
-{% endfor %}
-{% for group in data_path.attack %}
-  <div class="row ranking justify-content-md-center" id="{{group[0]}}-attack">
-    <div class="col-12 col-md-8 col-lg-6">
-      <h4>{% t pages.scorer_ranking.group %} {{ group[0] | remove: "group" }}</h4>
-      <table class="table table-striped table-condensed">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>{% t pages.teams_ranking.club %}</th>
-            <th>{% t pages.teams_ranking.goals_for_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.goals_against_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.matchs_win_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.matchs_draw_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.matchs_lost_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.fairplay_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.points_abbrevitation %}</th>
-          </tr>      
-        </thead>
-        <tbody>
-          {% for team in group[1].teams %}
-            <tr>
-              <td>{{ forloop.index}}</td>
-              <td>
-                {% include team-short-name.html param=team.team %}
-                <span class="team-name">{{team.team}}</span>
-              </td>
-              <td><strong>{{team.goalsfor}}</strong></td>
-              <td>{{team.goalsagainst}}</td>
-              <td>{{team.won}}</td>
-              <td>{{team.tied}}</td>
-              <td>{{team.lost}}</td>
-              <td>{{team.fairplay}}</td>
-              <td>{{team.points}}</td>
-            </tr>
-          {% endfor%}
-        </tbody>
-      </table>
-    </div>
-  </div>
-{% endfor %}
-{% for group in data_path.defense %}
-  <div class="row ranking justify-content-md-center" id="{{group[0]}}-defense">
-    <div class="col-12 col-md-8 col-lg-6">
-    <h4>{% t pages.scorer_ranking.group %} {{ group[0] | remove: "group" }}</h4>
-      <table class="table table-striped table-condensed">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>{% t pages.teams_ranking.club %}</th>
-            <th>{% t pages.teams_ranking.goals_for_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.goals_against_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.matchs_win_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.matchs_draw_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.matchs_lost_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.fairplay_abbrevitation %}</th>
-            <th>{% t pages.teams_ranking.points_abbrevitation %}</th>
-          </tr>      
-        </thead>
-        <tbody>
-          {% for team in group[1].teams %}
-            <tr>
-              <td>{{ forloop.index}}</td>
-              <td>
-                {% include team-short-name.html param=team.team %}
-                <span class="team-name">{{team.team}}</span>
-              </td>
-              <td>{{team.goalsfor}}</td>
-              <td><strong>{{team.goalsagainst}}</strong></td>
-              <td>{{team.won}}</td>
-              <td>{{team.tied}}</td>
-              <td>{{team.lost}}</td>
-              <td>{{team.fairplay}}</td>
-              <td>{{team.points}}</td>
-            </tr>
-          {% endfor%}
-        </tbody>
-      </table>
-    </div>
-  </div>
-{% endfor %}
-
-<!-- <div class="groups col-xs-12" id="global"> -->
-{% if data_path.global-standard %}
-<div class="row ranking gloabal-ranking justify-content-md-center" id="global-standard">
-  <div class="col-12 col-md-8 col-lg-6">
-  <h4>{% t pages.teams_ranking.global %}</h4>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>{% t pages.teams_ranking.club %}</th>
-          <th>{% t pages.teams_ranking.group_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.goals_for_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.goals_against_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.matchs_win_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.matchs_draw_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.matchs_lost_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.points_abbrevitation %}</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for teams in data_path.global-standard %}
-          {% for team in teams[1] %}
-            <tr>
-              <td>{{ forloop.index}}</td>
-              <td>
-                {% include team-short-name.html param=team.team %}
-                <span class="team-name">{{team.team}}</span>
-              </td>
-              <td>{{team.group}}</td>
-              <td>{{team.goalsfor}}</td>
-              <td>{{team.goalsagainst}}</td>
-              <td>{{team.won}}</td>
-              <td>{{team.tied}}</td>
-              <td>{{team.lost}}</td>
-              <td>{{team.points}}</td>
-            </tr>
-          {% endfor%}
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-</div>
+{% if page.data_path_season == '2016-2017' %}
+  {% assign data_path = site.data.archives1617[page.data_path_region][page.data_path_ligue] %}
+{% else %}
+  {% assign data_path = site.data[page.data_path_region][page.data_path_ligue] %}
 {% endif %}
-{% if data_path.global-attack %}
-<div class="row ranking gloabal-ranking justify-content-md-center" id="global-attack">
-  <div class="col-12 col-md-8 col-lg-6">
+
+{% if data_path.scorers.lastUpdate != null %}
+
+  {% for group in data_path.standard %}
+    <div class="row ranking team-standard justify-content-md-center" id="{{group[0]}}-standard">
+      <div class="col-12 col-md-8 col-lg-6"">
+        <h4>{% t pages.scorer_ranking.group %} {{ group[0] | remove: "group" }}</h4>
+        <table class="table table-striped table-condensed">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>{% t pages.teams_ranking.club %}</th>
+              <th>{% t pages.teams_ranking.goals_for_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.goals_against_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.matchs_win_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.matchs_draw_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.matchs_lost_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.fairplay_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.points_abbrevitation %}</th>
+            </tr>      
+          </thead>
+          <tbody>
+
+            {% for team in group[1].teams %}
+              <tr data-evolution='{{team.evolution | join: "," | prepend: "[" | append: "]"}}'>
+                <td>{{team.rank}}</td>
+                <td>
+                  {% include team-short-name.html param=team.team %}
+                  <span class="team-name">{{team.team}}</span>
+                </td>
+                <td>{{team.goalsfor}}</td>
+                <td>{{team.goalsagainst}}</td>
+                <td>{{team.won}}</td>
+                <td>{{team.tied}}</td>
+                <td>{{team.lost}}</td>
+                <td>{{team.fairplay}}</td>
+                <td>{{team.points}}</td>
+              </tr>
+            {% endfor%}
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  {% endfor %}
+  {% for group in data_path.attack %}
+    <div class="row ranking justify-content-md-center" id="{{group[0]}}-attack">
+      <div class="col-12 col-md-8 col-lg-6">
+        <h4>{% t pages.scorer_ranking.group %} {{ group[0] | remove: "group" }}</h4>
+        <table class="table table-striped table-condensed">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>{% t pages.teams_ranking.club %}</th>
+              <th>{% t pages.teams_ranking.goals_for_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.goals_against_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.matchs_win_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.matchs_draw_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.matchs_lost_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.fairplay_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.points_abbrevitation %}</th>
+            </tr>      
+          </thead>
+          <tbody>
+            {% for team in group[1].teams %}
+              <tr>
+                <td>{{ forloop.index}}</td>
+                <td>
+                  {% include team-short-name.html param=team.team %}
+                  <span class="team-name">{{team.team}}</span>
+                </td>
+                <td><strong>{{team.goalsfor}}</strong></td>
+                <td>{{team.goalsagainst}}</td>
+                <td>{{team.won}}</td>
+                <td>{{team.tied}}</td>
+                <td>{{team.lost}}</td>
+                <td>{{team.fairplay}}</td>
+                <td>{{team.points}}</td>
+              </tr>
+            {% endfor%}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  {% endfor %}
+  {% for group in data_path.defense %}
+    <div class="row ranking justify-content-md-center" id="{{group[0]}}-defense">
+      <div class="col-12 col-md-8 col-lg-6">
+      <h4>{% t pages.scorer_ranking.group %} {{ group[0] | remove: "group" }}</h4>
+        <table class="table table-striped table-condensed">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>{% t pages.teams_ranking.club %}</th>
+              <th>{% t pages.teams_ranking.goals_for_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.goals_against_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.matchs_win_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.matchs_draw_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.matchs_lost_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.fairplay_abbrevitation %}</th>
+              <th>{% t pages.teams_ranking.points_abbrevitation %}</th>
+            </tr>      
+          </thead>
+          <tbody>
+            {% for team in group[1].teams %}
+              <tr>
+                <td>{{ forloop.index}}</td>
+                <td>
+                  {% include team-short-name.html param=team.team %}
+                  <span class="team-name">{{team.team}}</span>
+                </td>
+                <td>{{team.goalsfor}}</td>
+                <td><strong>{{team.goalsagainst}}</strong></td>
+                <td>{{team.won}}</td>
+                <td>{{team.tied}}</td>
+                <td>{{team.lost}}</td>
+                <td>{{team.fairplay}}</td>
+                <td>{{team.points}}</td>
+              </tr>
+            {% endfor%}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  {% endfor %}
+
+  <!-- <div class="groups col-xs-12" id="global"> -->
+  {% if data_path.global-standard %}
+  <div class="row ranking gloabal-ranking justify-content-md-center" id="global-standard">
+    <div class="col-12 col-md-8 col-lg-6">
     <h4>{% t pages.teams_ranking.global %}</h4>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>{% t pages.teams_ranking.club %}</th>
-          <th>{% t pages.teams_ranking.group_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.goals_for_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.goals_against_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.matchs_win_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.matchs_draw_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.matchs_lost_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.fairplay_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.points_abbrevitation %}</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for teams in data_path.global-attack %}
-          {% for team in teams[1] %}
-            <tr>
-              <td>{{ forloop.index}}</td>
-              <td>
-                {% include team-short-name.html param=team.team %}
-                <span class="team-name">{{team.team}}</span>
-              </td>
-              <td>{{team.group}}</td>
-              <td><strong>{{team.goalsfor}}</strong></td>
-              <td>{{team.goalsagainst}}</td>
-              <td>{{team.won}}</td>
-              <td>{{team.tied}}</td>
-              <td>{{team.lost}}</td>
-              <td>{{team.points}}</td>
-            </tr>
-          {% endfor%}
-        {% endfor %}
-      </tbody>
-    </table>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>{% t pages.teams_ranking.club %}</th>
+            <th>{% t pages.teams_ranking.group_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.goals_for_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.goals_against_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.matchs_win_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.matchs_draw_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.matchs_lost_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.points_abbrevitation %}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for teams in data_path.global-standard %}
+            {% for team in teams[1] %}
+              <tr>
+                <td>{{ forloop.index}}</td>
+                <td>
+                  {% include team-short-name.html param=team.team %}
+                  <span class="team-name">{{team.team}}</span>
+                </td>
+                <td>{{team.group}}</td>
+                <td>{{team.goalsfor}}</td>
+                <td>{{team.goalsagainst}}</td>
+                <td>{{team.won}}</td>
+                <td>{{team.tied}}</td>
+                <td>{{team.lost}}</td>
+                <td>{{team.points}}</td>
+              </tr>
+            {% endfor%}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   </div>
-</div>
-{% endif %}
-{% if data_path.global-defense %}
-<div class="row ranking gloabal-ranking justify-content-md-center" id="global-defense">
-  <div class="col-12 col-md-8 col-lg-6">
-  <h4>{% t pages.teams_ranking.global %}</h4>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>{% t pages.teams_ranking.club %}</th>
-          <th>{% t pages.teams_ranking.group_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.goals_for_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.goals_against_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.matchs_win_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.matchs_draw_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.matchs_lost_abbrevitation %}</th>
-          <th>{% t pages.teams_ranking.points_abbrevitation %}</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for teams in data_path.global-defense %}
-          {% for team in teams[1] %}
-            <tr>
-              <td>{{ forloop.index}}</td>
-              <td>
-                {% include team-short-name.html param=team.team %}
-                <span class="team-name">{{team.team}}</span>
-              </td>
-              <td>{{team.group}}</td>
-              <td>{{team.goalsfor}}</td>
-              <td><strong>{{team.goalsagainst}}</strong></td>
-              <td>{{team.won}}</td>
-              <td>{{team.tied}}</td>
-              <td>{{team.lost}}</td>
-              <td>{{team.points}}</td>
-            </tr>
-          {% endfor%}
-        {% endfor %}
-      </tbody>
-    </table>
+  {% endif %}
+  {% if data_path.global-attack %}
+  <div class="row ranking gloabal-ranking justify-content-md-center" id="global-attack">
+    <div class="col-12 col-md-8 col-lg-6">
+      <h4>{% t pages.teams_ranking.global %}</h4>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>{% t pages.teams_ranking.club %}</th>
+            <th>{% t pages.teams_ranking.group_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.goals_for_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.goals_against_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.matchs_win_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.matchs_draw_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.matchs_lost_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.fairplay_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.points_abbrevitation %}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for teams in data_path.global-attack %}
+            {% for team in teams[1] %}
+              <tr>
+                <td>{{ forloop.index}}</td>
+                <td>
+                  {% include team-short-name.html param=team.team %}
+                  <span class="team-name">{{team.team}}</span>
+                </td>
+                <td>{{team.group}}</td>
+                <td><strong>{{team.goalsfor}}</strong></td>
+                <td>{{team.goalsagainst}}</td>
+                <td>{{team.won}}</td>
+                <td>{{team.tied}}</td>
+                <td>{{team.lost}}</td>
+                <td>{{team.points}}</td>
+              </tr>
+            {% endfor%}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  {% endif %}
+  {% if data_path.global-defense %}
+  <div class="row ranking gloabal-ranking justify-content-md-center" id="global-defense">
+    <div class="col-12 col-md-8 col-lg-6">
+    <h4>{% t pages.teams_ranking.global %}</h4>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>{% t pages.teams_ranking.club %}</th>
+            <th>{% t pages.teams_ranking.group_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.goals_for_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.goals_against_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.matchs_win_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.matchs_draw_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.matchs_lost_abbrevitation %}</th>
+            <th>{% t pages.teams_ranking.points_abbrevitation %}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for teams in data_path.global-defense %}
+            {% for team in teams[1] %}
+              <tr>
+                <td>{{ forloop.index}}</td>
+                <td>
+                  {% include team-short-name.html param=team.team %}
+                  <span class="team-name">{{team.team}}</span>
+                </td>
+                <td>{{team.group}}</td>
+                <td>{{team.goalsfor}}</td>
+                <td><strong>{{team.goalsagainst}}</strong></td>
+                <td>{{team.won}}</td>
+                <td>{{team.tied}}</td>
+                <td>{{team.lost}}</td>
+                <td>{{team.points}}</td>
+              </tr>
+            {% endfor%}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  {% endif %}
+{% else %}
+<div class="row no-data-available-info offset-md-3">
+  <div class="col-12">
+    <p>{% t pages.scorer_ranking.no_data %}</p>
   </div>
 </div>
 {% endif %}
