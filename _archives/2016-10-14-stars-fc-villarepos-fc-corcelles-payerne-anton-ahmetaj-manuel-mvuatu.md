@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  Les stars du week-end&#58; Anton Ahmetaj, Manuel Mvuatu, FC Villarepos et FC Corcelles-Payerne.
 date:   2016-10-14 13:40:00 +0200
 image: stars-1.jpg

@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  AVF - Les stats de la semaine
 date:   2016-10-04 14:00:00 +0200
 image: resumeAVF0410.jpg

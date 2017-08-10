@@ -11,7 +11,7 @@ layout: default
 				<ul class="list-inline post-detail">
 					<li><i class="fa fa-calendar"></i>{{ page.date | date: "%-d/%m/%Y"}}</li>
 				</ul>
-				<div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button_count"></div>
+				<div class="fb-share-button" data-href="{{site.url}}{{page.url | remove: '.html'}}" data-layout="button_count"></div>
 				<h2>{{page.title}}</h2>
 				{{content}}
 			</div><!--blog post-->

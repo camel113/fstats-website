@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  2e ligue&#58; Les chiffres du 1er tour
 date:   2016-11-17 11:20:00 +0200
 image: ligue-2.jpg

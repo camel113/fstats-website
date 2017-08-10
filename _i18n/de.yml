@@ -1,6 +1,6 @@
 pages:
   titles:
-    aff_3: "FFV 2. Liga"
+    aff_2: "FFV 2. Liga"
     aff_3: "FFV 3. Liga"
     aff_4: "FFV 4. Liga"
     aff_5: "FFV 5. Liga"
@@ -9,36 +9,146 @@ pages:
     aff_3_teams: "FFV 3. Liga"
     aff_4_teams: "FFV 4. Liga"
     aff_5_teams: "FFV 5. Liga"
-    acvf_3: "ACVF 2. Liga"
+    acvf_2: "ACVF 2. Liga"
     acvf_3: "ACVF 3. Liga"
     acvf_4: "ACVF 4. Liga"
     acvf_5: "ACVF 5. Liga"
     acvf_3_women: "ACVF 3. Liga Frauen"
-    acvf_3_teams: "ACVF 2. Liga"
+    acvf_2_teams: "ACVF 2. Liga"
     acvf_3_teams: "ACVF 3. Liga"
     acvf_4_teams: "ACVF 4. Liga"
     acvf_5_teams: "ACVF 5. Liga"
-    avf_3: "WFV 2. Liga"
+    avf_2: "WFV 2. Liga"
     avf_3: "WFV 3. Liga"
     avf_4: "WFV 4. Liga"
     avf_5: "WFV 5. Liga"
-    avf_3_teams: "WFV 2. Liga"
+    avf_2_teams: "WFV 2. Liga"
     avf_3_teams: "WFV 3. Liga"
     avf_4_teams: "WFV 4. Liga"
     avf_5_teams: "WFV 5. Liga"
+    anf_2: ANF 2. Liga
+    anf_3: ANF 3. Liga
+    anf_4: ANF 4. Liga
+    anf_5: ANF 5. Liga
+    anf_2_teams: ANF 2. Liga
+    anf_3_teams: ANF 3. Liga
+    anf_4_teams: ANF 4. Liga
+    anf_5_teams: ANF 5. Liga
+    acgf_2: ACGF 2. Liga
+    acgf_3: ACGF 3. Liga
+    acgf_4: ACGF 4. Liga
+    acgf_5: ACGF 5. Liga
+    acgf_2_teams: ACGF 2. Liga
+    acgf_3_teams: ACGF 3. Liga
+    acgf_4_teams: ACGF 4. Liga
+    acgf_5_teams: ACGF 5. Liga
+    afv_2: AFV 2. Liga
+    afv_3: AFV 3. Liga
+    afv_4: AFV 4. Liga
+    afv_5: AFV 5. Liga
+    afv_2_teams: AFV 2. Liga
+    afv_3_teams: AFV 3. Liga
+    afv_4_teams: AFV 4. Liga
+    afv_5_teams: AFV 5. Liga
+    fvbj_2: FVBJ 2. Liga
+    fvbj_3: FVBJ 3. Liga
+    fvbj_4: FVBJ 4. Liga
+    fvbj_5: FVBJ 5. Liga
+    fvbj_2_teams: FVBJ 2. Liga
+    fvbj_3_teams: FVBJ 3. Liga
+    fvbj_4_teams: FVBJ 4. Liga
+    fvbj_5_teams: FVBJ 5. Liga
+    ifv_2: IFV 2. Liga
+    ifv_3: IFV 3. Liga
+    ifv_4: IFV 4. Liga
+    ifv_5: IFV 5. Liga
+    ifv_2_teams: IFV 2. Liga
+    ifv_3_teams: IFV 3. Liga
+    ifv_4_teams: IFV 4. Liga
+    ifv_5_teams: IFV 5. Liga
+    fvnws_2: FVNWS 2. Liga
+    fvnws_3: FVNWS 3. Liga
+    fvnws_4: FVNWS 4. Liga
+    fvnws_5: FVNWS 5. Liga
+    fvnws_2_teams: FVNWS 2. Liga
+    fvnws_3_teams: FVNWS 3. Liga
+    fvnws_4_teams: FVNWS 4. Liga
+    fvnws_5_teams: FVNWS 5. Liga
+    ofv_2: OFV 2. Liga
+    ofv_3: OFV 3. Liga
+    ofv_4: OFV 4. Liga
+    ofv_5: OFV 5. Liga
+    ofv_2_teams: OFV 2. Liga
+    ofv_3_teams: OFV 3. Liga
+    ofv_4_teams: OFV 4. Liga
+    ofv_5_teams: OFV 5. Liga
+    sofv_2: SOFV 2. Liga
+    sofv_3: SOFV 3. Liga
+    sofv_4: SOFV 4. Liga
+    sofv_5: SOFV 5. Liga
+    sofv_2_teams: SOFV 2. Liga
+    sofv_3_teams: SOFV 3. Liga
+    sofv_4_teams: SOFV 4. Liga
+    sofv_5_teams: SOFV 5. Liga
+    fvrz_2: FVRZ 2. Liga
+    fvrz_3: FVRZ 3. Liga
+    fvrz_4: FVRZ 4. Liga
+    fvrz_5: FVRZ 5. Liga
+    fvrz_2_teams: FVRZ 2. Liga
+    fvrz_3_teams: FVRZ 3. Liga
+    fvrz_4_teams: FVRZ 4. Liga
+    fvrz_5_teams: FVRZ 5. Liga
     meta:
       aff_2: "FFV 2. Liga | Torschützen"
       aff_3: "FFV 3. Liga | Torschützen"
       aff_4: "FFV 4. Liga | Torschützen"
       aff_5: "FFV 5. Liga | Torschützen"
+      aff_3_women: "FFV 3. Liga Frauen | Torschützen"
       acvf_2: "ACVF 2. Liga | Torschützen"
       acvf_3: "ACVF 3. Liga | Torschützen"
       acvf_4: "ACVF 4. Liga | Torschützen"
       acvf_5: "ACVF 5. Liga | Torschützen"
+      acvf_3_women: "ACVF 3. Liga Frauen | Torschützen"
       avf_2: "WFV 2. Liga | Torschützen"
       avf_3: "WFV 3. Liga | Torschützen"
       avf_4: "WFV 4. Liga | Torschützen"
       avf_5: "WFV 5. Liga | Torschützen"
+      acgf_2: "ACGF 2. Liga | Torschützen"
+      acgf_3: "ACGF 3. Liga | Torschützen"
+      acgf_4: "ACGF 4. Liga | Torschützen"
+      acgf_5: "ACGF 5. Liga | Torschützen"
+      anf_2: "ANF 2. Liga | Torschützen"
+      anf_3: "ANF 3. Liga | Torschützen"
+      anf_4: "ANF 4. Liga | Torschützen"
+      anf_5: "ANF 5. Liga | Torschützen"
+      afv_2: "AFV 2. Liga | Torschützen"
+      afv_3: "AFV 3. Liga | Torschützen"
+      afv_4: "AFV 4. Liga | Torschützen"
+      afv_5: "AFV 5. Liga | Torschützen"
+      fvbj_2: "FVBJ 2. Liga | Torschützen"
+      fvbj_3: "FVBJ 3. Liga | Torschützen"
+      fvbj_4: "FVBJ 4. Liga | Torschützen"
+      fvbj_5: "FVBJ 5. Liga | Torschützen"
+      ifv_2: "IFV 2. Liga | Torschützen"
+      ifv_3: "IFV 3. Liga | Torschützen"
+      ifv_4: "IFV 4. Liga | Torschützen"
+      ifv_5: "IFV 5. Liga | Torschützen"
+      fvnws_2: "FVNWS 2. Liga | Torschützen"
+      fvnws_3: "FVNWS 3. Liga | Torschützen"
+      fvnws_4: "FVNWS 4. Liga | Torschützen"
+      fvnws_5: "FVNWS 5. Liga | Torschützen"
+      ofv_2: "OFV 2. Liga | Torschützen"
+      ofv_3: "OFV 3. Liga | Torschützen"
+      ofv_4: "OFV 4. Liga | Torschützen"
+      ofv_5: "OFV 5. Liga | Torschützen"
+      sofv_2: "SOFV 2. Liga | Torschützen"
+      sofv_3: "SOFV 3. Liga | Torschützen"
+      sofv_4: "SOFV 4. Liga | Torschützen"
+      sofv_5: "SOFV 5. Liga | Torschützen"
+      fvrz_2: "FVRZ 2. Liga | Torschützen"
+      fvrz_3: "FVRZ 3. Liga | Torschützen"
+      fvrz_4: "FVRZ 4. Liga | Torschützen"
+      fvrz_5: "FVRZ 5. Liga | Torschützen"
   descriptions:
     aff_2: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 2. Liga."
     aff_3: "Torschützen-Rangliste Meisterschaft FFV (Freiburg) 3. Liga."
@@ -66,11 +176,84 @@ pages:
     avf_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft WFV (Wallis)"
     avf_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft WFV (Wallis)"
     avf_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft WFV (Wallis)"
+    acgf_2: "Torschützen-Rangliste Meisterschaft ACGF (Genf) 2. Liga."
+    acgf_3: "Torschützen-Rangliste Meisterschaft ACGF (Genf) 3. Liga."
+    acgf_4: "Torschützen-Rangliste Meisterschaft ACGF (Genf) 4. Liga."
+    acgf_5: "Torschützen-Rangliste Meisterschaft ACGF (Genf) 5. Liga."
+    acgf_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft ACGF (Genf)"
+    acgf_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft ACGF (Genf)"
+    acgf_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ACGF (Genf)"
+    acgf_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ACGF (Genf)"
+    anf_2: "Torschützen-Rangliste Meisterschaft ANF (Neuenburg) 2. Liga."
+    anf_3: "Torschützen-Rangliste Meisterschaft ANF (Neuenburg) 3. Liga."
+    anf_4: "Torschützen-Rangliste Meisterschaft ANF (Neuenburg) 4. Liga."
+    anf_5: "Torschützen-Rangliste Meisterschaft ANF (Neuenburg) 5. Liga."
+    anf_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft ANF (Neuenburg)"
+    anf_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft ANF (Neuenburg)"
+    anf_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ANF (Neuenburg)"
+    anf_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft ANF (Neuenburg)"
+    afv_2: "Torschützen-Rangliste Meisterschaft AFV (Aargau) 2. Liga."
+    afv_3: "Torschützen-Rangliste Meisterschaft AFV (Aargau) 3. Liga."
+    afv_4: "Torschützen-Rangliste Meisterschaft AFV (Aargau) 4. Liga."
+    afv_5: "Torschützen-Rangliste Meisterschaft AFV (Aargau) 5. Liga."
+    afv_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft AFV (Aargau)"
+    afv_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft AFV (Aargau)"
+    afv_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft AFV (Aargau)"
+    afv_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft AFV (Aargau)"
+    fvbj_2: "Torschützen-Rangliste Meisterschaft FVBJ (Bern Jura) 2. Liga."
+    fvbj_3: "Torschützen-Rangliste Meisterschaft FVBJ (Bern Jura) 3. Liga."
+    fvbj_4: "Torschützen-Rangliste Meisterschaft FVBJ (Bern Jura) 4. Liga."
+    fvbj_5: "Torschützen-Rangliste Meisterschaft FVBJ (Bern Jura) 5. Liga."
+    fvbj_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft FVBJ (Bern Jura)"
+    fvbj_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft FVBJ (Bern Jura)"
+    fvbj_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVBJ (Bern Jura)"
+    fvbj_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVBJ (Bern Jura)"
+    ifv_2: "Torschützen-Rangliste Meisterschaft IFV (Innerschweizerischer) 2. Liga."
+    ifv_3: "Torschützen-Rangliste Meisterschaft IFV (Innerschweizerischer) 3. Liga."
+    ifv_4: "Torschützen-Rangliste Meisterschaft IFV (Innerschweizerischer) 4. Liga."
+    ifv_5: "Torschützen-Rangliste Meisterschaft IFV (Innerschweizerischer) 5. Liga."
+    ifv_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft IFV (Innerschweizerischer)"
+    ifv_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft IFV (Innerschweizerischer)"
+    ifv_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft IFV (Innerschweizerischer)"
+    ifv_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft IFV (Innerschweizerischer)"
+    fvnws_2: "Torschützen-Rangliste Meisterschaft FVNWS (Nordwestschweiz) 2. Liga."
+    fvnws_3: "Torschützen-Rangliste Meisterschaft FVNWS (Nordwestschweiz) 3. Liga."
+    fvnws_4: "Torschützen-Rangliste Meisterschaft FVNWS (Nordwestschweiz) 4. Liga."
+    fvnws_5: "Torschützen-Rangliste Meisterschaft FVNWS (Nordwestschweiz) 5. Liga."
+    fvnws_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft FVNWS (Nordwestschweiz)"
+    fvnws_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft FVNWS (Nordwestschweiz)"
+    fvnws_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVNWS (Nordwestschweiz)"
+    fvnws_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVNWS (Nordwestschweiz)"
+    ofv_2: "Torschützen-Rangliste Meisterschaft OFV (Ostschweizer) 2. Liga."
+    ofv_3: "Torschützen-Rangliste Meisterschaft OFV (Ostschweizer) 3. Liga."
+    ofv_4: "Torschützen-Rangliste Meisterschaft OFV (Ostschweizer) 4. Liga."
+    ofv_5: "Torschützen-Rangliste Meisterschaft OFV (Ostschweizer) 5. Liga."
+    ofv_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft OFV (Ostschweizer)"
+    ofv_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft OFV (Ostschweizer)"
+    ofv_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft OFV (Ostschweizer)"
+    ofv_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft OFV (Ostschweizer)"
+    sofv_2: "Torschützen-Rangliste Meisterschaft SOFV (Solothurn) 2. Liga."
+    sofv_3: "Torschützen-Rangliste Meisterschaft SOFV (Solothurn) 3. Liga."
+    sofv_4: "Torschützen-Rangliste Meisterschaft SOFV (Solothurn) 4. Liga."
+    sofv_5: "Torschützen-Rangliste Meisterschaft SOFV (Solothurn) 5. Liga."
+    sofv_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft SOFV (Solothurn)"
+    sofv_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft SOFV (Solothurn)"
+    sofv_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft SOFV (Solothurn)"
+    sofv_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft SOFV (Solothurn)"
+    fvrz_2: "Torschützen-Rangliste Meisterschaft FVRZ (Region Zürich) 2. Liga."
+    fvrz_3: "Torschützen-Rangliste Meisterschaft FVRZ (Region Zürich) 3. Liga."
+    fvrz_4: "Torschützen-Rangliste Meisterschaft FVRZ (Region Zürich) 4. Liga."
+    fvrz_5: "Torschützen-Rangliste Meisterschaft FVRZ (Region Zürich) 5. Liga."
+    fvrz_2_teams: "Rangliste der besten Offenensiven und Defensiven der 2. Liga Meisterschaft FVRZ (Region Zürich)"
+    fvrz_3_teams: "Rangliste der besten Offenensiven und Defensiven der 3. Liga Meisterschaft FVRZ (Region Zürich)"
+    fvrz_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVRZ (Region Zürich)"
+    fvrz_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVRZ (Region Zürich)"
   scorer_ranking:
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
-    info: "Die Ranglisten basieren auf den Daten, welche auf der Webseite football.ch publiziert sind."
+    info: 'Traduire'
     headline: "Torschützen-Rangliste pro Gruppe"
     group: "Gruppe"
+    no_data: "Traduire"
     groups:
       group1: "Gruppe 1"
       group2: "Gruppe 2"
@@ -112,14 +295,27 @@ pages:
     title: "Footstats | Wettbewerb um die besten Tore im schweizer Amateurfussball"
     description: "Schicken Sie uns die Filme Ihrer schönsten Tore und nehmen Sie an einem Wettbewerb für ein Paar Nike Schuhe (Hypervenom Phantom II) teil"
   app:
+<<<<<<< HEAD
     title: Traduire
     description: Traduire
     title_meta: "Footstats | Live App"
     description_meta: Traduire
+=======
+    title: "Footstats | Live App"
+    description: "Score en direct football amateur en Suisse Romande"
+  about:
+    title: Traduire
+  contact: 
+    title: Traduire
+    description: Traduire
+  errors_report:
+    title: Traduire
+    description: Traduire
+>>>>>>> add-new-regions
 layout:
   follow_us: "Folge uns"
 meta: 
   site_title: "Torschützen-Rangliste | Topscorers | Amateurfussball Schweiz"
-  site_description: "Torschützen- und Mannschafts-Rangliste für die Amateur-Meisterschaften der Kantone Waadt, Wallis und Freiburg"
-  facebook_title: "Torschützen- und Mannschafts-Rangliste Waadt, Wallis und Freiburg."
-  facebook_description: "Rangliste der Torschützen und der Mannschaften Waadt/Wallis/Freiburg"
+  site_description: "Wertung Torjäger und Statistik der Mannschaften für die Amateurfussballmeisterschaften in der Schweiz (2./3./4./5. Ligen)"
+  facebook_title: "Wertung Torjäger und Statistik der schweizer Amateurfussballmannschaften"
+  facebook_description: "Wertung Torjäger und Statistik der Mannschaften für die Fussballmeisterschaften 2./3./4./5. Ligen"

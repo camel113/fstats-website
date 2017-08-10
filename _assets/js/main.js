@@ -2,12 +2,6 @@
 
   $(function() {
     
-    $('.shop-product-gallery').slick({
-      "arrows":false,
-      "dots":true
-    });
-
-
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/service-worker.js', {
         scope: '/'
@@ -21,8 +15,18 @@
     }
     infiniteScroll.init()
     backToTop.init()
+    errorReportForm.init()
 
-    var options = {
+    if($('#league-stats').length>0){
+      smoothState.init()
+    }
+
+  });
+})(jQuery);
+
+var smoothState = {
+  init: function(){
+    var smoothStateOptions = {
       prefetch: true,
       cacheLength: 2,
       onStart: {
@@ -53,11 +57,9 @@
         }
       }
     }
-    var smoothState = $('#league-stats').smoothState(options).data('smoothState');
-
-  });
-})(jQuery);
-
+    var smoothState = $('#league-stats').smoothState(smoothStateOptions).data('smoothState');
+  }
+}
 var infiniteScroll = {
   //https://blog.codestack.de/2015/05/17/seo-friendly-infinite-scroll.html
   init: function(){
@@ -70,7 +72,6 @@ var infiniteScroll = {
     })
   },
   loadMoreContent: function(){
-    console.log("LOADMORE")
     var next = $("a.next").first();
     next.each(function(key, value) {
       var url = $(value).attr('href');
@@ -201,4 +202,39 @@ var analyticsConfig = {
       });
     });
   }
+<<<<<<< HEAD
+=======
+}
+var snipcartConfig = {
+  init: function(){
+    Snipcart.api.configure('split_firstname_and_lastname', true);
+    Snipcart.execute('registerLocale', 'fr', {"company_name":"Société"});
+    $('.shop-product-gallery').slick({
+      "arrows":false,
+      "dots":true
+    });
+  }
+}
+
+var errorReportForm = {
+  init: function(){
+    $("#errors-report-form").submit(function(e) {
+      e.preventDefault();
+
+      var $form = $(this);
+
+      var posting = $.post($form.attr("action"), $form.serialize())
+
+      posting.done(function() {
+        $("#errors-report-form-container").hide()
+        $("#errors-report-form-success").show()
+      });
+      posting.fail(function() {
+        $("#errors-report-form-container").hide()
+        $("#errors-report-form-fail").show()
+      });
+
+    });
+  }
+>>>>>>> add-new-regions
 }

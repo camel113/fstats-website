@@ -13,7 +13,7 @@ layout: default
 <article class="container blog-article">
 	<div class="row justify-content-md-center">
     <div class="col-12 col-md-8 col-lg-6 article-img">
-    	<img class="card-img-top" src="{{site.url}}/images/posts/headers/{{page.image-800}}" alt="{{page.title}}"/>
+    	<img class="card-img-top" src="{{site.url}}/images/posts/headers/{{page.image-800}}"  srcset="{{site.url}}/images/posts/headers/{{page.image-800}} 1x,{{site.url}}/images/posts/headers/{{page.image-1600}} 2x" alt="{{page.title}}"/>
   	</div>    
 	</div>
   <div class="row justify-content-md-center">
@@ -25,7 +25,10 @@ layout: default
   <!-- Your share button code -->
   <div class="row justify-content-md-center">
     <div class="col-12 col-md-8 col-lg-6">
-      <div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Partager</a></div>
+      <div class="fb-share-button" 
+        data-href="{{site.url}}{{page.url | remove: '.html'}}" 
+        data-layout="button_count">
+      </div>
     </div>
   </div>
   <div class="row justify-content-md-center">

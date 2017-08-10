@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  Le foot amateur en direct sur smartphone, tablette et PC.
 date:   2017-03-01 17:15:00 +0200
 image: webapp-live.jpg

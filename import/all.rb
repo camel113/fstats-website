@@ -286,6 +286,76 @@ filePath = "_data/avf/ligue5/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 
+# FVBJ 2eme ligue
+groups = [*1..2]
+region = 'fvbj'
+league = 2
+filePath = "_data/fvbj/ligue2/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# AFV 2eme ligue
+groups = [*1..1]
+region = 'afv'
+league = 2
+filePath = "_data/afv/ligue2/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# IFV 2eme ligue
+groups = [*1..1]
+region = 'ifv'
+league = 2
+filePath = "_data/ifv/ligue2/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# FVNWS 2eme ligue
+groups = [*1..1]
+region = 'fvnws'
+league = 2
+filePath = "_data/fvnws/ligue2/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# OFV 2eme ligue
+groups = [*1..2]
+region = 'ofv'
+league = 2
+filePath = "_data/ofv/ligue2/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# SOFV 2eme ligue
+groups = [*1..1]
+region = 'sofv'
+league = 2
+filePath = "_data/sofv/ligue2/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# FVRZ 2eme ligue
+groups = [*1..2]
+region = 'fvrz'
+league = 2
+filePath = "_data/fvrz/ligue2/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+leagues.each { |l| 
+  create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
+  create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
+  generate_stats_for_regions_league(l[:league],l[:region],l[:filePath],urlPath)
+  generate_stats_for_leagues_accross_region(l[:league],urlPath)
+}
+
 leagues.each { |l| 
   create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
   create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)

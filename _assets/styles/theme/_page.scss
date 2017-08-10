@@ -1,6 +1,6 @@
 .standard-page{
-	margin-top:20px;
-	margin-bottom:20px;
+	margin-top:40px;
+	margin-bottom:40px;
 }
 .page-img{
 	margin-top:10px;
@@ -32,4 +32,16 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-weight:bold;
+}
+.not-found{
+	text-align:center;
+	.row{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+}
+.after-form{
+	display:none;
+	margin-bottom:60px;
+	margin-top:60px;
 }

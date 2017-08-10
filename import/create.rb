@@ -96,7 +96,7 @@ end
 
 def create_post_by_region(region,canton)
 	date = Time.now.strftime("%Y-%m-%d")
-	File.open("_posts/"+date+"-resume-"+region+".md","w") do |f|
+	File.open("_i18n/fr/_posts/"+date+"-resume-"+region+".md","w") do |f|
 		f.write('---')
 		f.write "\n"
 		f.write "layout: new-post"

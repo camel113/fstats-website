@@ -60,7 +60,7 @@ gulp.task('build:jekyll:watch', ['build:jekyll'], function(cb) {
   cb();
 });
 gulp.task('build', function(cb) {
-  runSequence(['sass:prod', 'js:prod'],'build:jekyll',cb);
+  runSequence(['sass:prod', 'js:prod'],'generate-service-worker','build:jekyll',cb);
 });
 gulp.task('sass:prod', function () {
   return gulp.src(assetsDevDir.styles)

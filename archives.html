@@ -1,8 +1,10 @@
 ---
 layout: default
+translate: false
+date: 2017-07-27 11:00:00 +0200
 ---
 <div class="container standard-page">
     {% for archive in site.archives reversed %}
-      <a href="{{archive.url}}" class="archive-link">{{archive.date | date: "%-d/%m/%Y"}} - {{archive.title}}</a>
+      <a href="{{archive.url | remove: '.html'}}" class="archive-link">{{archive.date | date: "%-d/%m/%Y"}} - {{archive.title}}</a>
     {% endfor %}
 </div>

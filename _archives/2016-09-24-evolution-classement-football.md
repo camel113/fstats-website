@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  L'évolution du classement au fil du temps
 date:   2016-09-24 08:43:16 +0200
 image: evolution.jpg

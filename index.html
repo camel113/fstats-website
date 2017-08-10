@@ -3,7 +3,7 @@ layout: default
 home: true
 ---
 <div class="container scroll-content">
-    {% for post in paginator.posts %}
+    {% for post in paginator.posts %}  
   
       {% capture modulo %}{{ forloop.index0 | modulo:3 }}{% endcapture %}
 
@@ -12,17 +12,17 @@ home: true
       {% endif %}
         <div class="col-12 col-lg-4">
           <div class="card">
-            <a href="{{ post.url }}">
-              {% if post.image-300 %}
-              <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-800}}" alt="{{ post.title }}"/>
+            <a href="{{ post.url | remove: '.html'}}">
+              {% if post.image-800 %}
+              <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-800}}"  srcset="{{site.url}}/images/posts/headers/{{post.image-800}} 1x, {{site.url}}/images/posts/headers/{{post.image-1600}} 2x" alt="{{post.title}}"/>
               {% else %}
               <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-mobile}}" alt="mobile"/>
               {% endif %}
             </a>
             <div class="card-block">
-              <a href="{{ post.url }}"><h4 class="card-title">{{ post.title }}</h4></a>
-              <a href="{{ post.url }}"><p class="card-text">{{ post.excerpt | strip_html }}</p></a>
-              <a href="{{ post.url }}"><p class="card-text"><small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ post.date | date: "%-d/%m/%Y"}}</small></p></a>
+              <a href="{{ post.url | remove: '.html'}}"><h4 class="card-title">{{ post.title }}</h4></a>
+              <a href="{{ post.url | remove: '.html'}}"><p class="card-text">{{ post.excerpt | strip_html }}</p></a>
+              <a href="{{ post.url | remove: '.html'}}"><p class="card-text"><small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ post.date | date: "%-d/%m/%Y"}}</small></p></a>
             </div>
           </div>
         </div>
@@ -35,4 +35,5 @@ home: true
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path }}" class="next"></a>
     {% endif %}
+
 </div>

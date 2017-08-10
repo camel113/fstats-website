@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title: ACVF - Meilleurs buteurs
 date: 2017-04-06 11:00:00 +0200
 image: 2017-04-06-image-acvf.png

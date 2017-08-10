@@ -1,0 +1,38 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for post in site.posts %}
+<url>
+<loc>{{ site.url }}{{ post.url | remove: '.html'}}</loc>
+{%- if post.lastmod == null %}
+<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+{%- else %}
+<lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+{%- endif %}
+</url>
+  {%- endfor -%}
+  {%- for page in site.pages %}
+    {%- unless page.sitemap == false or page.url contains 'sitemap' %}
+      {%- if page.layout == 'teams-ranking-page' or page.layout == 'scorer-ranking-page' %}
+				<url>
+				<loc>{{ site.url }}{{ page.url | remove: ".html"}}</loc>
+				{%- if site.data[page.data_path_region][page.data_path_ligue].scorers.lastUpdateForSiteMap != null %}
+				<lastmod>{{ site.data[page.data_path_region][page.data_path_ligue].scorers.lastUpdateForSiteMap }}</lastmod>
+				{%- endif %}
+				</url>
+				{%- else %}
+				<url>
+				<loc>{{ site.url }}{{ page.url | remove: ".html"}}</loc>
+				{%- if page.date != null %}
+				<lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+				{%- endif %}
+				{%- if page.url == '/' %}
+				<lastmod>{{ site.posts.first.date | date_to_xmlschema }}</lastmod>
+				{%- endif %}
+				</url>
+      {%- endif %}
+    {%- endunless %}
+  {%- endfor -%}
+</urlset>

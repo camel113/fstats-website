@@ -43,6 +43,62 @@ pages:
     anf_3_teams: ANF 3ème ligue
     anf_4_teams: ANF 4ème ligue
     anf_5_teams: ANF 5ème ligue
+    afv_2: AFV 2ème ligue
+    afv_3: AFV 3ème ligue
+    afv_4: AFV 4ème ligue
+    afv_5: AFV 5ème ligue
+    afv_2_teams: AFV 2ème ligue
+    afv_3_teams: AFV 3ème ligue
+    afv_4_teams: AFV 4ème ligue
+    afv_5_teams: AFV 5ème ligue
+    fvbj_2: FVBJ 2ème ligue
+    fvbj_3: FVBJ 3ème ligue
+    fvbj_4: FVBJ 4ème ligue
+    fvbj_5: FVBJ 5ème ligue
+    fvbj_2_teams: FVBJ 2ème ligue
+    fvbj_3_teams: FVBJ 3ème ligue
+    fvbj_4_teams: FVBJ 4ème ligue
+    fvbj_5_teams: FVBJ 5ème ligue
+    ifv_2: IFV 2ème ligue
+    ifv_3: IFV 3ème ligue
+    ifv_4: IFV 4ème ligue
+    ifv_5: IFV 5ème ligue
+    ifv_2_teams: IFV 2ème ligue
+    ifv_3_teams: IFV 3ème ligue
+    ifv_4_teams: IFV 4ème ligue
+    ifv_5_teams: IFV 5ème ligue
+    fvnws_2: FVNWS 2ème ligue
+    fvnws_3: FVNWS 3ème ligue
+    fvnws_4: FVNWS 4ème ligue
+    fvnws_5: FVNWS 5ème ligue
+    fvnws_2_teams: FVNWS 2ème ligue
+    fvnws_3_teams: FVNWS 3ème ligue
+    fvnws_4_teams: FVNWS 4ème ligue
+    fvnws_5_teams: FVNWS 5ème ligue
+    ofv_2: OFV 2ème ligue
+    ofv_3: OFV 3ème ligue
+    ofv_4: OFV 4ème ligue
+    ofv_5: OFV 5ème ligue
+    ofv_2_teams: OFV 2ème ligue
+    ofv_3_teams: OFV 3ème ligue
+    ofv_4_teams: OFV 4ème ligue
+    ofv_5_teams: OFV 5ème ligue
+    sofv_2: SOFV 2ème ligue
+    sofv_3: SOFV 3ème ligue
+    sofv_4: SOFV 4ème ligue
+    sofv_5: SOFV 5ème ligue
+    sofv_2_teams: SOFV 2ème ligue
+    sofv_3_teams: SOFV 3ème ligue
+    sofv_4_teams: SOFV 4ème ligue
+    sofv_5_teams: SOFV 5ème ligue
+    fvrz_2: FVRZ 2ème ligue
+    fvrz_3: FVRZ 3ème ligue
+    fvrz_4: FVRZ 4ème ligue
+    fvrz_5: FVRZ 5ème ligue
+    fvrz_2_teams: FVRZ 2ème ligue
+    fvrz_3_teams: FVRZ 3ème ligue
+    fvrz_4_teams: FVRZ 4ème ligue
+    fvrz_5_teams: FVRZ 5ème ligue
     meta:
       acvf_2: ACVF 2ème ligue | Buteurs
       acvf_3: ACVF 3ème ligue | Buteurs
@@ -66,6 +122,34 @@ pages:
       anf_3: ANF 3ème ligue | Buteurs
       anf_4: ANF 4ème ligue | Buteurs
       anf_5: ANF 5ème ligue | Buteurs
+      afv_2: AFV 2ème ligue | Buteurs
+      afv_3: AFV 3ème ligue | Buteurs
+      afv_4: AFV 4ème ligue | Buteurs
+      afv_5: AFV 5ème ligue | Buteurs
+      fvbj_2: FVBJ 2ème ligue | Buteurs
+      fvbj_3: FVBJ 3ème ligue | Buteurs
+      fvbj_4: FVBJ 4ème ligue | Buteurs
+      fvbj_5: FVBJ 5ème ligue | Buteurs
+      ifv_2: IFV 2ème ligue | Buteurs
+      ifv_3: IFV 3ème ligue | Buteurs
+      ifv_4: IFV 4ème ligue | Buteurs
+      ifv_5: IFV 5ème ligue | Buteurs
+      fvnws_2: FVNWS 2ème ligue | Buteurs
+      fvnws_3: FVNWS 3ème ligue | Buteurs
+      fvnws_4: FVNWS 4ème ligue | Buteurs
+      fvnws_5: FVNWS 5ème ligue | Buteurs
+      ofv_2: OFV 2ème ligue | Buteurs
+      ofv_3: OFV 3ème ligue | Buteurs
+      ofv_4: OFV 4ème ligue | Buteurs
+      ofv_5: OFV 5ème ligue | Buteurs
+      sofv_2: SOFV 2ème ligue | Buteurs
+      sofv_3: SOFV 3ème ligue | Buteurs
+      sofv_4: SOFV 4ème ligue | Buteurs
+      sofv_5: SOFV 5ème ligue | Buteurs
+      fvrz_2: FVRZ 2ème ligue | Buteurs
+      fvrz_3: FVRZ 3ème ligue | Buteurs
+      fvrz_4: FVRZ 4ème ligue | Buteurs
+      fvrz_5: FVRZ 5ème ligue | Buteurs
   descriptions:
     aff_2: Classement buteurs championnat de football AFF (Fribourg) 2ème ligue.
     aff_3: Classement buteurs championnat de football AFF (Fribourg) 3ème ligue.
@@ -109,11 +193,68 @@ pages:
     anf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ANF (Neuchâtel) 3ème ligue."
     anf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ANF (Neuchâtel) 4ème ligue."
     anf_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ANF (Neuchâtel) 5ème ligue."
+    afv_2: Classement buteurs championnat de football AFV (Aarau) 2ème ligue.
+    afv_3: Classement buteurs championnat de football AFV (Aarau) 3ème ligue.
+    afv_4: Classement buteurs championnat de football AFV (Aarau) 4ème ligue.
+    afv_5: Classement buteurs championnat de football AFV (Aarau) 5ème ligue.
+    afv_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFV (Aarau) 2ème ligue."
+    afv_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFV (Aarau) 3ème ligue."
+    afv_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFV (Aarau) 4ème ligue."
+    afv_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football AFV (Aarau) 5ème ligue."
+    fvbj_2: Classement buteurs championnat de football FVBJ (Bern Jura) 2ème ligue.
+    fvbj_3: Classement buteurs championnat de football FVBJ (Bern Jura) 3ème ligue.
+    fvbj_4: Classement buteurs championnat de football FVBJ (Bern Jura) 4ème ligue.
+    fvbj_5: Classement buteurs championnat de football FVBJ (Bern Jura) 5ème ligue.
+    fvbj_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVBJ (Bern Jura) 2ème ligue."
+    fvbj_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVBJ (Bern Jura) 3ème ligue."
+    fvbj_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVBJ (Bern Jura) 4ème ligue."
+    fvbj_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVBJ (Bern Jura) 5ème ligue."
+    ifv_2: Classement buteurs championnat de football IFV (Innerschweizerischer) 2ème ligue.
+    ifv_3: Classement buteurs championnat de football IFV (Innerschweizerischer) 3ème ligue.
+    ifv_4: Classement buteurs championnat de football IFV (Innerschweizerischer) 4ème ligue.
+    ifv_5: Classement buteurs championnat de football IFV (Innerschweizerischer) 5ème ligue.
+    ifv_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football IFV (Innerschweizerischer) 2ème ligue."
+    ifv_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football IFV (Innerschweizerischer) 3ème ligue."
+    ifv_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football IFV (Innerschweizerischer) 4ème ligue."
+    ifv_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football IFV (Innerschweizerischer) 5ème ligue."
+    fvnws_2: Classement buteurs championnat de football FVNWS (Nordwestschweiz) 2ème ligue.
+    fvnws_3: Classement buteurs championnat de football FVNWS (Nordwestschweiz) 3ème ligue.
+    fvnws_4: Classement buteurs championnat de football FVNWS (Nordwestschweiz) 4ème ligue.
+    fvnws_5: Classement buteurs championnat de football FVNWS (Nordwestschweiz) 5ème ligue.
+    fvnws_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVNWS (Nordwestschweiz) 2ème ligue."
+    fvnws_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVNWS (Nordwestschweiz) 3ème ligue."
+    fvnws_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVNWS (Nordwestschweiz) 4ème ligue."
+    fvnws_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVNWS (Nordwestschweiz) 5ème ligue."
+    ofv_2: Classement buteurs championnat de football OFV (Ostschweizer) 2ème ligue.
+    ofv_3: Classement buteurs championnat de football OFV (Ostschweizer) 3ème ligue.
+    ofv_4: Classement buteurs championnat de football OFV (Ostschweizer) 4ème ligue.
+    ofv_5: Classement buteurs championnat de football OFV (Ostschweizer) 5ème ligue.
+    ofv_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Ostschweizer) 2ème ligue."
+    ofv_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Ostschweizer) 3ème ligue."
+    ofv_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Ostschweizer) 4ème ligue."
+    ofv_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Ostschweizer) 5ème ligue."
+    sofv_2: Classement buteurs championnat de football SOFV (Soleure) 2ème ligue.
+    sofv_3: Classement buteurs championnat de football SOFV (Soleure) 3ème ligue.
+    sofv_4: Classement buteurs championnat de football SOFV (Soleure) 4ème ligue.
+    sofv_5: Classement buteurs championnat de football SOFV (Soleure) 5ème ligue.
+    sofv_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Soleure) 2ème ligue."
+    sofv_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Soleure) 3ème ligue."
+    sofv_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Soleure) 4ème ligue."
+    sofv_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football OFV (Soleure) 5ème ligue."
+    fvrz_2: Classement buteurs championnat de football FVRZ (Région Zürich) 2ème ligue.
+    fvrz_3: Classement buteurs championnat de football FVRZ (Région Zürich) 3ème ligue.
+    fvrz_4: Classement buteurs championnat de football FVRZ (Région Zürich) 4ème ligue.
+    fvrz_5: Classement buteurs championnat de football FVRZ (Région Zürich) 5ème ligue.
+    fvrz_2_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVRZ (Région Zürich) 2ème ligue."
+    fvrz_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVRZ (Région Zürich) 3ème ligue."
+    fvrz_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVRZ (Région Zürich) 4ème ligue."
+    fvrz_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVRZ (Région Zürich) 5ème ligue."
   scorer_ranking:
     update: Les classements sont mis à jour plusieurs fois par semaine.
-    info: Si vous constatez des erreurs ou des oublis écrivez-nous sur Facebook, Instagram ou à contact@footstats.ch.
+    info: 'Les erreurs, oublis ou autres problèmes sont à signaler via ce <a href="/erreurs-oublis" title="Signaler une erreur ou un problème">formulaire</a>'
     headline: Classements buteurs par groupe
     group: "Groupe"
+    no_data: "Pas de données disponibles pour le moment."
     groups:
       group1: Groupe 1
       group2: Groupe 2
@@ -154,6 +295,13 @@ pages:
   top_buts:
     title: "Footstats | Concours top buts foot amateur suisse"
     description: "Envoyez nous les vidéos de vos plus beaux buts en tentez de gagner une paire de chaussure Nike Hypervenom Phantom II"
+  about:
+    title: A propos de Footstats
+  contact: 
+    title: Contact Footstats
+    description: Formulaire de contact
+  errors_report:
+    title: Formulaire de report d'erreurs et d'oublis
   app:
     title: FOOTSTATS Live App
     description: L'application Footstats Live permet de suivre en direct tous les matchs de football amateur en Suisse. L'application est actuellement en cours d'amélioration.
@@ -163,6 +311,6 @@ layout:
   follow_us: Suivez-nous
 meta: 
   site_title: "Footstats | Stats & Buteurs | Foot amateur Suisse"
-  site_description: Classements buteurs et équipes pour les championnats amateurs de football des cantons de Vaud, Fribourg, Neuchâtel, Valais et Genève
-  facebook_title: Classements buteurs et stats équipes VD/FR/NE/VS/GE
-  facebook_description: Classements buteurs et stats équipes championnat de football 2ème/3ème/4ème/5ème ligues
+  site_description: Classements buteurs et statistiques équipes pour les championnats amateurs de football en Suisse (2e/3e/4e/5e ligues)
+  facebook_title: Classements buteurs et stats équipes football amateur suisse
+  facebook_description: Classements buteurs et stats équipes championnats de football 2e/3e/4e/5e ligues

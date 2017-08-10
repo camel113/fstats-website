@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title: AVF - Meilleurs buteurs
 date: 2017-04-04 11:00:00 +0200
 image: 2017-04-04-image-avf.png

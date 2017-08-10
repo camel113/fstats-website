@@ -1,5 +1,6 @@
 ---
 layout: post
+translate: false
 title:  Les stars de la semaine&#58; Joao Da Silva, FC Villarepos, FC Cornaux I, FC Matran, ADPG et FC St. Niklaus
 date:   2016-11-11 16:20:00 +0200
 image: stars-5.jpg
