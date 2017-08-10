@@ -19,10 +19,10 @@
 <div class="row switch-ranks justify-content-center">
 <ul class="nav nav-pills">
   <li class="nav-item">
-    <a class="nav-link {%if scorers %}active{%endif%}" href="/{{page.data_path_region}}/{{ligue}}eme-ligue{{women}}">Buteurs</a>
+    <a class="nav-link {%if scorers %}active{%endif%}" href="{{site.baseurl}}/{{page.data_path_region}}/{{ligue}}eme-ligue{{women}}">{% t pages.scorer_ranking.tab_scorer %}</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link {%if scorers == false %}active{%endif%}" href="/{{page.data_path_region}}/{{ligue}}eme-ligue{{women}}-teams">Équipes</a>
+    <a class="nav-link {%if scorers == false %}active{%endif%}" href="{{site.baseurl}}/{{page.data_path_region}}/{{ligue}}eme-ligue{{women}}-teams">{% t pages.teams_ranking.tab_teams %}</a>
   </li>
 </ul>
 </div>
