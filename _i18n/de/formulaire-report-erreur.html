@@ -1,3 +1,38 @@
 <div class="container standard-page">
-  <h1>Traduire</h1>
+  <section class="row justify-content-md-center">
+    <div class="col-12 col-md-6" id="errors-report-form-container">
+      <h1>Formular für die Meldung von Fehlern oder Vergessenheiten.</h1>
+      <p>Um unsere Daten korrekt aktualisieren zu können, müssen wir wissen, bei welchem Match es ein Problem gab. Dafür brauchen wir unbedingt den Link von <a href="http://www.football.ch" rel="nofollow">football.ch</a>.</p>
+      <p>Für alle anderen Probleme, bitte füllen Sie <a href="/contact">dieses Formular</a>.</p>
+      <form netlify name="rankingsErrors" id="errors-report-form" action="Merci">
+				<div class="form-group">
+				  <label for="email">Ihre E-Mail-Adresse</label>
+				  <input type="email" name="email" class="form-control" id="email" required placeholder="E-Mail-Adresse">
+				</div>
+				<div class="form-group">
+  				<label for="url">Lien du match sur football.ch</label>
+				  <input type="url" name="url" class="form-control" id="url-match" required placeholder="http://www.football.ch/...">
+  			</div>
+				<div class="form-group">
+    			<label for="exampleTextarea">Informationen</label>
+    			<textarea class="form-control" name="info" id="exampleTextarea" rows="3" required placeholder="Gib bitte hier ein, welche Torschützen vergessen wurden oder die Fehler, die in der Zusammenfassung von football.ch gemacht wurden."></textarea>
+  			</div>
+  			<button type="submit" class="btn btn-primary">Envoyer</button>
+			</form>
+    </div>
+    <div class="col-12 col-md-6 after-form" id="errors-report-form-fail">
+      <div id="errors-report-form-fail">
+        <h1>Ooops!</h1>
+        <p>Ein Fehler ist geschehen. <a href="/erreurs-oublis">Klicke</a>, um noch einmal zu versuchen.</p>
+        <p>Sollte das Problem weiterhin bestehen, schicke uns eine E-Mail an <a href="mailto:contact@footstats.ch">contact@footstats.ch</a></p>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 after-form" id="errors-report-form-success">
+      <div >
+        <h1>Merci pour ta contribution!</h1>
+        <p>Wir werden Ihre Anfrage so schnell wie möglich bearbeiten. Sobald es gemacht ist, werden wir uns melden.</p>
+        <p><a href="/erreurs-oublis">Klicke bitte hier</a>, falls du uns andere Fehler melden möchtest.</p>
+      </div>
+    </div>
+  </section>
 </div>

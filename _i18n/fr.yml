@@ -304,6 +304,7 @@ pages:
     description: Formulaire de contact
   errors_report:
     title: Formulaire de report d'erreurs et d'oublis
+    description: Formulaire de report d'erreurs ou d'oublis dans les classements buteurs.
   app:
     title: Live App
     description: L'application Footstats Live permet de suivre en direct tous les matchs de football amateur en Suisse. L'application est actuellement en cours d'amélioration.
@@ -316,3 +317,7 @@ meta:
   site_description: Classements buteurs et statistiques équipes pour les championnats amateurs de football en Suisse (2e/3e/4e/5e ligues)
   facebook_title: Classements buteurs et stats équipes football amateur suisse
   facebook_description: Classements buteurs et stats équipes championnats de football 2e/3e/4e/5e ligues
+posts:
+  news1718:
+    title: Nouveauté pour la saison 17/18
+    description: Depuis quelques semaines Footstats s’est doté d’un nouvel habillage. La navigation a été repensée et le style général du site 

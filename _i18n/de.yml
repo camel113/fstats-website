@@ -300,17 +300,17 @@ pages:
     title: "Live App"
     description: "Score en direct football amateur en Suisse Romande"
   about:
-    title: Traduire
+    title: Uber Footstats
   contact: 
-    title: Traduire
-    description: Traduire
+    title: Kontakt Footstats
+    description: Kontaktformular
   errors_report:
-    title: Traduire
-    description: Traduire
+    title: Formular für die Meldung von Fehlern oder Vergessenheiten
+    description: Formular für die Meldung von Fehlern oder Vergessenheiten in den Torschützenlisten
 layout:
   follow_us: "Folge uns"
 meta: 
   site_title: "Torschützen-Rangliste | Topscorers | Amateurfussball Schweiz"
-  site_description: "Wertung Torjäger und Statistik der Mannschaften für die Amateurfussballmeisterschaften in der Schweiz (2./3./4./5. Ligen)"
-  facebook_title: "Wertung Torjäger und Statistik der schweizer Amateurfussballmannschaften"
-  facebook_description: "Wertung Torjäger und Statistik der Mannschaften für die Fussballmeisterschaften 2./3./4./5. Ligen"
+  site_description: "Torschützenliste und Statistik der Mannschaften für die Amateurfussballmeisterschaften in der Schweiz (2./3./4./5. Ligen)"
+  facebook_title: "Torschützenliste und Statistik der schweizer Amateurfussballmannschaften"
+  facebook_description: "Torschützenliste und Statistik der Mannschaften für die Fussballmeisterschaften 2./3./4./5. Ligen"
