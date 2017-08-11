@@ -1,8 +1,8 @@
 ---
 layout: new-post
 title: 5e ligue - Les chiffres marquants de la saison 16/17
-fr_only_title_meta: 5e ligue - Les chiffres marquants de la saison 16/17
-fr_only_description_meta: Buteurs, meilleures et pires attaques/défenses, les matchs spéctaculaires - les chiffres inédits de la 5e ligue en Suisse romande
+lang_only_title_meta: 5e ligue - Les chiffres marquants de la saison 16/17
+lang_only_description_meta: Buteurs, meilleures et pires attaques/défenses, les matchs spéctaculaires - les chiffres inédits de la 5e ligue en Suisse romande
 date: 2017-06-20 12:00:00 +0200
 image-800: 2017-06-23-5eligue-chiffres-size800.jpg
 image-1600: 2017-06-23-5eligue-chiffres-size1600.jpg

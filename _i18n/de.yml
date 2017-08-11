@@ -298,6 +298,7 @@ pages:
     description: "Schicken Sie uns die Filme Ihrer schönsten Tore und nehmen Sie an einem Wettbewerb für ein Paar Nike Schuhe (Hypervenom Phantom II) teil"
   app:
     title: "Live App"
+    title_meta: "Footstats | Live App"
     description: "Score en direct football amateur en Suisse Romande"
   about:
     title: Uber Footstats
@@ -314,3 +315,7 @@ meta:
   site_description: "Torschützenliste und Statistik der Mannschaften für die Amateurfussballmeisterschaften in der Schweiz (2./3./4./5. Ligen)"
   facebook_title: "Torschützenliste und Statistik der schweizer Amateurfussballmannschaften"
   facebook_description: "Torschützenliste und Statistik der Mannschaften für die Fussballmeisterschaften 2./3./4./5. Ligen"
+posts:
+  breadcrumb:
+    news1718:
+      title: Neuheiten für die 17/18 Saison

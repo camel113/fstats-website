@@ -1,8 +1,8 @@
 ---
 layout: new-post
 title: 2e ligue - Les chiffres de la saison 16/17
-fr_only_title_meta: 2e ligue - Les chiffres de la saison 16/17
-fr_only_description_meta: Buteurs, meilleures et pires attaques/défenses, les matchs spéctaculaires - les chiffres inédits de la 2e ligue en Suisse Romande
+lang_only_title_meta: 2e ligue - Les chiffres de la saison 16/17
+lang_only_description_meta: Buteurs, meilleures et pires attaques/défenses, les matchs spéctaculaires - les chiffres inédits de la 2e ligue en Suisse Romande
 date: 2017-07-02 16:00:00 +0200
 image-800: 2017-07-02-2eligue-chiffres-size800.jpg
 image-1600: 2017-07-02-2eligue-chiffres-size1600.jpg

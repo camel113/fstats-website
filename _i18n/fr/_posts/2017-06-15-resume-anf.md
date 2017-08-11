@@ -1,8 +1,8 @@
 ---
 layout: new-post
 title: ANF - Meilleurs buteurs
-fr_only_title_meta: ANF - Meilleurs buteurs - 15/06/2017
-fr_only_description_meta: Les meilleurs buteurs ANF des championnats de football amateur de la 2e à la 5e ligue - 15/06/2017
+lang_only_title_meta: ANF - Meilleurs buteurs - 15/06/2017
+lang_only_description_meta: Les meilleurs buteurs ANF des championnats de football amateur de la 2e à la 5e ligue - 15/06/2017
 date: 2017-06-15 11:00:00 +0200
 image: 2017-06-15-image-anf.png
 image-800: 2017-06-15-image-anf-size800.jpg

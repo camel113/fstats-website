@@ -318,6 +318,6 @@ meta:
   facebook_title: Classements buteurs et stats équipes football amateur suisse
   facebook_description: Classements buteurs et stats équipes championnats de football 2e/3e/4e/5e ligues
 posts:
-  news1718:
-    title: Nouveauté pour la saison 17/18
-    description: Depuis quelques semaines Footstats s’est doté d’un nouvel habillage. La navigation a été repensée et le style général du site 
+  breadcrumb:
+    news1718:
+      title: Nouveauté pour la saison 17/18
