@@ -252,7 +252,7 @@ pages:
   scorer_ranking:
     tab_scorer: Buteurs
     update: Les classements sont mis à jour plusieurs fois par semaine.
-    info: 'Les erreurs, oublis ou autres problèmes sont à signaler via ce <a href="/erreurs-oublis" title="Signaler une erreur ou un problème">formulaire</a>'
+    info: 'Les erreurs, oublis ou autres problèmes sont à signaler via ce <a href="/formulaire-report-erreur" title="Signaler une erreur ou un problème">formulaire</a>'
     headline: Classements buteurs par groupe
     group: "Groupe"
     no_data: "Pas de données disponibles pour le moment."

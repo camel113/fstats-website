@@ -251,10 +251,10 @@ pages:
   scorer_ranking:
     tab_scorer: Torschützenliste
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
-    info: 'Traduire'
+    info: 'Die Fehler, Vergessenheiten und alle Probleme müssen durch diesen <a href="//formular-fehlermeldung">Formular</a> signalisiert werden.'
     headline: "Torschützen-Rangliste pro Gruppe"
     group: "Gruppe"
-    no_data: "Traduire"
+    no_data: "Im Moment sind keine Daten vorhanden."
     groups:
       group1: "Gruppe 1"
       group2: "Gruppe 2"
