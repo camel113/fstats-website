@@ -38,7 +38,7 @@
     <ul class="list-inline other-links">
       {% for util in utilsnav %}
         <li>
-          <a href="{{util.path}}">{{ util.title }}</a>
+          <a href="{{site.baseurl}}/{{util.path}}">{{ util.title }}</a>
         </li>
       {% endfor %}
     </ul>
@@ -127,7 +127,7 @@
       </li>
       {% for mobilelink in mobilenav %}
         <li>
-          <a href="{{mobilelink.path}}">{{ mobilelink.title }}</a>
+          <a href="{{site.baseurl}}/{{mobilelink.path}}">{{ mobilelink.title }}</a>
         </li>
       {% endfor %}
     </ul>
