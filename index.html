@@ -20,7 +20,7 @@ home: true
               {% endif %}
             </a>
             <div class="card-block">
-              <a href="{{site.baseurl}}{{ post.url | remove: '.html'}}"><h4 class="card-title">{{ post.title }}</h4></a>
+              <a href="{{site.baseurl}}{{ post.url | remove: '.html'}}"><h4 class="card-title">{% if post.translate != false %}{% t post.title %}{% else %}{{ post.title }}{% endif %}</h4></a>
               <a href="{{site.baseurl}}{{ post.url | remove: '.html'}}"><p class="card-text">{{ post.excerpt | strip_html }}</p></a>
               <a href="{{site.baseurl}}{{ post.url | remove: '.html'}}"><p class="card-text"><small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ post.date | date: "%-d/%m/%Y"}}</small></p></a>
             </div>
