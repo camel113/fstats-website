@@ -11,7 +11,7 @@
         <ul class="links-list">
           {% for footerlink in footernav %}
             <li>
-              <a href="{{site.baseurl}}/{{footerlink.path}}">{{ footerlink.title }}</a>
+              <a href="{{site.baseurl}}{{footerlink.path}}">{{ footerlink.title }}</a>
             </li>
           {% endfor %}
         </ul>
