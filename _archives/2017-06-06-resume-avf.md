@@ -2,8 +2,8 @@
 layout: post
 translate: false
 title: AVF - Meilleurs buteurs
-fr_only_title_meta: AVF - Meilleurs buteurs - 06/06/2017
-fr_only_description_meta: Les meilleurs buteurs AVF des championnats de football amateur de la 2e à la 5e ligue - 06/06/2017
+lang_only_title_meta: AVF - Meilleurs buteurs - 06/06/2017
+lang_only_description_meta: Les meilleurs buteurs AVF des championnats de football amateur de la 2e à la 5e ligue - 06/06/2017
 date: 2017-06-06 11:00:00 +0200
 image: 2017-06-06-image-avf.png
 image-mobile: 2017-06-06-image-avf-mobile.png

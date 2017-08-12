@@ -2,8 +2,8 @@
 layout: post
 translate: false
 title: AFF - Meilleurs buteurs
-fr_only_title_meta: AFF - Meilleurs buteurs - 28/04/2017
-fr_only_description_meta: Les meilleurs buteurs AFF des championnats de football amateur de la 2e à la 5e ligue - 28/04/2017
+lang_only_title_meta: AFF - Meilleurs buteurs - 28/04/2017
+lang_only_description_meta: Les meilleurs buteurs AFF des championnats de football amateur de la 2e à la 5e ligue - 28/04/2017
 date: 2017-04-28 11:00:00 +0200
 image: 2017-04-28-image-aff.png
 image-mobile: 2017-04-28-image-aff-mobile.png

@@ -103,9 +103,9 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write "title: "+region.upcase+" - Meilleurs buteurs"
 		f.write "\n"
-		f.write "fr_only_title_meta: "+region.upcase+" - Meilleurs buteurs - "+Time.now.strftime("%d/%m/%Y")
+		f.write "lang_only_title_meta: "+region.upcase+" - Meilleurs buteurs - "+Time.now.strftime("%d/%m/%Y")
 		f.write "\n"
-		f.write "fr_only_description_meta: Les meilleurs buteurs "+region.upcase+" des championnats de football amateur de la 2e à la 5e ligue - "+Time.now.strftime("%d/%m/%Y")
+		f.write "lang_only_description_meta: Les meilleurs buteurs "+region.upcase+" des championnats de football amateur de la 2e à la 5e ligue - "+Time.now.strftime("%d/%m/%Y")
 		f.write "\n"
 		f.write('date: '+date+' 11:00:00 +0200')
 		f.write "\n"

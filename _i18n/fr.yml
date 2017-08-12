@@ -250,6 +250,7 @@ pages:
     fvrz_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVRZ (Région Zürich) 4ème ligue."
     fvrz_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football FVRZ (Région Zürich) 5ème ligue."
   scorer_ranking:
+    tab_scorer: Buteurs
     update: Les classements sont mis à jour plusieurs fois par semaine.
     info: 'Les erreurs, oublis ou autres problèmes sont à signaler via ce <a href="/erreurs-oublis" title="Signaler une erreur ou un problème">formulaire</a>'
     headline: Classements buteurs par groupe
@@ -268,6 +269,7 @@ pages:
     player_name: Nom
     player_club: Club
   teams_ranking:
+    tab_teams: Équipes
     headline: "Classements classique, attaque, défense"
     global: Global
     general: Général
@@ -293,7 +295,7 @@ pages:
   other:
     last_update: Dernière mise à jour
   top_buts:
-    title: "Footstats | Concours top buts foot amateur suisse"
+    title: "Concours top buts foot amateur suisse"
     description: "Envoyez nous les vidéos de vos plus beaux buts en tentez de gagner une paire de chaussure Nike Hypervenom Phantom II"
   about:
     title: A propos de Footstats
@@ -302,8 +304,9 @@ pages:
     description: Formulaire de contact
   errors_report:
     title: Formulaire de report d'erreurs et d'oublis
+    description: Formulaire de report d'erreurs ou d'oublis dans les classements buteurs.
   app:
-    title: FOOTSTATS Live App
+    title: Live App
     description: L'application Footstats Live permet de suivre en direct tous les matchs de football amateur en Suisse. L'application est actuellement en cours d'amélioration.
     title_meta: "Footstats | Live App"
     description_meta: "Score en direct football amateur en Suisse"
@@ -314,3 +317,7 @@ meta:
   site_description: Classements buteurs et statistiques équipes pour les championnats amateurs de football en Suisse (2e/3e/4e/5e ligues)
   facebook_title: Classements buteurs et stats équipes football amateur suisse
   facebook_description: Classements buteurs et stats équipes championnats de football 2e/3e/4e/5e ligues
+posts:
+  breadcrumb:
+    news1718:
+      title: Nouveauté pour la saison 17/18

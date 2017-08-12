@@ -6,6 +6,8 @@ GEM
     colorator (1.1.0)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
+    httparty (0.15.6)
+      multi_xml (>= 0.5.2)
     jekyll (3.5.0)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -28,6 +30,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
+    multi_xml (0.6.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -42,6 +45,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  httparty
   jekyll
   jekyll-paginate
 

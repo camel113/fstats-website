@@ -249,6 +249,7 @@ pages:
     fvrz_4_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVRZ (Region Zürich)"
     fvrz_5_teams: "Rangliste der besten Offenensiven und Defensiven der 4. Liga Meisterschaft FVRZ (Region Zürich)"
   scorer_ranking:
+    tab_scorer: Torschützenliste
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
     info: 'Traduire'
     headline: "Torschützen-Rangliste pro Gruppe"
@@ -267,6 +268,7 @@ pages:
     player_name: "Name"
     player_club: "Club"
   teams_ranking:
+    tab_teams: Teams
     headline: "Ranglisten klassisch, Offensive, Defensive"
     global: "Global"
     general: "Generell"
@@ -292,23 +294,28 @@ pages:
   other:
     last_update: "Letzte Aktualisierung"
   top_buts:
-    title: "Footstats | Wettbewerb um die besten Tore im schweizer Amateurfussball"
+    title: "Wettbewerb um die besten Tore im schweizer Amateurfussball"
     description: "Schicken Sie uns die Filme Ihrer schönsten Tore und nehmen Sie an einem Wettbewerb für ein Paar Nike Schuhe (Hypervenom Phantom II) teil"
   app:
-    title: "Footstats | Live App"
+    title: "Live App"
+    title_meta: "Footstats | Live App"
     description: "Score en direct football amateur en Suisse Romande"
   about:
-    title: Traduire
+    title: Uber Footstats
   contact: 
-    title: Traduire
-    description: Traduire
+    title: Kontakt Footstats
+    description: Kontaktformular
   errors_report:
-    title: Traduire
-    description: Traduire
+    title: Formular für die Meldung von Fehlern oder Vergessenheiten
+    description: Formular für die Meldung von Fehlern oder Vergessenheiten in den Torschützenlisten
 layout:
   follow_us: "Folge uns"
 meta: 
   site_title: "Torschützen-Rangliste | Topscorers | Amateurfussball Schweiz"
-  site_description: "Wertung Torjäger und Statistik der Mannschaften für die Amateurfussballmeisterschaften in der Schweiz (2./3./4./5. Ligen)"
-  facebook_title: "Wertung Torjäger und Statistik der schweizer Amateurfussballmannschaften"
-  facebook_description: "Wertung Torjäger und Statistik der Mannschaften für die Fussballmeisterschaften 2./3./4./5. Ligen"
+  site_description: "Torschützenliste und Statistik der Mannschaften für die Amateurfussballmeisterschaften in der Schweiz (2./3./4./5. Ligen)"
+  facebook_title: "Torschützenliste und Statistik der schweizer Amateurfussballmannschaften"
+  facebook_description: "Torschützenliste und Statistik der Mannschaften für die Fussballmeisterschaften 2./3./4./5. Ligen"
+posts:
+  breadcrumb:
+    news1718:
+      title: Neuheiten für die 17/18 Saison
