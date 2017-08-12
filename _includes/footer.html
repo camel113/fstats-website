@@ -1,33 +1,23 @@
+{% if site.lang == 'fr' %}
+  {% assign footernav = site.data.nav.footer-nav %}
+{% else %}
+  {% assign footernav = site.data.nav.footer-nav-de %}
+{% endif %}
 <footer id="footer">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-4 footer-col">
         <p>FOOTSTATS</p>
         <ul class="links-list">
-          <li>
-            <a href="/about" >
-              A propos
-            </a>
-          </li>
-          <li>
-            <a href="/contact" >
-              Contact
-            </a>
-          </li>
-          <li>
-            <a href="/archives" >
-              Archives
-            </a>
-          </li>
-          <li>
-            <a href="/jobs" >
-              Jobs
-            </a>
-          </li>
+          {% for footerlink in footernav %}
+            <li>
+              <a href="{{site.baseurl}}/{{footerlink.path}}">{{ footerlink.title }}</a>
+            </li>
+          {% endfor %}
         </ul>
       </div>
       <div class="col-12 col-md-4 footer-col footer-social">
-        <p>Pour rester informé</p>
+        <p>{% t layout.follow_us %}</p>
           <ul class="list-inline">
             <li>
               <a href="https://www.facebook.com/footstats.ch/" class="social-icon si-dark si-gray-round si-colored-facebook">

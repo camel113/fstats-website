@@ -1,0 +1,8 @@
+- title: "A propos"
+  path: "/about"
+- title: "Contact"
+  path: "/contact"
+- title: "Archives"
+  path: "/archives"
+- title: "Jobs"
+  path: "/jobs"
