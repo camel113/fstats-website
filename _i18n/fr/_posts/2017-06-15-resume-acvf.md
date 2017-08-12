@@ -6,7 +6,7 @@ lang_only_description_meta: Les meilleurs buteurs ACVF des championnats de footb
 date: 2017-06-15 11:00:00 +0200
 image: 2017-06-15-image-acvf.png
 image-800: 2017-06-15-image-acvf-size800.jpg
-image-1100: 2017-06-15-image-acvf-size1600.jpg
+image-1600: 2017-06-15-image-acvf-size1600.jpg
 categories: resume acvf
 description_for_facebook: Classements buteurs du canton de Vaud.
 title_for_facebook: ACVF - Top buteurs
