@@ -10,6 +10,7 @@ categories: news
 description_for_facebook: Malley tombe contre plus fort que lui 
 title_for_facebook: Une montagne se présentait sur la route de l'ES Malley en 32ème de finale de la Coupe de Suisse. général du site amélioré.
 image_for_facebook: /images/facebook/2017-08-14-malley.jpg
+translate: false
 ---
 Une montagne se présentait sur la route de l'ES Malley en 32ème de finale de la Coupe de Suisse. Une montagne nommée Stade-Lausanne Ouchy, équipe récemment promue en 3ème division suisse. 
 S'il semblait évident que l'exploit serait difficile pour les locaux, nul ne s'attendait à un telle correction. En effet, Stade-Lausanne n'a pas fait dans le détail samedi au Bois-Gentil, s'imposant par 14 à 0. 
