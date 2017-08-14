@@ -1,5 +1,5 @@
 <head>
-  <title>{% if page.lang_only_title_meta %}{{page.lang_only_title_meta}}{% elsif page.title_meta %}{% t page.title_meta %} | Footstats{% else %}{% t meta.site_title %}{% endif %}{% if page.data_path_season == '2016-2017' %} | 2016-2017 {% endif %}</title>
+  <title>{% if page.lang_only_title_meta %}{{page.lang_only_title_meta}}{% elsif page.title_meta %}{% t page.title_meta %}{% else %}{% t meta.site_title %}{% endif %}{% if page.data_path_season == '2016-2017' %} | 2016-2017 {% endif %}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="/assets/vendors/bootstrap.min.css" />
@@ -8,7 +8,7 @@
   
   <meta name="description" content="{% if page.data_path_season == '2016-2017' %}2016-2017 - {% endif %}{% if page.lang_only_description_meta %}{{page.lang_only_description_meta}}{% elsif page.description_meta %}{% t page.description_meta %}{% elsif page.description %}{{ page.description }}{% else %}{% t meta.site_description %}{% endif %}">
 
-  <meta property="og:url" content="{{ site.url }}{{ page.url | downcase | remove: '.html' }}"/>
+  <meta property="og:url" content="{{site.url}}{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl | prepend: site.baseurl_root }}"/>
   <meta property="og:description" content="{% if page.description_for_facebook %}{{ page.description_for_facebook }}{% else %}{% t meta.facebook_description %}{% endif %}" />
   <meta property="og:title" content="{% if page.data_path_season == '2016-2017' %}2016-2017 - {% endif %}{% if page.title_for_facebook %}{{ page.title_for_facebook }}{% else %}{% t meta.facebook_title %}{% endif %}" />
   <meta property="og:type" content="{% if page.id %}article{% else %}website{% endif %}" />
@@ -23,5 +23,9 @@
 
   <link rel="icon" href="http://www.footstats.ch/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="http://www.footstats.ch/favicon.ico" type="image/x-icon">
+  
+  {% if jekyll.environment == "production" %}
+    {% include analytics.html %}
+  {% endif %}
 
 </head>

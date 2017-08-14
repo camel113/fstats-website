@@ -18,7 +18,7 @@ layout: default
 	</div>
   <div class="row justify-content-md-center">
     <div class="col-12 col-md-8 col-lg-6 article-img">
-    	<h1>{{page.title}}</h1>
+    	<h1>{% if page.translate != false %}{% t page.title %}{% else %}{{ page.title }}{% endif %}</h1>
     	<p><small class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ page.date | date: "%-d/%m/%Y"}}</small></p>
     </div>    
   </div>

@@ -252,7 +252,7 @@ pages:
   scorer_ranking:
     tab_scorer: Buteurs
     update: Les classements sont mis à jour plusieurs fois par semaine.
-    info: 'Les erreurs, oublis ou autres problèmes sont à signaler via ce <a href="/erreurs-oublis" title="Signaler une erreur ou un problème">formulaire</a>'
+    info: 'Les erreurs, oublis ou autres problèmes sont à signaler via ce <a href="/formulaire-report-erreur" title="Signaler une erreur ou un problème">formulaire</a>'
     headline: Classements buteurs par groupe
     group: "Groupe"
     no_data: "Pas de données disponibles pour le moment."
@@ -298,7 +298,7 @@ pages:
     title: "Concours top buts foot amateur suisse"
     description: "Envoyez nous les vidéos de vos plus beaux buts en tentez de gagner une paire de chaussure Nike Hypervenom Phantom II"
   about:
-    title: A propos de Footstats
+    title: À propos de Footstats
   contact: 
     title: Contact Footstats
     description: Formulaire de contact
@@ -320,4 +320,4 @@ meta:
 posts:
   breadcrumb:
     news1718:
-      title: Nouveauté pour la saison 17/18
+      title: Nouveautés pour la saison 17/18

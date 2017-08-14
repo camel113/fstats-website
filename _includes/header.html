@@ -1,3 +1,12 @@
+{% if site.lang == 'fr' %}
+  {% assign regionnav = site.data.nav.regions %}
+  {% assign utilsnav = site.data.nav.utils %}
+  {% assign mobilenav = site.data.nav.mobile-nav %}
+{% else %}
+  {% assign regionnav = site.data.nav.regions-de %}
+  {% assign utilsnav = site.data.nav.utils-de %}
+  {% assign mobilenav = site.data.nav.mobile-nav-de %}
+{% endif %}
 <header class="hidden-md-up header-mobile">
   <div class="container">
     <div class="row hidden-md-up mobile-title">
@@ -27,22 +36,29 @@
       </li>
     </ul>
     <ul class="list-inline other-links">
-      {% assign utilsnav = site.data.nav.utils %}
       {% for util in utilsnav %}
         <li>
-          <a href="{{util.path}}">{{ util.title }}</a>
+          <a href="{{site.baseurl}}{{util.path}}">{{ util.title }}</a>
         </li>
       {% endfor %}
     </ul>
     <ul class="list-inline language-selector">
       {% if page.translate != false %}
-        {% capture link1 %}/de{{ page.url | remove: '.html'}}{% endcapture %}
+        {% if page.permalink_de == nil %}
+          {% capture link1 %}/de{{ page.url | remove: '.html'}}{% endcapture %}
+        {% else %}
+          {% capture link1 %}/de{{ page.permalink_de}}{% endcapture %}
+        {% endif %}
       {% else %}
         {% capture link1 %}/de{% endcapture %}
       {% endif %}
       <li><a href="{{ link1 }}" >de</a></li>
       <span>|</span>
-      {% capture link2 %}{{ page.url | remove: '.html' }}{% endcapture %}
+      {% if page.permalink != nil %}
+          {% capture link2 %}{{ page.permalink}}{% endcapture %}
+        {% else %}
+          {% capture link2 %}{{ page.url | remove: '.html' }}{% endcapture %}
+      {% endif %}
       <li><a href="{{ link2 }}" >fr</a></li>
     </ul>
   </div>
@@ -64,11 +80,6 @@
     <div class="row">
       <div class="col-xs-12">
         <ul class="nav">
-          {% if site.lang == 'fr' %}
-            {% assign regionnav = site.data.nav.regions %}
-          {% else %}
-            {% assign regionnav = site.data.nav.regions-de %}
-          {% endif %}
           {% if page.data_path_region == null %}
             {% for region in regionnav.regions %}
               <li class="nav-item">
@@ -114,10 +125,9 @@
           {% endfor %}
         </ul>
       </li>
-      {% assign mobilenav = site.data.nav.mobile-nav %}
       {% for mobilelink in mobilenav %}
         <li>
-          <a href="{{mobilelink.path}}">{{ mobilelink.title }}</a>
+          <a href="{{site.baseurl}}{{mobilelink.path}}">{{ mobilelink.title }}</a>
         </li>
       {% endfor %}
     </ul>
