@@ -295,11 +295,65 @@ create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 regions.push(region)
 
+# FVBJ 3eme ligue
+groups = [*1..8]
+region = 'fvbj'
+league = 3
+filePath = "_data/fvbj/ligue3/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# FVBJ 4eme ligue
+groups = [*1..10]
+region = 'fvbj'
+league = 4
+filePath = "_data/fvbj/ligue4/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# FVBJ 5eme ligue
+groups = [*1..12]
+region = 'fvbj'
+league = 5
+filePath = "_data/fvbj/ligue5/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
 # AFV 2eme ligue
 groups = [*1..1]
 region = 'afv'
 league = 2
 filePath = "_data/afv/ligue2/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# AFV 3eme ligue
+groups = [*1..2]
+region = 'afv'
+league = 3
+filePath = "_data/afv/ligue3/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# AFV 4eme ligue
+groups = [*1..4]
+region = 'afv'
+league = 4
+filePath = "_data/afv/ligue4/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# AFV 5eme ligue
+groups = [*1..3]
+region = 'afv'
+league = 5
+filePath = "_data/afv/ligue5/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 regions.push(region)
@@ -313,11 +367,65 @@ create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 regions.push(region)
 
+# IFV 3eme ligue
+groups = [*1..3]
+region = 'ifv'
+league = 3
+filePath = "_data/ifv/ligue3/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# IFV 4eme ligue
+groups = [*1..6]
+region = 'ifv'
+league = 4
+filePath = "_data/ifv/ligue4/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# IFV 5eme ligue
+groups = [*1..8]
+region = 'ifv'
+league = 5
+filePath = "_data/ifv/ligue5/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
 # FVNWS 2eme ligue
 groups = [*1..1]
 region = 'fvnws'
 league = 2
 filePath = "_data/fvnws/ligue2/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# FVNWS 3eme ligue
+groups = [*1..3]
+region = 'fvnws'
+league = 3
+filePath = "_data/fvnws/ligue3/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# FVNWS 4eme ligue
+groups = [*1..5]
+region = 'fvnws'
+league = 4
+filePath = "_data/fvnws/ligue4/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# FVNWS 5eme ligue
+groups = [*1..4]
+region = 'fvnws'
+league = 5
+filePath = "_data/fvnws/ligue5/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 regions.push(region)
@@ -331,6 +439,33 @@ create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 regions.push(region)
 
+# OFV 3eme ligue
+groups = [*1..4]
+region = 'ofv'
+league = 3
+filePath = "_data/ofv/ligue3/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# OFV 4eme ligue
+groups = [*1..8]
+region = 'ofv'
+league = 4
+filePath = "_data/ofv/ligue4/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# OFV 5eme ligue
+groups = [*1..10]
+region = 'ofv'
+league = 5
+filePath = "_data/ofv/ligue5/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
 # SOFV 2eme ligue
 groups = [*1..1]
 region = 'sofv'
@@ -340,11 +475,65 @@ create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 regions.push(region)
 
+# SOFV 3eme ligue
+groups = [*1..2]
+region = 'sofv'
+league = 3
+filePath = "_data/sofv/ligue3/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# SOFV 4eme ligue
+groups = [*1..3]
+region = 'sofv'
+league = 4
+filePath = "_data/sofv/ligue4/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# SOFV 5eme ligue
+groups = [*1..2]
+region = 'sofv'
+league = 5
+filePath = "_data/sofv/ligue5/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
 # FVRZ 2eme ligue
 groups = [*1..2]
 region = 'fvrz'
 league = 2
 filePath = "_data/fvrz/ligue2/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# FVRZ 3eme ligue
+groups = [*1..6]
+region = 'fvrz'
+league = 3
+filePath = "_data/fvrz/ligue3/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# FVRZ 4eme ligue
+groups = [*1..12]
+region = 'fvrz'
+league = 4
+filePath = "_data/fvrz/ligue4/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
+
+# FVRZ 5eme ligue
+groups = [*1..7]
+region = 'fvrz'
+league = 5
+filePath = "_data/fvrz/ligue5/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 regions.push(region)
