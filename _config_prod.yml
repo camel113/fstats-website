@@ -17,7 +17,7 @@ sass:
 # exclude: [dpackage.json,gulpfile.js,js/dev,node_modules,README.m]
 languages: ["fr", "de"]
 exclude_from_localizations: ["js", "images", "css", "rankings","import","libs","stats"]
-exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","package-lock.json","gulpfile.js","README.md","feed.xml","includes/analytics.html","*/global-stats.html","app","posts-images","npm-debug.log","shop","cgv"]
+exclude: ["backup","oldapp","node_modules","swiss-team.html","Gemfile","Gemfile.lock","package.json","package-lock.json","gulpfile.js","README.md","feed.xml","includes/analytics.html","*/global-stats.html","posts-images","npm-debug.log","shop","cgv"]
 include: ["_redirects"]
 plugins: 
   - jekyll-paginate
