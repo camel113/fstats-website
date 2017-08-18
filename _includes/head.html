@@ -22,7 +22,7 @@
     {%- else -%}
       <link hreflang="de" rel="alternate" href="{{site.url}}/de{{ page.permalink_de | replace:'index.html','' | remove: '.html' | prepend: site.baseurl_root }}">
     {% endif %}
-    {%- if page.permalink != nil -%}
+    {% if page.permalink != nil -%}
       <link hreflang="fr" rel="alternate" href="{{site.url}}{{ page.permalink | replace:'index.html','' | remove: '.html' | prepend: site.baseurl_root }}">
     {%- else -%}
       <link hreflang="fr" rel="alternate" href="{{site.url}}{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl_root }}">
