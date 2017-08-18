@@ -17,8 +17,8 @@
   
   <link rel="canonical" href="{{site.url}}{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl | prepend: site.baseurl_root }}">
   {% if page.translate != false %}
-  <link hreflang="fr" rel="alternate" href="{{site.url}}{{ page.url | replace:'index.html','' | remove: '.html' |prepend: site.baseurl | prepend: site.baseurl_root }}">
-  <link hreflang="de" rel="alternate" href="{{site.url}}/de{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl | prepend: site.baseurl_root }}">
+  <link hreflang="fr" rel="alternate" href="{{site.url}}{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl_root }}">
+  <link hreflang="de" rel="alternate" href="{{site.url}}/de{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl_root }}">
   {% endif %}
 
   <link rel="icon" href="http://www.footstats.ch/favicon.ico" type="image/x-icon">
