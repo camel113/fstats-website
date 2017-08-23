@@ -16,6 +16,7 @@
     infiniteScroll.init()
     backToTop.init()
     errorReportForm.init()
+    contactForm.init()
 
     if($('#league-stats').length>0){
       smoothState.init()
@@ -230,6 +231,28 @@ var errorReportForm = {
       posting.fail(function() {
         $("#errors-report-form-container").hide()
         $("#errors-report-form-fail").show()
+      });
+
+    });
+  }
+}
+
+var contactForm = {
+  init: function(){
+    $("#contact-form").submit(function(e) {
+      e.preventDefault();
+
+      var $form = $(this);
+
+      var posting = $.post($form.attr("action"), $form.serialize())
+
+      posting.done(function() {
+        $("#contact-form-container").hide()
+        $("#contact-form-success").show()
+      });
+      posting.fail(function() {
+        $("#contact-form-container").hide()
+        $("#contact-form-fail").show()
       });
 
     });
