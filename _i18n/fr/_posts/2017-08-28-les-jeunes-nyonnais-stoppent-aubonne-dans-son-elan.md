@@ -7,8 +7,8 @@ date: 2017-08-28 11:00:00 +0200
 image-800: 2017-08-28-aubonne-size800.jpg
 image-1600: 2017-08-28-aubonne-size1600.jpg
 categories: news
-description_for_facebook: Les jeunes nyonnais stoppent Aubonne dans son élan
-title_for_facebook: Deux matchs, 10 buts inscrits ! Telles étaient les statistiques de rêve du FC Chêne Aubonne à l'entame de la 3ème journée de championnat de 2ème ligue vaudoise. Mais malgré un bon début de partie face à la réserve nyonnaise, les Aubonnois se sont inclinés, trouvant sur leur chemin une équipe visiteuse joueuse et bien organisée. 
+description_for_facebook: Deux matchs, 10 buts inscrits ! Telles étaient les statistiques de rêve du FC Chêne Aubonne à l'entame de la 3ème journée de championnat de 2ème ligue vaudoise. Mais malgré un bon début de partie face à la réserve nyonnaise, les Aubonnois se sont inclinés, trouvant sur leur chemin une équipe visiteuse joueuse et bien organisée.
+title_for_facebook: Les jeunes nyonnais stoppent Aubonne dans son élan
 image_for_facebook: /images/facebook/2017-08-28-aubonne.jpg
 translate: false
 signature: JC
