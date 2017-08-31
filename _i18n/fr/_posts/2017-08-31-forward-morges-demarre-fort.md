@@ -3,7 +3,7 @@ layout: new-post
 title: Forward Morges démarre fort
 lang_only_title_meta: Les jeunes nyonnais stoppent Aubonne dans son élan
 lang_only_description_meta: L’équipe la plus performante de ce début de saison en 2e ligue ACVF est sans aucun doute le FC Forward Morges. L’équipe dirigée par Damien Berger est la seule à avoir fait le plein de points jusqu’ici. Forward est la deuxième meilleure attaque du championnat avec 13 buts marqués et n’a encaissé que 3 buts (4e meilleure défense). 
-date: 2017-08-31 11:00:00 +0200
+date: 2017-08-31 10:00:00 +0200
 image-800: 2017-08-31-forward-size800.jpg
 image-1600: 2017-08-31-forward-size1600.jpg
 categories: news
