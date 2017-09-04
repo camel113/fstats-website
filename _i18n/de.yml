@@ -310,6 +310,7 @@ pages:
     description: Formular für die Meldung von Fehlern oder Vergessenheiten in den Torschützenlisten
 layout:
   follow_us: "Folge uns"
+  problem: "Einige Probleme mit unseren Daten. Neues Update in ein paar Stunden!"
 meta: 
   site_title: "Torschützen-Rangliste | Topscorers | Amateurfussball Schweiz"
   site_description: "Torschützenliste und Statistik der Mannschaften für die Amateurfussballmeisterschaften in der Schweiz (2./3./4./5. Ligen)"

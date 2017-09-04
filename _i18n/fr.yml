@@ -312,6 +312,7 @@ pages:
     description_meta: "Score en direct football amateur en Suisse"
 layout:
   follow_us: Suivez-nous
+  problem: "Quelques problèmes avec nos données. Nouvelle mise à jour dans quelques heures!"
 meta: 
   site_title: "Footstats | Stats & Buteurs | Foot amateur Suisse"
   site_description: Classements buteurs et statistiques équipes pour les championnats amateurs de football en Suisse (2e/3e/4e/5e ligues)
