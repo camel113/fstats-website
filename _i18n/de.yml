@@ -251,7 +251,7 @@ pages:
   scorer_ranking:
     tab_scorer: Torschützenliste
     update: "Die Ranglisten werden mehrmals pro Woche aktualisiert."
-    info: 'Die Fehler, Vergessenheiten und alle Probleme müssen durch diesen <a href="//formular-fehlermeldung">Formular</a> signalisiert werden.'
+    info: 'Die Fehler, Vergessenheiten und alle Probleme müssen durch diesen <a href="/formular-fehlermeldung">Formular</a> signalisiert werden.'
     headline: "Torschützen-Rangliste pro Gruppe"
     group: "Gruppe"
     no_data: "Im Moment sind keine Daten vorhanden."
@@ -320,3 +320,6 @@ posts:
   breadcrumb:
     news1718:
       title: Neuheiten für die 17/18 Saison
+    post_region:
+      fvbj:
+        title: FVBJ - Beste Torschützen
