@@ -18,14 +18,14 @@ Après un peu plus de trois semaines de compétition, il est aujourd’hui possi
 [Classements buteurs par ligue en fin d’article](#classement-buteurs)
 
 ## 2e ligue
-Avec une moyenne de 4.8 buts marqués par match, le FC Amical Saint-Prex domine le classement des meilleures attaques de la ligue. C’est également l’équipe qui possède le plus grand nombre de buteurs avec déjà neuf joueurs ayant marqué plus d’un but. Le FC Gland n’a pris qu’un seul but en quatre rencontres et prend donc logiquement la tête du classement des meilleures défenses. 
+Avec une moyenne de 4.8 buts marqués par match, le FC Amical Saint-Prex domine le classement des meilleures attaques de la ligue. C’est également l’équipe qui possède le plus grand nombre de buteurs avec déjà neuf joueurs ayant marqué au moins un but. Le FC Gland n’a pris qu’un seul but en quatre rencontres et prend donc logiquement la tête du classement des meilleures défenses. 
  A noter encore la belle performance de Telesphore Louis Amougou (FC Forward-Morges) qui a inscrit quatre buts le week-end passé.
 
 ## 3e ligue
 On vous le disait en introduction, FC Saint-Légier IA possède déjà quatorze buteurs dans ses rangs après seulement 3 matchs. C’est aussi l’équipe qui possède la meilleure attaque avec une moyenne de 7 buts marqués par match ! Et pour couronner le tout, FC Saint-Légier IA partage la tête du classement des meilleures défenses avec FC Echallens Région. Tous deux ont une moyenne de 0.3 buts/matchs. Makicha Bouzoba (AS FC Napoli Vevey) et Cyril Dufey (AS Haute-Broye) sont les deux meilleurs buteurs de la semaine avec quatre buts inscrits.
 
 ## 4e ligue
-Une seule équipe n’a pas pris de buts jusqu’à maintenant, FC Saint-Sulpice IIB. Deux équipes se partage les rênes du classement des meilleures attaques avec une moyenne de 7 buts par match, FC Cheseaux et FC Turc Lausanne. Avec onze buteurs, FC Turc Lausanne est aussi l’équipe qui en possède le plus grand nombre. Deux de ses joueurs ont inscrits quatre buts la semaine dernière, Kreshnik Zenuni et Gökan Savci.
+Une seule équipe n’a pas pris de buts jusqu’à maintenant, FC Saint-Sulpice IIB. Deux équipes se partagent les rênes du classement des meilleures attaques avec une moyenne de 7 buts par match, FC Cheseaux et FC Turc Lausanne. Avec onze buteurs, FC Turc Lausanne est aussi l’équipe qui en possède le plus grand nombre. Deux de ses joueurs ont inscrit quatre buts la semaine dernière, Kreshnik Zenuni et Gökan Savci.
 
 ## 5e ligue
 FC Forward-Morges est pour l’instant la seule équipe à ne pas avoir encaissé de goals. Du côté des attaques FC Leysin marque 6.5 buts en moyenne par match et domine ce classement.
