@@ -66,10 +66,14 @@
       {% endif %}
       <li><a href="{{ link1 }}" >de</a></li>
       <span>|</span>
-      {% if page.permalink != nil %}
-          {% capture link2 %}{{ page.permalink}}{% endcapture %}
-        {% else %}
-          {% capture link2 %}{{ page.url | remove: '.html' }}{% endcapture %}
+      {% if page.translate != false %}
+        {% if page.permalink != nil %}
+            {% capture link2 %}{{ page.permalink}}{% endcapture %}
+          {% else %}
+            {% capture link2 %}{{ page.url | remove: '.html' }}{% endcapture %}
+        {% endif %}
+      {% else %}
+        {% capture link2 %}/{% endcapture %}
       {% endif %}
       <li><a href="{{ link2 }}" >fr</a></li>
     </ul>
