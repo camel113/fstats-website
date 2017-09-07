@@ -18,7 +18,7 @@ Die Fehler, Vergessenheiten und alle Probleme müssen durch diesen <a href="/for
 
 Die besten Torschützen der 2. Liga
 
-<table class="table"><thead><tr><th><i class="fa fa-male"></i></th><th><i class="fa fa-futbol-o"></i></th></tr></thead><tbody><tr><td>Simon Affentranger<span class='d-block team-name'><small>SC Fulenbach</small></span></td><td>6</td></tr><tr><td>Samuel Zayas<span class='d-block team-name'><small>FC Grenchen 15</small></span></td><td>5</td></tr><tr><td>Kevin Dweezil Künzler<span class='d-block team-name'><small>FC Subingen</small></span></td><td>4</td></tr><tr><td>Cyrill Sonderegger<span class='d-block team-name'><small>FC Lommiswil</small></span></td><td>4</td></tr><tr><td>Dzevahir Ramani<span class='d-block team-name'><small>FC Grenchen 15</small></span></td><td>4</td></tr><tr><td>Yanick Oumaray<span class='d-block team-name'><small>FC Härkingen</small></span></td><td>4</td></tr><tr></tbody></table>
+<table class="table"><thead><tr><th><i class="fa fa-male"></i></th><th><i class="fa fa-futbol-o"></i></th></tr></thead><tbody><tr><td>Simon Affentranger<span class='d-block team-name'><small>SC Fulenbach</small></span></td><td>6</td></tr><tr><td>Samuel Zayas<span class='d-block team-name'><small>FC Grenchen 15</small></span></td><td>5</td></tr><tr><td>Kevin Dweezil Künzler<span class='d-block team-name'><small>FC Subingen</small></span></td><td>4</td></tr><tr><td>Cyrill Sonderegger<span class='d-block team-name'><small>FC Lommiswil</small></span></td><td>4</td></tr><tr><td>Dzevahir Ramani<span class='d-block team-name'><small>FC Grenchen 15</small></span></td><td>4</td></tr><tr><td>Yanick Oumaray<span class='d-block team-name'><small>FC Härkingen</small></span></td><td>4</td></tr></tbody></table>
 
 Die besten Torschützen der 3. Liga
 
