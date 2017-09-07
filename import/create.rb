@@ -3,7 +3,7 @@ require 'httparty'
 require 'fileutils'
 require 'json'
 
-def create_post_by_region(region,canton)
+def create_fr_post_by_region(region,canton)
 	date = Time.now.strftime("%Y-%m-%d")
 	File.open("_i18n/fr/_posts/"+date+"-resume-"+region+".md","w") do |f|
 		f.write('---')
