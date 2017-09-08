@@ -28,4 +28,4 @@ Le 27 août passé Samuel Hasler (FC Montbrelloz, 4e ligue) a inscrit 6 buts fac
 Sandy Valiquer a fait tremblé les filets 4 fois avec le FC Granges face au FC Grône en 4e ligue. Personne n’a fait aussi bien ou mieux que lui pour le moment. Par contre ils sont trois à se partager la tête du classement des buteurs avec 5 goals : Ivan Palesko (FC Massongex, 3e ligue), Alexandre Farquet (FC Ardon, 3e ligue), David Jordan (FC Massongex 2, 5e ligue).
 
 ## ACGF
-Romain Collet est l’homme en forme du moment. Il a inscrit 7 buts en un match (record en Suisse romande) face au FC Collex-Bossy en 5e ligue et a pris du même coup les rênes du classement des buteurs.
+Romain Collet (FC Plan-les-Ouates) est l’homme en forme du moment. Il a inscrit 7 buts en un match (record en Suisse romande) face au FC Collex-Bossy en 5e ligue et a pris du même coup les rênes du classement des buteurs.
