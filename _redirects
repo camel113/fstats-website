@@ -9,3 +9,5 @@
 /resume/*/2017/05/:date/:slug /archives/2017%2D05%2D:date%2D:slug 301
 
 /archives/2016-21-10-stars-fc-villarepos-fc-corcelles-payerne-joao-fernando-da-silva-manuel-mvuatu-olympique-de-geneve-fc.html /archives/2016-10-21-stars-fc-villarepos-fc-corcelles-payerne-joao-fernando-da-silva-manuel-mvuatu-olympique-de-geneve-fc.html 301
+
+/  /de  302  Language=de-ch,de
