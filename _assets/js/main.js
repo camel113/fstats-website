@@ -133,6 +133,7 @@ var backToTop = {
 var navManager = {
   init: function(){
     $('.toggle-overlay').click(function() {
+      console.log($('aside'))
       $('aside').toggleClass('open');
       $('.visible').toggleClass('visible');
     });
