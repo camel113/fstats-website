@@ -10,15 +10,15 @@
       });
     }
 
-    analyticsConfig.init()
-    navManager.init()
+    analyticsConfig.init();
+    navManager.init();
     if($('.ligue-teams').length>0){
       rankingChoice.init()
     }
-    infiniteScroll.init()
-    backToTop.init()
-    errorReportForm.init()
-    contactForm.init()
+    infiniteScroll.init();
+    backToTop.init();
+    errorReportForm.init();
+    contactForm.init();
 
     if($('#league-stats').length>0){
       smoothState.init()
@@ -133,7 +133,6 @@ var backToTop = {
 var navManager = {
   init: function(){
     $('.toggle-overlay').click(function() {
-      console.log($('aside'))
       $('aside').toggleClass('open');
       $('.visible').toggleClass('visible');
     });
