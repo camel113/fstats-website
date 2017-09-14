@@ -13,7 +13,7 @@ image_for_facebook: /images/facebook/image-aff-facebook.jpg
 translate: false
 signature: ABG
 ---
-Trois semaines se sont maintenant écoulées depuis le début du championnat, le temps est venu de faire un point le football amateur fribourgeois. Chez les buteurs c'est Corentin Ruffieux qui domine le classement avec 9 réalisations jusqu'à aujourd'hui. Team Haut-Lac Ia possède l'attaque la plus prolifique du canton alors que trois équipes n'ont pas encore pris de buts jusqu'ici.
+Trois semaines se sont maintenant écoulées depuis le début du championnat, le temps est venu de faire un point le football amateur fribourgeois. Chez les buteurs c'est Corentin Ruffieux qui domine le classement avec 9 réalisations jusqu'à aujourd'hui. Team Haut-Lac Ia possède l'attaque la plus prolifique du canton alors que trois équipes n'ont pas encore pris de but jusqu'ici.
 
 [Classements buteurs par ligue en fin d’article](#classement-buteurs)
 
