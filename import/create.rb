@@ -16,7 +16,7 @@ def create_fr_post_by_region(region,canton)
 		f.write "\n"
 		f.write "lang_only_description_meta: Les meilleurs buteurs "+region.upcase+" des championnats de football amateur de la 2e à la 5e ligue - "+Time.now.strftime("%d/%m/%Y")
 		f.write "\n"
-		f.write('date: '+date+' 11:00:00 +0200')
+		f.write('date: '+date+' 09:00:00 +0200')
 		f.write "\n"
 		f.write('image-800: image-'+region+'-size800.jpg')
 		f.write "\n"
@@ -83,7 +83,7 @@ def create_de_post_by_region(region,canton)
 		f.write "\n"
 		f.write "lang_only_description_meta: Die besten "+region.upcase+" Torschützen der Amateurfussballmeisterschaften von der 2. bis zur 5. Liga - "+Time.now.strftime("%d/%m/%Y")
 		f.write "\n"
-		f.write('date: '+date+' 11:00:00 +0200')
+		f.write('date: '+date+' 09:00:00 +0200')
 		f.write "\n"
 		f.write('image-800: image-'+region+'-size800.jpg')
 		f.write "\n"
@@ -210,10 +210,10 @@ end
 
 regions = [{:acronym=>"aff",:canton=>"de Fribourg"},{:acronym=>"acvf",:canton=>"de Vaud"},{:acronym=>"anf",:canton=>"de Neuchâtel"},{:acronym=>"avf",:canton=>"du Valais"},{:acronym=>"acgf",:canton=>"de Genève"},{:acronym=>"fvbj",:canton=>"de Berne"},{:acronym=>"sofv",:canton=>"xx"},{:acronym=>"fvnws",:canton=>"xx"}]
 
-regions = [{:acronym=>"aff",:canton=>"xx"}]
+regions = [{:acronym=>"fvbj",:canton=>"xx"}]
 
 regions.each { |r|
-  create_post_by_region(r[:acronym],r[:canton])
-  # create_fr_post_by_region(r[:acronym],r[:canton])
-  # create_de_post_by_region(r[:acronym],r[:canton])
+  # create_post_by_region(r[:acronym],r[:canton])
+  create_fr_post_by_region(r[:acronym],r[:canton])
+  create_de_post_by_region(r[:acronym],r[:canton])
 }
