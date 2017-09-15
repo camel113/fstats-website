@@ -1,5 +1,7 @@
 - title: "À propos"
   path: "/about"
+- title: "Publicité"
+  path: "/publicite-footstats"
 - title: "Contact"
   path: "/contact"
 - title: "Archives"
