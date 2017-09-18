@@ -9,7 +9,7 @@ image-1600: 2017-09-18-st-sulpice-size1600.jpg
 categories: news
 description_for_facebook: Certes, l'équipe de l'Ouest lausannois avait bénéficié du forfait de certains de ses adversaires en ce début de saison. Certes, Saint-Sulpice ne jouait en réalité que son deuxième match de l'exercice. Mais quoi qu'il en soit, les hommes d'Hervé Perret étaient la dernière formation de 4ème ligue vaudoise à n'avoir pas encore encaissé le moindre but avant dimanche.
 title_for_facebook: La défense de Saint-Sulpice IIB plie pour la première fois 
-image_for_facebook: /images/facebook/2017-09-18-st-sulpice-size1600.jpg
+image_for_facebook: /images/facebook/2017-09-18-st-sulpice.jpg
 translate: false
 signature: JC
 ---
