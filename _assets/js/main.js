@@ -188,12 +188,12 @@ var analyticsConfig = {
       fbq('track', 'InitiateCheckout');
     });
 
-    $('.private-ad').on('click', function(event){
+    $('.ad-for-ad').on('click', function(event){
       ga('send', {
         hitType: 'event',
         eventCategory: 'Ad-Click',
         eventAction: 'click',
-        eventLabel: 'Cadenza'
+        eventLabel: 'Marketing'
       });
     });
 

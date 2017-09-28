@@ -27,6 +27,23 @@
 		}
 	}
 }
+.ad-for-ad{
+	display:block;
+	padding-left:10px;
+	padding-right:10px;
+	.ad-img{
+		width: 160px;
+	}
+	.ad-content{
+		background-color:rgba(0,0,0,.05);
+		margin-bottom:20px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		p{
+			font-size: 0.9em;
+		}
+	}
+}
 .job-title{
 	display:block;
 	margin-top: 10px;
