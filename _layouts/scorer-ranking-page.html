@@ -26,7 +26,18 @@ facebook_meta_description: meta.facebook_description
 				</div>
 			</div>
 			
-			
+			{% if site.lang == "fr" %}
+				<a class="ad-for-ad" href="/publicite-footstats">
+					<div class="row justify-content-md-center">
+						<div class="col-12 col-md-8 col-lg-6 rounded ad-content">
+							<div class="row">
+								<div class="col-5"><img class="img-fluid rounded ad-img" src="{{ '/images/other/marketing-footstats.jpg' | prepend: site.url }}" alt="job" /></div>
+								<div class="col-7"><p>Atteignez des milliers de personnes en plaçant votre pub ici.</p></div>
+							</div>
+						</div>
+					</div>
+				</a>
+  		{% endif %}
 			
 			{% if site.data.archives1617[page.data_path_region][page.data_path_ligue] != null %}
 			{% include year-select-list.html %}
