@@ -197,6 +197,10 @@ var analyticsConfig = {
       });
     });
 
+    $('#contact-pub').on('click', function(event){
+      fbq('track', 'InitiateCheckout');
+    })
+
     $('.job-tease').on('click', function(event){
       ga('send', {
         hitType: 'event',
