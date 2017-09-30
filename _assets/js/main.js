@@ -199,6 +199,7 @@ var analyticsConfig = {
 
     $('#contact-pub').on('click', function(event){
       fbq('track', 'InitiateCheckout');
+      console.log('InitiateCheckout')
     })
 
     $('.job-tease').on('click', function(event){
