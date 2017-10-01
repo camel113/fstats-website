@@ -136,7 +136,7 @@ filePath = "_data/aff/ligue5/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
 
-# ACVF 3eme fem
+# AFF 3eme fem
 groups = [*1..1]
 region = 'aff'
 league = 30
@@ -285,6 +285,15 @@ league = 5
 filePath = "_data/avf/ligue5/"
 create_directories(filePath)
 leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+
+# AVF 3eme fem
+groups = [*1..1]
+region = 'avf'
+league = 30
+filePath = "_data/avf/ligue30/"
+create_directories(filePath)
+leagues.push({:groups => groups, :region => region, :league => league, :filePath => filePath})
+regions.push(region)
 
 # FVBJ 2eme ligue
 groups = [*1..2]

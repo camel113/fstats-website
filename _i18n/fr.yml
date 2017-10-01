@@ -31,6 +31,7 @@ pages:
     avf_3: AVF 3ème ligue
     avf_4: AVF 4ème ligue
     avf_5: AVF 5ème ligue
+    avf_3_women: AVF 3ème ligue Féminine
     avf_2_teams: AVF 2ème ligue
     avf_3_teams: AVF 3ème ligue
     avf_4_teams: AVF 4ème ligue
@@ -114,6 +115,7 @@ pages:
       acgf_3: ACGF 3ème ligue | Buteurs
       acgf_4: ACGF 4ème ligue | Buteurs
       acgf_5: ACGF 5ème ligue | Buteurs
+      avf_3_women: AVF 3ème ligue féminie | Buteurs
       avf_2: AVF 2ème ligue | Buteurs
       avf_3: AVF 3ème ligue | Buteurs
       avf_4: AVF 4ème ligue | Buteurs
@@ -177,6 +179,7 @@ pages:
     acgf_3_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 3ème ligue."
     acgf_4_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 4ème ligue."
     acgf_5_teams: "Classements meilleurs attaques, défenses, classique du championnat de football ACGF (Genève) 5ème ligue."
+    avf_3_women: Classement buteurs championnat de football AVF (Valais) 3ème ligue Féminine.
     avf_2: Classement buteurs championnat de football AVF (Valais) 2ème ligue.
     avf_3: Classement buteurs championnat de football AVF (Valais) 3ème ligue.
     avf_4: Classement buteurs championnat de football AVF (Valais) 4ème ligue.
