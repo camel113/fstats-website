@@ -24,6 +24,8 @@ regions:
         path: "/4eme-ligue"
       - title: "5. Liga"
         path: "/5eme-ligue"
+      - title: "3. Liga Frauen"
+        path: "/3eme-ligue-feminine"
   - title: "ACVF"
     path: "acvf"
     subpages:
