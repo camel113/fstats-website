@@ -210,10 +210,10 @@ end
 
 regions = [{:acronym=>"aff",:canton=>"de Fribourg"},{:acronym=>"acvf",:canton=>"de Vaud"},{:acronym=>"anf",:canton=>"de Neuchâtel"},{:acronym=>"avf",:canton=>"du Valais"},{:acronym=>"acgf",:canton=>"de Genève"},{:acronym=>"fvbj",:canton=>"de Berne"},{:acronym=>"sofv",:canton=>"xx"},{:acronym=>"fvnws",:canton=>"xx"}]
 
-regions = [{:acronym=>"fvbj",:canton=>"xx"}]
+regions = [{:acronym=>"fvrz",:canton=>"xx"}]
 
 regions.each { |r|
-  # create_post_by_region(r[:acronym],r[:canton])
-  create_fr_post_by_region(r[:acronym],r[:canton])
-  create_de_post_by_region(r[:acronym],r[:canton])
+  create_post_by_region(r[:acronym],r[:canton])
+  # create_fr_post_by_region(r[:acronym],r[:canton])
+  # create_de_post_by_region(r[:acronym],r[:canton])
 }
