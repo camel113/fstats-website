@@ -9,7 +9,7 @@ image-1600: image-fc-siviriez-size1600.jpg
 categories: news aff
 description_for_facebook: Le FC Siviriez avec la meilleure attaque du championnat (20 buts) face à l'une des trois plus faibles attaques (7 buts). 
 title_for_facebook: Le FC Siviriez et son attaque redoutable
-image_for_facebook: /images/facebook/image-fc-avenches-facebook.jpg
+image_for_facebook: /images/facebook/image-fc-siviriez-facebook.jpg
 translate: false
 signature: L.S
 ---
