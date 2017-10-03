@@ -21,7 +21,7 @@ Et c'est bien le FC siviriez qui se créait les plus belles occasions franches e
 
 Au retour de la pause, le FCD effectua deux changements afin d'apporter plus de technique au milieu de terrain. Il fallait proposer autre chose en cette 2ème période si le FCD voulait prétendre revenir tant il a peiné à poser le pied sur le ballon en  1ère mi-temps. 
 
-C'est pourtant le FC Siviriez qui doubla la mise et conforta son avance au score. 2-0.
+C'est pourtant le FC Siviriez qui doubla la mise et conforta son avance au score. 2-0 par Benjamin Suard.
 
 Pas grand chose à se mettre sous la dent du côté diderain si ce n'est quelques éclaircies d'Ardian Hoti sur son côté droit. C'est d'ailleurs lui qui permit au FCD de revenir sur une frappe du gauche à l'entrée de la surface. Poteau goal 2-1.
 
