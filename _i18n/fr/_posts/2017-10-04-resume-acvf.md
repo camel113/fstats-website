@@ -13,7 +13,7 @@ image_for_facebook: /images/facebook/image-acvf-facebook.jpg
 translate: false
 signature: ABG
 ---
-Ces sept derniers jours ont été prolifique pour __Damien Vuilleumier__ du __FC Lonay IA__ qui a inscrit 6 buts lors de la victoire (10-0) de son équipe face au FC Gland IIB en 4e ligue. C’est le meilleur buteur sur la période du 27.09 au 04.10 dans le canton de Vaud. Durant cette période, le match le plus riche en buts a opposé __Villeneuve-Sports__ au __FC Aigle__ en 3e ligue et c’est terminé sur le score de 10-3.
+Ces sept derniers jours ont été prolifiques pour __Damien Vuilleumier__ du __FC Lonay IA__ qui a inscrit 6 buts lors de la victoire (10-0) de son équipe face au FC Gland IIB en 4e ligue. C’est le meilleur buteur sur la période du 27.09 au 04.10 dans le canton de Vaud. Durant cette même période le match le plus riche en buts a opposé __Villeneuve-Sports__ au __FC Aigle__ en 3e ligue et c’est terminé sur le score de 10-3.
 
 __Vincent Rapin__ a déjà fait trembler les filets 20 fois et est en tête du classement général des buteurs toutes ligues confondues. Le joueur du __FC Corcelles-Payerne__ en 4e ligue occupe la deuxième place au niveau suisse. En marquant 25 goals en 5 rencontres __FC Italia Nyon__ (5e ligue) possède la meilleure attaque du canton. __FC Forward-Morges__ (5e ligue) n’a encaissé que trois buts en sept rencontres et détient par la même occasion la meilleure défense du canton.
 
