@@ -1,6 +1,6 @@
 ---
 layout: new-post
-title: posts.breadcrumb.post_region.acgf.title
+title: ACGF - Meilleurs buteurs
 lang_only_title_meta: ACGF - Meilleurs buteurs - 05/10/2017
 lang_only_description_meta: Les meilleurs buteurs ACGF des championnats de football amateur de la 2e à la 5e ligue - 05/10/2017
 date: 2017-10-05 09:00:00 +0200
@@ -18,7 +18,7 @@ Merci de nous annoncer <b>les erreurs</b> à l'aide de ce <a href="/formulaire-r
 
 Les meilleurs buteurs de 2ème ligue
 
-<table class="table"><thead><tr><th><i class="fa fa-male"></i></th><th><i class="fa fa-futbol-o"></i></th></tr></thead><tbody><tr><td>Fitim Rugovaj<span class='d-block team-name'><small>FC Versoix 1</small></span></td><td>8</td></tr><tr><td>David Salan<span class='d-block team-name'><small>FC Aïre-le-Lignon 1</small></span></td><td>8</td></tr><tr><td>Danny Barbosa<span class='d-block team-name'><small>Olympique de Genève FC 1</small></span></td><td>6</td></tr><tr><td>Rinor Halimi<span class='d-block team-name'><small>FC Vernier 1</small></span></td><td>4</td></tr><tr><td>Blendim Gashi<span class='d-block team-name'><small>FC Kosova GE 1</small></span></td><td>4</td></tr><tr><td>Yoann Mermoud<span class='d-block team-name'><small>US Carouge FC 1</small></span></td><td>3</td></tr><tr><td>Michael Bleve<span class='d-block team-name'><small>FC Versoix 1</small></span></td><td>3</td></tr><tr><td>Daryl Passi<span class='d-block team-name'><small>Olympique de Genève FC 1</small></span></td><td>3</td></tr><tr><td>Junior Moukoko<span class='d-block team-name'><small>FC Kosova GE 1</small></span></td><td>3</td></tr><tr><td>Shpresim Fazlija<span class='d-block team-name'><small>FC Plan-les-Ouates 1</small></span></td><td>3</td></tr><tr><td>Diogo Mendes<span class='d-block team-name'><small>CS Italien GE 1</small></span></td><td>3</td></tr><tr><td>Dylan De Matos<span class='d-block team-name'><small>FC Vernier 1</small></span></td><td>3</td></tr><tr><td>Tiago Andre Figueiredo<span class='d-block team-name'><small>CS Italien GE 1</small></span></td><td>3</td></tr><tr><td>Angelo Micael Varela<span class='d-block team-name'><small>FC Champel 1</small></span></td><td>3</td></tr><tr><td>Bruno Alexandre Marques<span class='d-block team-name'><small>Olympique de Genève FC 1</small></span></td><td>3</td></tr></tbody></table>
+<table class="table"><thead><tr><th><i class="fa fa-male"></i></th><th><i class="fa fa-futbol-o"></i></th></tr></thead><tbody><tr><td>Fitim Rugovaj<span class='d-block team-name'><small>FC Versoix 1</small></span></td><td>8</td></tr><tr><td>David Salan<span class='d-block team-name'><small>FC Aïre-le-Lignon 1</small></span></td><td>8</td></tr><tr><td>Danny Barbosa<span class='d-block team-name'><small>Olympique de Genève FC 1</small></span></td><td>6</td></tr><tr><td>Rinor Halimi<span class='d-block team-name'><small>FC Vernier 1</small></span></td><td>4</td></tr><tr><td>Blendim Gashi<span class='d-block team-name'><small>FC Kosova GE 1</small></span></td><td>4</td></tr></tbody></table>
 
 Les meilleurs buteurs de 3ème ligue
 

@@ -213,7 +213,7 @@ def create_post_by_region_only_fr(region,canton)
 		f.write "\n"
 		f.write "layout: new-post"
 		f.write "\n"
-		f.write "title: posts.breadcrumb.post_region."+region+".title"
+		f.write "title: "+region.upcase+" - Meilleurs buteurs"
 		f.write "\n"
 		f.write "lang_only_title_meta: "+region.upcase+" - Meilleurs buteurs - "+Time.now.strftime("%d/%m/%Y")
 		f.write "\n"
