@@ -7,7 +7,7 @@ date: 2017-10-06 09:00:00 +0200
 image-800: image-aff-size800.jpg
 image-1600: image-aff-size1600.jpg
 categories: resume aff
-description_for_facebook: Cette semaine le meilleur buteur du canton se nomme __Atanasko Simevski__ et joue avec __ES Belfaux__ en 4e ligue.
+description_for_facebook: Cette semaine le meilleur buteur du canton se nomme Atanasko Simevski et joue avec ES Belfaux en 4e ligue.
 title_for_facebook: AFF - Stats et Top buteurs
 image_for_facebook: /images/facebook/image-aff-facebook.jpg
 translate: false
