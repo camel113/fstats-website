@@ -4,11 +4,13 @@
   {% include head.html %}
 
   <body>
-    {% include header.html %}
+    {% if page.nonav != true %}
+      {% include header.html %}
+    {% endif %}
     {{ content }}
     {% if page.footer == "shop" %}
     	{% include footer-shop.html %}
-		{% else %}
+		{% elsif page.nofooter != true %}
 			{% include footer.html %}
 		{% endif %}
 		<a href="#0" class="cd-top">Top</a>

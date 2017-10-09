@@ -36,6 +36,9 @@
 
   <link rel="icon" href="{{site.url}}/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="{{site.url}}/favicon.ico" type="image/x-icon">
+  {% if page.norobots == true %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
   
   {% if jekyll.environment == "production" %}
     {% include analytics.html %}
