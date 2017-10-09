@@ -29,8 +29,12 @@ facebook_meta_description: meta.facebook_description
 			{% if site.data.archives1617[page.data_path_region][page.data_path_ligue] != null %}
 			{% include year-select-list.html %}
 			{% endif %}
-
-			{% include mediaad.html %}
+			
+			<div class="row justify-content-md-center">
+				<div class="scorer-ranking col-12 col-md-8 col-lg-6">
+				{% include mediaad.html %}
+				</div>
+			</div>
 
 			<div class="row justify-content-md-center">
 				<div class="scorer-ranking col-12 col-md-8 col-lg-6">
