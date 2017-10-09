@@ -7,8 +7,8 @@ date: 2017-10-09 09:00:00 +0200
 image-800: image-fvbj-size800.jpg
 image-1600: image-fvbj-size1600.jpg
 categories: resume fvbj
-description_for_facebook: Torschützenliste FVBJ.
-title_for_facebook: FVBJ - Beste Torschützen
+description_for_facebook: Die besten FVBJ Torschützen der Amateurfussballmeisterschaften von der 2. bis zur 5. Liga
+title_for_facebook: FVBJ - Beste Torschützen - 09/10/2017
 image_for_facebook: /images/facebook/image-fvbj-facebook.jpg
 ---
 Die besten FVBJ Torschützen der Amateurfussballmeisterschaften von der 2. bis zur 5. Liga.

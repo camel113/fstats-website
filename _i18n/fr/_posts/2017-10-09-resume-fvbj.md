@@ -1,14 +1,14 @@
 ---
 layout: new-post
 title: posts.breadcrumb.post_region.fvbj.title
-lang_only_title_meta: FVBJ - Meilleurs buteurs - 09/10/2017
+lang_only_title_meta: FVBJ - Stats et Meilleurs buteurs - 09/10/2017
 lang_only_description_meta: Les meilleurs buteurs FVBJ des championnats de football amateur de la 2e à la 5e ligue - 09/10/2017
 date: 2017-10-09 09:00:00 +0200
 image-800: image-fvbj-size800.jpg
 image-1600: image-fvbj-size1600.jpg
 categories: resume fvbj
-description_for_facebook: Classements buteurs FVBJ.
-title_for_facebook: FVBJ - Top buteurs
+description_for_facebook: Stats et Classements buteurs FVBJ - 06/10/2017
+title_for_facebook: FVBJ - Stats et Top buteurs
 image_for_facebook: /images/facebook/image-fvbj-facebook.jpg
 ---
 __Dominik Kocher__ du FC Ins en 3e ligue domine le classement des buteurs du canton avec 18 réalisations. __FC Union-Sportive Montfaucon b__ en 5e ligue n'a pris que 2 goals jusqu'à présent et tient la première place du classement des défenses. Deux équipes se partagent le classement des meilleures attaques. __SC Radelfingen a__ en 5e ligue et __SC Grafenried b__ en 4e ligue ont toutes les deux inscrit 56 buts en 8 matchs, soit 7 buts par match en moyenne.
