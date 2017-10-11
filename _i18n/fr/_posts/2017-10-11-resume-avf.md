@@ -12,7 +12,7 @@ title_for_facebook: AVF - Stats et Top buteurs
 image_for_facebook: /images/facebook/image-avf-facebook.jpg
 translate: false
 ---
-__Louis Gillioz__ du __FC Saint-Léonard__ en 4e ligue domine toujours largement le classement des buteurs avec ses 19 réalisations. Au niveau Suisse (2e à 5e ligue) il se classe actuellement en 5e position. Le __FC Savièse__ en 4e ligue et le __FC Châteauneuf__ se partagent la première place du classement des meilleures défenses du canton avec leur moyenne de 0.3 buts encaissés par match. Le __FC Massongex__ en 5e ligue est l'équipe qui a marqué le plus de goals par match jusqu'à maintenant avec sa moyenne de 6.2 buts/match.
+__Louis Gillioz__ du __FC Saint-Léonard__ en 5e ligue domine toujours largement le classement des buteurs avec ses 19 réalisations. Au niveau Suisse (2e à 5e ligue) il se classe actuellement en 5e position. Le __FC Savièse__ en 4e ligue et le __FC Châteauneuf__ se partagent la première place du classement des meilleures défenses du canton avec leur moyenne de 0.3 buts encaissés par match. Le __FC Massongex__ en 5e ligue est l'équipe qui a marqué le plus de goals par match jusqu'à maintenant avec sa moyenne de 6.2 buts/match.
 
 Merci de nous annoncer <b>les erreurs</b> à l'aide de ce <a href="/formulaire-report-erreur" title="Signaler une erreur ou un problème">formulaire</a>.
 
