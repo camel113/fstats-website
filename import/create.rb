@@ -158,9 +158,9 @@ def create_post_by_region(region,canton)
 		f.write "\n"
 		f.write('categories: resume '+region)
 		f.write "\n"
-		f.write "description_for_facebook: Torschützenliste "+region.upcase+"."
+		f.write "description_for_facebook: Die besten "+region.upcase+" Torschützen der Amateurfussballmeisterschaften von der 2. bis zur 5. Liga"
 		f.write "\n"
-		f.write "title_for_facebook: "+region.upcase+" - Beste Torschützen"
+		f.write "title_for_facebook: "+region.upcase+" - Beste Torschützen - "+Time.now.strftime("%d/%m/%Y")
 		f.write "\n"
 		f.write "image_for_facebook: /images/facebook/image-"+region+"-facebook.jpg"
 		f.write "\n"
@@ -279,11 +279,11 @@ end
 
 regions = [{:acronym=>"aff",:canton=>"de Fribourg"},{:acronym=>"acvf",:canton=>"de Vaud"},{:acronym=>"anf",:canton=>"de Neuchâtel"},{:acronym=>"avf",:canton=>"du Valais"},{:acronym=>"acgf",:canton=>"de Genève"},{:acronym=>"fvbj",:canton=>"de Berne"},{:acronym=>"sofv",:canton=>"xx"},{:acronym=>"fvnws",:canton=>"xx"}]
 
-regions = [{:acronym=>"avf",:canton=>"xx"}]
+regions = [{:acronym=>"afv",:canton=>"xx"}]
 
 regions.each { |r|
-  # create_post_by_region(r[:acronym],r[:canton])
-  create_post_by_region_only_fr(r[:acronym],r[:canton])
+  create_post_by_region(r[:acronym],r[:canton])
+  # create_post_by_region_only_fr(r[:acronym],r[:canton])
   # create_fr_post_by_region(r[:acronym],r[:canton])
   # create_de_post_by_region(r[:acronym],r[:canton])
 }
