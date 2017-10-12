@@ -1,18 +1,18 @@
 ---
 layout: new-post
 title: ANF - Meilleurs buteurs
-lang_only_title_meta: ANF - Meilleurs buteurs - 12/10/2017
+lang_only_title_meta: ANF - Stats et Meilleurs buteurs - 12/10/2017
 lang_only_description_meta: Les meilleurs buteurs ANF des championnats de football amateur de la 2e à la 5e ligue - 12/10/2017
 date: 2017-10-12 15:00:00 +0200
 image-800: image-anf-size800.jpg
 image-1600: image-anf-size1600.jpg
 categories: resume anf
-description_for_facebook: Classements buteurs ANF.
-title_for_facebook: ANF - Top buteurs
+description_for_facebook: Stats et Classements buteurs ANF.
+title_for_facebook: ANF - Stats et Top buteurs - 12/10/2017
 image_for_facebook: /images/facebook/image-anf-facebook.jpg
 translate: false
 ---
-Avec ses 21 réalisations, __Joao Pedro De Melo__ risque d'être difficile à déloger au classement des buteurs du canton. Le joueur du __FC Saint-Imier__ en 3e ligue est actuellement troisième au niveau Suisse (2e à 5e ligue). Forcément son équipe en bénéficie et se classe meilleure attaque du canton avec une moyenne de 6.7 buts marqués par match. Du côté des meilleures défenses c'est le __FC Kosova NE__ (4e ligue) et le __FC Superga__ (4e ligue) qui se partagent la première place.
+Avec ses 21 réalisations, __Joao Pedro De Melo__ risque d'être difficile à déloger de la tête du classement des buteurs du canton. Le joueur du __FC Saint-Imier__ en 3e ligue est actuellement troisième au niveau Suisse (2e à 5e ligue). Forcément son équipe en bénéficie et se classe meilleure attaque du canton avec une moyenne de 6.7 buts marqués par match. Du côté des meilleures défenses c'est le __FC Kosova NE__ (4e ligue) et le __FC Superga__ (4e ligue) qui se partagent la première place.
 
 Merci de nous annoncer <b>les erreurs</b> à l'aide de ce <a href="/formulaire-report-erreur" title="Signaler une erreur ou un problème">formulaire</a>.
 
