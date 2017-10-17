@@ -12,7 +12,7 @@ title_for_facebook: ACVF - Stats et Top buteurs
 image_for_facebook: /images/facebook/image-acvf-facebook.jpg
 translate: false
 ---
-__Vincent Rapin__ (FC Corcelles-Payerne/4e ligue) reste au sommet du classement des meilleurs buteurs en Suisse (2e à 5e ligues). Son équie garde également la tête des meilleures attaques du canton avec une moyenne de 7.3 buts marqués par match. __FC Etoile-Broye__ (4e ligue) et __FC Saint-Légier IA__ (3e ligue) sont les deux meilleures défenses avec une moyenne de 0.6 goals encaissés par match.
+__Vincent Rapin__ (FC Corcelles-Payerne/4e ligue) reste au sommet du classement des meilleurs buteurs en Suisse (2e à 5e ligues). Son équipe garde également la tête des meilleures attaques du canton avec une moyenne de 7.3 buts marqués par match. __FC Etoile-Broye__ (4e ligue) et __FC Saint-Légier IA__ (3e ligue) sont les deux meilleures défenses avec une moyenne de 0.6 goals encaissés par match.
 
 Merci de nous annoncer <b>les erreurs</b> à l'aide de ce <a href="/formulaire-report-erreur" title="Signaler une erreur ou un problème">formulaire</a>.
 
