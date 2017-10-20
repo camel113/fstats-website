@@ -213,9 +213,9 @@ def create_post_by_region_only_fr(region,canton)
 		f.write "\n"
 		f.write "layout: new-post"
 		f.write "\n"
-		f.write "title: "+region.upcase+" - Meilleurs buteurs"
+		f.write "title: "+region.upcase+" - Stats et Meilleurs buteurs"
 		f.write "\n"
-		f.write "lang_only_title_meta: "+region.upcase+" - Meilleurs buteurs - "+Time.now.strftime("%d/%m/%Y")
+		f.write "lang_only_title_meta: "+region.upcase+" - Stats et Meilleurs buteurs - "+Time.now.strftime("%d/%m/%Y")
 		f.write "\n"
 		f.write "lang_only_description_meta: Les meilleurs buteurs "+region.upcase+" des championnats de football amateur de la 2e à la 5e ligue - "+Time.now.strftime("%d/%m/%Y")
 		f.write "\n"
@@ -227,9 +227,9 @@ def create_post_by_region_only_fr(region,canton)
 		f.write "\n"
 		f.write('categories: resume '+region)
 		f.write "\n"
-		f.write "description_for_facebook: Classements buteurs "+region.upcase+"."
+		f.write "description_for_facebook: Stats et Classements buteurs "+region.upcase+" - "+Time.now.strftime("%d/%m/%Y")
 		f.write "\n"
-		f.write "title_for_facebook: "+region.upcase+" - Top buteurs"
+		f.write "title_for_facebook: "+region.upcase+" - Stats et Top buteurs"
 		f.write "\n"
 		f.write "image_for_facebook: /images/facebook/image-"+region+"-facebook.jpg"
 		f.write "\n"
@@ -279,11 +279,11 @@ end
 
 regions = [{:acronym=>"aff",:canton=>"de Fribourg"},{:acronym=>"acvf",:canton=>"de Vaud"},{:acronym=>"anf",:canton=>"de Neuchâtel"},{:acronym=>"avf",:canton=>"du Valais"},{:acronym=>"acgf",:canton=>"de Genève"},{:acronym=>"fvbj",:canton=>"de Berne"},{:acronym=>"sofv",:canton=>"xx"},{:acronym=>"fvnws",:canton=>"xx"}]
 
-regions = [{:acronym=>"sofv",:canton=>"xx"}]
+regions = [{:acronym=>"anf",:canton=>"xx"}]
 
 regions.each { |r|
-  create_post_by_region(r[:acronym],r[:canton])
-  # create_post_by_region_only_fr(r[:acronym],r[:canton])
+  # create_post_by_region(r[:acronym],r[:canton])
+  create_post_by_region_only_fr(r[:acronym],r[:canton])
   # create_fr_post_by_region(r[:acronym],r[:canton])
   # create_de_post_by_region(r[:acronym],r[:canton])
 }
