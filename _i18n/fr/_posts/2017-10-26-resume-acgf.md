@@ -3,7 +3,7 @@ layout: new-post
 title: ACGF - Stats et Meilleurs buteurs
 lang_only_title_meta: ACGF - Stats et Meilleurs buteurs - 26/10/2017
 lang_only_description_meta: Les meilleurs buteurs ACGF des championnats de football amateur de la 2e à la 5e ligue - 26/10/2017
-date: 2017-10-26 17:00:00 +0200
+date: 2017-10-26 16:50:00 +0200
 image-800: image-acgf-size800.jpg
 image-1600: image-acgf-size1600.jpg
 categories: resume acgf
