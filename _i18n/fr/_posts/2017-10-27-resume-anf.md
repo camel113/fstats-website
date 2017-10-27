@@ -3,7 +3,7 @@ layout: new-post
 title: ANF - Stats et Meilleurs buteurs
 lang_only_title_meta: ANF - Stats et Meilleurs buteurs - 27/10/2017
 lang_only_description_meta: Les meilleurs buteurs ANF des championnats de football amateur de la 2e à la 5e ligue - 27/10/2017
-date: 2017-10-27 16:00:00 +0200
+date: 2017-10-27 16:10:00 +0200
 image-800: image-anf-size800.jpg
 image-1600: image-anf-size1600.jpg
 categories: resume anf
@@ -12,7 +12,7 @@ title_for_facebook: ANF - Stats et Top buteurs
 image_for_facebook: /images/facebook/image-anf-facebook.jpg
 translate: false
 ---
-Les meilleurs buteurs ANF des championnats de football amateur de la 2e à la 5e ligue.
+L'incontournable __Joao Pedro De Melo__ reste le meilleur buteur du canton avec ses 22 buts. Son équipe, le __FC Saint-Imier__, est également très solide puisqu'elle prend la tête du classement des meilleures défenses avec seulement 0.6 buts encaissés par match en moyenne. Offensivement c'est __Le Locle Sports__ en 4e ligue qui possède la meilleure attaque du canton avec une moyenne de 7.9 buts marqués par match.
 
 Merci de nous annoncer <b>les erreurs</b> à l'aide de ce <a href="/formulaire-report-erreur" title="Signaler une erreur ou un problème">formulaire</a>.
 

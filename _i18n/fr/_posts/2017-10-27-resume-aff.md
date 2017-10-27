@@ -12,7 +12,7 @@ title_for_facebook: AFF - Stats et Top buteurs
 image_for_facebook: /images/facebook/image-aff-facebook.jpg
 translate: false
 ---
-Les meilleurs buteurs AFF des championnats de football amateur de la 2e à la 5e ligue.
+Cette semaine ils sont quatre à se partager la première place du classement des buteurs. __Atanasko Simevski__ (ES Belfaux/2e ligue), __Victor Gonzalez__ (FC Vuadens/4e ligue), __Ilirjan Mehmetaj__ (FC Avenches/2e ligue) et __Jonathan Romanens__ (FC Villars-sur-Glâne/5e ligue) ont tous marqué 16 buts depuis le début de la saison. __FC La Roche/Pont-la-Ville__ (3e ligue) et __FC Petite-Glâne__ (5e ligue) sont les deux équipes les plus solides du canton avec seulement 0.6 buts pris par match en moyenne. __Team Haut-Lac Ia__ reste la meilleure attaque avec 6 buts marqués par match en moyenne.
 
 Merci de nous annoncer <b>les erreurs</b> à l'aide de ce <a href="/formulaire-report-erreur" title="Signaler une erreur ou un problème">formulaire</a>.
 
