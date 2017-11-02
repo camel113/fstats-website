@@ -12,7 +12,7 @@ title_for_facebook: ACGF - Stats et Top buteurs
 image_for_facebook: /images/facebook/image-acgf-facebook.jpg
 translate: false
 ---
-Cette semaine __Romain Zlotykamien__ (FC Vernier 2/4e ligue) prend seul la tête du classement des buteurs du canton. Le __FC Grand-Saconnex__ (3e ligue) reste la meilleure défense genevoise avec sa moyenne de 0.6 buts encaissés par match. Le __FC Vernier__ (4e ligue) est toujours la meilleure attaque avec 5.9 buts marqués par match en moyenne.
+Cette semaine __Romain Zlotykamien__ (FC Vernier 2/4e ligue) prend seul la tête du classement des buteurs du canton. Le __FC Grand-Saconnex__ (3e ligue) reste la meilleure défense genevoise avec sa moyenne de 0.6 buts encaissés par match. Le __FC Vernier__ (4e ligue) possède toujours la meilleure attaque avec 5.9 buts marqués par match en moyenne.
 
 Merci de nous annoncer <b>les erreurs</b> à l'aide de ce <a href="/formulaire-report-erreur" title="Signaler une erreur ou un problème">formulaire</a>.
 
