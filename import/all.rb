@@ -50,6 +50,25 @@ def create_standard_rankings_by_league (league,region,filePath,urlPath)
   end
 end
 
+def create_flat_data_by_group(league,region,groups,filePath,urlPath)
+  groups.each { |x| create_teams_rankings_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
+  groups.each { |x| create_teams_fixtures_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
+end
+
+def create_teams_rankings_by_group (group,league,region,filePath,urlPath)
+  response = HTTParty.get(urlPath+'/teams/rankinggroup/'+region+'/'+league.to_s+'/'+group.to_s)
+  File.open(filePath+"ranking/group"+group.to_s+".json","w") do |f|
+    f.write(response.body)
+  end
+end
+
+def create_teams_fixtures_by_group (group,league,region,filePath,urlPath)
+  response = HTTParty.get(urlPath+'/teams/fixturesgroup/'+region+'/'+league.to_s+'/'+group.to_s)
+  File.open(filePath+"fixtures/group"+group+".json","w") do |f|
+    f.write(response.body)
+  end
+end
+
 def create_league_data(region,league,groups,filePath,urlPath)
   if(groups.length > 1)
     create_global_rankings_files(league.to_s,region,filePath,urlPath)
@@ -94,9 +113,10 @@ def create_directories(filePath)
 end
 
 def create_parsing_flat_directories(filePath)
-  dirname = File.dirname(filePath+"random")
+  dirname = File.dirname(filePath+"/ranking")
   unless File.directory?(dirname)
-    FileUtils.mkdir_p(dirname)
+    FileUtils.mkdir_p(dirname+"/ranking")
+    FileUtils.mkdir_p(dirname+"/fixtures")
   end
 end
 
@@ -721,16 +741,17 @@ leaguesFlat.push({:groups => groups, :region => region, :league => league, :file
 regions.push(region)
 
 
-leagues.each { |l| 
-  create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
-  create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
-  generate_stats_for_regions_league(l[:league],l[:region],l[:filePath],urlPath)
-  generate_stats_for_leagues_accross_region(l[:league],urlPath)
-}
-# leaguesFlat.each { |l|
+# leagues.each { |l| 
+#   create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
 #   create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
-#   create_standard_rankings_by_league(l[:league],l[:region],l[:filePath],urlPath)
+#   generate_stats_for_regions_league(l[:league],l[:region],l[:filePath],urlPath)
+#   generate_stats_for_leagues_accross_region(l[:league],urlPath)
 # }
+leaguesFlat.each { |l|
+  create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
+  create_standard_rankings_by_league(l[:league],l[:region],l[:filePath],urlPath)
+  create_flat_data_by_group(l[:league],l[:region],l[:groups],l[:filePath],urlPath)
+}
 # def create_topflop_data(region,filePath,urlPath)
 #   response = HTTParty.get(urlPath+'/topflop/'+region)
 #   File.open(filePath+"topflop.json","w") do |f|
