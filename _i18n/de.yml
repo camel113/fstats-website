@@ -301,9 +301,12 @@ pages:
     title: "Wettbewerb um die besten Tore im schweizer Amateurfussball"
     description: "Schicken Sie uns die Filme Ihrer schönsten Tore und nehmen Sie an einem Wettbewerb für ein Paar Nike Schuhe (Hypervenom Phantom II) teil"
   app:
-    title: "Live App"
-    title_meta: "Footstats | Live App"
-    description: "Score en direct football amateur en Suisse Romande"
+    title: "Footstats App"
+    title_meta: "Footstats | iOS und Android"
+    description: "Torschützenliste und Rangliste der schweizer Amateurfussballmannschaften"
+    description_meta: "Torschützenliste | Ranglisten | Resultate | Schweizer Amateurfußball"
+    available: "Verfügbar für iOS und Android"
+    download: "Jetzt App gratis heruntladen"
   about:
     title: Über uns
   contact: 

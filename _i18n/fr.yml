@@ -310,10 +310,12 @@ pages:
     title: Formulaire de report d'erreurs et d'oublis
     description: Formulaire de report d'erreurs ou d'oublis dans les classements buteurs.
   app:
-    title: Live App
-    description: L'application Footstats Live permet de suivre en direct tous les matchs de football amateur en Suisse. L'application est actuellement en cours d'amélioration.
-    title_meta: "Footstats | Live App"
-    description_meta: "Score en direct football amateur en Suisse"
+    title: Footstats App
+    description: Retrouvez tous les classements buteurs et équipes ainsi que les résultats du football amateur suisse
+    title_meta: "Footstats | App iOS et Android"
+    description_meta: "Buteurs | Classements | Résultats | Football amateur suisse"
+    available: "Disponible sur iOS et Android"
+    download: "Télécharge là maintenant!"
 layout:
   follow_us: Suivez-nous
   problem: "Quelques problèmes avec nos données. Nouvelle mise à jour dans quelques heures!"
