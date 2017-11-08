@@ -741,12 +741,12 @@ leaguesFlat.push({:groups => groups, :region => region, :league => league, :file
 regions.push(region)
 
 
-# leagues.each { |l| 
-#   create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
-#   create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
-#   generate_stats_for_regions_league(l[:league],l[:region],l[:filePath],urlPath)
-#   generate_stats_for_leagues_accross_region(l[:league],urlPath)
-# }
+leagues.each { |l| 
+  create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
+  create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
+  generate_stats_for_regions_league(l[:league],l[:region],l[:filePath],urlPath)
+  generate_stats_for_leagues_accross_region(l[:league],urlPath)
+}
 leaguesFlat.each { |l|
   create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
   create_standard_rankings_by_league(l[:league],l[:region],l[:filePath],urlPath)
