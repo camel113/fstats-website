@@ -335,6 +335,11 @@ pages:
       title: Merci pour ta contribution!
       descr: Nous allons traiter ta demande dans les plus brefs délais. Dès que ce sera fait, nous te tiendrons au courant par email.
     send: Envoyer
+  app_form_contact:
+    title: Contact
+    message:
+      label: Message
+      input: Ton message...
 layout:
   follow_us: Suivez-nous
   problem: "Quelques problèmes avec nos données. Nouvelle mise à jour dans quelques heures!"

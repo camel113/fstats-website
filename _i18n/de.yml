@@ -326,6 +326,11 @@ pages:
       title: Danke für deinen Beitrag!
       descr: Wir werden Ihre Anfrage so schnell wie möglich bearbeiten. Sobald es gemacht ist, werden wir uns melden.
     send: Senden
+  app_form_contact:
+    title: Kontakt
+    message:
+      label: Nachricht
+      input: Ihre Nachricht...
   about:
     title: Über uns
   contact: 
