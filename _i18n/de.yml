@@ -307,6 +307,25 @@ pages:
     description_meta: "Torschützenliste | Ranglisten | Resultate | Schweizer Amateurfußball"
     available: "Verfügbar für iOS und Android"
     download: "Jetzt App gratis heruntladen"
+  app_form:
+    title: "Formular für die Meldung von Fehlern oder Vergessenheiten."
+    descr: "Um unsere Daten korrekt aktualisieren zu können, müssen wir wissen, bei welchem Match es ein Problem gab. Dafür brauchen wir unbedingt den Link von www.football.ch"
+    email:
+      label: E-Mail-Adresse
+    name: 
+      label: Vorname
+    link:
+      label: Link des Spiels auf football.ch
+      input: http://www.football.ch/...
+    info: 
+      label: Informationen
+      input: Gib bitte hier ein, welche Torschützen vergessen wurden oder die Fehler, die in der Zusammenfassung von football.ch gemacht wurden.
+    error: 
+      descr: Ein Fehler ist geschehen. Sollte das Problem weiterhin bestehen, schicke uns eine E-Mail an contact@footstats.ch
+    success: 
+      title: Danke für deinen Beitrag!
+      descr: Wir werden Ihre Anfrage so schnell wie möglich bearbeiten. Sobald es gemacht ist, werden wir uns melden.
+    send: Senden
   about:
     title: Über uns
   contact: 

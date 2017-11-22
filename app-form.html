@@ -1,49 +1,46 @@
 ---
 layout: default
-lang_only_title_meta: 
-description: 
+lang_only_title_meta: pages.app_form.title
+description: pages.app_form.title
 norobots: true
 nonav: true
 nofooter: true
-translate: false
-date: 2017-07-27 11:00:00 +0200
+date: 2017-10-27 11:00:00 +0200
 ---
 <div class="container standard-page app-form">
   <section class="row justify-content-md-center">
     <div class="col-12 col-md-6" id="errors-report-form-container">
-      <h1>Formulaire de report d'erreurs ou d'oublis dans les classements buteurs.</h1>
-      <p>Afin de mettre correctement nos données à jour, nous avons besoin de connaître lors de quel match l'erreur et/ou l'oubli s'est produit. Pour cela nous avons impérativement besoin du lien du match sur le site <i>football.ch</i>.</p>
+      <p>{% t pages.app_form.descr %}</p>
       <form netlify name="rankingsErrors" id="errors-report-form" action="Merci">
 				<div class="form-group">
-				  <label for="email">Ton adresse email</label>
-				  <input type="email" name="email" class="form-control" id="email" required placeholder="Adresse email">
+				  <label for="email">{% t pages.app_form.email.label %}</label>
+				  <input type="email" name="email" class="form-control" id="email" required placeholder="{% t pages.app_form.email.label %}">
 				</div>
         <div class="form-group">
-          <label for="name">Prénom</label>
+          <label for="name">{% t pages.app_form.name.label %}</label>
           <input type="text" name="name" class="form-control" id="name" required placeholder="">
         </div>
 				<div class="form-group">
-  				<label for="url">Lien du match sur football.ch</label>
-				  <input type="url" name="url" class="form-control" id="url-match" required placeholder="http://www.football.ch/...">
+  				<label for="url">{% t pages.app_form.link.label %}</label>
+				  <input type="url" name="url" class="form-control" id="url-match" required placeholder="{% t pages.app_form.link.input %}">
   			</div>
 				<div class="form-group">
-    			<label for="exampleTextarea">Informations</label>
-    			<textarea class="form-control" name="info" id="exampleTextarea" rows="3" required placeholder="Indique ici quels sont les buteurs oubliés ou les erreurs dans le résumé du match sur football.ch"></textarea>
+    			<label for="exampleTextarea">{% t pages.app_form.info.label %}</label>
+    			<textarea class="form-control" name="info" id="exampleTextarea" rows="3" required placeholder="{% t pages.app_form.email.input %}"></textarea>
   			</div>
-  			<button type="submit" class="btn btn-primary">Envoyer</button>
+  			<button type="submit" class="btn btn-primary">{% t pages.app_form.send %}</button>
 			</form>
     </div>
     <div class="col-12 col-md-6 after-form" id="errors-report-form-fail">
       <div id="errors-report-form-fail">
         <h1>Ooops!</h1>
-        <p>Une erreur s'est produite. <a href="/formulaire-report-erreur">Clique ici</a> pour essayer à nouveau.</p>
-        <p>Si le problème persiste, contacte nous directement par email à <a href="mailto:contact@footstats.ch">contact@footstats.ch</a>.</p>
+        <p>{% t pages.app_form.error %}</p>
       </div>
     </div>
     <div class="col-12 col-md-6 after-form" id="errors-report-form-success">
       <div >
-        <h1>Merci pour ta contribution!</h1>
-        <p>Nous allons traiter ta demande dans les plus brefs délais. Dès que ce sera fait, nous te tiendrons au courant par email.</p>
+        <h1>{% t pages.app_form.success.title %}</h1>
+        <p>{% t pages.app_form.success.descr %}</p>
       </div>
     </div>
   </section>
