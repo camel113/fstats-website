@@ -7,10 +7,9 @@ nonav: true
 nofooter: true
 date: 2017-10-27 11:00:00 +0200
 ---
-<div class="container standard-page">
+<div class="container standard-page app-form">
   <section class="row justify-content-md-center">
     <div class="col-12 col-md-6" id="contact-form-container">
-      <h1>{% t pages.app_form_contact.title %}</h1>
       <form netlify name="contact" id="contact-form" action="thx">
         <div class="form-group">
           <label for="email">{% t pages.app_form.email.label %}</label>
@@ -20,7 +19,7 @@ date: 2017-10-27 11:00:00 +0200
           <label for="message">{% t pages.app_form_contact.message.label %}</label>
           <textarea class="form-control" name="info" id="message" rows="3" required placeholder="{% t pages.app_form_contact.message.label %}"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">{% t pages.app_form.send %}</button>
+        <button type="submit" class="btn btn-primary custom-color">{% t pages.app_form.send %}</button>
       </form>
     </div>
     <div class="col-12 col-md-6 after-form" id="errors-report-form-fail">
