@@ -14,7 +14,7 @@ home: true
           <div class="card">
             <a href="{{site.baseurl}}{{ post.url | remove: '.html'}}">
               {% if post.image-800 %}
-              <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-800}}"  srcset="{{site.url}}/images/posts/headers/{{post.image-800}} 1x, {{site.url}}/images/posts/headers/{{post.image-1600}} 2x" alt="{{post.title}}"/>
+              <img class="card-img-top unusued" src="{{site.url}}/images/posts/headers/{{post.image-800}}"  srcset="{{site.url}}/images/posts/headers/{{post.image-800}} 1x, {{site.url}}/images/posts/headers/{{post.image-1600}} 2x" alt="{{post.title}}"/>
               {% else %}
               <img class="card-img-top" src="{{site.url}}/images/posts/headers/{{post.image-mobile}}" alt="mobile"/>
               {% endif %}
