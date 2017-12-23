@@ -27,7 +27,7 @@ a {
 
 a:focus,
 a:hover {
-  color: #45c2b3;
+  color: #FF4E49;
 }
 
 .nav-link {
@@ -2756,8 +2756,8 @@ body[class*="u-body--header-side"].u-body--header-side-opened .u-header__overlay
 }
 
 .u-btn-primary:hover, .u-btn-primary.active {
-  border-color: #78dcd0;
-  background-color: #78dcd0;
+  border-color: #FF4E49;
+  background-color: #FF4E49;
 }
 
 .u-btn-primary:hover, .u-btn-primary:focus, .u-btn-primary.active {
@@ -25410,7 +25410,7 @@ img.u-block-hover__main--magnifier-top-left {
 }
 
 .g-brd-primary-dark-dark-v2--active.cbp-filter-item-active {
-  border-color: #45c2b3 !important;
+  border-color: #FF4E49 !important;
 }
 
 .g-brd-primary-dark-dark-v3--active.cbp-filter-item-active {
@@ -26276,7 +26276,7 @@ pre[class*="language-"] .toolbar-item a {
 }
 
 .g-bg-primary-dark-v2 {
-  background-color: #45c2b3 !important;
+  background-color: #FF4E49 !important;
 }
 
 .g-bg-primary-dark-v3 {
@@ -26344,19 +26344,19 @@ pre[class*="language-"] .toolbar-item a {
 }
 
 .g-bg-primary-opacity-0_6 {
-  background-color: rgba(79, 210, 194, 0.6) !important;
+  background-color: rgba(255, 154, 151, 0.6) !important;
 }
 
 .g-bg-primary-opacity-0_6--hover:hover {
-  background-color: rgba(79, 210, 194, 0.6) !important;
+  background-color: rgba(255, 154, 151, 0.6) !important;
 }
 
 .g-bg-primary-opacity-0_6--hover--after:hover::after {
-  background-color: rgba(79, 210, 194, 0.6) !important;
+  background-color: rgba(255, 154, 151, 0.6) !important;
 }
 
 .g-bg-primary-opacity-0_6--after::after {
-  background-color: rgba(79, 210, 194, 0.6) !important;
+  background-color: rgba(255, 154, 151, 0.6) !important;
 }
 
 .g-bg-primary-opacity-0_8 {
@@ -28092,15 +28092,15 @@ pre[class*="language-"] .toolbar-item a {
 }
 
 .g-brd-primary-dark-dark-v2 {
-  border-color: #45c2b3 !important;
+  border-color: #FF4E49 !important;
 }
 
 .g-brd-primary-dark-dark-v2--hover:hover, .g-brd-primary-dark-dark-v2--active.active {
-  border-color: #45c2b3 !important;
+  border-color: #FF4E49 !important;
 }
 
 *:hover > .g-brd-primary-dark-dark-v2--hover-parent {
-  border-color: #45c2b3 !important;
+  border-color: #FF4E49 !important;
 }
 
 .g-brd-primary-dark-dark-v3 {
@@ -28719,19 +28719,19 @@ pre[class*="language-"] .toolbar-item a {
 }
 
 .g-brd-primary-dark-dark-v2-top {
-  border-top-color: #45c2b3 !important;
+  border-top-color: #FF4E49 !important;
 }
 
 .g-brd-primary-dark-dark-v2-bottom {
-  border-bottom-color: #45c2b3 !important;
+  border-bottom-color: #FF4E49 !important;
 }
 
 .g-brd-primary-dark-dark-v2-left {
-  border-left-color: #45c2b3 !important;
+  border-left-color: #FF4E49 !important;
 }
 
 .g-brd-primary-dark-dark-v2-right {
-  border-right-color: #45c2b3 !important;
+  border-right-color: #FF4E49 !important;
 }
 
 .g-brd-primary-dark-dark-v3-top {
@@ -45480,7 +45480,7 @@ h6, .h6 {
 
 /* Background */
 .g-bg-primary-dark-v2 {
-  background-color: #45c2b3 !important;
+  background-color: #FF4E49 !important;
 }
 
 .g-theme-bg-gray-light-v1 {

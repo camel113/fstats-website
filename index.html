@@ -25,17 +25,17 @@ home: true
     <div class="container">
       <div class="row">
         <div class="col-md-5 text-center g-overflow-hidden g-mb-50 g-mb-0--md">
-          <img class="img-fluid" src="assets/img-temp/mockups/mockup2.png" alt="Image description"
+          <img class="img-fluid" src="assets/img/overview-{{site.lang}}.png" alt="Image description"
                data-animation="slideInLeft">
         </div>
 
         <div class="col-md-7 d-flex text-center text-md-left">
           <div class="align-self-center">
             <div class="g-mb-20">
-              <h2 class="g-line-height-1_3 g-font-size-28 mb-0"><strong>Le foot amateur suisse sur iPhone et Android</strong></h2>
+              <h2 class="g-line-height-1_3 g-font-size-28 mb-0"><strong>{% t pages.app_landing.title %}</strong></h2>
             </div>
 
-            <p class="g-font-size-16 g-mb-65">Tous les classements par équipes, calendriers et classements buteurs réunnis dans une seule app!</p>
+            <p class="g-font-size-16 g-mb-65">{% t pages.app_landing.description %}</p>
 
             <div class="media d-block d-md-flex text-center text-md-left g-mb-40">
               <div class="d-md-flex align-self-center g-mb-30 g-mb-0--md g-mr-30--md">
@@ -43,8 +43,8 @@ home: true
               </div>
 
               <div class="media-body align-self-center">
-                <h4 class="h6 text-uppercase g-font-weight-700 g-color-black g-mb-15">Classements</h4>
-                <p class="mb-0">Retrouvez les classements meilleurs buteurs par groupe et par ligue. Accèdez simplement à tous les classements par équipes.</p>
+                <h4 class="h6 text-uppercase g-font-weight-700 g-color-black g-mb-15">{% t pages.app_landing.features.rankings.title %}</h4>
+                <p class="mb-0">{% t pages.app_landing.features.rankings.description %}</p>
               </div>
             </div>
 
@@ -54,8 +54,8 @@ home: true
               </div>
 
               <div class="media-body align-self-center">
-                <h4 class="h6 text-uppercase g-font-weight-700 g-color-black g-mb-15">Calendrier et Résultats</h4>
-                <p class="mb-0">Visulalisez en un coup d'oeil les prochains matchs et les derniers résultats pour chaque groupe.</p>
+                <h4 class="h6 text-uppercase g-font-weight-700 g-color-black g-mb-15">{% t pages.app_landing.features.fixtures.title %}</h4>
+                <p class="mb-0">{% t pages.app_landing.features.fixtures.description %}</p>
               </div>
             </div>
   
@@ -65,8 +65,8 @@ home: true
               </div>
 
               <div class="media-body align-self-center">
-                <h4 class="h6 text-uppercase g-font-weight-700 g-color-black g-mb-15">Suivez votre équipe favorite</h4>
-                <p class="mb-0">Accèdez simplement et rapidement à tous les résultats, calendrier et classements de votre équipe favorite.</p>
+                <h4 class="h6 text-uppercase g-font-weight-700 g-color-black g-mb-15">{% t pages.app_landing.features.favorite.title %}</h4>
+                <p class="mb-0">{% t pages.app_landing.features.favorite.title %}</p>
               </div>
             </div>
 
@@ -75,7 +75,7 @@ home: true
       </div>
       <div class="row download justify-content-center g-mt-30">
         <div class="col-12 col-md-6 text-center">
-          <h2>{% t pages.app.download %}</h2>
+          <h2>{% t pages.app_landing.download_now %}</h2>
           <div class="badges g-mt-10">
             <a class="badge-link" href="http://bit.ly/2zodWxC"><img class="mb-2 mb-md-0" src="/images/app/google-play-badge.svg" alt="footstats android app download"></a>
             <a class="badge-link" href="http://apple.co/2AlSTbT"><img src="/images/app/app-store-badge.svg" alt="footstats ios app download"></a>
@@ -91,7 +91,7 @@ home: true
   <section id="whatsNew" class="g-py-90">
     <div class="container text-center g-max-width-750 g-mb-45">
       <div class="text-uppercase g-line-height-1_3 g-mb-20">
-        <h2 class="g-line-height-1_3 g-font-size-36 mb-0">Aperçu</h2>
+        <h2 class="g-line-height-1_3 g-font-size-36 mb-0">{% t pages.app_landing.overview %}</h2>
       </div>
     </div>
 
@@ -122,10 +122,10 @@ home: true
              }
            }]'>
         <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img-temp/270x481/img1.jpg"
-             data-title="Custom Title 1"
+          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img/assoc-{{site.lang}}.png"
+             data-title="{% t pages.app_landing.images.assoc %}"
              data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img-temp/270x481/img1.jpg" alt="Image description">
+            <img src="assets/img/assoc-{{site.lang}}.png" alt="{% t pages.app_landing.images.assoc %}">
 
             <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
               <div class="cbp-l-caption-alignCenter">
@@ -138,10 +138,10 @@ home: true
         </div>
 
         <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img-temp/270x481/img2.jpg"
-             data-title="Custom Title 2"
+          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img/teams-ranking-{{site.lang}}.png"
+             data-title="{% t pages.app_landing.images.teams_ranking %}"
              data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img-temp/270x481/img2.jpg" alt="Image description">
+            <img src="assets/img/teams-ranking-{{site.lang}}.png" alt="{% t pages.app_landing.images.teams_ranking %}">
 
             <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
               <div class="cbp-l-caption-alignCenter">
@@ -154,10 +154,10 @@ home: true
         </div>
 
         <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img-temp/270x481/img3.jpg"
-             data-title="Custom Title 3"
+          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img/results-{{site.lang}}.png"
+             data-title="{% t pages.app_landing.images.fixtures %}"
              data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img-temp/270x481/img3.jpg" alt="Image description">
+            <img src="assets/img/results-{{site.lang}}.png" alt="{% t pages.app_landing.images.fixtures %}">
 
             <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
               <div class="cbp-l-caption-alignCenter">
@@ -170,10 +170,10 @@ home: true
         </div>
 
         <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img-temp/270x481/img4.jpg"
-             data-title="Custom Title 4"
+          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img/fixtures-{{site.lang}}.png"
+             data-title="{% t pages.app_landing.images.calendar %}"
              data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img-temp/270x481/img4.jpg" alt="Image description">
+            <img src="assets/img/fixtures-{{site.lang}}.png" alt="{% t pages.app_landing.images.calendar %}">
 
             <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
               <div class="cbp-l-caption-alignCenter">
@@ -186,10 +186,10 @@ home: true
         </div>
 
         <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img-temp/270x481/img5.jpg"
-             data-title="Custom Title 5"
+          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img/scorers-ranking-{{site.lang}}.png"
+             data-title="{% t pages.app_landing.images.scorers_ranking %}"
              data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img-temp/270x481/img5.jpg" alt="Image description">
+            <img src="assets/img/teams-ranking-{{site.lang}}.png" alt="{% t pages.app_landing.images.scorers_ranking %}">
 
             <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
               <div class="cbp-l-caption-alignCenter">
@@ -201,117 +201,6 @@ home: true
           </a>
         </div>
 
-        <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img-temp/270x481/img6.jpg"
-             data-title="Custom Title 6"
-             data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img-temp/270x481/img6.jpg" alt="Image description">
-
-            <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
-              <div class="cbp-l-caption-alignCenter">
-                <div class="cbp-l-caption-body">
-                  <div class="cbp-l-caption-title g-font-size-50">+</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img-temp/270x481/img7.jpg"
-             data-title="Custom Title 7"
-             data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img-temp/270x481/img7.jpg" alt="Image description">
-
-            <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
-              <div class="cbp-l-caption-alignCenter">
-                <div class="cbp-l-caption-body">
-                  <div class="cbp-l-caption-title g-font-size-50">+</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img-temp/270x481/img8.jpg"
-             data-title="Custom Title 8"
-             data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img-temp/270x481/img8.jpg" alt="Image description">
-
-            <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
-              <div class="cbp-l-caption-alignCenter">
-                <div class="cbp-l-caption-body">
-                  <div class="cbp-l-caption-title g-font-size-50">+</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img-temp/270x481/img9.jpg"
-             data-title="Custom Title 9"
-             data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img-temp/270x481/img9.jpg" alt="Image description">
-
-            <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
-              <div class="cbp-l-caption-alignCenter">
-                <div class="cbp-l-caption-body">
-                  <div class="cbp-l-caption-title g-font-size-50">+</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img-temp/270x481/img10.jpg"
-             data-title="Custom Title 10"
-             data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img-temp/270x481/img10.jpg" alt="Image description">
-
-            <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
-              <div class="cbp-l-caption-alignCenter">
-                <div class="cbp-l-caption-body">
-                  <div class="cbp-l-caption-title g-font-size-50">+</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img-temp/270x481/img11.jpg"
-             data-title="Custom Title 11"
-             data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img-temp/270x481/img11.jpg" alt="Image description">
-
-            <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
-              <div class="cbp-l-caption-alignCenter">
-                <div class="cbp-l-caption-body">
-                  <div class="cbp-l-caption-title g-font-size-50">+</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img-temp/270x481/img12.jpg"
-             data-title="Custom Title 12"
-             data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img-temp/270x481/img12.jpg" alt="Image description">
-
-            <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
-              <div class="cbp-l-caption-alignCenter">
-                <div class="cbp-l-caption-body">
-                  <div class="cbp-l-caption-title g-font-size-50">+</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
       </div>
       <!-- End Carousel -->
     </div>
@@ -324,7 +213,7 @@ home: true
       <div class="row">
         <div class="col-lg-5 g-mb-20 g-mb-0--lg">
           <div class="text-uppercase g-mb-20">
-            <h2 class="g-font-size-36 g-color-black mb-0">Contact</h2>
+            <h2 class="g-font-size-36 g-color-black mb-0">{% t pages.app_form_contact.title %}</h2>
           </div>
         </div>
 
@@ -333,21 +222,21 @@ home: true
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group g-mb-30">
-                  <input id="inputGroup1_1" class="form-control g-color-black g-placeholder-inherit g-bg-transparent g-bg-transparent--focus g-brd-black g-rounded-10 g-px-20 g-py-10" type="text" placeholder="Nom">
+                  <input id="inputGroup1_1" class="form-control g-color-black g-placeholder-inherit g-bg-transparent g-bg-transparent--focus g-brd-black g-rounded-10 g-px-20 g-py-10" type="text" placeholder="{% t pages.app_form.name.label %}">
                 </div>
 
                 <div class="form-group g-mb-30">
-                  <input id="inputGroup1_2" class="form-control g-color-black g-placeholder-inherit g-bg-transparent g-bg-transparent--focus g-brd-black g-rounded-10 g-px-20 g-py-10" type="email" placeholder="Email *">
+                  <input id="inputGroup1_2" class="form-control g-color-black g-placeholder-inherit g-bg-transparent g-bg-transparent--focus g-brd-black g-rounded-10 g-px-20 g-py-10" type="email" placeholder="{% t pages.app_form.email.label %}">
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="form-group g-mb-30">
-                  <textarea id="inputGroup1_3" class="form-control g-resize-none g-color-black g-placeholder-inherit g-bg-transparent g-bg-transparent--focus g-brd-black g-rounded-10 g-px-20 g-py-10" rows="5" placeholder="Message"></textarea>
+                  <textarea id="inputGroup1_3" class="form-control g-resize-none g-color-black g-placeholder-inherit g-bg-transparent g-bg-transparent--focus g-brd-black g-rounded-10 g-px-20 g-py-10" rows="5" placeholder="{% t pages.app_form_contact.message.label %}"></textarea>
                 </div>
 
                 <div class="text-center text-md-right">
-                  <button class="btn u-btn-primary btn-md text-uppercase g-font-weight-700 g-font-size-12 g-color-white g-rounded-10 g-py-10 g-px-25 mb-0" type="submit" role="button">Submit</button>
+                  <button class="btn u-btn-primary btn-md text-uppercase g-font-weight-700 g-font-size-12 g-color-white g-rounded-10 g-py-10 g-px-25 mb-0" type="submit" role="button">{% t pages.app_form.send %}</button>
                 </div>
               </div>
             </div>

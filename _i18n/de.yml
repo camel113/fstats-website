@@ -1,4 +1,25 @@
 pages:
+  app_landing:
+    title: Schweizer Amateurfußball auf iPhone und Android
+    description: Alle Ranglisten per Mannschaften, Kalender, Resultate und Torschützenlist zusammen.
+    features:
+      rankings: 
+        title: Ranglisten
+        description: Finden Sie hier die besten Torschützen per Gruppe und Liga. Einfacher Access an alle Ranglisten per Mannschaft.
+      fixtures: 
+        title: Resultate und Spielplan
+        description: Sehen Sie in einem Augenblick die nächsten Matchs und die letzten Resultate für jede Gruppe.
+      favorite:
+        title: Folge deinem Lieblingsteam!
+        description: Einfach und schnell auf alle Ergebnisse, Kalender und Ranglisten Ihres Lieblingsteams zugreifen.
+    download_now: Jetzt App heruntladen!
+    overview: Überblick
+    images:
+      calendar: Spielplan
+      teams_ranking: Ranglisten
+      scorers_ranking: Torschützenliste
+      assoc: Alle-Regionalverbände
+      fixtures: Resultate
   titles:
     aff_2: "FFV 2. Liga"
     aff_3: "FFV 3. Liga"
