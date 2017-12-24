@@ -364,10 +364,10 @@ layout:
   follow_us: "Folge uns"
   problem: "Einige Probleme mit unseren Daten. Neues Update in ein paar Stunden!"
 meta: 
-  site_title: "Torschützen-Rangliste | Topscorers | Amateurfussball Schweiz"
-  site_description: "Torschützenliste und Statistik der Mannschaften für die Amateurfussballmeisterschaften in der Schweiz (2./3./4./5. Ligen)"
-  facebook_title: "Torschützenliste und Statistik der schweizer Amateurfussballmannschaften"
-  facebook_description: "Torschützenliste und Statistik der Mannschaften für die Fussballmeisterschaften 2./3./4./5. Ligen"
+  site_title: "Schweizer Amateurfußball auf iPhone und Android"
+  site_description: "Alle Ranglisten per Mannschaften, Kalender, Resultate und Torschützenlist zusammen."
+  facebook_title: "Footstats"
+  facebook_description: "Alle Ranglisten per Mannschaften, Kalender, Resultate und Torschützenlist zusammen."
 posts:
   breadcrumb:
     news1718:

@@ -30,6 +30,10 @@
 <!-- JS Plugins Init. -->
 <script>
   $(document).on('ready', function () {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+     for(let registration of registrations) {
+      registration.unregister()
+    } })
     // initialization of carousel
     $.HSCore.components.HSCarousel.init('.js-carousel');
 

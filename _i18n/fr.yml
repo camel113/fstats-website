@@ -365,10 +365,10 @@ layout:
   follow_us: Suivez-nous
   problem: "Quelques problèmes avec nos données. Nouvelle mise à jour dans quelques heures!"
 meta: 
-  site_title: "Footstats | Stats & Buteurs | Foot amateur Suisse"
-  site_description: Classements buteurs et statistiques équipes pour les championnats amateurs de football en Suisse (2e/3e/4e/5e ligues)
-  facebook_title: Classements buteurs et stats équipes football amateur suisse
-  facebook_description: Classements buteurs et stats équipes championnats de football 2e/3e/4e/5e ligues
+  site_title: "Le foot amateur suisse sur iPhone et Android"
+  site_description: Tous les classements par équipes, calendriers et classements buteurs réunnis dans une seule app (Android, iOS)!
+  facebook_title: Footstats
+  facebook_description: Tous les classements par équipes, calendriers et classements buteurs réunnis dans une seule app!
 posts:
   breadcrumb:
     news1718:
