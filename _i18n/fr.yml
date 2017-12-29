@@ -1,4 +1,25 @@
 pages:
+  app_landing:
+    title: Le foot amateur suisse sur iPhone et Android
+    description: Tous les classements par équipes, calendriers et classements buteurs réunnis dans une seule app!
+    features:
+      rankings: 
+        title: Classements
+        description: Retrouvez les classements meilleurs buteurs par groupe et par ligue. Accèdez simplement à tous les classements par équipes.
+      fixtures: 
+        title: Calendrier et Résultats
+        description: Visulalisez en un coup d'oeil les prochains matchs et les derniers résultats pour chaque groupe.
+      favorite:
+        title: Suivez votre équipe favorite
+        description: Accèdez simplement et rapidement à tous les résultats, calendrier et classements de votre équipe favorite.
+    download_now: Télécharge là maintenant!
+    overview: Aperçu
+    images:
+      calendar: Calendriers
+      teams_ranking: Classements équipes
+      scorers_ranking: Classements buteurs
+      assoc: Toutes les régions
+      fixtures: Résultats
   titles:
     aff_2: AFF 2ème ligue
     aff_3: AFF 3ème ligue
@@ -344,10 +365,10 @@ layout:
   follow_us: Suivez-nous
   problem: "Quelques problèmes avec nos données. Nouvelle mise à jour dans quelques heures!"
 meta: 
-  site_title: "Footstats | Stats & Buteurs | Foot amateur Suisse"
-  site_description: Classements buteurs et statistiques équipes pour les championnats amateurs de football en Suisse (2e/3e/4e/5e ligues)
-  facebook_title: Classements buteurs et stats équipes football amateur suisse
-  facebook_description: Classements buteurs et stats équipes championnats de football 2e/3e/4e/5e ligues
+  site_title: "Le foot amateur suisse sur iPhone et Android"
+  site_description: Tous les classements par équipes, calendriers et classements buteurs réunnis dans une seule app (Android, iOS)!
+  facebook_title: Footstats
+  facebook_description: Tous les classements par équipes, calendriers et classements buteurs réunnis dans une seule app!
 posts:
   breadcrumb:
     news1718:

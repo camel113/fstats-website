@@ -1,37 +1,39 @@
 <head>
-  <title>{% if page.lang_only_title_meta %}{{page.lang_only_title_meta}}{% elsif page.title_meta %}{% t page.title_meta %}{% else %}{% t meta.site_title %}{% endif %}{% if page.data_path_season == '2016-2017' %} | 2016-2017 {% endif %}</title>
+  <title>{% t meta.site_title %}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="/assets/vendors/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="/assets/styles/font-awesome.css" />
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+
+  <link rel="stylesheet" href="assets/vendor/icon-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/vendor/icon-line/css/simple-line-icons.css">
+  <link rel="stylesheet" href="assets/vendor/icon-hs/style.css">
+  <link rel="stylesheet" href="assets/vendor/hamburgers/hamburgers.min.css">
+  <link rel="stylesheet" href="assets/vendor/animate.css">
+  <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
+  <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+  <link rel="stylesheet" href="assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+  <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
+  <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+
+  <link rel="stylesheet" href="assets/unify/styles.op-app.css">
+
   <link rel="stylesheet" type="text/css" href="/assets/styles/main.css" />
   
-  <meta name="description" content="{% if page.data_path_season == '2016-2017' %}2016-2017 - {% endif %}{% if page.lang_only_description_meta %}{{page.lang_only_description_meta}}{% elsif page.description_meta %}{% t page.description_meta %}{% elsif page.description %}{{ page.description }}{% else %}{% t meta.site_description %}{% endif %}">
+  <meta name="description" content="{% t meta.site_description %}">
 
   <meta property="og:url" content="{{site.url}}{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl | prepend: site.baseurl_root }}"/>
-  <meta property="og:description" content="{% if page.description_for_facebook %}{{ page.description_for_facebook }}{% else %}{% t meta.facebook_description %}{% endif %}" />
-  <meta property="og:title" content="{% if page.data_path_season == '2016-2017' %}2016-2017 - {% endif %}{% if page.title_for_facebook %}{{ page.title_for_facebook }}{% else %}{% t meta.facebook_title %}{% endif %}" />
-  <meta property="og:type" content="{% if page.id %}article{% else %}website{% endif %}" />
-  {% if site.lang == "fr" %}
-    {% capture ogimage %}/images/facebook/footstats-fr.jpg{% endcapture %}
-  {% else %}
-    {% capture ogimage %}/images/facebook/footstats-de.jpg{% endcapture %}
-  {% endif %}
-  <meta property="og:image" content="{% if page.image_for_facebook %}{{ site.url }}{{ page.image_for_facebook }}{% else %}{{ site.url }}{{ogimage}}{% endif %}" />
+  <meta property="og:description" content="{% t meta.facebook_description %}" />
+  <meta property="og:title" content="{% t meta.facebook_title %}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{ site.url }}/assets/img/facebook-{{site.lang}}.png" />
   <meta property="fb:app_id" content="320239721737368" />
   
   <link rel="canonical" href="{{site.url}}{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl | prepend: site.baseurl_root }}">
-  {% if page.translate != false %}
-    {%- if page.permalink_de == nil -%}
-      <link hreflang="de" rel="alternate" href="{{site.url}}/de{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl_root }}">
-    {%- else -%}
-      <link hreflang="de" rel="alternate" href="{{site.url}}/de{{ page.permalink_de | replace:'index.html','' | remove: '.html' | prepend: site.baseurl_root }}">
-    {% endif %}
-    {% if page.permalink != nil -%}
-      <link hreflang="fr" rel="alternate" href="{{site.url}}{{ page.permalink | replace:'index.html','' | remove: '.html' | prepend: site.baseurl_root }}">
-    {%- else -%}
-      <link hreflang="fr" rel="alternate" href="{{site.url}}{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl_root }}">
-    {% endif %}
+  {%- if site.lang == "fr" -%}
+    <link hreflang="de" rel="alternate" href="{{site.url}}/de">
+  {%- else -%}
+    <link hreflang="fr" rel="alternate" href="{{site.url}}">
   {% endif %}
 
   <link rel="icon" href="{{site.url}}/favicon.ico" type="image/x-icon">

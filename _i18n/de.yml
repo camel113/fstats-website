@@ -1,4 +1,25 @@
 pages:
+  app_landing:
+    title: Schweizer Amateurfußball auf iPhone und Android
+    description: Alle Ranglisten per Mannschaften, Kalender, Resultate und Torschützenlist zusammen.
+    features:
+      rankings: 
+        title: Ranglisten
+        description: Finden Sie hier die besten Torschützen per Gruppe und Liga. Einfacher Access an alle Ranglisten per Mannschaft.
+      fixtures: 
+        title: Resultate und Spielplan
+        description: Sehen Sie in einem Augenblick die nächsten Matchs und die letzten Resultate für jede Gruppe.
+      favorite:
+        title: Folge deinem Lieblingsteam!
+        description: Einfach und schnell auf alle Ergebnisse, Kalender und Ranglisten Ihres Lieblingsteams zugreifen.
+    download_now: Jetzt App heruntladen!
+    overview: Überblick
+    images:
+      calendar: Spielplan
+      teams_ranking: Ranglisten
+      scorers_ranking: Torschützenliste
+      assoc: Alle-Regionalverbände
+      fixtures: Resultate
   titles:
     aff_2: "FFV 2. Liga"
     aff_3: "FFV 3. Liga"
@@ -343,10 +364,10 @@ layout:
   follow_us: "Folge uns"
   problem: "Einige Probleme mit unseren Daten. Neues Update in ein paar Stunden!"
 meta: 
-  site_title: "Torschützen-Rangliste | Topscorers | Amateurfussball Schweiz"
-  site_description: "Torschützenliste und Statistik der Mannschaften für die Amateurfussballmeisterschaften in der Schweiz (2./3./4./5. Ligen)"
-  facebook_title: "Torschützenliste und Statistik der schweizer Amateurfussballmannschaften"
-  facebook_description: "Torschützenliste und Statistik der Mannschaften für die Fussballmeisterschaften 2./3./4./5. Ligen"
+  site_title: "Schweizer Amateurfußball auf iPhone und Android"
+  site_description: "Alle Ranglisten per Mannschaften, Kalender, Resultate und Torschützenlist zusammen."
+  facebook_title: "Footstats"
+  facebook_description: "Alle Ranglisten per Mannschaften, Kalender, Resultate und Torschützenlist zusammen."
 posts:
   breadcrumb:
     news1718:

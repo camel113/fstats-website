@@ -1,13 +1,17 @@
-/news/*/2016/:month/:date/:slug /archives/2016%2D:month%2D:date%2D:slug 301
-/ligue/statistiques/2016/:month/:date/:slug /archives/2016%2D:month%2D:date%2D:slug 301
-/stars/:year/:month/:date/:slug /archives/:year%2D:month%2D:date%2D:slug 301
+/aff/* / 301
+/acvf/* / 301
+/anf/* / 301
+/acgf/* / 301
+/avf/* / 301
+/afv/* / 301
+/fvbj/* / 301
+/ifv/* / 301
+/fvnws/* / 301
+/ofv/* / 301
+/sofv/* / 301
+/fvrz/* / 301
 
-/resume/*/2017/01/:date/:slug /archives/2017%2D01%2D:date%2D:slug 301
-/resume/*/2017/02/:date/:slug /archives/2017%2D02%2D:date%2D:slug 301
-/resume/*/2017/03/:date/:slug /archives/2017%2D03%2D:date%2D:slug 301
-/resume/*/2017/04/:date/:slug /archives/2017%2D04%2D:date%2D:slug 301
-/resume/*/2017/05/:date/:slug /archives/2017%2D05%2D:date%2D:slug 301
-
-/archives/2016-21-10-stars-fc-villarepos-fc-corcelles-payerne-joao-fernando-da-silva-manuel-mvuatu-olympique-de-geneve-fc.html /archives/2016-10-21-stars-fc-villarepos-fc-corcelles-payerne-joao-fernando-da-silva-manuel-mvuatu-olympique-de-geneve-fc.html 301
+/resume/* /
+/de/resume/* /
 
 /  /de  302  Language=de-ch,de
