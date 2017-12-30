@@ -1,7 +1,7 @@
 pages:
   app_landing:
     title: Le foot amateur suisse sur iPhone et Android
-    description: Tous les classements par équipes, calendriers et classements buteurs réunnis dans une seule app!
+    description: Tous les classements par équipes, calendriers et classements buteurs réunis dans une seule app!
     features:
       rankings: 
         title: Classements
