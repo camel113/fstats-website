@@ -8,7 +8,7 @@ pages:
         description: Retrouvez les classements meilleurs buteurs par groupe et par ligue. Accèdez simplement à tous les classements par équipes.
       fixtures: 
         title: Calendrier et Résultats
-        description: Visulalisez en un coup d'oeil les prochains matchs et les derniers résultats pour chaque groupe.
+        description: Visualisez en un coup d'oeil les prochains matchs et les derniers résultats pour chaque groupe.
       favorite:
         title: Suivez votre équipe favorite
         description: Accèdez simplement et rapidement à tous les résultats, calendrier et classements de votre équipe favorite.
@@ -366,9 +366,9 @@ layout:
   problem: "Quelques problèmes avec nos données. Nouvelle mise à jour dans quelques heures!"
 meta: 
   site_title: "Le foot amateur suisse sur iPhone et Android"
-  site_description: Tous les classements par équipes, calendriers et classements buteurs réunnis dans une seule app (Android, iOS)!
+  site_description: Tous les classements par équipes, calendriers et classements buteurs réunis dans une seule app (Android, iOS)!
   facebook_title: Footstats
-  facebook_description: Tous les classements par équipes, calendriers et classements buteurs réunnis dans une seule app!
+  facebook_description: Tous les classements par équipes, calendriers et classements buteurs réunis dans une seule app!
 posts:
   breadcrumb:
     news1718:
