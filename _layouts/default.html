@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
 
-  {% include head.html %}
+  
+  {% if page.form != true %}
+  	{% include head.html %}
+	{% else %}
+		{% include head_form.html %}
+	{% endif %}
 
   <body>
     {{ content }}
-    {% include scripts.html %}
+    {% if page.form != true %}
+    	{% include scripts.html %}
+  	{% endif %}
   </body>
 
 </html>
