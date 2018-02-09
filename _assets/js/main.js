@@ -102,7 +102,7 @@ var transfersForm = {
       var posting = $.post($form.attr("action"), $form.serialize())
 
       posting.done(function() {
-        $("#errors-report-form-container").hide()
+        $("#transfers-info-form-container").hide()
         $("#transfers-info-form-success").show()
       });
       posting.fail(function() {

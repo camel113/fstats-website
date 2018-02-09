@@ -11,7 +11,7 @@ date: 2017-10-27 11:00:00 +0200
 <div class="container standard-page app-form">
   <section class="row justify-content-md-center g-color-black">
     <div class="col-12 col-md-6" id="contact-form-container">
-      <form netlify name="contact" id="contact-form" action="thx">
+      <form netlify name="contact" id="contact-form" action="Merci">
         <div class="form-group">
           <label for="email">{% t pages.app_form.email.label %}</label>
           <input type="email" name="email" class="form-control" id="email" required placeholder="{% t pages.app_form.name.input %}">
@@ -23,13 +23,13 @@ date: 2017-10-27 11:00:00 +0200
         <button type="submit" class="btn btn-primary custom-color">{% t pages.app_form.send %}</button>
       </form>
     </div>
-    <div class="col-12 col-md-6 after-form" id="contact-report-form-fail">
+    <div class="col-12 col-md-6 after-form" id="contact-form-fail">
       <div id="errors-report-form-fail">
         <h1>Ooops!</h1>
         <p>{% t pages.app_form.error %}</p>
       </div>
     </div>
-    <div class="col-12 col-md-6 after-form" id="contact-report-form-success">
+    <div class="col-12 col-md-6 after-form" id="contact-form-success">
       <div >
         <h1>{% t pages.app_form.success.title %}</h1>
         <p>{% t pages.app_form.success.descr %}</p>
