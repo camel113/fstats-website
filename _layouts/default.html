@@ -12,6 +12,8 @@
     {{ content }}
     {% if page.form != true %}
     	{% include scripts.html %}
+  	{% else %}
+  		<script src="/assets/js/main.js"></script>
   	{% endif %}
   </body>
 
