@@ -50,7 +50,7 @@ gulp.task('serve',['build'], function() {
   gulp.watch(assetsDevDir.js, ['js:prod']);
 });
 gulp.task('build:jekyll', function() {
-    var shellCommand = 'bundle exec jekyll build --incremental --config _config.yml';
+    var shellCommand = 'bundle exec jekyll build --config _config.yml';
     return gulp.src('')
       .pipe(run(shellCommand))
       .on('error', gutil.log);
