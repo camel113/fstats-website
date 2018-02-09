@@ -11,7 +11,10 @@ date: 2018-02-02 11:00:00 +0200
 <div class="container standard-page app-form">
   <section class="row justify-content-md-center g-color-black">
     <div class="col-12 col-md-6" id="transfers-info-form-container">
-      <form netlify name="transfersInfo" id="transfers-info-form" action="Merci">
+      <form data-netlify-honeypot="bot-field" data-netlify="true" name="transfersInfo" id="transfers-info-form" action="Merci">
+        <p class="hidden">
+          <label>Don’t fill this out: <input name="bot-field"></label>
+        </p>
         <div class="form-group">
           <label for="player">{% t pages.app_form_transfers.player %}</label>
           <input type="text" name="player" class="form-control" id="player" required placeholder="">
