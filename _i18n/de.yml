@@ -352,6 +352,15 @@ pages:
     message:
       label: Nachricht
       input: Ihre Nachricht...
+  app_form_transfers:
+    title: Transfers
+    player: Spieler
+    old_club: Altes Team
+    new_club: Neues Team
+    email: Ihre E-Mail-Adresse
+    message:
+      label: Nachricht
+      input: Ihre Nachricht...
   about:
     title: Über uns
   contact: 

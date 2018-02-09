@@ -361,6 +361,12 @@ pages:
     message:
       label: Message
       input: Ton message...
+  app_form_transfers:
+    title: Transferts
+    player: Joueur
+    old_club: Ancienne équipe
+    new_club: Nouvelle équipe
+    email: Ton adresse email
 layout:
   follow_us: Suivez-nous
   problem: "Quelques problèmes avec nos données. Nouvelle mise à jour dans quelques heures!"

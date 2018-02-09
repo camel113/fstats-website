@@ -5,6 +5,7 @@
     analyticsConfig.init();
     errorReportForm.init();
     contactForm.init();
+    transfersForm.init();
 
   });
 })(jQuery);
@@ -84,6 +85,29 @@ var contactForm = {
       posting.fail(function() {
         $("#contact-form-container").hide()
         $("#contact-form-fail").show()
+      });
+
+    });
+  }
+}
+
+var transfersForm = {
+  init: function(){
+    console.log("transfersForm")
+    $("#transfers-info-form").submit(function(e) {
+      e.preventDefault();
+
+      var $form = $(this);
+
+      var posting = $.post($form.attr("action"), $form.serialize())
+
+      posting.done(function() {
+        $("#errors-report-form-container").hide()
+        $("#transfers-info-form-success").show()
+      });
+      posting.fail(function() {
+        $("#transfers-info-form-container").hide()
+        $("#transfers-info-form-fail").show()
       });
 
     });
