@@ -12,6 +12,9 @@ date: 2017-10-27 11:00:00 +0200
   <section class="row justify-content-md-center g-color-black">
     <div class="col-12 col-md-6" id="contact-form-container">
       <form netlify-honeypot name="contact" id="contact-form" action="Merci">
+        <p class="hidden">
+          <label>Don’t fill this out: <input name="bot-field"></label>
+        </p>
         <div class="form-group">
           <label for="email">{% t pages.app_form.email.label %}</label>
           <input type="email" name="email" class="form-control" id="email" required placeholder="{% t pages.app_form.name.input %}">
