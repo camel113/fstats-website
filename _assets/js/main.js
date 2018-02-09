@@ -76,6 +76,9 @@ var contactForm = {
 
       var $form = $(this);
 
+      console.log($form)
+      console.log($form.serialize())
+
       var posting = $.post($form.attr("action"), $form.serialize())
 
       posting.done(function() {
