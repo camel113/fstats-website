@@ -12,10 +12,7 @@ date: 2017-10-27 11:00:00 +0200
 <div class="container standard-page app-form">
   <section class="row justify-content-md-center g-color-black">
     <div class="col-12 col-md-6" id="contact-form-container">
-      <form data-netlify-honeypot="bot-field" name="contact" id="contact-form" data-netlify="true" action="https://www.footstats.ch/app-forms-thanks">
-        <p class="hidden">
-          <label>Don’t fill this out: <input name="bot-field"></label>
-        </p>
+      <form  name="contact" id="contact-form" netlify action="/app-forms-thanks">
         <div class="form-group">
           <label for="email">{% t pages.app_form.email.label %}</label>
           <input type="email" name="email" class="form-control" id="email" required placeholder="{% t pages.app_form.name.input %}">
