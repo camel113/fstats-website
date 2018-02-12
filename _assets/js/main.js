@@ -3,8 +3,8 @@
   $(function() {
     console.log("app-landing")
     analyticsConfig.init();
-    errorReportForm.init();
-    contactForm.init();
+    // errorReportForm.init();
+    // contactForm.init();
     transfersForm.init();
 
   });
