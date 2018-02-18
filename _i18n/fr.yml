@@ -338,6 +338,7 @@ pages:
     available: "Disponible sur iOS et Android"
     download: "Télécharge là maintenant!"
   app_form:
+    unavailable: "Formulaire indisponible. Merci de mettre l'application à jour."
     title: "Formulaire de report d'erreurs ou d'oublis dans les classements buteurs."
     descr: "Afin de mettre correctement nos données à jour, nous avons besoin de connaître lors de quel match l'erreur et/ou l'oubli s'est produit. Pour cela nous avons impérativement besoin du lien du match sur le site www.football.ch"
     email:

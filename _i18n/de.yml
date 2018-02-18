@@ -329,6 +329,7 @@ pages:
     available: "Verfügbar für iOS und Android"
     download: "Jetzt App gratis heruntladen"
   app_form:
+    unavailable: "Formular nicht verfügbar Bitte aktualisieren Sie die App."
     title: "Formular für die Meldung von Fehlern oder Vergessenheiten."
     descr: "Um unsere Daten korrekt aktualisieren zu können, müssen wir wissen, bei welchem Match es ein Problem gab. Dafür brauchen wir unbedingt den Link von www.football.ch"
     email:
