@@ -12,6 +12,7 @@
 
 <!-- JS Unify -->
 <script src="/assets/js/hs.core.js"></script>
+<script src="/assets/js/components/hs.header.js"></script>
 <script src="/assets/js/components/hs.scroll-nav.js"></script>
 <script src="/assets/js/components/hs.onscroll-animation.js"></script>
 <script src="/assets/js/components/hs.cubeportfolio.js"></script>
@@ -30,6 +31,9 @@
     // initialization of scroll animation
     $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
 
+    // initialization of header
+    $.HSCore.components.HSHeader.init($('#js-header'));
+    
     // initialization of go to section
     $.HSCore.components.HSGoTo.init('.js-go-to');
 
