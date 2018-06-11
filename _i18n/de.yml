@@ -1,17 +1,19 @@
 pages:
   app_landing:
     title: Schweizer Amateurfußball auf iPhone und Android
-    description: Alle Ranglisten per Mannschaften, Kalender, Resultate und Torschützenlist zusammen.
+    description: Alle Ranglisten per Mannschaften, Kalender, Resultate und Torschützenlist zusammen
     features:
-      rankings: 
-        title: Ranglisten
-        description: Finden Sie hier die besten Torschützen per Gruppe und Liga. Einfacher Access an alle Ranglisten per Mannschaft.
+      rankings:
+        title: Teams Ranglisten und Torschützenliste
+        description: Finden Sie hier die besten Torschützen per Gruppe und Liga. Einfacher Access an alle Ranglisten per Mannschaft
+      stats: 
+        title: "Heimtabelle/Auswärtstabelle, Ranglisten der besten Offenensiven und Defensiven"
       fixtures: 
         title: Resultate und Spielplan
-        description: Sehen Sie in einem Augenblick die nächsten Matchs und die letzten Resultate für jede Gruppe.
+        description: Sehen Sie in einem Augenblick die nächsten Matchs und die letzten Resultate für jede Gruppe
       favorite:
         title: Folge deinem Lieblingsteam!
-        description: Einfach und schnell auf alle Ergebnisse, Kalender und Ranglisten Ihres Lieblingsteams zugreifen.
+        description: Einfach und schnell auf alle Ergebnisse, Kalender und Ranglisten Ihres Lieblingsteams zugreifen
     download_now: Jetzt App heruntladen!
     overview: Überblick
     images:

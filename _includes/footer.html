@@ -1,44 +1,10 @@
-{% if site.lang == 'fr' %}
-  {% assign footernav = site.data.nav.footer-nav %}
-{% else %}
-  {% assign footernav = site.data.nav.footer-nav-de %}
-{% endif %}
-<footer id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-4 footer-col">
-        <p>FOOTSTATS</p>
-        <ul class="links-list">
-          {% for footerlink in footernav %}
-            <li>
-              <a href="{{site.baseurl}}{{footerlink.path}}">{{ footerlink.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="col-12 col-md-4 footer-col footer-social">
-        <p>{% t layout.follow_us %}</p>
-          <ul class="list-inline">
-            <li>
-              <a href="https://www.facebook.com/footstats.ch/" class="social-icon si-dark si-gray-round si-colored-facebook">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/footstats.ch/" class="social-icon si-dark si-gray-round instagram">
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.matchdone.ch/" class="social-icon matchdone">
-                <img src="/images/matchdone.png" alt="matchdone">
-              </a>
-            </li>
-          </ul>
-      </div>
-    </div>
-  </div>
+<footer class="footer">
+  <ul class="footer__list-socials">
+    <li class="footer__social-item footer__social-item--facebook">
+      <a class="footer_social-icon" href="https://www.facebook.com/footstats.ch"><i class="fab fa-facebook-f fa-2x"></i></a>
+    </li>
+    <li class="footer__social-item footer__social-item--instagram">
+      <a class="footer_social-icon" href="https://www.instagram.com/footstats.ch/"><i class="fab fa-instagram fa-2x"></i></a>
+    </li>
+  </ul>
 </footer>
-

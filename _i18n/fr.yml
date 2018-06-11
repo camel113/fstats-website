@@ -4,15 +4,17 @@ pages:
     description: Tous les classements par équipes, calendriers et classements buteurs réunis dans une seule app!
     features:
       rankings: 
-        title: Classements
+        title: Classements buteurs et équipes
         description: Retrouvez les classements meilleurs buteurs par groupe et par ligue. Accèdez simplement à tous les classements par équipes.
+      stats: 
+        title: Classements domicile/éxtérieur, mailleures attaques, meilleures défenses
       fixtures: 
         title: Calendrier et Résultats
         description: Visualisez en un coup d'oeil les prochains matchs et les derniers résultats pour chaque groupe.
       favorite:
         title: Suivez votre équipe favorite
         description: Accèdez simplement et rapidement à tous les résultats, calendrier et classements de votre équipe favorite.
-    download_now: Télécharge là maintenant!
+    download_now: Télécharge l'app!
     overview: Aperçu
     images:
       calendar: Calendriers

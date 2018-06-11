@@ -1,247 +1,96 @@
 ---
 layout: default
 home: true
+form: false
 ---
-<main>
-  <!-- Header v1 -->
-  <header id="js-header" class="u-header u-header--sticky-top u-header--show-hide u-header--toggle-section" data-header-fix-moment="100" data-header-fix-effect="slide">
-    <div class="u-header__section u-shadow-v27 g-bg-white g-transition-0_3 g-py-12 g-py-20--md">
-      <nav class="navbar navbar-expand py-0 g-px-15">
-        <div class="container g-pos-rel">
-          <!-- Logo -->
-          <a href="#!" class="js-go-to navbar-brand u-header__logo"
-             data-type="static">
-            <img class="u-header__logo-img u-header__logo-img--main g-width-130" src="/assets/images/footstats2.png" alt="Image description">
-          </a>
-          <!-- End Logo -->
-          <div id="navBar" class="">
-                <!-- Navigation -->
-                <div class="align-items-center flex-sm-row">
-                  <ul id="js-scroll-nav" class="navbar-nav g-flex-right--xs text-uppercase w-100 g-font-weight-700 g-font-size-11 g-pt-20 g-pt-0--lg">
-                    <li class="nav-item g-mx-15 g-mb-12 g-mb-0">
-                      <a href="/" class="nav-link p-0">FR</a>
-                    </li>
-                    <li class="nav-item g-ml-15 g-mb-12 g-mb-0">
-                      <a href="/de" class="nav-link p-0">DE</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- End Navigation -->
-              </div>
-        </div>
-      </nav>
+<header class="header"> 
+  <nav class="header__nav">
+    <section class="header__nav-links">
+      <a class="header__image" href="#"><img src="images/2.0/footstats.png" alt="Footstats" srcset="images/2.0/footstats-2x.png 2x"/></a>
+      <a class="header__title" href="#">FOOTSTATS</a>
+    </section>
+    <div class="lang-switcher nav__lang-switcher">
+      <ul class="lang-switcher__lang-list">
+        <li class="lang-list__lang"><a href="{{site.url}}">FR</a></li>
+        <li class="lang-list__lang"><a href="{{site.url}}/de">DE</a></li>
+      </ul>
     </div>
-  </header>
-  <!-- End Header v1 -->
-
-  <!-- Section Content -->
-  <section id="features" class="g-theme-bg-gray-light-v1 g-pt-90 g-pb-40">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 text-center g-overflow-hidden g-mb-50 g-mb-0--md">
-          <img class="img-fluid" src="assets/img/overview-{{site.lang}}.png" alt="Image description" srcset="assets/img/overview-{{site.lang}}-2x.png 2x"
-               data-animation="slideInLeft">
-        </div>
-
-        <div class="col-md-7 d-flex text-center text-md-left">
-          <div class="align-self-center">
-            <div class="g-mb-20">
-              <h2 class="g-line-height-1_3 g-font-size-28 mb-0"><strong>{% t pages.app_landing.title %}</strong></h2>
-            </div>
-
-            <p class="g-font-size-16 g-mb-65">{% t pages.app_landing.description %}</p>
-
-            <div class="media d-block d-md-flex text-center text-md-left g-mb-40">
-              <div class="d-md-flex align-self-center g-mb-30 g-mb-0--md g-mr-30--md">
-                <span class="u-icon-v2 u-icon-size--lg g-font-size-26 g-color-primary g-rounded-50x"><i class="fa fa-line-chart"></i></span>
-              </div>
-
-              <div class="media-body align-self-center">
-                <h4 class="h6 text-uppercase g-font-weight-700 g-color-black g-mb-15">{% t pages.app_landing.features.rankings.title %}</h4>
-                <p class="mb-0">{% t pages.app_landing.features.rankings.description %}</p>
-              </div>
-            </div>
-
-            <div class="media d-block d-md-flex text-center text-md-left g-mb-40">
-              <div class="d-md-flex align-self-center g-mb-30 g-mb-0--md g-mr-30--md">
-                <span class="u-icon-v2 u-icon-size--lg g-font-size-26 g-color-primary g-rounded-50x"><i class="fa fa-calendar"></i></span>
-              </div>
-
-              <div class="media-body align-self-center">
-                <h4 class="h6 text-uppercase g-font-weight-700 g-color-black g-mb-15">{% t pages.app_landing.features.fixtures.title %}</h4>
-                <p class="mb-0">{% t pages.app_landing.features.fixtures.description %}</p>
-              </div>
-            </div>
-            <div class="media d-block d-md-flex text-center text-md-left">
-              <div class="d-md-flex align-self-center g-mb-30 g-mb-0--md g-mr-30--md">
-                <span class="u-icon-v2 u-icon-size--lg g-font-size-26 g-color-primary g-rounded-50x"><i class="fa fa-star-o"></i></span>
-              </div>
-
-              <div class="media-body align-self-center">
-                <h4 class="h6 text-uppercase g-font-weight-700 g-color-black g-mb-15">{% t pages.app_landing.features.favorite.title %}</h4>
-                <p class="mb-0">{% t pages.app_landing.features.favorite.description %}</p>
-              </div>
-            </div>
-
+  </nav>
+</header>
+<main class="main-content">
+  <section class="overview">
+    <section class="overview__app-overview container">
+      <img class="overview__app-overview-img" src="images/2.0/overview-regions-fr.png" alt="Application Footstats" srcset="images/2.0/overview-regions-fr-2x.png 2x"/>
+      <section class="overview__description">
+        <h1 class="overview__title">{% t pages.app_landing.title %}</h1>
+        <section class="download overview__download">
+          <h1 class="download__title">{% t pages.app_landing.download_now %}</h1>
+          <div class="download__buttons">
+            <a class="download__button" href="http://apple.co/2AlSTbT"><img class="download__button-img" src="/images/2.0/app-store-badge.svg" alt="footstats ios app download"></a>
+            <a class="download__button" href="http://bit.ly/2zodWxC"><img class="download__button-img" src="/images/2.0/google-play-badge.svg" alt="footstats android app download"></a>
           </div>
-        </div>
-      </div>
-      <div class="row download justify-content-center g-mt-30">
-        <div class="col-12 col-md-6 text-center">
-          <h2>{% t pages.app_landing.download_now %}</h2>
-          <div class="badges g-mt-10">
-            <a class="badge-link" href="http://bit.ly/2zodWxC"><img class="mb-2 mb-md-0" src="/images/app/google-play-badge.svg" alt="footstats android app download"></a>
-            <a class="badge-link" href="http://apple.co/2AlSTbT"><img src="/images/app/app-store-badge.svg" alt="footstats ios app download"></a>
+        </section>
+      </section>
+    </section>
+  </section>
+  <section class="features">
+    <div class="feature-container">
+      <article class="feature features__feature container">
+        <section class="feature__description">
+          <div data-aos="slide-up" data-aos-duration="300" class="feature__icon">
+            <span>
+              <i class="fas fa-chart-line"></i>
+            </span>
           </div>
-        </div>
-      </div>
+          <div data-aos="slide-up" data-aos-duration="300">
+            <h2 class="feature__heading">{% t pages.app_landing.features.stats.title %}</h2>
+          </div>
+        </section>
+        <section class="feature__overview" data-aos="fade" data-aos-duration="300">
+          <img src="images/2.0/overview-regions-fr.png" alt="{% t pages.app_landing.features.stats.title %}" srcset="images/2.0/overview-fr-2x.png 2x"/>
+        </section>
+      </article>
+    </div>
+    <div class="feature-container">
+      <article class="feature feature--reverse features__feature container">
+        <section class="feature__description">
+          <div data-aos="slide-up" data-aos-duration="300" class="feature__icon">
+            <span>
+              <i class="fas fa-list-ol"></i>
+            </span>
+          </div>
+          <div data-aos="slide-up" data-aos-duration="300">
+            <h2 class="feature__heading">{% t pages.app_landing.features.rankings.title %}</h2>
+          </div>
+        </section>
+        <section class="feature__overview" data-aos="fade" data-aos-duration="300" class="feature__overview">
+          <img src="images/2.0/overview-scorers-fr.png" alt="{% t pages.app_landing.features.rankings.title %}" srcset="images/2.0/overview-scorers-fr-2x.png 2x"/>
+        </section>
+      </article>
+    </div>
+    <div class="feature-container">
+      <article class="feature features__feature container">
+        <section class="feature__description">
+          <div data-aos="slide-up" data-aos-duration="300" class="feature__icon">
+            <span>
+              <i class="fas fa-calendar-alt"></i>
+            </span>
+          </div>
+          <div data-aos="slide-up" data-aos-duration="300">
+            <h2 class="feature__heading">{% t pages.app_landing.features.fixtures.title %}</h2>
+          </div>
+        </section>
+        <section  class="feature__overview" data-aos="fade" data-aos-duration="300">
+          <img src="images/2.0/overview-results-fr.png" alt="{% t pages.app_landing.features.fixtures.title %}" srcset="images/2.0/overview-results-fr-2x.png 2x"/>
+        </section>
+      </article>
     </div>
   </section>
-  <!-- End Section Content -->
-
-  <!-- Section Content -->
-  <div class="cbp"></div>
-  <section id="whatsNew" class="g-py-90">
-    <div class="container text-center g-max-width-750 g-mb-45">
-      <div class="text-uppercase g-line-height-1_3 g-mb-20">
-        <h2 class="g-line-height-1_3 g-font-size-36 mb-0">{% t pages.app_landing.overview %}</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Carousel -->
-      <div class="js-carousel g-pb-20"
-           data-infinite="true"
-           data-slides-show="4"
-           data-slides-scroll="4"
-           data-pagi-classes="text-center u-carousel-indicators-v1 g-absolute-centered--x g-bottom-0 g-width-auto"
-           data-responsive='[{
-             "breakpoint": 1200,
-             "settings": {
-               "slidesToShow": 3,
-               "slidesToScroll": 3
-             }
-           }, {
-             "breakpoint": 992,
-             "settings": {
-               "slidesToShow": 2,
-               "slidesToScroll": 2
-             }
-           }, {
-             "breakpoint": 576,
-             "settings": {
-               "slidesToShow": 1,
-               "slidesToScroll": 1
-             }
-           }]'>
-        <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img/assoc-{{site.lang}}.png"
-             data-title="{% t pages.app_landing.images.assoc %}"
-             data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img/assoc-{{site.lang}}.png" alt="{% t pages.app_landing.images.assoc %}">
-
-            <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
-              <div class="cbp-l-caption-alignCenter">
-                <div class="cbp-l-caption-body">
-                  <div class="cbp-l-caption-title g-font-size-50">+</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img/teams-ranking-{{site.lang}}.png"
-             data-title="{% t pages.app_landing.images.teams_ranking %}"
-             data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img/teams-ranking-{{site.lang}}.png" alt="{% t pages.app_landing.images.teams_ranking %}">
-
-            <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
-              <div class="cbp-l-caption-alignCenter">
-                <div class="cbp-l-caption-body">
-                  <div class="cbp-l-caption-title g-font-size-50">+</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img/results-{{site.lang}}.png"
-             data-title="{% t pages.app_landing.images.fixtures %}"
-             data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img/results-{{site.lang}}.png" alt="{% t pages.app_landing.images.fixtures %}">
-
-            <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
-              <div class="cbp-l-caption-alignCenter">
-                <div class="cbp-l-caption-body">
-                  <div class="cbp-l-caption-title g-font-size-50">+</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img/fixtures-{{site.lang}}.png"
-             data-title="{% t pages.app_landing.images.calendar %}"
-             data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img/fixtures-{{site.lang}}.png" alt="{% t pages.app_landing.images.calendar %}">
-
-            <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
-              <div class="cbp-l-caption-alignCenter">
-                <div class="cbp-l-caption-body">
-                  <div class="cbp-l-caption-title g-font-size-50">+</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="js-slide text-center g-px-15">
-          <a class="cbp-lightbox d-inline-block g-pos-rel g-parent" href="assets/img/scorers-ranking-{{site.lang}}.png"
-             data-title="{% t pages.app_landing.images.scorers_ranking %}"
-             data-cbp-lightbox="whatsNewCarousel">
-            <img src="assets/img/teams-ranking-{{site.lang}}.png" alt="{% t pages.app_landing.images.scorers_ranking %}">
-
-            <div class="cbp-caption-activeWrap g-pos-abs g-top-0 g-left-0 w-100 h-100 opacity-0 g-opacity-1--parent-hover g-bg-primary-opacity-0_6 g-transition-0_2 g-transition--ease-in">
-              <div class="cbp-l-caption-alignCenter">
-                <div class="cbp-l-caption-body">
-                  <div class="cbp-l-caption-title g-font-size-50">+</div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-      </div>
-      <!-- End Carousel -->
+  <section class="download download--mobile">
+    <h1 class="download__title">{% t pages.app_landing.download_now %}</h1>
+    <div class="download__buttons">
+      <a class="download__button" href="http://apple.co/2AlSTbT"><img class="download__button-img" src="/images/2.0/app-store-badge.svg" alt="footstats ios app download"></a>
+      <a class="download__button" href="http://bit.ly/2zodWxC"><img class="download__button-img" src="/images/2.0/google-play-badge.svg" alt="footstats android app download"></a>
     </div>
   </section>
-  <!-- End Section Content -->
-
-  <!-- Footer -->
-  <footer>
-    <ul class="list-inline d-table w-100 mb-0">
-      <li class="list-inline-item d-table-cell g-width-1x">
-        <a class="btn btn-lg u-btn-indigo btn-block rounded-0 g-py-20" href="https://www.facebook.com/footstats.ch"><i class="fa fa-facebook"></i></a>
-      </li>
-      <li class="list-inline-item d-table-cell g-width-1x">
-        <a class="btn btn-lg u-btn-pink btn-block rounded-0 g-py-20" href="https://www.instagram.com/footstats.ch/"><i class="fa fa-instagram"></i></a>
-      </li>
-    </ul>
-  </footer>
-  <!-- End Footer -->
-
-  <a class="js-go-to u-go-to-v1" href="#!"
-     data-type="fixed"
-     data-position='{
-       "bottom": 15,
-       "right": 15
-     }'
-     data-offset-top="400"
-     data-compensation="#js-header"
-     data-show-effect="zoomIn">
-    <i class="hs-icon hs-icon-arrow-top"></i>
-  </a>
 </main>
