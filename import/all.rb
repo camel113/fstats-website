@@ -3,6 +3,7 @@ require 'httparty'
 require 'fileutils'
 
 urlPath = "http://127.0.0.1:8083"
+filePathForParsingFlatNational = "/Users/adrienbigler/Documents/sysin/code/js/footstatsApiForReactNativeApp/data1718/national"
 
 def create_defense_rankings_by_league (league,region,filePath,urlPath)
   response = HTTParty.get(urlPath+'/teams/defense/'+region+'/'+league)
@@ -12,7 +13,7 @@ def create_defense_rankings_by_league (league,region,filePath,urlPath)
 end
 
 def create_attack_rankings_by_league (league,region,filePath,urlPath)
-  response = HTTParty.get(urlPath+'/teams/attackaverage/'+region+'/'+league)
+  response = HTTParty.get(urlPath+'/teams/attack/'+region+'/'+league)
   File.open(filePath+"attack.json","w") do |f|
     f.write(response.body)
   end
@@ -26,7 +27,7 @@ def create_defenseaverage_rankings_by_league (league,region,filePath,urlPath)
 end
 
 def create_attackaverage_rankings_by_league (league,region,filePath,urlPath)
-  response = HTTParty.get(urlPath+'/teams/attack/'+region+'/'+league)
+  response = HTTParty.get(urlPath+'/teams/attackaverage/'+region+'/'+league)
   File.open(filePath+"attackaverage.json","w") do |f|
     f.write(response.body)
   end
@@ -46,12 +47,19 @@ def create_teams_rankings_away_by_league (league,region,filePath,urlPath)
   end
 end
 
+def create_groups_info_by_league (league,region,filePath,urlPath)
+  response = HTTParty.get(urlPath+'/teams/getgroups/'+region+'/'+league)
+  File.open(filePath+"groups.json","w") do |f|
+    f.write(response.body)
+  end
+end
+
 def create_flat_data_by_group(league,region,groups,filePath,urlPath)
-  # groups.each { |x| create_teams_rankings_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
-  # groups.each { |x| create_teams_results_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
-  # groups.each { |x| create_scorers_ranking_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
-  # groups.each { |x| create_teams_rankings_home_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
-  # groups.each { |x| create_teams_rankings_away_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
+  groups.each { |x| create_teams_rankings_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
+  groups.each { |x| create_teams_results_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
+  groups.each { |x| create_scorers_ranking_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
+  groups.each { |x| create_teams_rankings_home_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
+  groups.each { |x| create_teams_rankings_away_by_group(x.to_s,league.to_s,region,filePath,urlPath) }
 end
 
 def create_teams_rankings_by_group (group,league,region,filePath,urlPath)
@@ -90,17 +98,53 @@ def create_scorers_ranking_by_group (group,league,region,filePath,urlPath)
 end
 
 def create_league_data(region,league,groups,filePath,urlPath)
-  # create_defense_rankings_by_league(league.to_s,region,filePath,urlPath)
-  # create_attack_rankings_by_league(league.to_s,region,filePath,urlPath)
-  # create_defenseaverage_rankings_by_league(league.to_s,region,filePath,urlPath)
-  # create_attackaverage_rankings_by_league(league.to_s,region,filePath,urlPath)
-  # create_teams_rankings_home_by_league(league.to_s,region,filePath,urlPath)
+  create_defense_rankings_by_league(league.to_s,region,filePath,urlPath)
+  create_attack_rankings_by_league(league.to_s,region,filePath,urlPath)
+  create_defenseaverage_rankings_by_league(league.to_s,region,filePath,urlPath)
+  create_attackaverage_rankings_by_league(league.to_s,region,filePath,urlPath)
+  create_teams_rankings_home_by_league(league.to_s,region,filePath,urlPath)
   create_teams_rankings_away_by_league(league.to_s,region,filePath,urlPath)
+  create_groups_info_by_league(league.to_s,region,filePath,urlPath)
 end
 
 def create_scorers_data(league,region,filePath,urlPath)
   response = HTTParty.get(urlPath+'/topscorers/'+region+'/'+league.to_s)
   File.open(filePath+"scorers.json","w") do |f|
+    f.write(response.body)
+  end
+end
+
+def create_national_scorers_data(league,urlPath,filePath)
+  response = HTTParty.get(urlPath+'/topscorers/'+league.to_s)
+  File.open(filePath+'/ligue'+league.to_s+'/scorers.json',"w") do |f|
+    f.write(response.body)
+  end
+end
+
+def create_national_defense_rankings_by_league (league,urlPath,filePath)
+  response = HTTParty.get(urlPath+'/teams/defense/'+league.to_s)
+  File.open(filePath+'/ligue'+league.to_s+'/defense.json',"w") do |f|
+    f.write(response.body)
+  end
+end
+
+def create_national_attack_rankings_by_league (league,urlPath,filePath)
+  response = HTTParty.get(urlPath+'/teams/attack/'+league.to_s)
+  File.open(filePath+'/ligue'+league.to_s+'/attack.json',"w") do |f|
+    f.write(response.body)
+  end
+end
+
+def create_national_defenseaverage_rankings_by_league (league,urlPath,filePath)
+  response = HTTParty.get(urlPath+'/teams/defenseaverage/'+league.to_s)
+  File.open(filePath+'/ligue'+league.to_s+'/defenseaverage.json',"w") do |f|
+    f.write(response.body)
+  end
+end
+
+def create__national_attackaverage_rankings_by_league (league,urlPath,filePath)
+  response = HTTParty.get(urlPath+'/teams/attackaverage/'+league.to_s)
+  File.open(filePath+'/ligue'+league.to_s+'/attackaverage.json',"w") do |f|
     f.write(response.body)
   end
 end
@@ -125,6 +169,22 @@ def create_parsing_flat_directories(filePath)
     FileUtils.mkdir_p(dirname+"/scorers")
   end
 end
+
+def create_parsing_flat_directories_national(filePath)
+  unless File.directory?(filePath+"/ligue2")
+    FileUtils.mkdir_p(filePath+"/ligue2")
+  end
+  unless File.directory?(filePath+"/ligue3")
+    FileUtils.mkdir_p(filePath+"/ligue3")
+  end
+  unless File.directory?(filePath+"/ligue4")
+    FileUtils.mkdir_p(filePath+"/ligue4")
+  end
+  unless File.directory?(filePath+"/ligue5")
+    FileUtils.mkdir_p(filePath+"/ligue5")
+  end
+end
+create_parsing_flat_directories_national(filePathForParsingFlatNational)
 
 def generate_stats_for_leagues_accross_region(league,urlPath)
   filePath = "_data/"
@@ -771,9 +831,17 @@ regions.push(region)
 #   generate_stats_for_leagues_accross_region(l[:league],urlPath)
 # }
 leaguesFlat.each { |l|
-  # create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
+  create_scorers_data(l[:league],l[:region],l[:filePath],urlPath)
   create_league_data(l[:region],l[:league],l[:groups],l[:filePath],urlPath)
-  # create_flat_data_by_group(l[:league],l[:region],l[:groups],l[:filePath],urlPath)
+  create_flat_data_by_group(l[:league],l[:region],l[:groups],l[:filePath],urlPath)
+}
+nationalLeagues = [2,3,4,5]
+nationalLeagues.each { |l|
+  create_national_scorers_data(l,urlPath,filePathForParsingFlatNational)
+  create__national_attackaverage_rankings_by_league(l,urlPath,filePathForParsingFlatNational)
+  create_national_defenseaverage_rankings_by_league(l,urlPath,filePathForParsingFlatNational)
+  create_national_attack_rankings_by_league(l,urlPath,filePathForParsingFlatNational)
+  create_national_defense_rankings_by_league(l,urlPath,filePathForParsingFlatNational)
 }
 # def create_topflop_data(region,filePath,urlPath)
 #   response = HTTParty.get(urlPath+'/topflop/'+region)
