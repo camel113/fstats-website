@@ -387,3 +387,9 @@ posts:
     post_region:
       fvbj:
         title: FVBJ - Beste Torschützen
+newsletter:
+  title: Newsletter Footstats
+  descr: Finde jede Woche die Resultate der verrücktesten Spiele, die besten Torschützen schweizweit und spannende Stats
+  submit: Anmelden
+  thanks: Danke 
+  error: Ein Fehler ist geschehen

@@ -385,3 +385,9 @@ posts:
     post_region:
         fvbj:
           title: FVBJ - Meilleurs buteurs
+newsletter:
+  title: Newsletter Footstats
+  descr: Retrouve chaque semaine les résultats des matchs les plus fous, les meilleurs buteurs en Suisse et des stats inédites
+  submit: Je m'inscris
+  thanks: Merci 
+  error: Une erreur s'est produite

@@ -2,21 +2,8 @@
 layout: default
 home: true
 form: false
+title: meta.site_title
 ---
-<header class="header"> 
-  <nav class="header__nav">
-    <section class="header__nav-links">
-      <a class="header__image" href="#"><img src="images/2.0/footstats.png" alt="Footstats" srcset="images/2.0/footstats-2x.png 2x"/></a>
-      <a class="header__title" href="#">FOOTSTATS</a>
-    </section>
-    <div class="lang-switcher nav__lang-switcher">
-      <ul class="lang-switcher__lang-list">
-        <li class="lang-list__lang"><a href="{{site.url}}">FR</a></li>
-        <li class="lang-list__lang"><a href="{{site.url}}/de">DE</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
 <main class="main-content">
   <section class="overview">
     <section class="overview__app-overview container">
@@ -83,6 +70,28 @@ form: false
         <section  class="feature__overview" data-aos="fade" data-aos-duration="300">
           <img src="images/2.0/overview-results-fr.png" alt="{% t pages.app_landing.features.fixtures.title %}" srcset="images/2.0/overview-results-fr-2x.png 2x"/>
         </section>
+      </article>
+    </div>
+    <div class="feature-container">
+      <article class="feature feature-newsletter features__feature container">
+          <section class="newsletter-section newsletter__newsletter-section container">
+            <img class="overview__footstats-logo-img" src="images/footstats-round-100.png" alt="Footstats" srcset="images/footstats-round-200.png 2x"/>
+          </section>
+          <section class="newsletter__newsletter-section container">
+            <h1 class="newsletter__title">Newsletter Footstats</h1>
+          </section>
+          <section class="newsletter__newsletter-section container">
+            <p class="newsletter__description">{% t newsletter.descr %}</p>
+          </section>
+          <section class="newsletter-section__form newsletter__newsletter-section container">
+            <form id="subscribe-form" class="newsletter-form newsletter__newsletter-form">
+              <input type="email" class="newsletter-form__input" required="true" placeholder="Ton email" name="email" value="">
+              <input type="hidden" class="" name="locale" value="fr">
+              <button type="submit" class="newsletter-form__button">{% t newsletter.submit %}</button>
+            </form>
+            <div class="newsletter__newsletter-success">{% t newsletter.thanks %} 🙌</div>
+            <div class="newsletter__newsletter-error">{% t newsletter.error %} 🙌</div>
+          </section>
       </article>
     </div>
   </section>
