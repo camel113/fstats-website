@@ -1,24 +1,31 @@
 {
-  "name": "chscorers",
-  "version": "0.0.0",
-  "private": true,
+  "name": "fstats-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass _assets/styles/main.scss assets/2.0/main.css --output-style compressed",
+    "watch:css": "onchange '_assets/styles/*.scss' -- npm run sass",
+    "watch:js": "onchange '_assets/scripts/main.js' -- webpack",
+    "serve": "browser-sync start --proxy 'localhost:4000' --files '_site/*.*'",
+    "start": "parallelshell 'npm run serve' 'npm run watch:css' 'npm run watch:js'",
+    "build": "parallelshell 'npm run sass' 'webpack'"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "gulp-less": "2.0",
-    "gulp-run": "^1.7.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.0",
-    "gulp-uglify": "^1.5.4",
-    "gulp-util": "^3.0.8",
-    "pump": "^1.0.2",
-    "run-sequence": "^1.2.2",
-    "sw-precache": "^5.1.0"
+    "aos": "^2.3.0",
+    "browser-sync": "^2.24.4",
+    "domready": "^1.0.8",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5",
+    "onchange": "^4.0.0",
+    "parallelshell": "^3.0.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
   },
   "dependencies": {
-    "async": "^2.4.1",
-    "fs": "0.0.1-security",
-    "gulp": "^3.9.1",
-    "moment": "^2.18.1",
-    "path": "^0.12.7"
+    "get-form-data": "^2.0.0"
   }
 }

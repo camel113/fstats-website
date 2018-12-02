@@ -2,6 +2,20 @@
 
 Some reminders and documentation
 
+## New workflow to develop and build the static website
+
+We develop and build the static website with node scripts via `package.json`. During dev time, the command `npm start` allow to rebuild the website when anything change inside `_site` folder. There are also two watchers for js and css files. JS is bundled with webck and sass files are minified. You still have to start the Jekyll server with `jekyll serve` in another terminal tab otherwise it will not make any change inside `_site` folder.
+
+### Dev run
+
+1. `jekyll serve`
+2. `npm start` in another terminal tab
+
+
+## BEM
+
+We use BEM to organise the css.
+
 ## Posts
 
 Posts are in `_i18n` folder. You can have post only in `fr` or `de` or in both.

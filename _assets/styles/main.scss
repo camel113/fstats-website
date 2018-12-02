@@ -1,34 +1,329 @@
-.app-form{
-  margin-top: 40px;
-  margin-bottom: 40px;
-	h1{
-		font-size: 1em;
-	}
-	.custom-color{
-		background-color: #ff4d49;
-		border-color: #ff4d49;
-	}
-}
-.after-form{
-	display:none;
-	margin-bottom:60px;
-	margin-top:60px;
-}
-.badges {
-	.badge-link{
-		img {
-  		height: 60px;
-  	}
-  }
-}
-main #contact{
-	display: none;
-}
-.hidden{
-	visibility: hidden;
-  height: 0;
+$font-stack: -apple-system, BlinkMacSystemFont,"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+$primary-color: #000;
+$secondary-color: #FF4E49;
+$primary-background-color: #fff;
+$secondary-background-color: #f5f5f5;
+$primary-text-color: rgba(0,0,0,.84);
+$secondary-text-color: #999;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-text-color;
   margin: 0;
 }
-*:not(input) {
-  user-select: none;
+.main-content{
+	background: $primary-background-color;
+}
+.container{
+	@media (min-width: 1020px) {
+		max-width:980px;
+	}
+}
+/* Header */
+.header{
+	position:fixed;
+	top:0;
+	left: 0;
+	bottom:auto;
+	width:100%;
+  box-shadow: 0 0 3px #b5b5b5;
+  z-index:101;
+  background-color:$primary-background-color;
+}
+.header__nav{
+	padding:0.5rem 1rem;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+.header__nav-links{
+  display: flex;
+  align-items: center;
+}
+.header__title{
+	text-decoration: none;
+  background-color: transparent;
+  color:$primary-text-color;
+  margin-left:22px;
+}
+.header__image{
+	img{
+		max-width:40px;
+		border-radius: 5px;
+	}
+}
+.lang-switcher__lang-list{
+	display:flex;
+}
+.lang-list__lang{
+	list-style:none;
+  padding: 0 18px;
+  a{
+  	text-decoration:none;
+  	color:$primary-text-color;
+  }
+}
+/* App overview */
+.overview{
+	padding-top:5rem;
+	padding-left:15px;
+	padding-right:15px;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction:column;
+	background-color:$secondary-background-color;
+	@media (min-width: 768px) {
+		flex-direction:row;
+		padding-left:1rem;
+		padding-right:1rem;
+		padding-bottom:30px;
+	}
+}
+.overview__app-overview{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	@media (min-width: 768px) {
+		width:100%;
+		flex-direction: row;
+	}
+}
+.overview__description{
+	@media (min-width: 768px) {
+		display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	}
+}
+.overview__title,.main-content__subtitle{
+	text-align:center;
+}
+.overview__title{
+	color:$primary-text-color;
+	@media (min-width: 768px) {
+		margin-bottom:50px;
+	}
+}
+.overview__download{
+	display:none;
+	@media (min-width: 768px) {
+		display:block;
+		.download__title{
+			display:none;
+		}
+	}
+}
+/* App features */
+.feature-container{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	color:$secondary-text-color;
+	padding-right: 15px;
+  padding-left: 15px;
+  flex-grow: 1;
+  @media (min-width: 768px) {
+		flex-direction:column;
+		align-items: center;
+	}
+	&:nth-child(even){
+		background-color:$secondary-background-color;
+	}
+}
+.features__feature{
+	margin-top:30px;
+	margin-bottom:30px;
+	transition: all .5s ease-in-out;
+}
+.feature{
+	@media (min-width: 768px) {
+		display:flex;
+		width:100%
+	}
+}
+.feature--reverse{
+	@media (min-width: 768px) {
+		flex-direction:row-reverse;
+	}
+}
+.feature__description{
+	@media (min-width: 768px) {
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		width:50%;
+	}
+}
+.feature__overview{
+	padding-top:0rem;
+	display:flex;
+	justify-content:center;
+	@media (min-width: 768px) {
+		width:50%;
+	}
+}
+.feature__icon{
+	text-align:center;
+	span{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+		width: 5rem;
+  	height: 5rem;
+		font-size:1.9rem;
+		color:$secondary-color;
+  	border-radius: 50%;
+  	border:1px solid;
+  	i{
+  		position: relative;
+    	top: 50%;
+    	display: block;
+	    transform: translateY(-50%);
+  	}
+	}
+}
+.feature__heading{
+	font-size:1.2rem;
+  text-align: center;
+	color:$primary-text-color;
+}
+.feature-newsletter{
+	flex-direction:column;
+	align-items: center;
+	text-align:center;
+}
+/* App download */
+.download--mobile{
+	@media (min-width: 768px) {
+		display:none;
+	}
+}
+.download__title{
+	font-size:1.5rem;
+	margin-bottom:20px;
+	text-align:center;
+}
+.download__buttons{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	align-items:center;
+}
+.download__button{
+	margin-bottom:12px;
+}
+.download__button-img{
+	height:50px;
+}
+/* Footer */
+.footer__list-socials{
+	display:flex;
+	padding:0;
+	margin-bottom:0;
+	margin-top:0;
+	list-style:none;
+	align-items:center;
+}
+.footer__social-item{
+	flex-grow:1;
+	text-align:center;
+	height:60px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.footer__social-item--facebook{
+  background-color: #4263a3;
+}
+.footer__social-item--instagram{
+	background-color: #e81c62;
+}
+.footer_social-icon{
+	color:#fff;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Newsletter */
+.newsletter{
+	padding-top:7rem;
+	padding-left:15px;
+	padding-right:15px;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction:column;
+	background-color:$primary-background-color;
+	@media (min-width: 768px) {
+		padding-left:1rem;
+		padding-right:1rem;
+		padding-bottom:30px;
+	}
+}
+.newsletter-section{
+	text-align: center;
+}
+.newsletter__title{
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.newsletter__description{
+	line-height: 28px;
+	font-size: 20px;
+  font-weight: 300;
+  color: #999;
+}
+.newsletter__newsletter-section{
+	display:flex;
+	justify-content:center;
+	width:100%;
+}
+.newsletter-section__form{
+	margin-top:10px;
+	margin-bottom:50px;
+	max-width:400px;
+}
+.newsletter-form{
+	flex-direction: row;
+	display:flex;
+	margin-left:0;
+	justify-content: center;
+	width:100%;
+}
+.newsletter-form__input{
+  border-radius: 3px;
+  border: 1px solid #e8e8e8;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 34px;
+  width: inherit;
+  padding: 0 10px;
+  margin-left:12px;
+  margin-right:10px;
+}
+.newsletter-form__button{
+	padding: 6px 12px;
+  font-size: .875rem;
+  color: white;
+  background-color: $secondary-color;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: inherit;
+  border: none;
+  border-radius: 2px;
+}
+.newsletter .download--mobile{
+	@media (min-width: 768px) {
+		display:flex;
+	}
 }
