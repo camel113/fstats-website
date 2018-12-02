@@ -12,11 +12,13 @@ github_username:  jekyll
 name: "FOOTSTATS.CH"
 
 # exclude: [dpackage.json,gulpfile.js,js/dev,node_modules,README.m]
-languages: ["fr","de"]
-exclude_from_localizations: ["palmares/2017","js", "images", "css", "rankings","import","libs","stats","config_prod.yml","jobs.html","cgv.html","shop.html","conditions-concours.html","topbuts.html","service-worker.js","_archives","archives.html","posts-images"]
+languages: ["fr", "de"]
+exclude_from_localizations: ["palmares/2017","js","images","assets","css", "rankings","import","libs","stats","config_prod.yml","jobs.html","cgv.html","shop.html","conditions-concours.html","topbuts.html","service-worker.js","_archives","archives.html","posts-images"]
 exclude: ["node_modules","Gemfile","Gemfile.lock","package.json","gulpfile.js","README.md","*/global-stats.html","package-lock.json","shop","cgv","app-form*"]
 plugins:
   - jekyll-paginate
+gems:
+  - jekyll-multiple-languages-plugin
 
 future: true
 paginate: 12
