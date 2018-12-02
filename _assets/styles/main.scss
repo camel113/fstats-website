@@ -249,8 +249,8 @@ body {
   to   { opacity: 1; }
 }
 
-/* Newsletter */
-.newsletter{
+/* Generic page template */
+.newsletter, .footstats-awards{
 	padding-top:7rem;
 	padding-left:15px;
 	padding-right:15px;
@@ -265,6 +265,7 @@ body {
 		padding-bottom:30px;
 	}
 }
+/* Newsletter */
 .newsletter-section{
 	text-align: center;
 }
@@ -279,7 +280,7 @@ body {
   font-weight: 300;
   color: #999;
 }
-.newsletter__newsletter-section{
+.footstats-icon{
 	display:flex;
 	justify-content:center;
 	width:100%;
