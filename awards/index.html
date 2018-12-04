@@ -3,7 +3,6 @@ layout: default
 lang_only_title_meta: Awards AFF
 description: Awards AFF
 date: 2019-01-31 11:00:00 +0200
-region: aff
 ---
 <main class="main-content">
   <section class="footstats-awards">
@@ -12,34 +11,34 @@ region: aff
     </section>
     <section class="page-title">
       <h1 class="page-title__general">Footstats Awards</h1>
-      <h2 class="page-title__description-league">1er tour saison 18/19 | ACVF</h2>
+      <h2 class="page-title__description-league">1er tour saison 18/19 | AFF</h2>
     </section>
     <section class="page-title">
       <h1 class="page-title__league">2e ligue</h1>
     </section>
     <section class="awards">
       <h3 class="awards__title">Meilleur buteur</h3>
-      {% for winner in site.data.awards.league2m[page.region].topscorer.topscorers %}
-      <p class="awards__winner">{{ winner.scorer }} ({{winner.team}}) avec {{winner.goals}} marqués</p>
+      {% for winner in site.data.awards.league2m['aff'].topscorer.topscorers %}
+      <p class="awards__winner">{{ winner.scorer }} ({{winner.team}}) avec {{winner.goals}} buts marqués</p>
       {% endfor %}
     </section>
     <section class="awards">
       <h3 class="awards__title">Meilleure attaque</h3>
-      {% for winner in site.data.awards.league2m[page.region].attackaverage.teams %}
+      {% for winner in site.data.awards.league2m['aff'].attackaverage.teams %}
         <p class="awards__winner">{{ winner.team }}</p>
         <p class="awards__number">{{ winner.goalsfor }} goals marqués en {{ winner.played }} matchs</p>
       {% endfor %}
     </section>
     <section class="awards">
       <h3 class="awards__title">Meilleure défense</h3>
-      {% for winner in site.data.awards.league2m[page.region].defenseaverage.teams %}
+      {% for winner in site.data.awards.league2m['aff'].defenseaverage.teams %}
         <p class="awards__winner">{{ winner.team }}</p>
         <p class="awards__number">{{ winner.goalsagainst }} goals encaissé en {{ winner.played }} matchs</p>
       {% endfor %}   
     </section>
     <section class="awards">
       <h3 class="awards__title">Plus grand nombre de cleansheets (blanchissages)</h3>
-      {% for winner in site.data.awards.league2m[page.region].cleansheets.teams %}
+      {% for winner in site.data.awards.league2m['aff'].cleansheets.teams %}
         <p class="awards__winner">
           {{ winner.team }} avec {{ winner.cleansheets }} cleansheets
         </p>
@@ -49,15 +48,23 @@ region: aff
     </section>
     <section class="awards">
       <h3 class="awards__title">Equipe(s) invaincue(s)</h3>
-      {% for winner in site.data.awards.league2m[page.region].unbeaten.teams %}
-        <p class="awards__winner">{{winner.team}}</p>
-      {% endfor %}
+      {% if site.data.awards.league2m['aff'].victoryonly.teams.siez > 0 %}
+        {% for winner in site.data.awards.league2m['aff'].unbeaten.teams %}
+          <p class="awards__winner">{{winner.team}}</p>
+        {% endfor %}
+      {% else %}
+          <p>Aucune équipe</p>
+      {% endif %}
     </section>
     <section class="awards">
       <h3 class="awards__title">Equipe(s) ne comptant que des victoires</h3>
-      {% for winner in site.data.awards.league2m[page.region].victoryonly.teams %}
-        <p class="awards__winner">{{winner.team}}</p>
-      {% endfor %}
+      {% if site.data.awards.league2m['aff'].victoryonly.teams.siez > 0 %}
+        {% for winner in site.data.awards.league2m['aff'].victoryonly.teams %}
+          <p class="awards__winner">{{winner.team}}</p>
+        {% endfor %}
+      {% else %}
+          <p>Aucune équipe</p>
+      {% endif %}
     </section>
   </section>
 </main>
