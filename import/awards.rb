@@ -5,41 +5,6 @@ require 'json'
 
 urlPath = "http://127.0.0.1:8083"
 
-def create_teams_cleansheets_awards_by_league_and_region (region,nationalId,filePath,urlPath)
-  response = HTTParty.get(urlPath+'/awards/cleansheets/'+nationalId+'/'+region)
-  File.open(filePath+"cleansheets.json","w") do |f|
-    f.write(response.body)
-  end
-end
-
-def create_teams_attackaverage_awards_by_league_and_region (region,nationalId,filePath,urlPath)
-  response = HTTParty.get(urlPath+'/awards/attackaverage/'+nationalId+'/'+region)
-  File.open(filePath+"attackaverage.json","w") do |f|
-    f.write(response.body)
-  end
-end
-
-def create_teams_defenseaverage_awards_by_league_and_region (region,nationalId,filePath,urlPath)
-  response = HTTParty.get(urlPath+'/awards/defenseaverage/'+nationalId+'/'+region)
-  File.open(filePath+"defenseaverage.json","w") do |f|
-    f.write(response.body)
-  end
-end
-
-def create_teams_unbeaten_awards_by_league_and_region (region,nationalId,filePath,urlPath)
-  response = HTTParty.get(urlPath+'/awards/unbeaten/'+nationalId+'/'+region)
-  File.open(filePath+"unbeaten.json","w") do |f|
-    f.write(response.body)
-  end
-end
-
-def create_teams_victoryonly_awards_by_league_and_region (region,nationalId,filePath,urlPath)
-  response = HTTParty.get(urlPath+'/awards/victoryonly/'+nationalId+'/'+region)
-  File.open(filePath+"victoryonly.json","w") do |f|
-    f.write(response.body)
-  end
-end
-
 def create_directories(filePath)
   dirname = File.dirname(filePath+"random")
   unless File.directory?(dirname)
@@ -52,10 +17,13 @@ end
 
 def create_awards_page_region(region,league,urlPath)
 	date = Time.now.strftime("%Y-%m-%d")
-	topScorerResponse = HTTParty.get(urlPath+'/awards/topscorer/'+league+'/'+region)
-	topScorersBody = JSON.parse(topScorerResponse.body)
-	topScorers = topScorersBody['topscorers']
-	puts topScorers
+	topScorers = JSON.parse(HTTParty.get(urlPath+'/awards/topscorer/'+league+'/'+region).body)['topscorers']
+	topCleansheets = JSON.parse(HTTParty.get(urlPath+'/awards/cleansheets/'+league+'/'+region).body)['teams']
+	topAttackTeams = JSON.parse(HTTParty.get(urlPath+'/awards/attackaverage/'+league+'/'+region).body)['teams']
+	topDefenseTeams = JSON.parse(HTTParty.get(urlPath+'/awards/defenseaverage/'+league+'/'+region).body)['teams']
+	topVictoryOnly = JSON.parse(HTTParty.get(urlPath+'/awards/unbeaten/'+league+'/'+region).body)['teams']
+	topUnbeaten = JSON.parse(HTTParty.get(urlPath+'/awards/unbeaten/'+league+'/'+region).body)['teams']
+
 	dir = File.dirname("awards/"+league+"/"+region+"/random")
   unless File.directory?(dir)
     FileUtils.mkdir_p(dir)
@@ -99,34 +67,61 @@ def create_awards_page_region(region,league,urlPath)
 			f.write	   '<p class="awards__winner">'+winner['scorer']+' ('+winner['team']+') avec '+winner['goals'].to_s+' buts marqués</p>'
 		end
 		f.write	   '</section>'
+		f.write 	 '<section class="awards">'
+    f.write  			'<h3 class="awards__title">Meilleure attaque</h3>'
+    topAttackTeams.each do |winner|
+    f.write    		'<p class="awards__winner">'+winner['team']+'</p>'
+		f.write 			'<p class="awards__number">'+winner['goalsfor'].to_s+' goals marqués en '+winner['played'].to_s+'matchs</p>'
+    end
+    f.write	   '</section>'
+    f.write 	 '<section class="awards">'
+    f.write  			'<h3 class="awards__title">Meilleure défense</h3>'
+    topDefenseTeams.each do |winner|
+    f.write    		'<p class="awards__winner">'+winner['team']+'</p>'
+		f.write 			'<p class="awards__number">'+winner['goalsagainst'].to_s+' goals encaissés en '+winner['played'].to_s+'matchs</p>'
+    end
+    f.write	   '</section>'
+		f.write 	'<section class="awards">'
+    f.write  		'<h3 class="awards__title">Plus grand nombre de cleansheets (blanchissages)</h3>'
+    topCleansheets.each do |winner|
+      f.write 	'<p class="awards__winner">'+winner['team']+' avec '+winner['cleansheets']+' cleansheets'
+    end
+    f.write		'</section>'
+    f.write 	'<section class="awards">'
+    f.write 		'<h3 class="awards__title">Équipe(s) invaincue(s)</h3>'
+    if topUnbeaten.length > 0
+        topUnbeaten.each do |winner|
+					f.write '<p class="awards__winner">'+winner['team']+'</p>'
+       	end
+    else
+          f.write '<p>Aucune équipe</p>'
+    end
+    f.write		'</section>'
+    f.write 	'<section class="awards">'
+    f.write 		'<h3 class="awards__title">Équipe(s) ne comptant que des victoires</h3>'
+    if topVictoryOnly.length > 0
+        topVictoryOnly.each do |winner|
+					f.write '<p class="awards__winner">'+winner['team']+'</p>'
+       	end
+    else
+          f.write '<p>Aucune équipe</p>'
+    end
+    f.write		'</section>'
+    f.write '</main>'
 		f.write "\n"
 	end
 end
 
-
-leaguesFlat = []
 leagues = []
-regions = []
 
 # AFF 2eme ligue
 filePath = "_data/awards/league2m/aff/"
-# create_directories(filePath)
 leagues.push(:region => 'aff', :nationalId => '2m', :filePath => filePath)
 
 # AFF 3eme ligue
 filePath = "_data/awards/league3m/aff/"
-# create_directories(filePath)
 leagues.push(:region => 'aff', :nationalId => '3m', :filePath => filePath)
 
 leagues.each { |l|
   create_awards_page_region(l[:region],l[:nationalId],urlPath)
 }
-
-# leagues.each { |l|
-#   create_teams_cleansheets_awards_by_league_and_region(l[:region],l[:nationalId],l[:filePath],urlPath)
-#   create_topscorer_awards_by_league_and_region(l[:region],l[:nationalId],l[:filePath],urlPath)
-#   create_teams_attackaverage_awards_by_league_and_region(l[:region],l[:nationalId],l[:filePath],urlPath)
-#   create_teams_defenseaverage_awards_by_league_and_region(l[:region],l[:nationalId],l[:filePath],urlPath)
-#   create_teams_victoryonly_awards_by_league_and_region(l[:region],l[:nationalId],l[:filePath],urlPath)
-#   create_teams_unbeaten_awards_by_league_and_region(l[:region],l[:nationalId],l[:filePath],urlPath)
-# }
