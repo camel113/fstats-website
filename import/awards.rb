@@ -12,13 +12,6 @@ def create_teams_cleansheets_awards_by_league_and_region (region,nationalId,file
   end
 end
 
-def create_topscorer_awards_by_league_and_region (region,nationalId,filePath,urlPath)
-  response = HTTParty.get(urlPath+'/awards/topscorer/'+nationalId+'/'+region)
-  File.open(filePath+"topscorer.json","w") do |f|
-    f.write(response.body)
-  end
-end
-
 def create_teams_attackaverage_awards_by_league_and_region (region,nationalId,filePath,urlPath)
   response = HTTParty.get(urlPath+'/awards/attackaverage/'+nationalId+'/'+region)
   File.open(filePath+"attackaverage.json","w") do |f|
@@ -57,10 +50,12 @@ end
 
 # Page generation
 
-def create_awards_page_region(region,league)
+def create_awards_page_region(region,league,urlPath)
 	date = Time.now.strftime("%Y-%m-%d")
-	puts region
-	puts league
+	topScorerResponse = HTTParty.get(urlPath+'/awards/topscorer/'+league+'/'+region)
+	topScorersBody = JSON.parse(topScorerResponse.body)
+	topScorers = topScorersBody['topscorers']
+	puts topScorers
 	dir = File.dirname("awards/"+league+"/"+region+"/random")
   unless File.directory?(dir)
     FileUtils.mkdir_p(dir)
@@ -100,9 +95,9 @@ def create_awards_page_region(region,league)
 		f.write	  	'</section>'
 		f.write	   '<section class="awards">'
 		f.write	     '<h3 class="awards__title">Meilleur buteur</h3>'
-		f.write	     '{% for winner in site.data.awards.league2m["aff"].topscorer.topscorers %}'
-		f.write	     '<p class="awards__winner">{{ winner.scorer }} ({{winner.team}}) avec {{winner.goals}} buts marqués</p>'
-		f.write	     '{% endfor %}'
+		topScorers.each do |winner|
+			f.write	   '<p class="awards__winner">'+winner['scorer']+' ('+winner['team']+') avec '+winner['goals'].to_s+' buts marqués</p>'
+		end
 		f.write	   '</section>'
 		f.write "\n"
 	end
@@ -124,7 +119,7 @@ filePath = "_data/awards/league3m/aff/"
 leagues.push(:region => 'aff', :nationalId => '3m', :filePath => filePath)
 
 leagues.each { |l|
-  create_awards_page_region(l[:region],l[:nationalId])
+  create_awards_page_region(l[:region],l[:nationalId],urlPath)
 }
 
 # leagues.each { |l|
