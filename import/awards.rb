@@ -64,9 +64,9 @@ def create_awards_page_region(region,urlPath)
 			topVictoryOnly = JSON.parse(HTTParty.get(urlPath+'/awards/unbeaten/'+league[:nationalId]+'/'+region[:name]).body)['teams']
 			topUnbeaten = JSON.parse(HTTParty.get(urlPath+'/awards/unbeaten/'+league[:nationalId]+'/'+region[:name]).body)['teams']
 
-			f.write			'<section class="page-title">'
+			f.write		 '<section class="page-title">'
 			f.write	    	'<h1 class="page-title__league">'+league[:name]+'e ligue</h1>'
-			f.write	  	'</section>'
+			f.write	   '</section>'
 			f.write	   '<section class="awards">'
 			f.write	     '<h3 class="awards__title">Meilleur buteur</h3>'
 			topScorers.each do |winner|
@@ -112,10 +112,11 @@ def create_awards_page_region(region,urlPath)
 	    else
 	          f.write '<p>Aucune équipe</p>'
 	    end
-	    f.write		'</section>'
-	    f.write '</main>'
-			f.write "\n"
+				f.write		'</section>'
 		end #end of each leagues
+		f.write	'</section>'
+    f.write '</main>'
+		f.write "\n"
 	end
 end
 
