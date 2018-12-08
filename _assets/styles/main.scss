@@ -328,3 +328,29 @@ body {
 		display:flex;
 	}
 }
+
+/* Awards */
+
+.awards{
+	display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-bottom: 2px dotted #ddd;
+}
+.page-title__general{
+	text-align: center;
+}
+.page-title__description{
+	text-align: center;
+}
+.awards:last-of-type {
+  border-bottom: none;
+}
+.awards__winner{
+	margin-top: 0;
+}
+.awards__number{
+	margin-top: 0;
+	font-style: italic;
+	color: #666666;
+}

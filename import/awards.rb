@@ -49,11 +49,11 @@ def create_awards_page_region(region,urlPath)
 		f.write '<main class="main-content">'
 		  f.write		'<section class="footstats-awards">'
 		  f.write 		'<section class="footstats-icon">'
-		  f.write 			'<img class="footstats-icon__img" src="images/2.0/footstats-round-100.png" alt="Footstats" srcset="images/2.0/footstats-round-200.png 2x"/>'
+		  f.write 			'<img class="footstats-icon__img" src="{{ site.url }}/images/2.0/footstats-round-100.png" alt="Footstats" srcset="{{ site.url }}/images/2.0/footstats-round-200.png 2x"/>'
 		  f.write 		'</section>'
 		  f.write			'<section class="page-title">'
 			f.write	 			'<h1 class="page-title__general">Footstats Awards</h1>'
-			f.write	  		'<h2 class="page-title__description-league">1er tour saison 18/19 | '+region[:name].upcase+'</h2>'
+			f.write	  		'<h2 class="page-title__description">1er tour saison 18/19 '+region[:name].upcase+'</h2>'
 			f.write			'</section>'
 		region[:leagues].each do |league|
 
@@ -68,49 +68,51 @@ def create_awards_page_region(region,urlPath)
 			f.write	    	'<h1 class="page-title__league">'+league[:name]+'e ligue</h1>'
 			f.write	   '</section>'
 			f.write	   '<section class="awards">'
-			f.write	     '<h3 class="awards__title">Meilleur buteur</h3>'
+			f.write	     '<h3 class="awards__title">Meilleur buteur 🥇</h3>'
 			topScorers.each do |winner|
-				f.write	   '<p class="awards__winner">'+winner['scorer']+' ('+winner['team']+') avec '+winner['goals'].to_s+' buts marqués</p>'
+				f.write	   '<p class="awards__winner">'+winner['scorer']+' ('+winner['team']+')</p>'
 			end
+			f.write 			'<p class="awards__number">'+topScorers[0]['goals'].to_s+' buts marqués</p>'
 			f.write	   '</section>'
 			f.write 	 '<section class="awards">'
-	    f.write  			'<h3 class="awards__title">Meilleure attaque</h3>'
+	    f.write  			'<h3 class="awards__title">Meilleure attaque 🏆</h3>'
 	    topAttackTeams.each do |winner|
 	    f.write    		'<p class="awards__winner">'+winner['team']+'</p>'
-			f.write 			'<p class="awards__number">'+winner['goalsfor'].to_s+' goals marqués en '+winner['played'].to_s+'matchs</p>'
+	    f.write 			'<p class="awards__number">'+winner['goalsfor'].to_s+' goals marqués en '+winner['played'].to_s+' matchs</p>'
 	    end
 	    f.write	   '</section>'
 	    f.write 	 '<section class="awards">'
-	    f.write  			'<h3 class="awards__title">Meilleure défense</h3>'
+	    f.write  			'<h3 class="awards__title">Meilleure défense 🏆</h3>'
 	    topDefenseTeams.each do |winner|
 	    f.write    		'<p class="awards__winner">'+winner['team']+'</p>'
-			f.write 			'<p class="awards__number">'+winner['goalsagainst'].to_s+' goals encaissés en '+winner['played'].to_s+'matchs</p>'
+	    f.write 			'<p class="awards__number">'+winner['goalsagainst'].to_s+' goals encaissés en '+winner['played'].to_s+' matchs</p>'
 	    end
 	    f.write	   '</section>'
 			f.write 	'<section class="awards">'
-	    f.write  		'<h3 class="awards__title">Plus grand nombre de cleansheets (blanchissages)</h3>'
+	    f.write  		'<h3 class="awards__title">Plus grand nombre de cleansheets (blanchissages) ❌</h3>'
 	    topCleansheets.each do |winner|
-	      f.write 	'<p class="awards__winner">'+winner['team']+' avec '+winner['cleansheets']+' cleansheets'
+	      f.write 	'<p class="awards__winner">'+winner['team']
 	    end
+	    f.write 			'<p class="awards__number">'+topCleansheets[0]['cleansheets'].to_s+' cleansheets</p>'
 	    f.write		'</section>'
 	    f.write 	'<section class="awards">'
-	    f.write 		'<h3 class="awards__title">Équipe(s) invaincue(s)</h3>'
+	    f.write 		'<h3 class="awards__title">Équipe(s) invaincue(s) 🏰</h3>'
 	    if topUnbeaten.length > 0
 	        topUnbeaten.each do |winner|
 						f.write '<p class="awards__winner">'+winner['team']+'</p>'
 	       	end
 	    else
-	          f.write '<p>Aucune équipe</p>'
+	          f.write '<p class="awards__winner">Aucune équipe 😢</p>'
 	    end
 	    f.write		'</section>'
 	    f.write 	'<section class="awards">'
-	    f.write 		'<h3 class="awards__title">Équipe(s) ne comptant que des victoires</h3>'
+	    f.write 		'<h3 class="awards__title">Équipe(s) ne comptant que des victoires 🚀</h3>'
 	    if topVictoryOnly.length > 0
 	        topVictoryOnly.each do |winner|
 						f.write '<p class="awards__winner">'+winner['team']+'</p>'
 	       	end
 	    else
-	          f.write '<p>Aucune équipe</p>'
+	          f.write '<p class="awards__winner">Aucune équipe 😢</p>'
 	    end
 				f.write		'</section>'
 		end #end of each leagues
