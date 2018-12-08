@@ -391,3 +391,12 @@ newsletter:
   submit: Je m'inscris
   thanks: Merci 
   error: Une erreur s'est produite
+awards:
+  topscorer:
+    title: Meilleur buteur
+  topscorers:
+    title: Meilleurs buteurs
+  top_attack:
+    title: Meilleure attaque
+  top_attacks:
+    title: Meilleures attaques

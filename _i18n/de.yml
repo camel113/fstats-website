@@ -393,3 +393,12 @@ newsletter:
   submit: Anmelden
   thanks: Danke 
   error: Ein Fehler ist geschehen
+awards:
+  topscorer:
+    title: Beste Torschütze
+  topscorers:
+    title: Beste Torschützen
+  top_attack:
+    title: Beste Offenensive Team
+  top_attack:
+    title: Besten Offenensiven Teams

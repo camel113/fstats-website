@@ -16,7 +16,7 @@ end
 
 # Page generation
 
-def create_awards_page_region(region,urlPath)
+def create_awards_page_region(region,urlPath,allRegions)
 	date = Time.now.strftime("%Y-%m-%d")
 	
 	dir = File.dirname("awards/"+region[:name]+"/random")
@@ -55,6 +55,16 @@ def create_awards_page_region(region,urlPath)
 			f.write	 			'<h1 class="page-title__general">Footstats Awards</h1>'
 			f.write	  		'<h2 class="page-title__description">1er tour saison 18/19 '+region[:name].upcase+'</h2>'
 			f.write			'</section>'
+			f.write 		'<nav class="simple-links-nav">'
+			allRegions.each do |regionInfo|
+				if regionInfo.equal?(allRegions.last)
+					f.write '<a class="simple-links-nav__link" href="{{ site.url }}/'+regionInfo[:filePath]+'">'+regionInfo[:name].upcase+'</a>'
+				else
+					f.write '<a class="simple-links-nav__link" href="{{ site.url }}/'+regionInfo[:filePath]+'">'+regionInfo[:name].upcase+'</a> / '
+				end
+				
+			end
+			f.write 	'</nav>'
 		region[:leagues].each do |league|
 
 			topScorers = JSON.parse(HTTParty.get(urlPath+'/awards/topscorer/'+league[:nationalId]+'/'+region[:name]).body)['topscorers']
@@ -68,7 +78,12 @@ def create_awards_page_region(region,urlPath)
 			f.write	    	'<h1 class="page-title__league">'+league[:name]+'e ligue</h1>'
 			f.write	   '</section>'
 			f.write	   '<section class="awards">'
-			f.write	     '<h3 class="awards__title">Meilleur buteur 🥇</h3>'
+			if topScorers.size > 1
+				f.write	 	'<h3 class="awards__title">{% t awards.topscorers.title %} 🥇</h3>'
+			else
+				f.write	 	'<h3 class="awards__title">{% t awards.topscorer.title %} {% t awards.topscorer.description %} 🥇</h3>'
+			end
+			
 			topScorers.each do |winner|
 				f.write	   '<p class="awards__winner">'+winner['scorer']+' ('+winner['team']+')</p>'
 			end
@@ -122,20 +137,64 @@ def create_awards_page_region(region,urlPath)
 	end
 end
 
-affLeagues = []
 regions = []
 
 # AFF
-# AFF 2eme ligue
-create_directory("_data/awards/2m/aff/")
+affLeagues = []
 affLeagues.push(:nationalId => '2m', :name => "2")
-
-# AFF 3eme ligue
-create_directory("_data/awards/3m/aff/")
 affLeagues.push(:nationalId => '3m', :name => "3")
 
 regions.push(:name => 'aff', :leagues => affLeagues, filePath: 'awards/aff/')
 
+#ACVF
+acvfLeagues = []
+acvfLeagues.push(:nationalId => '3m', :name => "3")
+
+regions.push(:name => 'acvf', :leagues => affLeagues, filePath: 'awards/acvf/')
+
+#AVF
+avfLeagues = []
+avfLeagues.push(:nationalId => '3m', :name => "3")
+
+regions.push(:name => 'avf', :leagues => avfLeagues, filePath: 'awards/avf/')
+
+#ACGF
+acgfLeagues = []
+acgfLeagues.push(:nationalId => '3m', :name => "3")
+
+regions.push(:name => 'acgf', :leagues => affLeagues, filePath: 'awards/acgf/')
+
+#ANF
+anfLeagues = []
+anfLeagues.push(:nationalId => '3m', :name => "3")
+regions.push(:name => 'anf', :leagues => anfLeagues, filePath: 'awards/anf/')
+
+#FVRZ
+fvrzLeagues = []
+fvrzLeagues.push(:nationalId => '3m', :name => "3")
+regions.push(:name => 'fvrz', :leagues => fvrzLeagues, filePath: 'awards/fvrz/')
+
+#AFV
+# afvLeagues = []
+# afvLeagues.push(:nationalId => '3m', :name => "3")
+# regions.push(:name => 'afv', :leagues => afvLeagues, filePath: 'awards/afv/')
+
+#SOFV
+sofvLeagues = []
+sofvLeagues.push(:nationalId => '3m', :name => "3")
+regions.push(:name => 'sofv', :leagues => sofvLeagues, filePath: 'awards/sofv/')
+
+#OFV
+ofvLeagues = []
+ofvLeagues.push(:nationalId => '3m', :name => "3")
+regions.push(:name => 'ofv', :leagues => ofvLeagues, filePath: 'awards/ofv/')
+
+#IFV
+ifvLeagues = []
+ifvLeagues.push(:nationalId => '3m', :name => "3")
+regions.push(:name => 'ifv', :leagues => ifvLeagues, filePath: 'awards/ifv/')
+
+
 regions.each { |region|
-  create_awards_page_region(region,urlPath)
+  create_awards_page_region(region,urlPath,regions)
 }
