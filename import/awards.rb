@@ -53,7 +53,8 @@ def create_awards_page_region(region,urlPath,allRegions)
 		  f.write 		'</section>'
 		  f.write			'<section class="page-title">'
 			f.write	 			'<h1 class="page-title__general">Footstats Awards</h1>'
-			f.write	  		'<h2 class="page-title__description">1er tour saison 18/19 '+region[:name].upcase+'</h2>'
+			f.write	  		'<h2 class="page-title__description">1er tour saison 18/19</h2>'
+			f.write	  		'<h2 class="page-title__description">{% t associations.'+region[:name]+'.short %} - {% t associations.'+region[:name]+'.long %}</h2>'
 			f.write			'</section>'
 			f.write 		'<nav class="simple-links-nav">'
 			allRegions.each do |regionInfo|
@@ -183,9 +184,9 @@ fvrzLeagues.push(:nationalId => '3m', :name => "3")
 regions.push(:name => 'fvrz', :leagues => fvrzLeagues, filePath: 'awards/fvrz/')
 
 #AFV
-# afvLeagues = []
-# afvLeagues.push(:nationalId => '3m', :name => "3")
-# regions.push(:name => 'afv', :leagues => afvLeagues, filePath: 'awards/afv/')
+afvLeagues = []
+afvLeagues.push(:nationalId => '3m', :name => "3")
+regions.push(:name => 'afv', :leagues => afvLeagues, filePath: 'awards/afv/')
 
 #SOFV
 sofvLeagues = []

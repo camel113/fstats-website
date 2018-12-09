@@ -378,6 +378,46 @@ meta:
   site_description: Tous les classements par équipes, calendriers et classements buteurs réunis dans une seule app (Android, iOS)!
   facebook_title: Footstats
   facebook_description: Tous les classements par équipes, calendriers et classements buteurs réunis dans une seule app!
+associations:
+  afv:
+    short: AFV
+    long: Aargauischer Fussballverband
+  afbj:
+    short: AFBJ
+    long: Association de football Berne/Jura
+  ifv:
+    short: IFV 
+    long: Innerschweizerischer Fussballverband
+  fvnws:
+    short: FVNWS
+    long: Fussballverband Nordwestschweiz
+  ofv:
+    short: OFV
+    long: Ostschweizer Fussballverband
+  sofv:
+    short: SOFV
+    long: Solothurner Fussballverband
+  fvrz:
+    short: FVRZ
+    long: Fussballverband Region Zürich
+  ftc:
+    short: FTC
+    long: Federazione ticinese di calcio
+  aff:
+    short: AFF
+    long: Association fribourgeoise de football 
+  acgf:
+    short: ACGF
+    long: Association cantonale genevoise de football
+  anf:
+    short: ANF
+    long: Association neuchâteloise de football
+  acvf:
+    short: ACVF
+    long: Association cantonale vaudoise de football
+  avf:
+    short: AVF
+    long: Association valaisanne de football
 posts:
   breadcrumb:
     news1718:
