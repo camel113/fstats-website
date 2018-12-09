@@ -382,7 +382,7 @@ associations:
   afv:
     short: AFV
     long: Aargauischer Fussballverband
-  afbj:
+  fvbj:
     short: AFBJ
     long: Association de football Berne/Jura
   ifv:
