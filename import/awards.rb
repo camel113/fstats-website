@@ -113,7 +113,7 @@ def create_awards_page_region(region,urlPath,allRegions)
 	    end
 	    f.write	   '</section>'
 			f.write 	'<section class="awards">'
-	    f.write  		'<h3 class="awards__title">{% t awards.cleansheets.title %} ❌</h3>'
+	    f.write  		'<h3 class="awards__title">{% t awards.cleansheets.title %}&nbsp;❌</h3>'
 	    topCleansheets.each do |winner|
 	      f.write 	'<p class="awards__winner">'+winner['team']
 	    end
@@ -130,7 +130,7 @@ def create_awards_page_region(region,urlPath,allRegions)
 	    end
 	    f.write		'</section>'
 	    f.write 	'<section class="awards">'
-	    f.write 		'<h3 class="awards__title">{% t awards.victory_only.title %} 🚀</h3>'
+	    f.write 		'<h3 class="awards__title">{% t awards.victory_only.title %}&nbsp;🚀</h3>'
 	    if topVictoryOnly.length > 0
 	        topVictoryOnly.each do |winner|
 						f.write '<p class="awards__winner">'+winner['team']+'</p>'

@@ -336,6 +336,10 @@ body {
   width: 100%;
   flex-direction: column;
   border-bottom: 2px dotted #ddd;
+  max-width: 500px;
+  @media (min-width: 768px) {
+		text-align: center;
+	}
 }
 .page-title__general{
 	text-align: center;
@@ -353,4 +357,13 @@ body {
 	margin-top: 0;
 	font-style: italic;
 	color: #666666;
+}
+
+/* Other */
+.simple-links-nav{
+  line-height: 1.5em;
+}
+
+.simple-links-nav__link{
+  color:#006fc6;
 }
