@@ -79,28 +79,36 @@ def create_awards_page_region(region,urlPath,allRegions)
 			f.write	   '</section>'
 			f.write	   '<section class="awards">'
 			if topScorers.size > 1
-				f.write	 	'<h3 class="awards__title">{% t awards.topscorers.title %} 🥇</h3>'
+				f.write	 	'<h3 class="awards__title">{% t awards.topscorers.multiple %} 🥇</h3>'
 			else
-				f.write	 	'<h3 class="awards__title">{% t awards.topscorer.title %} {% t awards.topscorer.description %} 🥇</h3>'
+				f.write	 	'<h3 class="awards__title">{% t awards.topscorers.single %} 🥇</h3>'
 			end
 			
 			topScorers.each do |winner|
 				f.write	   '<p class="awards__winner">'+winner['scorer']+' ('+winner['team']+')</p>'
 			end
-			f.write 			'<p class="awards__number">'+topScorers[0]['goals'].to_s+' buts marqués</p>'
+			f.write 			'<p class="awards__number">'+topScorers[0]['goals'].to_s+' {% t awards.topscorers.number_description %}</p>'
 			f.write	   '</section>'
 			f.write 	 '<section class="awards">'
-	    f.write  			'<h3 class="awards__title">Meilleure attaque 🏆</h3>'
+	    if topAttackTeams.size > 1
+				f.write	 	'<h3 class="awards__title">{% t awards.topattack.multiple %} 🏆</h3>'
+			else
+				f.write	 	'<h3 class="awards__title">{% t awards.topattack.single %} 🏆</h3>'
+			end
 	    topAttackTeams.each do |winner|
 	    f.write    		'<p class="awards__winner">'+winner['team']+'</p>'
-	    f.write 			'<p class="awards__number">'+winner['goalsfor'].to_s+' goals marqués en '+winner['played'].to_s+' matchs</p>'
+	    f.write 			'<p class="awards__number">'+winner['goalsfor'].to_s+' {% t awards.topattack.number_description.part1 %} '+winner['played'].to_s+' {% t awards.topattack.number_description.part2 %}</p>'
 	    end
 	    f.write	   '</section>'
 	    f.write 	 '<section class="awards">'
-	    f.write  			'<h3 class="awards__title">Meilleure défense 🏆</h3>'
+	    if topDefenseTeams.size > 1
+				f.write	 	'<h3 class="awards__title">{% t awards.topdefense.multiple %} 🏆</h3>'
+			else
+				f.write	 	'<h3 class="awards__title">{% t awards.topdefense.single %} 🏆</h3>'
+			end
 	    topDefenseTeams.each do |winner|
 	    f.write    		'<p class="awards__winner">'+winner['team']+'</p>'
-	    f.write 			'<p class="awards__number">'+winner['goalsagainst'].to_s+' goals encaissés en '+winner['played'].to_s+' matchs</p>'
+	    f.write 			'<p class="awards__number">'+winner['goalsagainst'].to_s+'  {% t awards.topdefense.number_description.part1 %} '+winner['played'].to_s+'  {% t awards.topdefense.number_description.part2 %}</p>'
 	    end
 	    f.write	   '</section>'
 			f.write 	'<section class="awards">'

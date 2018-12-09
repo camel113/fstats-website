@@ -392,11 +392,19 @@ newsletter:
   thanks: Merci 
   error: Une erreur s'est produite
 awards:
-  topscorer:
-    title: Meilleur buteur
   topscorers:
-    title: Meilleurs buteurs
-  top_attack:
-    title: Meilleure attaque
-  top_attacks:
-    title: Meilleures attaques
+    single: Meilleur buteur
+    multiple: Meilleurs buteurs
+    number_description: buts marqués
+  topattack:
+    single: Meilleure attaque
+    multiple: Meilleures attaques
+    number_description:
+      part1: buts marqués en
+      part2: matchs joués
+  topdefense:
+    single: Meilleure défense
+    multiple: Meilleures défenses
+    number_description:
+      part1: buts encaissés en
+      part2: matchs joués
