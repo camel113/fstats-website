@@ -408,3 +408,10 @@ awards:
     number_description:
       part1: buts encaissés en
       part2: matchs joués
+  cleansheets:
+    title: Plus grand nombre de clean sheets
+  unbeaten:
+    title: Équipe(s) invaincue(s)
+  victory_only:
+    title: Équipe(s) ne comptant que des victoires
+  no_team_info: Aucune équipe

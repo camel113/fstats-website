@@ -112,30 +112,30 @@ def create_awards_page_region(region,urlPath,allRegions)
 	    end
 	    f.write	   '</section>'
 			f.write 	'<section class="awards">'
-	    f.write  		'<h3 class="awards__title">Plus grand nombre de cleansheets (blanchissages) ❌</h3>'
+	    f.write  		'<h3 class="awards__title">{% t awards.cleansheets.title %} ❌</h3>'
 	    topCleansheets.each do |winner|
 	      f.write 	'<p class="awards__winner">'+winner['team']
 	    end
-	    f.write 			'<p class="awards__number">'+topCleansheets[0]['cleansheets'].to_s+' cleansheets</p>'
+	    f.write 			'<p class="awards__number">'+topCleansheets[0]['cleansheets'].to_s+' clean sheets</p>'
 	    f.write		'</section>'
 	    f.write 	'<section class="awards">'
-	    f.write 		'<h3 class="awards__title">Équipe(s) invaincue(s) 🏰</h3>'
+	    f.write 		'<h3 class="awards__title">{% t awards.unbeaten.title %} 🏰</h3>'
 	    if topUnbeaten.length > 0
 	        topUnbeaten.each do |winner|
 						f.write '<p class="awards__winner">'+winner['team']+'</p>'
 	       	end
 	    else
-	          f.write '<p class="awards__winner">Aucune équipe 😢</p>'
+	          f.write '<p class="awards__winner">{% t awards.no_team_info %} 😢</p>'
 	    end
 	    f.write		'</section>'
 	    f.write 	'<section class="awards">'
-	    f.write 		'<h3 class="awards__title">Équipe(s) ne comptant que des victoires 🚀</h3>'
+	    f.write 		'<h3 class="awards__title">{% t awards.victory_only.title %} 🚀</h3>'
 	    if topVictoryOnly.length > 0
 	        topVictoryOnly.each do |winner|
 						f.write '<p class="awards__winner">'+winner['team']+'</p>'
 	       	end
 	    else
-	          f.write '<p class="awards__winner">Aucune équipe 😢</p>'
+	          f.write '<p class="awards__winner">{% t awards.no_team_info %} 😢</p>'
 	    end
 				f.write		'</section>'
 		end #end of each leagues

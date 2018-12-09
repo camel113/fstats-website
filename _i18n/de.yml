@@ -410,3 +410,10 @@ awards:
     number_description:
       part1: Gegentore in
       part2: Spielen
+  cleansheets:
+    title: Mehr Clean sheets
+  unbeaten:
+    title: Ungeschlagenes Team(s)
+  victory_only:
+    title: Team(s) mit nur Siegen
+  no_team_info: Kein Team
