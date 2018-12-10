@@ -49,7 +49,7 @@ def create_awards_page_region(region,urlPath,allRegions)
 		f.write '<main class="main-content">'
 		  f.write		'<section class="footstats-awards">'
 		  f.write 		'<section class="footstats-icon">'
-		  f.write 			'<img class="footstats-icon__img" src="{{ site.url }}/images/2.0/footstats-round-100.png" alt="Footstats" srcset="{{ site.url }}/images/2.0/footstats-round-200.png 2x"/>'
+		  f.write 			'<img class="footstats-icon__img" src="/images/2.0/footstats-round-100.png" alt="Footstats" srcset="/images/2.0/footstats-round-200.png 2x"/>'
 		  f.write 		'</section>'
 		  f.write			'<section class="page-title">'
 			f.write	 			'<h1 class="page-title__general">Footstats Awards</h1>'
