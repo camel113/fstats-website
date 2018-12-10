@@ -19,13 +19,13 @@ end
 def create_awards_page_region(region,urlPath,allRegions)
 	date = Time.now.strftime("%Y-%m-%d")
 	
-	dir = File.dirname("awards/"+region[:name]+"/random")
+	dir = File.dirname("awards/"+region[:apiPath]+"/random")
 	puts dir
   unless File.directory?(dir)
     FileUtils.mkdir_p(dir)
   end
 
-	File.open("awards/"+region[:name]+"/index.html","w") do |f|
+	File.open("awards/"+region[:apiPath]+"/index.html","w") do |f|
 		f.write('---')
 		f.write "\n"
 		f.write "layout: default"
@@ -54,26 +54,30 @@ def create_awards_page_region(region,urlPath,allRegions)
 		  f.write			'<section class="page-title">'
 			f.write	 			'<h1 class="page-title__general">Footstats Awards</h1>'
 			f.write	  		'<h2 class="page-title__description">1er tour saison 18/19</h2>'
-			f.write	  		'<h2 class="page-title__description">{% t associations.'+region[:name]+'.short %} - {% t associations.'+region[:name]+'.long %}</h2>'
+			if region[:apiPath] != ''
+				f.write	  	'<h2 class="page-title__description">{% t associations.'+region[:name]+'.short %} - {% t associations.'+region[:name]+'.long %}</h2>'
+			else
+				f.write	  	'<h2 class="page-title__description">'+region[:name]+'</h2>'
+			end
 			f.write			'</section>'
 			f.write 		'<nav class="simple-links-nav">'
 			allRegions.each do |regionInfo|
 				if regionInfo.equal?(allRegions.last)
-					f.write '<a class="simple-links-nav__link" href="{{ site.url }}/'+regionInfo[:filePath]+'">'+regionInfo[:name].upcase+'</a>'
+					f.write '<a class="simple-links-nav__link" href="{{site.url}}{{ site.baseurl }}/'+regionInfo[:filePath]+'">'+regionInfo[:name].upcase+'</a>'
 				else
-					f.write '<a class="simple-links-nav__link" href="{{ site.url }}/'+regionInfo[:filePath]+'">'+regionInfo[:name].upcase+'</a> / '
+					f.write '<a class="simple-links-nav__link" href="{{site.url}}{{ site.baseurl }}/'+regionInfo[:filePath]+'">'+regionInfo[:name].upcase+'</a> / '
 				end
 				
 			end
 			f.write 	'</nav>'
 		region[:leagues].each do |league|
 
-			topScorers = JSON.parse(HTTParty.get(urlPath+'/awards/topscorer/'+league[:nationalId]+'/'+region[:name]).body)['topscorers']
-			topCleansheets = JSON.parse(HTTParty.get(urlPath+'/awards/cleansheets/'+league[:nationalId]+'/'+region[:name]).body)['teams']
-			topAttackTeams = JSON.parse(HTTParty.get(urlPath+'/awards/attackaverage/'+league[:nationalId]+'/'+region[:name]).body)['teams']
-			topDefenseTeams = JSON.parse(HTTParty.get(urlPath+'/awards/defenseaverage/'+league[:nationalId]+'/'+region[:name]).body)['teams']
-			topVictoryOnly = JSON.parse(HTTParty.get(urlPath+'/awards/unbeaten/'+league[:nationalId]+'/'+region[:name]).body)['teams']
-			topUnbeaten = JSON.parse(HTTParty.get(urlPath+'/awards/unbeaten/'+league[:nationalId]+'/'+region[:name]).body)['teams']
+			topScorers = JSON.parse(HTTParty.get(urlPath+'/awards/topscorer/'+league[:nationalId]+'/'+region[:apiPath]).body)['topscorers']
+			topCleansheets = JSON.parse(HTTParty.get(urlPath+'/awards/cleansheets/'+league[:nationalId]+'/'+region[:apiPath]).body)['teams']
+			topAttackTeams = JSON.parse(HTTParty.get(urlPath+'/awards/attackaverage/'+league[:nationalId]+'/'+region[:apiPath]).body)['teams']
+			topDefenseTeams = JSON.parse(HTTParty.get(urlPath+'/awards/defenseaverage/'+league[:nationalId]+'/'+region[:apiPath]).body)['teams']
+			topVictoryOnly = JSON.parse(HTTParty.get(urlPath+'/awards/unbeaten/'+league[:nationalId]+'/'+region[:apiPath]).body)['teams']
+			topUnbeaten = JSON.parse(HTTParty.get(urlPath+'/awards/unbeaten/'+league[:nationalId]+'/'+region[:apiPath]).body)['teams']
 
 			f.write		 '<section class="page-title">'
 			f.write	    	'<h1 class="page-title__league">'+league[:name]+'e ligue</h1>'
@@ -148,71 +152,76 @@ end
 
 regions = []
 
+#Suisse
+swissLeagues = []
+swissLeagues.push(:nationalId => '3m', :name => "3")
+regions.push(:name => '🇨🇭', :apiPath => '', :leagues => swissLeagues, filePath: 'awards/')
+
 #AFV
 afvLeagues = []
 afvLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'afv', :leagues => afvLeagues, filePath: 'awards/afv/')
+regions.push(:name => 'afv', :apiPath => 'afv', :leagues => afvLeagues, filePath: 'awards/afv/')
 
 #FVBJ
 fvbjLeagues = []
 fvbjLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'fvbj', :leagues => fvbjLeagues, filePath: 'awards/fvbj/')
+regions.push(:name => 'fvbj', :apiPath => 'fvbj', :leagues => fvbjLeagues, filePath: 'awards/fvbj/')
 
 #IFV
 ifvLeagues = []
 ifvLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'ifv', :leagues => ifvLeagues, filePath: 'awards/ifv/')
+regions.push(:name => 'ifv', :apiPath => 'ifv', :leagues => ifvLeagues, filePath: 'awards/ifv/')
 
 #FVNWS
 fvnwsLeagues = []
 fvnwsLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'fvnws', :leagues => fvnwsLeagues, filePath: 'awards/fvnws/')
+regions.push(:name => 'fvnws', :apiPath => 'fvnws', :leagues => fvnwsLeagues, filePath: 'awards/fvnws/')
 
 #OFV
 ofvLeagues = []
 ofvLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'ofv', :leagues => ofvLeagues, filePath: 'awards/ofv/')
+regions.push(:name => 'ofv', :apiPath => 'ofv', :leagues => ofvLeagues, filePath: 'awards/ofv/')
 
 #SOFV
 sofvLeagues = []
 sofvLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'sofv', :leagues => sofvLeagues, filePath: 'awards/sofv/')
+regions.push(:name => 'sofv', :apiPath => 'sofv', :leagues => sofvLeagues, filePath: 'awards/sofv/')
 
 #FVRZ
 fvrzLeagues = []
 fvrzLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'fvrz', :leagues => fvrzLeagues, filePath: 'awards/fvrz/')
+regions.push(:name => 'fvrz', :apiPath => 'fvrz', :leagues => fvrzLeagues, filePath: 'awards/fvrz/')
 
 #FTC
 ftcLeagues = []
 ftcLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'ftc', :leagues => ftcLeagues, filePath: 'awards/ftc/')
+regions.push(:name => 'ftc', :apiPath => 'ftc', :leagues => ftcLeagues, filePath: 'awards/ftc/')
 
 # AFF
 affLeagues = []
 affLeagues.push(:nationalId => '2m', :name => "2")
 affLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'aff', :leagues => affLeagues, filePath: 'awards/aff/')
+regions.push(:name => 'aff', :apiPath => 'aff', :leagues => affLeagues, filePath: 'awards/aff/')
 
 #ACGF
 acgfLeagues = []
 acgfLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'acgf', :leagues => affLeagues, filePath: 'awards/acgf/')
+regions.push(:name => 'acgf', :apiPath => 'acgf', :leagues => affLeagues, filePath: 'awards/acgf/')
 
 #ANF
 anfLeagues = []
 anfLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'anf', :leagues => anfLeagues, filePath: 'awards/anf/')
+regions.push(:name => 'anf', :apiPath => 'anf', :leagues => anfLeagues, filePath: 'awards/anf/')
 
 #ACVF
 acvfLeagues = []
 acvfLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'acvf', :leagues => affLeagues, filePath: 'awards/acvf/')
+regions.push(:name => 'acvf', :apiPath => 'acvf', :leagues => affLeagues, filePath: 'awards/acvf/')
 
 #AVF
 avfLeagues = []
 avfLeagues.push(:nationalId => '3m', :name => "3")
-regions.push(:name => 'avf', :leagues => avfLeagues, filePath: 'awards/avf/')
+regions.push(:name => 'avf', :apiPath => 'avf', :leagues => avfLeagues, filePath: 'awards/avf/')
 
 
 
