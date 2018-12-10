@@ -218,27 +218,53 @@ body {
 	height:50px;
 }
 /* Footer */
+.footer{
+	background-color: #FF4E49;
+  padding: 40px 0;
+}
+.nav-footer__ul{
+	margin:0;
+	padding: 0;
+  display: block;
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+.nav-footer__li{
+	display: inline;
+  float: none;
+  color:#b23633;
+}
+.nav-footer__li:after {
+  content: "\2022";
+  font-size: 14px;
+}
+.nav-footer__li:last-child:after {
+  content: "";
+}
+.nav-footer__link{
+  margin: 0 6px 0 2px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.nav-footer__link:hover{
+	color:#b23633;
+}
 .footer__list-socials{
-	display:flex;
-	padding:0;
-	margin-bottom:0;
-	margin-top:0;
-	list-style:none;
-	align-items:center;
+	margin:0 0;
+	padding: 20px 0;
+  display: block;
+  float: none;
+  width: 100%;
+  text-align: center;
 }
 .footer__social-item{
-	flex-grow:1;
-	text-align:center;
-	height:60px;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-}
-.footer__social-item--facebook{
-  background-color: #4263a3;
-}
-.footer__social-item--instagram{
-	background-color: #e81c62;
+	display: inline;
+  float: none;
+  color:#b23633;
+  margin-right: 15px;
 }
 .footer_social-icon{
 	color:#fff;
