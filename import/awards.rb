@@ -30,17 +30,15 @@ def create_awards_page_region(region,urlPath,allRegions)
 		f.write "\n"
 		f.write "layout: default"
 		f.write "\n"
-		f.write "title: Awards "+region[:name].upcase
+		f.write "no_translation_title: Awards "+region[:name].upcase+" - Footstats"
 		f.write "\n"
-		f.write "lang_only_title_meta: Awards "+region[:name].upcase+" - "+Time.now.strftime("%d/%m/%Y")
+		f.write "awards: associations."+region[:name]+".long"
 		f.write "\n"
-		f.write "lang_only_description_meta: Les meilleurs buteurs "+region[:name].upcase+" des championnats de football amateur de la 2e à la 5e ligue - "+Time.now.strftime("%d/%m/%Y")
+		f.write "description: awards.description"
 		f.write "\n"
-		f.write('date: '+date+' 09:00:00 +0200')
+		f.write "description_for_facebook: awards.description"
 		f.write "\n"
-		f.write "description_for_facebook: Classements buteurs "+region[:name].upcase+"."
-		f.write "\n"
-		f.write "title_for_facebook: "+region[:name].upcase+" - Top buteurs"
+		f.write "title_for_facebook: Awards "+region[:name].upcase+" - Footstats"
 		f.write "\n"
 		f.write "image_for_facebook: /images/facebook/image-"+region[:name]+"-facebook.jpg"
 		f.write "\n"

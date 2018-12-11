@@ -381,6 +381,9 @@ meta:
   facebook_title: "Footstats"
   facebook_description: "Alle Ranglisten per Mannschaften, Kalender, Resultate und Torschützenlist zusammen."
 associations:
+  🇨🇭:
+    short: 🇨🇭
+    long: Football amateur 🇨🇭
   afv:
     short: AFV
     long: Aargauischer Fussballverband
@@ -429,11 +432,12 @@ posts:
         title: FVBJ - Beste Torschützen
 newsletter:
   title: Newsletter Footstats
-  descr: Finde jede Woche die Resultate der verrücktesten Spiele, die besten Torschützen schweizweit und spannende Stats
+  descritpion: Finde jede Woche die Resultate der verrücktesten Spiele, die besten Torschützen schweizweit und spannende Stats
   submit: Anmelden
   thanks: Danke 
   error: Ein Fehler ist geschehen
 awards:
+  description: _to_translate_
   topscorers:
     single: Beste Torschütze
     multiple: Beste Torschützen

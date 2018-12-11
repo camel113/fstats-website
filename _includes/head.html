@@ -1,5 +1,5 @@
 <head>
-  <title>{% t page.title %}</title>
+  <title>{%- if page.awards != null -%}Awards - {% t page.awards %} - Footstats {%- else -%}{% t page.title %}{% endif %}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/assets/2.0/main.css">
   <script src="/assets/2.0/bundle.js"></script>
   
-  <meta name="description" content="{% t meta.site_description %}">
+  <meta name="description" content="{%- if page.description != null -%}{% t page.description %}{%- else -%}{% t meta.site_description %}{% endif %}">
 
   <meta property="og:url" content="{{site.url}}{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl | prepend: site.baseurl_root }}"/>
   <meta property="og:description" content="{% t meta.facebook_description %}" />
@@ -19,10 +19,11 @@
   <meta property="fb:app_id" content="320239721737368" />
   
   <link rel="canonical" href="{{site.url}}{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl | prepend: site.baseurl_root }}">
+
   {%- if site.lang == "fr" -%}
-    <link hreflang="de" rel="alternate" href="{{site.url}}/de">
+    <link hreflang="de" rel="alternate" href="{{site.url}}/de{{page.url}}">
   {%- else -%}
-    <link hreflang="fr" rel="alternate" href="{{site.url}}">
+    <link hreflang="fr" rel="alternate" href="{{site.url}}{{page.url}}">
   {% endif %}
 
   <link rel="icon" href="{{site.url}}/favicon.ico" type="image/x-icon">
