@@ -11,9 +11,13 @@ body {
   font: 100% $font-stack;
   color: $primary-text-color;
   margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 .main-content{
 	background: $primary-background-color;
+	flex: 1;
 }
 .container{
 	@media (min-width: 1020px) {
