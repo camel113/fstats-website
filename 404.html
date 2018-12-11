@@ -3,22 +3,17 @@ layout: default
 sitemap: false
 title: pages.about.title
 ---
-<div class="container not-found">
-  <div class="row not-found-title">
-    <div class="col-12"><h1>404</h1></div>
-  </div>
-  <div class="row">
-    <div class="col-12">Oups!</div>
-  </div>
-  <div class="row">
-    <div class="col-12">Cette page n’est pas disponible</div>
-  </div>
-  <div class="row">
-    <div class="col-12">Le lien que vous avez suivi peut être incorrect ou la page peut avoir été supprimée.</div>
-  </div>
-  <div class="row link-to-home">
-    <div class="col-12"><a href="/" class="btn btn-theme-dark btn-lg">Retour à la page d'accueil</a></div>
-  </div>
-</div>
-
-
+<main class="main-content">
+  <section class="page-404">
+    <section class="footstats-icon">
+      <img class="overview__footstats-logo-img" src="/images/2.0/footstats-round-100.png" alt="Footstats" srcset="/images/2.0/footstats-round-200.png 2x"/>
+    </section>
+    <section class="page-title">
+      <h1 class="page-title__general">404</h1>
+      <h2 class="page-title__description">Oups!</h2>
+      <p>{% t page404.description_1 %}</p>
+      <p>{% t page404.description_2 %}</p>
+      <p><a href="/" class="btn btn-theme-dark btn-lg">{% t page404.description_3 %}</a></p>
+    </section>
+  </section>
+</main>

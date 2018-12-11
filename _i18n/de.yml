@@ -461,3 +461,7 @@ awards:
   victory_only:
     title: Team(s) mit nur Siegen
   no_team_info: Kein Team
+page404:
+  description_1: Seite nicht gefunden.
+  description_2: Die angeforderte Seite konnte nicht gefunden werden.
+  description_3: Zur Startseite
