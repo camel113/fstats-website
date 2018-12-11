@@ -460,6 +460,7 @@ awards:
     title: Équipe(s) ne comptant que des victoires
   no_team_info: Aucune équipe
 page404:
+  title: "404 not found"
   description_1: Cette page n’est pas disponible.
   description_2: Le lien que vous avez suivi peut être incorrect ou la page peut avoir été supprimée.
   description_3: Retour à la page d'accueil
