@@ -432,7 +432,7 @@ posts:
         title: FVBJ - Beste Torschützen
 newsletter:
   title: Newsletter Footstats
-  descritpion: Finde jede Woche die Resultate der verrücktesten Spiele, die besten Torschützen schweizweit und spannende Stats
+  description: Finde jede Woche die Resultate der verrücktesten Spiele, die besten Torschützen schweizweit und spannende Stats
   submit: Anmelden
   thanks: Danke 
   error: Ein Fehler ist geschehen
@@ -466,3 +466,5 @@ page404:
   description_1: Seite nicht gefunden.
   description_2: Die angeforderte Seite konnte nicht gefunden werden.
   description_3: Zur Startseite
+privacy:
+  title: Privacy policy
