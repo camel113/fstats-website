@@ -40,7 +40,7 @@ def create_awards_page_region(region,urlPath,allRegions)
 		f.write "\n"
 		f.write "title_for_facebook: Awards "+region[:name].upcase+" - Footstats"
 		f.write "\n"
-		f.write "image_for_facebook: /images/facebook/image-"+region[:name]+"-facebook.jpg"
+		f.write "image_for_facebook: facebook-awards"
 		f.write "\n"
 		f.write('---')
 		f.write "\n"

@@ -12,10 +12,10 @@
   <meta name="description" content="{%- if page.description != null -%}{% t page.description %}{%- else -%}{% t meta.site_description %}{% endif %}">
 
   <meta property="og:url" content="{{site.url}}{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl | prepend: site.baseurl_root }}"/>
-  <meta property="og:description" content="{% t meta.facebook_description %}" />
-  <meta property="og:title" content="{% t meta.facebook_title %}" />
+  <meta property="og:description" content="{%- if page.description_for_facebook != null -%}{% t page.description_for_facebook %}{%- else -%}{% t meta.facebook_description %}{% endif %}" />
+  <meta property="og:title" content="{%- if page.title_for_facebook != null -%}{{page.title_for_facebook}}{%- else -%}{% t meta.facebook_title %}{% endif %}" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/assets/img/facebook-{{site.lang}}.png" />
+  <meta property="og:image" content="{%- if page.image_for_facebook != null -%}/assets/img/{{page.image_for_facebook}}.png{%- else -%}/assets/img/facebook-{{site.lang}}.png{% endif %}" />
   <meta property="fb:app_id" content="320239721737368" />
   
   <link rel="canonical" href="{{site.url}}{{ page.url | replace:'index.html','' | remove: '.html' | prepend: site.baseurl | prepend: site.baseurl_root }}">
