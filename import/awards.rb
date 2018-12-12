@@ -152,73 +152,114 @@ regions = []
 
 #Suisse
 swissLeagues = []
+swissLeagues.push(:nationalId => '2m', :name => "2")
 swissLeagues.push(:nationalId => '3m', :name => "3")
+swissLeagues.push(:nationalId => '4m', :name => "4")
+swissLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => '🇨🇭', :apiPath => '', :leagues => swissLeagues, filePath: 'awards/')
 
 #AFV
 afvLeagues = []
+afvLeagues.push(:nationalId => '2m', :name => "2")
 afvLeagues.push(:nationalId => '3m', :name => "3")
+afvLeagues.push(:nationalId => '4m', :name => "4")
+afvLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'afv', :apiPath => 'afv', :leagues => afvLeagues, filePath: 'awards/afv/')
 
 #FVBJ
 fvbjLeagues = []
+fvbjLeagues.push(:nationalId => '2m', :name => "2")
 fvbjLeagues.push(:nationalId => '3m', :name => "3")
+fvbjLeagues.push(:nationalId => '4m', :name => "4")
+fvbjLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'fvbj', :apiPath => 'fvbj', :leagues => fvbjLeagues, filePath: 'awards/fvbj/')
 
 #IFV
 ifvLeagues = []
+ifvLeagues.push(:nationalId => '2m', :name => "2")
 ifvLeagues.push(:nationalId => '3m', :name => "3")
+ifvLeagues.push(:nationalId => '4m', :name => "4")
+ifvLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'ifv', :apiPath => 'ifv', :leagues => ifvLeagues, filePath: 'awards/ifv/')
 
 #FVNWS
 fvnwsLeagues = []
+fvnwsLeagues.push(:nationalId => '2m', :name => "2")
 fvnwsLeagues.push(:nationalId => '3m', :name => "3")
+fvnwsLeagues.push(:nationalId => '4m', :name => "4")
+fvnwsLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'fvnws', :apiPath => 'fvnws', :leagues => fvnwsLeagues, filePath: 'awards/fvnws/')
 
 #OFV
 ofvLeagues = []
+ofvLeagues.push(:nationalId => '2m', :name => "2")
 ofvLeagues.push(:nationalId => '3m', :name => "3")
+ofvLeagues.push(:nationalId => '4m', :name => "4")
+ofvLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'ofv', :apiPath => 'ofv', :leagues => ofvLeagues, filePath: 'awards/ofv/')
 
 #SOFV
 sofvLeagues = []
+sofvLeagues.push(:nationalId => '2m', :name => "2")
 sofvLeagues.push(:nationalId => '3m', :name => "3")
+sofvLeagues.push(:nationalId => '4m', :name => "4")
+sofvLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'sofv', :apiPath => 'sofv', :leagues => sofvLeagues, filePath: 'awards/sofv/')
 
 #FVRZ
 fvrzLeagues = []
+fvrzLeagues.push(:nationalId => '2m', :name => "2")
 fvrzLeagues.push(:nationalId => '3m', :name => "3")
+fvrzLeagues.push(:nationalId => '4m', :name => "4")
+fvrzLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'fvrz', :apiPath => 'fvrz', :leagues => fvrzLeagues, filePath: 'awards/fvrz/')
 
 #FTC
 ftcLeagues = []
+ftcLeagues.push(:nationalId => '2m', :name => "2")
 ftcLeagues.push(:nationalId => '3m', :name => "3")
+ftcLeagues.push(:nationalId => '4m', :name => "4")
+ftcLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'ftc', :apiPath => 'ftc', :leagues => ftcLeagues, filePath: 'awards/ftc/')
 
 # AFF
 affLeagues = []
 affLeagues.push(:nationalId => '2m', :name => "2")
 affLeagues.push(:nationalId => '3m', :name => "3")
+affLeagues.push(:nationalId => '4m', :name => "4")
+affLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'aff', :apiPath => 'aff', :leagues => affLeagues, filePath: 'awards/aff/')
 
 #ACGF
 acgfLeagues = []
+acgfLeagues.push(:nationalId => '2m', :name => "2")
 acgfLeagues.push(:nationalId => '3m', :name => "3")
+acgfLeagues.push(:nationalId => '4m', :name => "4")
+acgfLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'acgf', :apiPath => 'acgf', :leagues => affLeagues, filePath: 'awards/acgf/')
 
 #ANF
 anfLeagues = []
+anfLeagues.push(:nationalId => '2m', :name => "2")
 anfLeagues.push(:nationalId => '3m', :name => "3")
+anfLeagues.push(:nationalId => '4m', :name => "4")
+anfLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'anf', :apiPath => 'anf', :leagues => anfLeagues, filePath: 'awards/anf/')
 
 #ACVF
 acvfLeagues = []
+acvfLeagues.push(:nationalId => '2m', :name => "2")
 acvfLeagues.push(:nationalId => '3m', :name => "3")
+acvfLeagues.push(:nationalId => '4m', :name => "4")
+acvfLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'acvf', :apiPath => 'acvf', :leagues => affLeagues, filePath: 'awards/acvf/')
 
 #AVF
 avfLeagues = []
+avfLeagues.push(:nationalId => '2m', :name => "2")
 avfLeagues.push(:nationalId => '3m', :name => "3")
+avfLeagues.push(:nationalId => '4m', :name => "4")
+avfLeagues.push(:nationalId => '5m', :name => "5")
 regions.push(:name => 'avf', :apiPath => 'avf', :leagues => avfLeagues, filePath: 'awards/avf/')
 
 
