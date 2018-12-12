@@ -3,7 +3,7 @@ require 'httparty'
 require 'fileutils'
 require 'json'
 
-urlPath = "http://127.0.0.1:8083"
+urlPath = "http://footstatsapi.herokuapp.com"
 
 def create_directory(filePath)
   dir = File.dirname(filePath)
