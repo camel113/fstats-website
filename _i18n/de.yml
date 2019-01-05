@@ -437,27 +437,28 @@ newsletter:
   thanks: Danke 
   error: Ein Fehler ist geschehen
 awards:
-  description: _to_translate_
+  first_round: 1. Round Saison 18/19
+  description: Die besten Torschützen und die besten Teams der Schweizer Amateurfussballmeisterschaft
   topscorers:
-    single: Beste Torschütze
+    single: Bester Torschütze
     multiple: Beste Torschützen
     number_description: Tore erzielt
   topattack:
-    single: Beste offensive Team
-    multiple: Besten offensiven Team
+    single: Bestes offensives Team
+    multiple: Beste offensive Teams
     number_description:
       part1: Tore in
       part2: Spielen erzielt
   topdefense:
-    single: Beste defensive Team
-    multiple: Besten defensiven Team
+    single: Bestes defensives Team
+    multiple: Beste defensive Team
     number_description:
       part1: Gegentore in
       part2: Spielen
   cleansheets:
     title: Mehr Clean sheets
   unbeaten:
-    title: Ungeschlagenes Team(s)
+    title: Ungeschlagene(s) Team(s)
   victory_only:
     title: Team(s) mit nur Siegen
   no_team_info: Kein Team

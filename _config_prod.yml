@@ -5,7 +5,7 @@ description_de: "Torschützen- und Mannschafts-Rangliste für die Amateur-Meiste
 description: "Classements buteurs et équipes pour les championnats amateurs de football en Suisse"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://www.footstats.ch" # the base hostname & protocol for your site
+url: "https://staging--hotelier-wendy-65381.netlify.com" # the base hostname & protocol for your site
 # url: "http://localhost:4000" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
