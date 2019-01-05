@@ -74,8 +74,8 @@ def create_awards_page_region(region,urlPath,allRegions)
 			topCleansheets = JSON.parse(HTTParty.get(urlPath+'/awards/cleansheets/'+league[:nationalId]+'/'+region[:apiPath]).body)['teams']
 			topAttackTeams = JSON.parse(HTTParty.get(urlPath+'/awards/attackaverage/'+league[:nationalId]+'/'+region[:apiPath]).body)['teams']
 			topDefenseTeams = JSON.parse(HTTParty.get(urlPath+'/awards/defenseaverage/'+league[:nationalId]+'/'+region[:apiPath]).body)['teams']
-			topVictoryOnly = JSON.parse(HTTParty.get(urlPath+'/awards/unbeaten/'+league[:nationalId]+'/'+region[:apiPath]).body)['teams']
-			topUnbeaten = JSON.parse(HTTParty.get(urlPath+'/awards/victoryonly/'+league[:nationalId]+'/'+region[:apiPath]).body)['teams']
+			topVictoryOnly = JSON.parse(HTTParty.get(urlPath+'/awards/victoryonly/'+league[:nationalId]+'/'+region[:apiPath]).body)['teams']
+			topUnbeaten = JSON.parse(HTTParty.get(urlPath+'/awards/unbeaten/'+league[:nationalId]+'/'+region[:apiPath]).body)['teams']
 
 			f.write		 '<section class="page-title">'
 			f.write	    	'<h1 class="page-title__league">'+league[:name]+'e ligue</h1>'
