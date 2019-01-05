@@ -51,7 +51,7 @@ def create_awards_page_region(region,urlPath,allRegions)
 		  f.write 		'</section>'
 		  f.write			'<section class="page-title">'
 			f.write	 			'<h1 class="page-title__general">Footstats Awards</h1>'
-			f.write	  		'<h2 class="page-title__description">1er tour saison 18/19</h2>'
+			f.write	  		'<h2 class="page-title__description">{% t awards.first_round %}</h2>'
 			if region[:apiPath] != ''
 				f.write	  	'<h2 class="page-title__description">{% t associations.'+region[:name]+'.short %} - {% t associations.'+region[:name]+'.long %}</h2>'
 			else
