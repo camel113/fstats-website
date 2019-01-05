@@ -34,7 +34,7 @@ def create_awards_page_region(region,urlPath,allRegions)
 		f.write "\n"
 		f.write "awards: associations."+region[:name]+".long"
 		f.write "\n"
-		f.write "description: awards.description - "+region[:name].upcase+
+		f.write "description: awards.description - "+region[:name].upcase
 		f.write "\n"
 		f.write "description_for_facebook: awards.description"
 		f.write "\n"
