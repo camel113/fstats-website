@@ -280,7 +280,7 @@ body {
 }
 
 /* Generic page template */
-.newsletter, .footstats-awards, .page-404, .advertise{
+.newsletter, .footstats-awards, .page-404, .advertise, .privacy, .footstats-fc-terms{
 	padding-top:7rem;
 	padding-left:15px;
 	padding-right:15px;
@@ -294,6 +294,9 @@ body {
 		padding-right:1rem;
 		padding-bottom:30px;
 	}
+}
+.privacy, .footstats-fc-terms{
+	align-items: flex-start;
 }
 /* Newsletter */
 .newsletter-section{
