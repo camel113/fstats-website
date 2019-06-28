@@ -3,7 +3,8 @@ require 'httparty'
 require 'fileutils'
 require 'json'
 
-urlPath = "http://footstatsapi.herokuapp.com"
+urlPath = "http://localhost:8083"
+awardsDirectory = 'awards1819'
 
 def create_directory(filePath)
   dir = File.dirname(filePath)
@@ -16,21 +17,21 @@ end
 
 # Page generation
 
-def create_awards_page_region(region,urlPath,allRegions)
+def create_awards_page_region(region,urlPath,allRegions,awardsDirectory)
 	date = Time.now.strftime("%Y-%m-%d")
 	
-	dir = File.dirname("awards/"+region[:apiPath]+"/random")
+	dir = File.dirname(awardsDirectory+"/"+region[:apiPath]+"/random")
 	puts dir
   unless File.directory?(dir)
     FileUtils.mkdir_p(dir)
   end
 
-	File.open("awards/"+region[:apiPath]+"/index.html","w") do |f|
+	File.open(awardsDirectory+"/"+region[:apiPath]+"/index.html","w") do |f|
 		f.write('---')
 		f.write "\n"
 		f.write "layout: default"
 		f.write "\n"
-		f.write "no_translation_title: Awards "+region[:name].upcase+" - Footstats"
+		f.write "no_translation_title: Awards Saison 2018/2019 "+region[:name].upcase+" - Footstats"
 		f.write "\n"
 		f.write "awards: associations."+region[:name]+".long"
 		f.write "\n"
@@ -51,7 +52,7 @@ def create_awards_page_region(region,urlPath,allRegions)
 		  f.write 		'</section>'
 		  f.write			'<section class="page-title">'
 			f.write	 			'<h1 class="page-title__general">Footstats Awards</h1>'
-			f.write	  		'<h2 class="page-title__description">{% t awards.first_round %}</h2>'
+			f.write	  		'<h2 class="page-title__description">{% t awards.all %}</h2>'
 			if region[:apiPath] != ''
 				f.write	  	'<h2 class="page-title__description">{% t associations.'+region[:name]+'.short %} - {% t associations.'+region[:name]+'.long %}</h2>'
 			else
@@ -156,7 +157,7 @@ swissLeagues.push(:nationalId => '2m', :name => "2")
 swissLeagues.push(:nationalId => '3m', :name => "3")
 swissLeagues.push(:nationalId => '4m', :name => "4")
 swissLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => '🇨🇭', :apiPath => '', :leagues => swissLeagues, filePath: 'awards/')
+regions.push(:name => '🇨🇭', :apiPath => '', :leagues => swissLeagues, filePath: awardsDirectory+'/')
 
 #AFV
 afvLeagues = []
@@ -164,7 +165,7 @@ afvLeagues.push(:nationalId => '2m', :name => "2")
 afvLeagues.push(:nationalId => '3m', :name => "3")
 afvLeagues.push(:nationalId => '4m', :name => "4")
 afvLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'afv', :apiPath => 'afv', :leagues => afvLeagues, filePath: 'awards/afv/')
+regions.push(:name => 'afv', :apiPath => 'afv', :leagues => afvLeagues, filePath: awardsDirectory+'/afv/')
 
 #FVBJ
 fvbjLeagues = []
@@ -172,7 +173,7 @@ fvbjLeagues.push(:nationalId => '2m', :name => "2")
 fvbjLeagues.push(:nationalId => '3m', :name => "3")
 fvbjLeagues.push(:nationalId => '4m', :name => "4")
 fvbjLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'fvbj', :apiPath => 'fvbj', :leagues => fvbjLeagues, filePath: 'awards/fvbj/')
+regions.push(:name => 'fvbj', :apiPath => 'fvbj', :leagues => fvbjLeagues, filePath: awardsDirectory+'/fvbj/')
 
 #IFV
 ifvLeagues = []
@@ -180,7 +181,7 @@ ifvLeagues.push(:nationalId => '2m', :name => "2")
 ifvLeagues.push(:nationalId => '3m', :name => "3")
 ifvLeagues.push(:nationalId => '4m', :name => "4")
 ifvLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'ifv', :apiPath => 'ifv', :leagues => ifvLeagues, filePath: 'awards/ifv/')
+regions.push(:name => 'ifv', :apiPath => 'ifv', :leagues => ifvLeagues, filePath: awardsDirectory+'/ifv/')
 
 #FVNWS
 fvnwsLeagues = []
@@ -188,7 +189,7 @@ fvnwsLeagues.push(:nationalId => '2m', :name => "2")
 fvnwsLeagues.push(:nationalId => '3m', :name => "3")
 fvnwsLeagues.push(:nationalId => '4m', :name => "4")
 fvnwsLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'fvnws', :apiPath => 'fvnws', :leagues => fvnwsLeagues, filePath: 'awards/fvnws/')
+regions.push(:name => 'fvnws', :apiPath => 'fvnws', :leagues => fvnwsLeagues, filePath: awardsDirectory+'/fvnws/')
 
 #OFV
 ofvLeagues = []
@@ -196,7 +197,7 @@ ofvLeagues.push(:nationalId => '2m', :name => "2")
 ofvLeagues.push(:nationalId => '3m', :name => "3")
 ofvLeagues.push(:nationalId => '4m', :name => "4")
 ofvLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'ofv', :apiPath => 'ofv', :leagues => ofvLeagues, filePath: 'awards/ofv/')
+regions.push(:name => 'ofv', :apiPath => 'ofv', :leagues => ofvLeagues, filePath: awardsDirectory+'/ofv/')
 
 #SOFV
 sofvLeagues = []
@@ -204,7 +205,7 @@ sofvLeagues.push(:nationalId => '2m', :name => "2")
 sofvLeagues.push(:nationalId => '3m', :name => "3")
 sofvLeagues.push(:nationalId => '4m', :name => "4")
 sofvLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'sofv', :apiPath => 'sofv', :leagues => sofvLeagues, filePath: 'awards/sofv/')
+regions.push(:name => 'sofv', :apiPath => 'sofv', :leagues => sofvLeagues, filePath: awardsDirectory+'/sofv/')
 
 #FVRZ
 fvrzLeagues = []
@@ -212,7 +213,7 @@ fvrzLeagues.push(:nationalId => '2m', :name => "2")
 fvrzLeagues.push(:nationalId => '3m', :name => "3")
 fvrzLeagues.push(:nationalId => '4m', :name => "4")
 fvrzLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'fvrz', :apiPath => 'fvrz', :leagues => fvrzLeagues, filePath: 'awards/fvrz/')
+regions.push(:name => 'fvrz', :apiPath => 'fvrz', :leagues => fvrzLeagues, filePath: awardsDirectory+'/fvrz/')
 
 #FTC
 ftcLeagues = []
@@ -220,7 +221,7 @@ ftcLeagues.push(:nationalId => '2m', :name => "2")
 ftcLeagues.push(:nationalId => '3m', :name => "3")
 ftcLeagues.push(:nationalId => '4m', :name => "4")
 ftcLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'ftc', :apiPath => 'ftc', :leagues => ftcLeagues, filePath: 'awards/ftc/')
+regions.push(:name => 'ftc', :apiPath => 'ftc', :leagues => ftcLeagues, filePath: awardsDirectory+'/ftc/')
 
 # AFF
 affLeagues = []
@@ -228,7 +229,7 @@ affLeagues.push(:nationalId => '2m', :name => "2")
 affLeagues.push(:nationalId => '3m', :name => "3")
 affLeagues.push(:nationalId => '4m', :name => "4")
 affLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'aff', :apiPath => 'aff', :leagues => affLeagues, filePath: 'awards/aff/')
+regions.push(:name => 'aff', :apiPath => 'aff', :leagues => affLeagues, filePath: awardsDirectory+'/aff/')
 
 #ACGF
 acgfLeagues = []
@@ -236,7 +237,7 @@ acgfLeagues.push(:nationalId => '2m', :name => "2")
 acgfLeagues.push(:nationalId => '3m', :name => "3")
 acgfLeagues.push(:nationalId => '4m', :name => "4")
 acgfLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'acgf', :apiPath => 'acgf', :leagues => affLeagues, filePath: 'awards/acgf/')
+regions.push(:name => 'acgf', :apiPath => 'acgf', :leagues => affLeagues, filePath: awardsDirectory+'/acgf/')
 
 #ANF
 anfLeagues = []
@@ -244,7 +245,7 @@ anfLeagues.push(:nationalId => '2m', :name => "2")
 anfLeagues.push(:nationalId => '3m', :name => "3")
 anfLeagues.push(:nationalId => '4m', :name => "4")
 anfLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'anf', :apiPath => 'anf', :leagues => anfLeagues, filePath: 'awards/anf/')
+regions.push(:name => 'anf', :apiPath => 'anf', :leagues => anfLeagues, filePath: awardsDirectory+'/anf/')
 
 #ACVF
 acvfLeagues = []
@@ -252,7 +253,7 @@ acvfLeagues.push(:nationalId => '2m', :name => "2")
 acvfLeagues.push(:nationalId => '3m', :name => "3")
 acvfLeagues.push(:nationalId => '4m', :name => "4")
 acvfLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'acvf', :apiPath => 'acvf', :leagues => affLeagues, filePath: 'awards/acvf/')
+regions.push(:name => 'acvf', :apiPath => 'acvf', :leagues => affLeagues, filePath: awardsDirectory+'/acvf/')
 
 #AVF
 avfLeagues = []
@@ -260,7 +261,7 @@ avfLeagues.push(:nationalId => '2m', :name => "2")
 avfLeagues.push(:nationalId => '3m', :name => "3")
 avfLeagues.push(:nationalId => '4m', :name => "4")
 avfLeagues.push(:nationalId => '5m', :name => "5")
-regions.push(:name => 'avf', :apiPath => 'avf', :leagues => avfLeagues, filePath: 'awards/avf/')
+regions.push(:name => 'avf', :apiPath => 'avf', :leagues => avfLeagues, filePath: awardsDirectory+'/avf/')
 
 
 
@@ -273,5 +274,5 @@ regions.push(:name => 'avf', :apiPath => 'avf', :leagues => avfLeagues, filePath
 
 
 regions.each { |region|
-  create_awards_page_region(region,urlPath,regions)
+  create_awards_page_region(region,urlPath,regions,awardsDirectory)
 }

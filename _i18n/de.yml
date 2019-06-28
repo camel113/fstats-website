@@ -438,7 +438,8 @@ newsletter:
   error: Ein Fehler ist geschehen
 awards:
   first_round: 1. Round Saison 18/19
-  description: Die besten Torschützen und die besten Teams der Schweizer Amateurfussballmeisterschaft
+  all: Saison 18/19
+  description: Die besten Torschützen und die besten Teams der Schweizer Amateurfussballmeisterschaft | Saison 2018/2019
   topscorers:
     single: Bester Torschütze
     multiple: Beste Torschützen

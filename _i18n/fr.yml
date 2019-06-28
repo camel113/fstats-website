@@ -436,7 +436,8 @@ newsletter:
   error: Une erreur s'est produite
 awards:
   first_round: 1er tour saison 18/19
-  description: Les meilleurs buteurs et les meilleures équipes des championnats de football amateur en Suisse
+  all: Saison 18/19
+  description: Les meilleurs buteurs et les meilleures équipes des championnats de football amateur en Suisse | Saison 2018/2019
   topscorers:
     single: Meilleur buteur
     multiple: Meilleurs buteurs
