@@ -233,15 +233,25 @@ body {
   float: none;
   width: 100%;
   text-align: center;
+  list-style-type: none;
 }
 .nav-footer__li{
-	display: inline;
-  float: none;
-  color:#b23633;
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  @media (min-width: 576px) {
+    display: inline;
+    float: none;
+    color:#b23633;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 .nav-footer__li:after {
-  content: "\2022";
-  font-size: 14px;
+  @media (min-width: 576px) {
+    content: "\2022";
+    font-size: 14px;
+  }
 }
 .nav-footer__li:last-child:after {
   content: "";
@@ -280,7 +290,7 @@ body {
 }
 
 /* Generic page template */
-.newsletter, .footstats-awards, .page-404, .advertise, .privacy, .footstats-fc-terms{
+.newsletter, .footstats-awards, .page-404, .advertise, .privacy, .footstats-fc-terms, .faq{
 	padding-top:7rem;
 	padding-left:15px;
 	padding-right:15px;
@@ -289,6 +299,8 @@ body {
 	align-items: center;
 	flex-direction:column;
 	background-color:$primary-background-color;
+  max-width: 980px;
+  margin: auto;
 	@media (min-width: 768px) {
 		padding-left:1rem;
 		padding-right:1rem;
@@ -399,4 +411,13 @@ body {
 
 .simple-links-nav__link{
   color:#006fc6;
+}
+
+/* FAQ */
+
+.question__question{
+  font-size: 1.1rem;
+}
+.faq .page-title__description{
+  text-align: left;
 }

@@ -473,3 +473,13 @@ terms:
 advertise:
   title: Advertise on Footstats
   description: Push your product or your brand to thousands of football players and supporters around Switzerland.
+faq:
+  title: FAQ
+  description: Footstats - FAQ
+  intro: "Je m’appelle Adrien Bigler, j’ai créé l’application Footstats il y a quelques années. Je travaille principalement seul sur le développement de l’application. Quelques personnes collaborent avec moi pour corriger les textes et traduire l’application en allemand. L’application Footstats n’est aucunement liée à football.ch ni à l’ASF. Si vous appréciez l'application, vous avez désormais la possibilité de m'encourager et de m'aider à continuer, ou tout simplement de montrer que vous appréciez le travail accompli en souscrivant à un abonnement."
+  q1:
+    question: Pourquoi certaines fonctionnalités sont-elles payantes?
+    answer: La récupération des données et la création des statistiques nécessitent beaucoup d’heures de travail durant toute l’année. Il y a aussi des frais fixes inévitables comme la location de serveurs, de bases de données mais aussi les accès aux plateformes Google et Apple.
+  q2:
+    question: Pourquoi Footstats propose un système d’abonnement plutôt que des achats uniques?
+    answer: Le système d’abonnement permet d’améliorer constamment l’application en y ajoutant de nouvelles fonctionnalités mais aussi en corrigeant les petits bugs. Un achat unique pourrait se comparer à l’achat d’un livre. On achète une version de l’app à un moment donné et on bénéficie pas des améliorations/corrections tout au long de l’année.
