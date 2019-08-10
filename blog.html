@@ -1,0 +1,22 @@
+---
+layout: default
+title: newsletter.title
+descritpion: newsletter.description
+---
+<main class="main-content">
+  <section class="blog">
+    <h1 class="blog__title">La Buvette</h1>
+    <p class="blog_description">Blog et discussions sur le football amateur en Suisse et ses statistiques...</p>
+    <div class="blog__blog-posts-container">
+    {% for post in site.posts %}
+      <a class="blog-post-link" href="{{ post.url }}">
+        <article class="blog-post-card">
+          <img class="blog-post-card__image" src="/assets/blog/{{ post.image }}">
+          <h1 class="blog-post-card__title">{{ post.title }}</h1>
+          <small class="blog-post-card__time"><i class="far fa-calendar-alt"></i>&nbsp;{{ post.date | date: "%d/%m/%Y" }}</small>
+        </article>
+      </a>
+    {% endfor %}
+    </div>
+  </section>
+</main>
