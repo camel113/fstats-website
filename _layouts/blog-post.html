@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  
+  {% if page.form != true %}
+    {% include head.html %}
+  {% else %}
+    {% include head_form.html %}
+  {% endif %}
+
+  <body>
+    {% include header.html %}
+    <main class="main-content">
+      <section class="blog-post">
+        <img class="blog-post__image" src="/assets/blog/{{ page.image }}">
+        <h1 class="blog-post__title">{{ page.title }}</h1>
+        {{ content }}
+      </section>
+    </main>
+    {% include footer.html %}
+  </body>
+
+</html>

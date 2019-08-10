@@ -290,7 +290,7 @@ body {
 }
 
 /* Generic page template */
-.newsletter, .footstats-awards, .page-404, .advertise, .privacy, .footstats-fc-terms, .faq, .blog{
+.newsletter, .footstats-awards, .page-404, .advertise, .privacy, .footstats-fc-terms, .faq, .blog, .blog-post{
 	padding-top:7rem;
 	padding-left:15px;
 	padding-right:15px;
@@ -402,7 +402,7 @@ body {
   font-size: 1rem;
   margin: 0.75rem;
 }
-.blog-post-card__image{
+.blog-post-card__image,.blog-post__image{
   max-width: 100%;
   height: auto;
 }
@@ -410,7 +410,9 @@ body {
   color:#6c757d;
   margin: 0rem 0.75rem 0.75rem 0.75rem;
 }
-
+.blog-post p{
+  line-height: 20px;
+}
 
 /* Awards */
 
