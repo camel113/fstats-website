@@ -1,9 +1,10 @@
 ---
 layout: blog-post
 title: Le Ballon d'or du football amateur
-descritpion: Comment et pourquoi attribuer un Ballon d'or au footballeurs amateurs
+description: Comment et pourquoi attribuer un Ballon d'or aux footballeurs amateurs
 permalink: /blog/:year/:month/:day/:title
 image: ballon-d-or.jpg
+translate: false
 ---
 Décerné depuis 1956, le (FIFA) Ballon d'or est aujourd'hui la récompense individuelle suprême dans le monde du football professionnel. Nombreux sont les amateurs de foot à débattre sans fin pour déterminer qui de Messi, Ronaldo ou autre le mérite. Au final, cette décision est aujourd'hui prise par des journalistes de différents pays. Ce trophée fait rêver des millions de jeunes et moins jeunes footballeurs à travers le monde. Malheureusement cette distinction n'est décernée qu'à un seul joueur et une seule fois par année.
 
