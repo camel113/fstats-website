@@ -5,6 +5,7 @@ description: Comment et pourquoi attribuer un Ballon d'or aux footballeurs amate
 permalink: /blog/:year/:month/:day/:title
 image: ballon-d-or.jpg
 translate: false
+author: Adrien
 ---
 Décerné depuis 1956, le (FIFA) Ballon d'or est aujourd'hui la récompense individuelle suprême dans le monde du football professionnel. Nombreux sont les amateurs de foot à débattre sans fin pour déterminer qui de Messi, Ronaldo ou autre le mérite. Au final, cette décision est aujourd'hui prise par des journalistes de différents pays. Ce trophée fait rêver des millions de jeunes et moins jeunes footballeurs à travers le monde. Malheureusement cette distinction n'est décernée qu'à un seul joueur et une seule fois par année.
 
@@ -17,5 +18,3 @@ Pour réaliser ce classement il nous fallait un minimum de statistiques individu
 Le classement Ballon d'or du football amateur est certainement perfectible. Toutefois, il offre la possibilité aux joueurs de se comparer sur une base commune et permet aux supporters et suiveurs d'avoir un regard objectif sur le niveau des joueurs du championnat.
 
 Si tu es un joueur, entraîneur ou supporter de 2e ligue interrégionale ou 2e ligue en Suisse, n'hésite pas à nous donner ton avis sur cet article ou sur ce classement Ballon d'or sur les réseaux sociaux ou par mail (contact@footstats.ch)
-
-Adrien
