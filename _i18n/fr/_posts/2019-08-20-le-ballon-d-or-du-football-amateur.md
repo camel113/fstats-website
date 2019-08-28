@@ -4,6 +4,7 @@ title: Le Ballon d'or du football amateur
 description: Comment et pourquoi attribuer un Ballon d'or aux footballeurs amateurs
 permalink: /blog/:year/:month/:day/:title
 image: ballon-d-or.jpg
+image_for_facebook: ballon-d-or.jpg
 translate: false
 author: Adrien
 ---
