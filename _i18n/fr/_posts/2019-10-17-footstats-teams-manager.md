@@ -4,7 +4,7 @@ title: Footstats - Teams Manager
 description: La nouvelle fonctionnalité qui permet aux joueurs et entraîneurs de mieux organiser leur semaine
 permalink: /blog/:year/:month/:day/:title
 image: teams-manager.jpg
-image_for_facebook: teams-manager.jpg
+image_for_facebook: teams-manager-fb.jpg
 translate: false
 author: Adrien
 author_link: https://adrienbigler.ch
