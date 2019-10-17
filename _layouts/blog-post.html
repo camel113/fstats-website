@@ -14,8 +14,9 @@
       <section class="blog-post">
         <img class="blog-post__image" src="/assets/blog/{{ page.image }}">
         <h1 class="blog-post__title">{{ page.title }}</h1>
-        <small class="blog-post__author">Posté par {{page.author}} le {{ page.date | date: "%d/%m/%Y" }}</small>
+        <small class="blog-post__author">Posté par <a href="{{page.author_link}}">{{page.author}}</a> le {{ page.date | date: "%d/%m/%Y" }}</small>
         {{ content }}
+        {% include writers_info.html %}
       </section>
     </main>
     {% include footer.html %}

@@ -7,6 +7,7 @@ image: amateur-football.jpg
 image_for_facebook: amateur-football.jpg
 translate: false
 author: Adrien
+author_link: https://adrienbigler.ch
 ---
 Le foot amateur a tendance à se "professionnaliser". On le voit avec les clubs de 2e ligue inter., 2e ligue, voir 3e ligue qui n'hésitent plus à rémunérer leurs joueurs. Pourtant le foot business et ses dérives commence peut être à montrer ses limites. On le voit au plus haut niveau où les caprices de stars commencent à exaspérer les supporters et les suiveurs. Dans ces conditions, on peut penser que le foot amateur ferait bien de ne pas s'inspirer de ce qui se fait dans le monde professionnel. Difficile toutefois pour les joueurs du dimanche de ne pas s'inspirer de ce que font les joueurs pro, pour le meilleur et pour le pire.
 
