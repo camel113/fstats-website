@@ -108,16 +108,21 @@ body {
 	color:$primary-text-color;
 	@media (min-width: 768px) {
 		margin-bottom:50px;
+    padding-left: 10px;
+    padding-right: 10px;
 	}
 }
 .overview__download{
-	display:none;
 	@media (min-width: 768px) {
 		display:block;
 		.download__title{
 			display:none;
 		}
 	}
+}
+.feature__overview-img, .overview__app-overview-img{
+  max-width: 100%;
+  height: auto;
 }
 /* App features */
 .feature-container{
@@ -197,6 +202,10 @@ body {
 	flex-direction:column;
 	align-items: center;
 	text-align:center;
+}
+
+.feature__list-item{
+  margin-bottom: 10px;
 }
 /* App download */
 .download--mobile{

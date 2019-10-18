@@ -7,15 +7,22 @@ pages:
         title: Classements buteurs et équipes
         description: Retrouvez les classements meilleurs buteurs par groupe et par ligue. Accèdez simplement à tous les classements par équipes.
       stats: 
-        title: Stats individuelles, Stats équipes, Classements trios buteurs, Classements trios buteurs
+        title: Stats individuelles | Stats équipes | Classements buteurs
       stats_team:
         title: Statistiques par équipe
       fixtures: 
-        title: Calendrier et Résultats
+        title: Calendrier | Résultats | Classements
         description: Visualisez en un coup d'oeil les prochains matchs et les derniers résultats pour chaque groupe.
       favorite:
         title: Suivez votre équipe favorite
         description: Accèdez simplement et rapidement à tous les résultats, calendrier et classements de votre équipe favorite.
+      teams_manager:
+        title: Teams Manager
+        features: 
+          sync: Matchs officiels synchronisés automatiquement
+          participation: Gestion des présences aux entraînements et aux matchs
+          comminication: Communication plus simple des heures et lieu de rendez-vous aux matchs/entraînements
+          history: Historique des matchs/entraînements
     download_now: Télécharge l'app!
     overview: Aperçu
     images:

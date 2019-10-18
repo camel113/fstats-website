@@ -11,11 +11,18 @@ pages:
       stats_team:
         title: Stats per Mannschaft
       fixtures: 
-        title: Resultate und Spielplan
+        title: Resultate | Spielplan | Ranglisten
         description: Sehen Sie in einem Augenblick die nächsten Matchs und die letzten Resultate für jede Gruppe
       favorite:
         title: Folge deinem Lieblingsteam!
         description: Einfach und schnell auf alle Ergebnisse, Kalender und Ranglisten Ihres Lieblingsteams zugreifen
+      teams_manager:
+        title: Teams Manager
+        features: 
+          sync: Offizielle Spiele automatisch synchronisiert
+          participation: Verwaltung der Anwesenheit bei Trainings und Spiele
+          comminication: Einfache Mitteilung der Spiel- und Trainingsorte und Zeiten
+          history: Ansicht der vergangenen Spiele/Trainings
     download_now: Jetzt App heruntladen!
     overview: Überblick
     images:
